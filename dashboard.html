@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>게임 일정</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  /* ────────────────────────────────────────────────────────────
+     형태 규칙 (하나로 고정, 예외 없음)
+       --r-pill  칩·배지·토글처럼 누르는 것        → 완전 라운드
+       --r-panel 표·타임라인처럼 내용을 담는 면    → 10px
+       --r-mark  데이터 마크                       → 3px
+     ──────────────────────────────────────────────────────────── */
+  :root {
+    color-scheme: light dark;
+    --r-pill: 999px;
+    --r-panel: 10px;
+    --r-mark: 3px;
+
+    /* 라이트 (기본). validate_palette.js 통과 — light, surface #ffffff:
+       최악 인접쌍 CVD ΔE 9.1 / 일반시야 22.9.
+       aqua·yellow 는 대비 3:1 미만이라 '직접 라벨 + 표 뷰' 로 해소한다
+       (레인 이름과 표 뷰가 항상 있으므로 조건 충족). */
+    --page:      #f7f7f5;
+    --surface:   #ffffff;
+    --surface-2: #f1f1ee;
+    --grid:      #ebebe7;
+    --rule:      #dedeD8;
+    --ink:       #16161a;
+    --ink-2:     #55555f;
+    --ink-muted: #74747e;
+
+    --s1: #2a78d6;   /* 명조 */
+    --s2: #eb6834;   /* 스타레일 */
+    --s3: #1baf7a;   /* 이환 */
+    --s4: #eda100;   /* 엔드필드 */
+    --s-other: #8a8a94;
+
+    /* 상태 = 예약 팔레트. 모드와 무관하게 고정, 시리즈로 재사용 금지.
+       항상 글리프 + 라벨과 함께 쓴다 (색 단독으로 의미를 지지 않음). */
+    --st-good:     #0ca30c;
+    --st-warning:  #fab219;
+    --st-serious:  #ec835a;
+    --st-critical: #d03b3b;
+
+    --kr: "Pretendard", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+
+  /* 다크. 같은 여덟 색을 어두운 표면에 맞춰 다시 고른 것이지 자동 반전이 아니다.
+     validate_palette.js 통과 — dark, surface #141922:
+     최악 인접쌍 CVD ΔE 8.4 / 일반시야 19.8 / 전 슬롯 대비 3:1 이상. */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page:      #0b0e14;
+      --surface:   #141922;
+      --surface-2: #1b2230;
+      --grid:      #1e2530;
+      --rule:      #2a3340;
+      --ink:       #e8edf4;
+      --ink-2:     #9fb0c4;
+      --ink-muted: #8296ab;
+
+      --s1: #3987e5;
+      --s2: #d95926;
+      --s3: #199e70;
+      --s4: #c98500;
+      --s-other: #7a8799;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--page); color: var(--ink); font-family: var(--kr);
+    -webkit-font-smoothing: antialiased; line-height: 1.5; padding-bottom: 72px;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---- 헤더 ---- */
+  /* 상단 바만 sticky. 필터까지 붙여두면 좁은 폭에서 3줄로 늘어나
+     타임라인 위를 덮어버린다. 필터는 스코프하는 것 위에 있기만 하면 된다. */
+  header { border-bottom: 1px solid var(--rule); }
+  .hbar {
+    position: sticky; top: 0; z-index: 40;
+    display: flex; align-items: baseline; gap: 14px; padding: 13px 0; flex-wrap: wrap;
+    background: color-mix(in srgb, var(--page) 90%, transparent);
+    backdrop-filter: blur(12px);
+  }
+  .brand { font-size: 18px; font-weight: 800; letter-spacing: -.02em; }
+  .brand .dot { color: var(--s1); }
+  .updated { font-size: 11px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+
+  /* ---- 필터: 스코프하는 모든 것 위에 한 줄로. 차트 카드 안에 두지 않는다. ---- */
+  .filters {
+    display: flex; gap: 8px 20px; flex-wrap: wrap; align-items: center;
+    padding: 12px 0 14px; border-bottom: 1px solid var(--rule);
+  }
+  .fgroup { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+  /* 필터의 폼 레이블. 섹션 eyebrow 가 아니므로 uppercase·tracking 을 쓰지 않는다
+     (그 조합을 곳곳에 뿌리면 페이지 전체가 템플릿처럼 읽힌다). */
+  .flabel { font-size: 12px; font-weight: 600; color: var(--ink-muted); margin-right: 2px; }
+  .chip {
+    font: inherit; font-size: 13px; font-weight: 600; color: var(--ink-2);
+    background: transparent; border: 1px solid var(--rule); border-radius: var(--r-pill);
+    padding: 5px 12px; cursor: pointer; transition: color .14s, border-color .14s, background .14s;
+    display: inline-flex; align-items: center; gap: 7px;
+  }
+  .chip:hover { color: var(--ink); border-color: var(--ink-muted); }
+  .chip:active { transform: scale(.97); }   /* 눌리는 느낌 */
+  .chip[aria-pressed="true"] { color: var(--ink); background: var(--surface-2); border-color: var(--ink-muted); }
+  .swatch { width: 9px; height: 9px; border-radius: 50%; background: var(--gc, var(--ink-muted));
+            opacity: .35; transition: .14s; flex: none; }
+  .chip[aria-pressed="true"] .swatch { opacity: 1; }
+
+  /* ---- 히어로: 뷰당 정확히 하나. 이 도구의 존재 이유 = '언제 끝나나' ---- */
+  .now-sec { padding: 26px 0 4px; }
+  .sec-label { font-size: 10px; font-weight: 700; color: var(--ink-muted);
+               letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px; }
+  .hero { display: flex; align-items: flex-start; gap: 18px; flex-wrap: wrap; margin-bottom: 6px; }
+  .hero-fig { display: flex; align-items: baseline; flex: none; }
+  .hero-num { font-size: 54px; font-weight: 800; letter-spacing: -.04em; line-height: 1;
+              color: var(--ink); }        /* 히어로는 비례숫자 (tabular 금지) */
+  .hero-unit { font-size: 20px; font-weight: 700; color: var(--ink-2); margin-left: 2px; }
+  .hero-body { min-width: 0; padding-top: 2px; }
+  .hero-when { font-size: 13px; color: var(--ink-muted); margin-bottom: 6px; }
+  /* 같은 날 마감이 여럿이면 줄줄이 쌓인다 */
+  .hero-item { display: flex; align-items: center; gap: 9px; flex-wrap: wrap;
+               font-size: 15px; color: var(--ink-2); margin-bottom: 4px; }
+  .hero-item .key { width: 3px; height: 15px; border-radius: var(--r-mark);
+                    background: var(--gc); flex: none; }
+  .hero-item b { color: var(--ink); font-weight: 700; }
+  .hero-game { font-size: 12px; color: var(--ink-muted); }
+  .hero-none { font-size: 17px; color: var(--ink-2); }
+
+  /* ---- 상태 배지: 색 단독 금지 → 글리프 + 라벨.
+         라이트 모드에서 warning 글리프가 흰 바탕에 묻히므로 옅은 배경으로 받쳐준다. ---- */
+  .badge {
+    display: inline-flex; align-items: center; gap: 5px; flex: none;
+    font-size: 11px; font-weight: 700; color: var(--ink-2);
+    border-radius: var(--r-pill); padding: 3px 10px;
+    background: color-mix(in srgb, var(--sc) 12%, transparent);
+  }
+  .badge .g { color: var(--sc); font-size: 9px; line-height: 1; }
+
+  /* ---- 활성 목록 ----
+     밀도가 높은 화면이라 카드 박스를 쓰지 않는다. 1px 헤어라인이 행을 나누고,
+     여백이 묶는다. 박스가 겹칠수록 실제 데이터가 뒤로 밀린다. ---- */
+  .active { display: flex; flex-direction: column; margin-top: 14px;
+            border-top: 1px solid var(--rule); }
+  .arow { display: flex; align-items: center; gap: 12px; padding: 13px 2px;
+          border-bottom: 1px solid var(--grid); transition: background .14s; }
+  .arow:hover { background: var(--surface-2); }
+  .arow .key { width: 3px; height: 20px; border-radius: var(--r-mark);
+               background: var(--gc); flex: none; }
+  .arow .g  { font-size: 11px; color: var(--ink-muted); width: 96px; flex: none;
+              overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .arow .t  { flex: 1; font-size: 14px; font-weight: 600; min-width: 0;
+              overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .arow .d  { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums;
+              white-space: nowrap; }
+  .tag { font-size: 10px; font-weight: 700; color: var(--ink-muted);
+         border: 1px solid var(--rule); border-radius: var(--r-mark);
+         padding: 1px 5px; margin-left: 7px; }
+
+  /* 모션: 행이 순서대로 들어온다. 위계를 만드는 용도이지 장식이 아니다. */
+  @media (prefers-reduced-motion: no-preference) {
+    .arow { animation: rowin .34s cubic-bezier(.16,1,.3,1) both;
+            animation-delay: calc(var(--i, 0) * 26ms); }
+    @keyframes rowin { from { opacity: 0; transform: translateY(5px); } }
+  }
+
+  /* ---- 뷰 전환 ---- */
+  .viewbar { display: flex; align-items: center; gap: 10px; margin: 34px 0 14px; flex-wrap: wrap; }
+  .toggle { display: inline-flex; border: 1px solid var(--rule);
+            border-radius: var(--r-pill); padding: 3px; gap: 2px; }
+  .toggle button { font: inherit; font-size: 13px; font-weight: 600; color: var(--ink-2);
+                   background: transparent; border: 0; padding: 6px 15px;
+                   border-radius: var(--r-pill); cursor: pointer;
+                   transition: color .14s, background .14s; }
+  .toggle button[aria-pressed="true"] { background: var(--ink); color: var(--page); }
+  .toggle button:hover:not([aria-pressed="true"]) { color: var(--ink); }
+  .toggle button:active { transform: scale(.97); }
+
+  /* ---- 타임라인 ---- */
+  .tl-card { background: var(--surface); border: 1px solid var(--rule);
+             border-radius: var(--r-panel); overflow: hidden; }
+  .tl-scroll { overflow-x: auto; overflow-y: hidden; }
+  .tl-inner { position: relative; }
+  .tl-head { position: relative; height: 26px; border-bottom: 1px solid var(--grid); }
+  .tl-month { position: absolute; top: 7px; font-size: 11px; font-weight: 700;
+              color: var(--ink-2); padding-left: 6px; white-space: nowrap; }
+  .tl-grid { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--grid); }
+  .tl-now  { position: absolute; top: 0; bottom: 0; width: 2px;
+             background: color-mix(in srgb, var(--ink) 55%, transparent); z-index: 6; }
+  .tl-now::after {
+    content: "오늘"; position: absolute; top: 4px; left: 4px; font-size: 10px; font-weight: 700;
+    color: var(--page); background: color-mix(in srgb, var(--ink) 78%, transparent);
+    padding: 1px 5px; border-radius: var(--r-mark); white-space: nowrap;
+  }
+  .lane { position: relative; border-top: 1px solid var(--grid); }
+  .lane:first-child { border-top: 0; }
+  .lane-label {
+    position: sticky; left: 0; z-index: 8; float: left; width: 116px;
+    display: flex; align-items: center; gap: 7px; padding: 0 10px;
+    background: var(--surface); border-right: 1px solid var(--grid);
+    font-size: 12px; font-weight: 700; color: var(--ink-2);   /* 텍스트는 잉크, 색은 옆 스와치가 */
+  }
+  .lane-label .key { width: 3px; height: 16px; border-radius: var(--r-mark);
+                     background: var(--gc); flex: none; }
+  .lane-label span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* 마크: 얇게(18px ≤ 24px), 4px 라운드. 인접 마크 사이는 2px 표면 간격으로 분리. */
+  .mark { position: absolute; height: 18px; border-radius: var(--r-mark); cursor: default;
+          background: var(--gc); z-index: 3; }
+  .mark.pred { background: color-mix(in srgb, var(--gc) 14%, transparent);
+               border: 1px dashed color-mix(in srgb, var(--gc) 60%, transparent); }
+  .mark:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .mlabel { position: absolute; font-size: 11px; font-weight: 600; white-space: nowrap;
+            z-index: 4; pointer-events: none; line-height: 18px; }
+  .mlabel.on-fill  { color: #0b0e14; }      /* 불투명 마크 위 → 명도로 고름 */
+  .mlabel.on-ghost { color: var(--ink-2); } /* 예측(반투명) 마크 위 */
+  .mlabel.outside  { color: var(--ink-2); } /* 마크 바깥 */
+  /* 방송 = 시점 이벤트. 길이가 없으므로 마름모 마커 + 2px 표면 링. */
+  .bc { position: absolute; width: 11px; height: 11px; z-index: 5;
+        background: var(--gc); transform: rotate(45deg);
+        box-shadow: 0 0 0 2px var(--surface); border-radius: var(--r-mark); }
+
+  /* ---- 표 뷰 (색 단독 인코딩의 WCAG 대응 쌍) ---- */
+  .tbl-wrap { overflow-x: auto; border: 1px solid var(--rule);
+              border-radius: var(--r-panel); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { text-align: left; padding: 9px 14px; white-space: nowrap; }
+  th { font-size: 12px; font-weight: 700; color: var(--ink-muted);
+       border-bottom: 1px solid var(--rule); }
+  td { border-top: 1px solid var(--grid); color: var(--ink-2); }
+  td.tt { color: var(--ink); font-weight: 600; white-space: normal; min-width: 200px; }
+  td.num { font-variant-numeric: tabular-nums; }   /* 세로 정렬되는 열만 tabular */
+  .tkey { display: inline-block; width: 9px; height: 9px; border-radius: var(--r-mark);
+          background: var(--gc); margin-right: 7px; vertical-align: -1px; }
+
+  /* ---- 범례: 2계열 이상이면 항상 존재 ---- */
+  .legend { display: flex; gap: 8px 18px; flex-wrap: wrap; margin: 14px 2px 0;
+            font-size: 11px; color: var(--ink-muted); }
+  .legend .item { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .k { width: 14px; height: 8px; border-radius: var(--r-mark); background: var(--gc); }
+  .legend .k.pred { background: color-mix(in srgb, var(--ink-muted) 18%, transparent);
+                    border: 1px dashed var(--ink-muted); }
+  .legend .k.dia { width: 9px; height: 9px; border-radius: var(--r-mark); transform: rotate(45deg);
+                   background: var(--ink-muted); }
+
+  /* ---- 툴팁: 값을 여기서만 볼 수 있게 만들지 않는다 (표 뷰가 항상 있음) ---- */
+  #tip { position: fixed; z-index: 90; pointer-events: none; opacity: 0; transition: opacity .1s;
+         background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r-panel);
+         padding: 9px 12px; font-size: 12px; color: var(--ink-2); max-width: 300px;
+         box-shadow: 0 10px 30px color-mix(in srgb, var(--ink) 18%, transparent); }
+  #tip .tg { font-size: 10px; color: var(--ink-muted); margin-bottom: 3px; }
+  #tip .tt { font-size: 13px; font-weight: 700; color: var(--ink); white-space: normal; }
+  #tip .td { margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+  /* 예측이 섞인 데이터라는 사실은 숨기지 않는다. 다만 데이터 자체보다
+     앞서지 않도록 잉크 단계만 낮춘다. */
+  /* 수집 신호 이상. 실제 상태를 나타내므로 예약된 상태색을 쓴다. */
+  .warns { margin-top: 20px; padding: 11px 14px; border-radius: var(--r-panel);
+           background: color-mix(in srgb, var(--st-warning) 13%, transparent);
+           display: flex; flex-direction: column; gap: 3px;
+           font-size: 12.5px; color: var(--ink-2); }
+  /* display:flex 가 hidden 속성의 display:none 을 덮어쓴다. 명시적으로 되돌린다. */
+  .warns[hidden] { display: none; }
+  .warns b { color: var(--ink); font-size: 12px; }
+
+  .notice { margin-top: 14px; font-size: 12px; line-height: 1.6; color: var(--ink-muted);
+            max-width: 62ch; }
+  .notice b { color: var(--ink-2); font-weight: 700; }
+
+  .empty { color: var(--ink-2); font-size: 14px; padding: 44px 4px; text-align: center; }
+  /* 구분자 중간점을 줄줄이 늘어놓지 않는다. 여백이 나눈다. */
+  .foot { margin-top: 34px; padding-top: 14px; border-top: 1px solid var(--grid);
+          display: flex; gap: 20px; flex-wrap: wrap;
+          font-size: 11px; color: var(--ink-muted); }
+  .foot a { color: var(--ink-2); text-decoration: none; }
+  .foot a:hover { color: var(--ink); text-decoration: underline; }
+  @media (max-width: 640px) {
+    .hero-num { font-size: 44px; }
+    .arow .g { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="hbar">
+      <div class="brand">게임 일정<span class="dot">.</span></div>
+      <div class="updated" id="updated"></div>
+    </div>
+    <div class="filters">
+      <div class="fgroup"><span class="flabel">게임</span><span id="game-chips" style="display:contents"></span></div>
+      <div class="fgroup"><span class="flabel">종류</span><span id="type-chips" style="display:contents"></span></div>
+      <div class="fgroup"><button class="chip" id="chip-pred" aria-pressed="true">예측 포함</button></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="warns" id="warns" hidden></div>
+
+  <section class="now-sec">
+    <div class="sec-label">다음 마감</div>
+    <div id="hero"></div>
+    <div class="active" id="active"></div>
+    <p class="notice">
+      공식 발표 전 항목은 <b>추정</b>이라 실제와 다를 수 있습니다.
+      참고용으로만 사용하시고, 정확한 일정은 각 게임 공식 공지를 확인해 주세요.
+    </p>
+  </section>
+
+  <div class="viewbar">
+    <div class="toggle" role="group" aria-label="보기 방식">
+      <button id="v-timeline" aria-pressed="true">타임라인</button>
+      <button id="v-list" aria-pressed="false">리스트</button>
+      <button id="v-table" aria-pressed="false">표</button>
+    </div>
+  </div>
+
+  <div id="view-timeline"></div>
+  <div id="view-list" hidden></div>
+  <div id="view-table" hidden></div>
+
+  <div class="legend" id="legend"></div>
+  <div class="foot">
+    <a href="schedule.ics">캘린더 구독(.ics)</a>
+    <a href="https://github.com/NoonDaL/game-schedule">GitHub</a>
+    <span>6시간마다 자동 갱신</span>
+  </div>
+</div>
+
+<div id="tip" role="tooltip"></div>
+
+<script>
+"use strict";
+const DAY = 86400000;
+
+/* 게임 → 색은 '고정 순서'로 배정한다. 필터로 계열 수가 줄어도 재배정하지 않는다
+   (Recolor-on-filter 안티패턴). 목록에 없는 게임은 중립 회색으로 접는다. */
+const GAME_ORDER = ["명조: 워더링 웨이브", "붕괴: 스타레일", "이환", "명일방주: 엔드필드"];
+const SERIES = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)"];
+const colorOf = g => { const i = GAME_ORDER.indexOf(g); return i < 0 ? "var(--s-other)" : SERIES[i]; };
+
+const TYPE_LABELS = { banner: "픽업", broadcast: "방송", event: "이벤트" };
+const SHOW_TYPES = new Set(["banner", "broadcast", "event"]);   // hint 는 예측 재료라 표시 안 함
+
+let EVENTS = [];
+const state = load();
+
+function load() {
+  const d = { view: "timeline", games: null, types: ["banner", "broadcast"], pred: true };
+  try { Object.assign(d, JSON.parse(localStorage.getItem("gsched2") || "{}")); } catch (e) {}
+  return d;
+}
+const save = () => { try { localStorage.setItem("gsched2", JSON.stringify(state)); } catch (e) {} };
+
+const endOf = e => e.end ? new Date(e.end) : new Date(+new Date(e.start) + 90 * 60000);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmt = d => `${d.getMonth() + 1}월 ${d.getDate()}일`;
+const fmtT = d => `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`;
+const drange = e => e.end ? `${fmt(new Date(e.start))} ~ ${fmt(endOf(e))}` : fmtT(new Date(e.start));
+const shortTitle = e => e.title
+  .replace(/^\[(예측|예정|픽업)\]\s*/, "")
+  .replace(/^\[배너[^\]]*\]\s*/, "");
+
+/* 타임라인 전용 짧은 라벨. 방송 제목은 '〈붕괴: 스타레일〉 4.5 버전 「…」 프리뷰
+   스페셜 프로그램'처럼 길어서 레인을 가로질러 버린다. 버전 번호만으로 충분하고,
+   전체 제목은 툴팁과 표 뷰에 그대로 있다. */
+const tlLabel = e => e.type === "broadcast"
+  ? (e.version ? `v${e.version} 방송` : "특별 방송")
+  : shortTitle(e);
+
+/* 상태 = 예약 팔레트. 색 단독으로 의미를 지지 않게 글리프와 라벨을 함께 돌려준다.
+   글리프는 모양이 서로 달라서 흑백/CVD 에서도 구분된다. */
+function statusOf(e, now) {
+  const s = +new Date(e.start), en = +endOf(e);
+  if (en < now) return { k: "done", label: "종료", g: "·", c: "var(--ink-muted)" };
+  if (s <= now) {
+    const d = Math.max(0, Math.ceil((en - now) / DAY));
+    if (d <= 2) return { k: "critical", label: "곧 종료", g: "▲", c: "var(--st-critical)", d, ing: true };
+    if (d <= 7) return { k: "warning",  label: "종료 임박", g: "◆", c: "var(--st-warning)", d, ing: true };
+    return { k: "good", label: "진행 중", g: "●", c: "var(--st-good)", d, ing: true };
+  }
+  const d = Math.max(0, Math.ceil((s - now) / DAY));
+  if (d <= 3) return { k: "soon", label: "곧 시작", g: "◇", c: "var(--st-serious)", d };
+  return { k: "future", label: "예정", g: "○", c: "var(--ink-muted)", d };
+}
+const badge = st => `<span class="badge" style="--sc:${st.c}"><span class="g">${st.g}</span>${st.label}</span>`;
+
+async function init() {
+  /* 폰트 로드 전에 measureText 를 쓰면 폭이 어긋나 라벨이 마크를 넘어간다.
+     반드시 웹폰트가 준비된 뒤에 첫 렌더를 한다. */
+  try { await document.fonts.ready; } catch (e) {}
+  let data = null, status = null;
+  try { const r = await fetch("events.json", { cache: "no-store" }); if (r.ok) data = await r.json(); } catch (e) {}
+  /* '언제 확인했는가' 는 status.json 이 따로 들고 있다. events.json 의
+     updated_at 은 내용이 실제로 바뀔 때만 갱신되므로 확인 시각이 아니다. */
+  try { const r = await fetch("status.json", { cache: "no-store" }); if (r.ok) status = await r.json(); } catch (e) {}
+
+  EVENTS = Object.entries(data || {})
+    .map(([uid, e]) => ({ uid, ...e }))
+    .filter(e => SHOW_TYPES.has(e.type) && shortTitle(e).trim() !== "");
+
+  const checked = status && status.checked_at
+    ? new Date(status.checked_at)
+    : (() => { const u = EVENTS.map(e => e.updated_at).filter(Boolean).sort();
+               return u.length ? new Date(u[u.length - 1]) : null; })();
+  document.getElementById("updated").textContent =
+    !data ? "events.json 연결 대기" : checked ? "확인 " + fmtT(checked) : "";
+
+  /* 수집 신호가 끊기면 조용히 예측으로 떨어질 뿐이라 화면에 드러낸다.
+     이게 없으면 몇 달 뒤에야 알아챈다. */
+  const warns = (status && status.warnings) || [];
+  if (warns.length) {
+    const el = document.getElementById("warns");
+    el.hidden = false;
+    el.innerHTML = `<b>수집 신호 이상</b>` +
+      warns.map(w => `<span>${esc(w)}</span>`).join("");
+  }
+
+  const games = GAME_ORDER.filter(g => EVENTS.some(e => e.game === g))
+    .concat([...new Set(EVENTS.map(e => e.game))].filter(g => !GAME_ORDER.includes(g)));
+  if (!state.games) state.games = games.slice();
+  buildChips(games); bindControls(); applyView(); renderAll();
+}
+
+function buildChips(games) {
+  const gc = document.getElementById("game-chips");
+  games.forEach(g => {
+    const b = document.createElement("button");
+    b.className = "chip"; b.style.setProperty("--gc", colorOf(g));
+    b.setAttribute("aria-pressed", state.games.includes(g));
+    b.innerHTML = `<span class="swatch"></span>${esc(g)}`;
+    b.onclick = () => { toggle(state.games, g); b.setAttribute("aria-pressed", state.games.includes(g)); save(); renderAll(); };
+    gc.appendChild(b);
+  });
+  const tc = document.getElementById("type-chips");
+  Object.entries(TYPE_LABELS).forEach(([t, label]) => {
+    const b = document.createElement("button");
+    b.className = "chip";
+    b.setAttribute("aria-pressed", state.types.includes(t));
+    // 게임 칩의 점은 '색 키'라 정보를 지지만, 종류 칩에는 대응하는 색이 없다.
+    // 뜻 없는 점은 넣지 않는다.
+    b.textContent = label;
+    b.onclick = () => { toggle(state.types, t); b.setAttribute("aria-pressed", state.types.includes(t)); save(); renderAll(); };
+    tc.appendChild(b);
+  });
+}
+function toggle(a, v) { const i = a.indexOf(v); i < 0 ? a.push(v) : a.splice(i, 1); }
+
+function bindControls() {
+  [["v-timeline", "timeline"], ["v-list", "list"], ["v-table", "table"]].forEach(([id, v]) => {
+    document.getElementById(id).onclick = () => { state.view = v; save(); applyView(); renderAll(); };
+  });
+  const cp = document.getElementById("chip-pred");
+  cp.setAttribute("aria-pressed", state.pred);
+  cp.onclick = () => { state.pred = !state.pred; cp.setAttribute("aria-pressed", state.pred); save(); renderAll(); };
+}
+function applyView() {
+  [["v-timeline", "view-timeline", "timeline"], ["v-list", "view-list", "list"], ["v-table", "view-table", "table"]]
+    .forEach(([btn, box, v]) => {
+      document.getElementById(btn).setAttribute("aria-pressed", state.view === v);
+      document.getElementById(box).hidden = state.view !== v;
+    });
+}
+
+const visible = () => EVENTS.filter(e =>
+  state.games.includes(e.game) && state.types.includes(e.type) && (state.pred || !e.predicted));
+
+function renderAll() { renderNow(); renderLegend(); ({ timeline: renderTimeline, list: renderList, table: renderTable }[state.view])(); }
+
+/* ---- 히어로 + 활성 목록: '무엇이 중요한가'를 색이 아니라 위치와 상태로 말한다 ---- */
+const sameDay = (a, b) => a.getFullYear() === b.getFullYear()
+  && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+
+function renderNow() {
+  const now = Date.now();
+  const live = visible().filter(e => +endOf(e) >= now)
+    .sort((a, b) => +endOf(a) - +endOf(b));
+  const ongoing = live.filter(e => +new Date(e.start) <= now);
+  const hero = document.getElementById("hero");
+
+  // 진행 중인 게 있으면 '가장 빠른 종료', 없으면 '가장 빠른 시작' 기준.
+  const started = ongoing.length > 0;
+  const pool = started ? ongoing : live;
+  const head = pool[0];
+
+  if (!head) {
+    hero.innerHTML = `<div class="hero-none">표시할 일정이 없습니다. 위 필터를 확인해 보세요.</div>`;
+  } else {
+    const keyOf = e => started ? endOf(e) : new Date(e.start);
+    const target = keyOf(head);
+    /* 같은 날 마감하는 건 함께 띄운다. 가장 급한 하나만 보여주면
+       같은 날 끝나는 나머지를 그대로 놓친다. */
+    const group = pool.filter(e => sameDay(keyOf(e), target));
+    hero.innerHTML = `<div class="hero">
+      <div class="hero-fig">
+        <span class="hero-num">${statusOf(head, now).d}</span><span class="hero-unit">일</span>
+      </div>
+      <div class="hero-body">
+        <div class="hero-when">${fmt(target)} ${started ? "종료" : "시작"}</div>
+        ${group.map(e => `<div class="hero-item">
+            <span class="key" style="--gc:${colorOf(e.game)}"></span>
+            <b>${esc(shortTitle(e))}</b>
+            <span class="hero-game">${esc(e.game)}</span>
+            ${badge(statusOf(e, now))}
+          </div>`).join("")}
+      </div>
+    </div>`;
+  }
+
+  document.getElementById("active").innerHTML = live.slice(0, 8).map((e, i) => {
+    const st = statusOf(e, now);
+    return `<div class="arow" style="--gc:${colorOf(e.game)};--i:${i}">
+      <span class="key"></span><span class="g">${esc(e.game)}</span>
+      <span class="t">${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
+      <span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
+  }).join("");
+}
+
+function renderLegend() {
+  // 레인과 같은 고정 순서로. 범례와 차트의 순서가 어긋나면 대조가 어려워진다.
+  const present = new Set(visible().map(e => e.game));
+  const games = GAME_ORDER.filter(g => present.has(g))
+    .concat([...present].filter(g => !GAME_ORDER.includes(g)));
+  const gl = games.map(g => `<span class="item"><span class="k" style="--gc:${colorOf(g)}"></span>${esc(g)}</span>`).join("");
+  document.getElementById("legend").innerHTML = gl +
+    `<span class="item"><span class="k pred"></span>예측</span>` +
+    `<span class="item"><span class="k dia"></span>특별방송</span>`;
+}
+
+/* ---- 타임라인 ---- */
+const PX = 16, BARH = 18, ROWH = 26, PADY = 7, LANE_W = 116;
+
+/* 라벨은 '들어갈 때만' 마크 안에 넣는다. overflow:hidden 으로 잘라내지 않는다. */
+let _ctx;
+function textW(s, weight = 600, size = 11) {
+  if (!_ctx) _ctx = document.createElement("canvas").getContext("2d");
+  _ctx.font = `${weight} ${size}px Pretendard, system-ui, sans-serif`;
+  return _ctx.measureText(s).width;
+}
+
+function renderTimeline() {
+  const host = document.getElementById("view-timeline");
+  const now = Date.now();
+  /* 범위를 고정한다. 예전엔 데이터 최소값까지 늘려서 5월 방송 하나가
+     타임라인 전체를 몇 달치로 늘려놨다. */
+  const min = Math.floor((now - 14 * DAY) / DAY) * DAY;
+  const evs = visible().filter(e => +endOf(e) >= min);
+  if (!evs.length) { host.innerHTML = `<div class="empty">표시할 일정이 없습니다.</div>`; return; }
+  let max = now + 60 * DAY;
+  evs.forEach(e => { max = Math.max(max, Math.min(+endOf(e), now + 130 * DAY)); });
+  max = Math.ceil(max / DAY) * DAY;
+
+  const W = Math.round((max - min) / DAY) * PX;
+  const x = t => ((+t - min) / DAY) * PX;
+  const games = GAME_ORDER.filter(g => evs.some(e => e.game === g))
+    .concat([...new Set(evs.map(e => e.game))].filter(g => !GAME_ORDER.includes(g)));
+
+  let head = "", grid = "";
+  for (let d = min; d <= max; d += DAY) {
+    const dt = new Date(d);
+    if (dt.getDate() === 1) {
+      head += `<div class="tl-month" style="left:${x(d)}px">${dt.getMonth() + 1}월</div>`;
+      grid += `<div class="tl-grid" style="left:${x(d)}px"></div>`;
+    } else if (dt.getDay() === 1) {
+      grid += `<div class="tl-grid" style="left:${x(d)}px;opacity:.5"></div>`;
+    }
+  }
+
+  const lanes = games.map(g => {
+    const col = colorOf(g);
+    const ge = evs.filter(e => e.game === g).sort((a, b) => +new Date(a.start) - +new Date(b.start));
+    const rowEnds = [];
+    const placed = ge.map(e => {
+      const s = +new Date(e.start), en = +endOf(e);
+      let row = rowEnds.findIndex(re => re <= s);
+      if (row < 0) { row = rowEnds.length; rowEnds.push(en); } else { rowEnds[row] = en; }
+      return { e, row };
+    });
+    const laneH = Math.max(1, rowEnds.length) * ROWH + PADY;
+
+    /* 같은 행에서 다음 마크가 시작하는 x — 바깥 라벨을 놓을 여유를 재는 데 쓴다 */
+    const nextLeft = placed.map(({ e, row }) => {
+      const mine = +new Date(e.start);
+      const nx = placed.filter(p => p.row === row && +new Date(p.e.start) > mine)
+                       .map(p => x(new Date(p.e.start)));
+      return nx.length ? Math.min(...nx) : Infinity;
+    });
+
+    const marks = placed.map(({ e, row }, idx) => {
+      const top = PADY / 2 + row * ROWH;
+      const l = Math.max(x(new Date(e.start)), 0);
+      const tip = `data-tip="${esc(JSON.stringify({ g: e.game, t: shortTitle(e), d: drange(e), p: !!e.predicted }))}"`;
+      const txt = tlLabel(e);
+      const gap = nextLeft[idx];
+
+      if (e.type === "broadcast") {
+        /* 시점 이벤트 → 마름모 마커. 라벨은 항상 바깥, 다음 마크와 겹치지 않을 때만. */
+        const room = gap - (l + 14);
+        const lab = textW(txt) <= room
+          ? `<div class="mlabel outside" style="left:${l + 14}px;top:${top}px">${esc(txt)}</div>` : "";
+        return `<div class="bc" style="--gc:${col};left:${l - 5}px;top:${top + 3}px" tabindex="0" ${tip}></div>${lab}`;
+      }
+
+      /* 인접 마크는 2px 표면 간격으로 분리한다 (테두리로 나누지 않는다) */
+      const w = Math.max(x(endOf(e)) - l - 2, 6);
+      const cls = e.predicted ? "mark pred" : "mark";
+      let lab = "";
+      if (textW(txt) + 18 <= w) {
+        // 안에 여유 있게 들어감
+        lab = `<div class="mlabel ${e.predicted ? "on-ghost" : "on-fill"}" style="left:${l + 9}px;top:${top}px">${esc(txt)}</div>`;
+      } else if (textW(txt) <= gap - (l + w + 8)) {
+        // 안엔 안 들어가지만 마크 오른쪽 끝 바깥에 자리가 있음
+        lab = `<div class="mlabel outside" style="left:${l + w + 8}px;top:${top}px">${esc(txt)}</div>`;
+      }
+      // 둘 다 아니면 라벨 없음 — 잘라내지 않는다. 값은 툴팁과 표 뷰에 그대로 있다.
+      return `<div class="${cls}" style="--gc:${col};left:${l}px;top:${top}px;width:${w}px" tabindex="0" ${tip}></div>${lab}`;
+    }).join("");
+
+    return `<div class="lane" style="height:${laneH}px">
+      <div class="lane-label" style="--gc:${col};height:${laneH}px"><span class="key"></span><span>${esc(g)}</span></div>
+      ${marks}</div>`;
+  }).join("");
+
+  host.innerHTML = `<div class="tl-card"><div class="tl-scroll" id="tlscroll">
+    <div class="tl-inner" style="width:${W + LANE_W}px;padding-left:${LANE_W}px">
+      <div class="tl-head">${head}</div>
+      ${grid}
+      <div class="tl-now" style="left:${x(now) + LANE_W}px"></div>
+      <div style="position:relative">${lanes}</div>
+    </div></div></div>`;
+
+  /* 그리드/현재선은 패딩 기준이 달라 좌표를 보정 */
+  host.querySelectorAll(".tl-grid").forEach(el => { el.style.left = parseFloat(el.style.left) + LANE_W + "px"; });
+  /* 열자마자 '오늘'이 보이게 스크롤 */
+  const sc = document.getElementById("tlscroll");
+  if (sc) {
+    /* 레인 이름 칸(sticky) 뒤로 들어간 라벨은 숨긴다. 앞글자가 잘린 채 보이면
+       '깨진 글자'로 읽혀서, 안 보이는 편이 낫다. */
+    /* 좌표계 주의: .mlabel 은 .lane(패딩 이후에서 시작) 기준이라 left 에 LANE_W 가
+       이미 반영돼 있다. 화면상 위치 = LANE_W + left, sticky 칸이 덮는 구간 =
+       [scrollLeft, scrollLeft + LANE_W] → 가려지는 조건은 left < scrollLeft. */
+    const labs = [...host.querySelectorAll(".mlabel")];
+    const mask = () => labs.forEach(L => {
+      L.style.visibility = parseFloat(L.style.left) < sc.scrollLeft + 2 ? "hidden" : "visible";
+    });
+    sc.addEventListener("scroll", mask, { passive: true });
+    sc.scrollLeft = Math.max(0, x(now) - 120);
+    mask();
+  }
+  bindTips(host);
+}
+
+function renderList() {
+  const host = document.getElementById("view-list");
+  const now = Date.now();
+  const evs = visible().filter(e => +endOf(e) >= now).sort((a, b) => +new Date(a.start) - +new Date(b.start));
+  if (!evs.length) { host.innerHTML = `<div class="empty">다가오는 일정이 없습니다.</div>`; return; }
+  const rows = evs.map((e, i) => {
+    const st = statusOf(e, now);
+    return `<div class="arow" style="--gc:${colorOf(e.game)};--i:${i}">
+      <span class="key"></span><span class="g">${esc(e.game)}</span>
+      <span class="t">${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
+      <span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
+  }).join("");
+  host.innerHTML = `<div class="active">${rows}</div>`;
+}
+
+/* 표 뷰 — 색 인코딩에 기대지 않는 동등한 경로 */
+function renderTable() {
+  const host = document.getElementById("view-table");
+  const now = Date.now();
+  const evs = visible().sort((a, b) => +new Date(a.start) - +new Date(b.start));
+  if (!evs.length) { host.innerHTML = `<div class="empty">표시할 일정이 없습니다.</div>`; return; }
+  const rows = evs.map(e => {
+    const st = statusOf(e, now);
+    return `<tr>
+      <td><span class="tkey" style="--gc:${colorOf(e.game)}"></span>${esc(e.game)}</td>
+      <td>${TYPE_LABELS[e.type] || e.type}${e.predicted ? " (예측)" : e.confirmed ? " (확정)" : ""}</td>
+      <td class="tt">${esc(shortTitle(e))}</td>
+      <td class="num">${fmtT(new Date(e.start))}</td>
+      <td class="num">${e.end ? fmtT(endOf(e)) : "없음"}</td>
+      <td>${st.g} ${st.label}${st.d != null && st.k !== "done" ? ` (D-${st.d})` : ""}</td>
+    </tr>`;
+  }).join("");
+  host.innerHTML = `<div class="tbl-wrap"><table>
+    <thead><tr><th>게임</th><th>종류</th><th>제목</th><th>시작</th><th>종료</th><th>상태</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>`;
+}
+
+/* ---- 호버/포커스 툴팁 (키보드도 같은 내용을 본다) ---- */
+const tip = document.getElementById("tip");
+function bindTips(root) {
+  root.querySelectorAll("[data-tip]").forEach(el => {
+    const show = ev => {
+      const d = JSON.parse(el.dataset.tip);
+      tip.innerHTML = `<div class="tg">${esc(d.g)}</div><div class="tt">${esc(d.t)}${d.p ? ' <span class="tag">예측</span>' : ""}</div><div class="td">${esc(d.d)}</div>`;
+      tip.style.opacity = 1;
+      const r = el.getBoundingClientRect();
+      const cx = ev.clientX != null && ev.clientX ? ev.clientX : r.left + r.width / 2;
+      tip.style.left = Math.min(cx + 14, innerWidth - tip.offsetWidth - 12) + "px";
+      tip.style.top = Math.max(8, r.top - tip.offsetHeight - 10) + "px";
+    };
+    el.addEventListener("mouseenter", show);
+    el.addEventListener("mousemove", show);
+    el.addEventListener("focus", show);
+    ["mouseleave", "blur"].forEach(k => el.addEventListener(k, () => { tip.style.opacity = 0; }));
+  });
+}
+
+init();
+</script>
+</body>
+</html>

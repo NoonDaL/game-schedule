@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>게임 일정</title>
+<meta name="description" content="명조 · 스타레일 · 이환 · 엔드필드의 픽업 배너와 특별방송을 한 캘린더로.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  /* 대시보드와 같은 토큰·형태 규칙을 쓴다.
+     --r-pill 누르는 것 / --r-panel 담는 면 / --r-mark 데이터 마크 */
+  :root {
+    color-scheme: light dark;
+    --r-pill: 999px; --r-panel: 10px; --r-mark: 3px;
+    --page: #f7f7f5; --surface: #ffffff; --surface-2: #f1f1ee;
+    --grid: #ebebe7; --rule: #dedad2;
+    --ink: #16161a; --ink-2: #55555f; --ink-muted: #74747e;
+    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
+    --kr: "Pretendard", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0b0e14; --surface: #141922; --surface-2: #1b2230;
+      --grid: #1e2530; --rule: #2a3340;
+      --ink: #e8edf4; --ink-2: #9fb0c4; --ink-muted: #8296ab;
+      --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--page); color: var(--ink); font-family: var(--kr);
+    -webkit-font-smoothing: antialiased; line-height: 1.6;
+    display: flex; justify-content: center; padding: 12vh 20px 64px;
+  }
+  .wrap { width: 100%; max-width: 560px; }
+
+  h1 { font-size: 30px; font-weight: 800; letter-spacing: -.03em; line-height: 1.2; }
+  h1 .dot { color: var(--s1); }
+  .lede { color: var(--ink-2); font-size: 15px; margin-top: 10px; }
+
+  /* 게임 4종 = 대시보드와 같은 색 배정 순서. 색이 곧 식별자라 순서를 바꾸지 않는다. */
+  .games { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 18px;
+           font-size: 12px; color: var(--ink-muted); }
+  .games span { display: inline-flex; align-items: center; gap: 6px; }
+  .games i { width: 3px; height: 13px; border-radius: var(--r-mark); background: var(--c); }
+
+  .block { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .block h2 { font-size: 15px; font-weight: 700; }
+  .block p { color: var(--ink-2); font-size: 13px; margin-top: 5px; }
+
+  .urlrow { display: flex; gap: 8px; margin-top: 14px; }
+  .url {
+    flex: 1; min-width: 0; background: var(--surface); border: 1px solid var(--rule);
+    border-radius: var(--r-panel); padding: 11px 13px; font-size: 12.5px;
+    color: var(--ink); overflow-x: auto; white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  button, .btn {
+    font: inherit; font-size: 13.5px; font-weight: 700; cursor: pointer;
+    border-radius: var(--r-pill); border: 1px solid var(--rule);
+    background: var(--surface); color: var(--ink); padding: 11px 20px;
+    text-decoration: none; display: inline-flex; align-items: center;
+    justify-content: center; white-space: nowrap;
+    transition: background .14s, border-color .14s, color .14s;
+  }
+  button:hover, .btn:hover { border-color: var(--ink-muted); background: var(--surface-2); }
+  button:active, .btn:active { transform: scale(.97); }
+  .btn-main {
+    background: var(--ink); color: var(--page); border-color: var(--ink);
+    width: 100%; padding: 13px;
+  }
+  .btn-main:hover { background: var(--ink); color: var(--page); opacity: .88; }
+
+  ol { margin: 12px 0 0 18px; color: var(--ink-2); font-size: 13px; }
+  ol li { margin-bottom: 4px; }
+  ol b { color: var(--ink); }
+
+  /* 예측이 섞인 데이터라는 사실을 숨기지 않되, 본문보다 앞서지 않게 잉크만 낮춘다. */
+  .notice { margin-top: 40px; font-size: 12px; line-height: 1.6; color: var(--ink-muted); }
+  .notice b { color: var(--ink-2); font-weight: 700; }
+
+  .foot { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--grid);
+          display: flex; gap: 20px; flex-wrap: wrap;
+          font-size: 11.5px; color: var(--ink-muted); }
+  .foot a { color: var(--ink-2); text-decoration: none; }
+  .foot a:hover { color: var(--ink); text-decoration: underline; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .wrap > * { animation: rise .4s cubic-bezier(.16,1,.3,1) both;
+                animation-delay: calc(var(--i, 0) * 60ms); }
+    @keyframes rise { from { opacity: 0; transform: translateY(7px); } }
+  }
+  @media (max-width: 520px) {
+    body { padding-top: 8vh; }
+    .urlrow { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1 style="--i:0">게임 일정<span class="dot">.</span></h1>
+  <p class="lede" style="--i:1">픽업 배너와 특별방송을 캘린더 하나로 모읍니다. 6시간마다 자동 갱신.</p>
+
+  <div class="games" style="--i:2">
+    <span><i style="--c:var(--s1)"></i>명조: 워더링 웨이브</span>
+    <span><i style="--c:var(--s2)"></i>붕괴: 스타레일</span>
+    <span><i style="--c:var(--s3)"></i>이환</span>
+    <span><i style="--c:var(--s4)"></i>명일방주: 엔드필드</span>
+  </div>
+
+  <section class="block" style="--i:3">
+    <h2>캘린더에 추가</h2>
+    <p>이 주소를 구독하면 일정이 알아서 캘린더에 등록됩니다.</p>
+    <div class="urlrow">
+      <div class="url" id="ics">https://noondal.github.io/game-schedule/schedule.ics</div>
+      <button id="copy">복사</button>
+    </div>
+    <ol>
+      <li>구글 캘린더 왼쪽 <b>다른 캘린더 +</b> → <b>URL로 만들기</b></li>
+      <li>주소를 붙여넣고 <b>캘린더 추가</b></li>
+    </ol>
+  </section>
+
+  <section class="block" style="--i:4">
+    <h2>지금 진행 중인 이벤트 보기</h2>
+    <p>진행 중인 픽업과 남은 기간을 한 화면에서 봅니다.</p>
+    <a class="btn btn-main" href="dashboard.html" style="margin-top:14px">대시보드 열기</a>
+  </section>
+
+  <p class="notice" style="--i:5">
+    공식 발표 전 항목은 <b>추정</b>이라 실제와 다를 수 있습니다.
+    참고용으로만 사용하시고, 정확한 일정은 각 게임 공식 공지를 확인해 주세요.
+  </p>
+
+  <div class="foot" style="--i:6">
+    <a href="https://github.com/NoonDaL/game-schedule">GitHub</a>
+    <span>구독 반영은 캘린더 앱 주기에 따라 수 시간 걸립니다</span>
+  </div>
+
+</div>
+<script>
+  const btn = document.getElementById("copy");
+  btn.addEventListener("click", async () => {
+    const text = document.getElementById("ics").textContent.trim();
+    try {
+      await navigator.clipboard.writeText(text);
+      btn.textContent = "복사됨";
+    } catch {
+      // 클립보드 권한이 없으면 선택 상태로 만들어 사용자가 직접 복사하게 한다
+      const r = document.createRange();
+      r.selectNodeContents(document.getElementById("ics"));
+      getSelection().removeAllRanges();
+      getSelection().addRange(r);
+      btn.textContent = "직접 복사";
+    }
+    setTimeout(() => { btn.textContent = "복사"; }, 1600);
+  });
+</script>
+</body>
+</html>
