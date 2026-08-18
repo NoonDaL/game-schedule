@@ -1017,16 +1017,16 @@
     "note": "공식 공지. 유튜브 예정 라이브가 올라오면 자동으로 대체된다",
     "confirmed": true
   },
-  "manual-d590faf6@gameschedule": {
-    "uid": "manual-d590faf6@gameschedule",
+  "manual-f0dfec53@gameschedule": {
+    "uid": "manual-f0dfec53@gameschedule",
     "game": "명조: 워더링 웨이브",
-    "type": "custom",
+    "type": "event",
     "title": "피자헛 콜라보",
     "start": "2026-08-20T15:00:00+00:00",
     "end": "2026-09-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-08-18T16:27:49.970559+00:00",
+    "updated_at": "2026-08-18T16:59:06.343807+00:00",
     "confirmed": true
   }
 }
