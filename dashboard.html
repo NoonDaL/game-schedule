@@ -267,6 +267,9 @@
   .warns[hidden] { display: none; }
   .warns b { color: var(--ink); font-size: 12px; }
 
+  .more { margin-top: 10px; font-size: 12px; color: var(--ink-muted); }
+  .more b { color: var(--ink-2); font-weight: 700; }
+
   .notice { margin-top: 14px; font-size: 12px; line-height: 1.6; color: var(--ink-muted);
             max-width: 62ch; }
   .notice b { color: var(--ink-2); font-weight: 700; }
@@ -307,6 +310,7 @@
     <div class="sec-label">다음 마감</div>
     <div id="hero"></div>
     <div class="active" id="active"></div>
+    <p class="more" id="more"></p>
     <p class="notice">
       공식 발표 전 항목은 <b>추정</b>이라 실제와 다를 수 있습니다.
       참고용으로만 사용하시고, 정확한 일정은 각 게임 공식 공지를 확인해 주세요.
@@ -534,7 +538,14 @@ function renderNow() {
     </div>`;
   }
 
-  document.getElementById("active").innerHTML = live.slice(0, 8).map((e, i) => {
+  /* 여기는 '다음 마감' 요약이라 전부 늘어놓지 않는다. 다만 잘렸다는 표시가
+     없으면 "왜 이건 안 보이지" 로 오해하게 된다 (실제로 그랬다). */
+  const CAP = 8;
+  const rest = Math.max(0, live.length - CAP);
+  document.getElementById("more").innerHTML = rest
+    ? `그 밖에 <b>${rest}건</b> — 아래 <b>리스트</b> 또는 <b>표</b> 에서 전부 볼 수 있습니다`
+    : "";
+  document.getElementById("active").innerHTML = live.slice(0, CAP).map((e, i) => {
     const st = statusOf(e, now);
     return `<div class="arow" style="--gc:${colorOf(e.game)};--i:${i}">
       <span class="key"></span><span class="g">${esc(e.game)}</span>
