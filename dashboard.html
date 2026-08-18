@@ -146,6 +146,12 @@
      여백이 묶는다. 박스가 겹칠수록 실제 데이터가 뒤로 밀린다. ---- */
   .active { display: flex; flex-direction: column; margin-top: 14px;
             border-top: 1px solid var(--rule); }
+  /* 목록 안의 구분 라벨. 곧 시작 / 진행 중 을 나눈다. */
+  .grp { font-size: 10px; font-weight: 700; color: var(--ink-muted);
+         letter-spacing: .08em; padding: 12px 2px 5px;
+         border-bottom: 1px solid var(--grid); }
+  .grp:first-child { padding-top: 4px; }
+
   .arow { display: flex; align-items: center; gap: 12px; padding: 13px 2px;
           border-bottom: 1px solid var(--grid); transition: background .14s; }
   .arow:hover { background: var(--surface-2); }
@@ -188,6 +194,10 @@
   .tl-head { position: relative; height: 26px; border-bottom: 1px solid var(--grid); }
   .tl-month { position: absolute; top: 7px; font-size: 11px; font-weight: 700;
               color: var(--ink-2); padding-left: 6px; white-space: nowrap; }
+  /* 주 단위 날짜 눈금. 월 라벨보다 한 단계 약하게 둬서 월 경계가 먼저 읽힌다. */
+  .tl-day { position: absolute; top: 8px; font-size: 10px; color: var(--ink-muted);
+            padding-left: 5px; white-space: nowrap;
+            font-variant-numeric: tabular-nums; }
   .tl-grid { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--grid); }
   .tl-now  { position: absolute; top: 0; bottom: 0; width: 2px;
              background: color-mix(in srgb, var(--ink) 55%, transparent); z-index: 6; }
@@ -538,20 +548,37 @@ function renderNow() {
     </div>`;
   }
 
-  /* 여기는 '다음 마감' 요약이라 전부 늘어놓지 않는다. 다만 잘렸다는 표시가
-     없으면 "왜 이건 안 보이지" 로 오해하게 된다 (실제로 그랬다). */
-  const CAP = 8;
-  const rest = Math.max(0, live.length - CAP);
+  /* 이 프로젝트의 초점은 '앞으로 뭐가 오나' 다. 그래서 아직 시작 안 한 것을
+     시작일 순으로 먼저 놓고, 진행 중인 것은 그 아래로 내린다.
+     히어로가 이미 종료 임박을 보여주므로 정보가 빠지지 않는다.
+     (예전엔 전체를 종료일 순으로 한 줄로 늘어놔서 '곧 시작' 이 뒤로 밀렸다) */
+  const soon = live.filter(e => +new Date(e.start) > now)
+                   .sort((a, b) => +new Date(a.start) - +new Date(b.start));
+  const running = ongoing.slice().sort((a, b) => +endOf(a) - +endOf(b));
+
+  /* 요약 섹션이라 전부 늘어놓지 않는다. 다만 잘렸다는 표시가 없으면
+     "왜 이건 안 보이지" 로 오해하게 된다 (실제로 그랬다). */
+  const CAP = 5;
+  const shown = soon.slice(0, CAP).concat(running.slice(0, CAP));
+  const rest = (soon.length - Math.min(soon.length, CAP))
+             + (running.length - Math.min(running.length, CAP));
   document.getElementById("more").innerHTML = rest
     ? `그 밖에 <b>${rest}건</b> — 아래 <b>리스트</b> 또는 <b>표</b> 에서 전부 볼 수 있습니다`
     : "";
-  document.getElementById("active").innerHTML = live.slice(0, CAP).map((e, i) => {
+
+  const row = (e, i) => {
     const st = statusOf(e, now);
     return `<div class="arow" style="--gc:${colorOf(e.game)};--i:${i}">
       <span class="key"></span><span class="g">${esc(e.game)}</span>
       <span class="t">${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
       <span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
-  }).join("");
+  };
+  const section = (label, items, off) => items.length
+    ? `<div class="grp">${label}</div>` + items.map((e, i) => row(e, i + off)).join("")
+    : "";
+  document.getElementById("active").innerHTML =
+    section("곧 시작", soon.slice(0, CAP), 0) +
+    section("진행 중", running.slice(0, CAP), Math.min(soon.length, CAP));
 }
 
 function renderLegend() {
@@ -580,11 +607,13 @@ function renderTimeline() {
   const host = document.getElementById("view-timeline");
   const now = Date.now();
   /* 범위를 고정한다. 예전엔 데이터 최소값까지 늘려서 5월 방송 하나가
-     타임라인 전체를 몇 달치로 늘려놨다. */
-  const min = Math.floor((now - 14 * DAY) / DAY) * DAY;
+     타임라인 전체를 몇 달치로 늘려놨다.
+     관심은 '앞으로 뭐가 오나' 에 있으므로 과거는 한 주만 남기고 화면을
+     앞날에 쓴다. 지난 일정은 표 뷰에서 볼 수 있다. */
+  const min = Math.floor((now - 7 * DAY) / DAY) * DAY;
   const evs = visible().filter(e => +endOf(e) >= min);
   if (!evs.length) { host.innerHTML = `<div class="empty">표시할 일정이 없습니다.</div>`; return; }
-  let max = now + 60 * DAY;
+  let max = now + 90 * DAY;
   evs.forEach(e => { max = Math.max(max, Math.min(+endOf(e), now + 130 * DAY)); });
   max = Math.ceil(max / DAY) * DAY;
 
@@ -593,15 +622,35 @@ function renderTimeline() {
   const games = GAME_ORDER.filter(g => evs.some(e => e.game === g))
     .concat([...new Set(evs.map(e => e.game))].filter(g => !GAME_ORDER.includes(g)));
 
-  let head = "", grid = "";
+  /* 눈금에 날짜를 적는다. 예전엔 월 이름만 있어서 74일 구간에 표시가 3개뿐이었고,
+     막대가 20일 시작인지 24일 시작인지 마우스를 올려야 알 수 있었다.
+     선은 이미 주 단위로 그어져 있었으니 라벨만 붙인다. */
+  /* 눈금 자리를 먼저 모은 뒤 라벨을 고른다. 월 1일과 월요일이 하루 차이로
+     붙는 경우가 있어서(8/31 과 9월 1일), 순서대로 그리면 겹친다.
+     월 라벨을 우선으로 두고, 그 앞뒤로 너무 가까운 주 눈금은 라벨을 뺀다. */
+  const MIN_GAP = 46;                      // px
+  const ticks = [];
   for (let d = min; d <= max; d += DAY) {
     const dt = new Date(d);
-    if (dt.getDate() === 1) {
-      head += `<div class="tl-month" style="left:${x(d)}px">${dt.getMonth() + 1}월</div>`;
-      grid += `<div class="tl-grid" style="left:${x(d)}px"></div>`;
-    } else if (dt.getDay() === 1) {
-      grid += `<div class="tl-grid" style="left:${x(d)}px;opacity:.5"></div>`;
-    }
+    const first = dt.getDate() === 1;
+    if (!first && dt.getDay() !== 1) continue;
+    ticks.push({ px: x(d), first,
+                 text: first ? `${dt.getMonth() + 1}월`
+                             : `${dt.getMonth() + 1}/${dt.getDate()}` });
+  }
+  const months = ticks.filter(k => k.first);
+  const keep = ticks.filter(k => k.first ||
+    months.every(m => Math.abs(m.px - k.px) >= MIN_GAP));
+  let head = "", grid = "", lastPx = -Infinity;
+  for (const k of ticks) {
+    grid += `<div class="tl-grid" style="left:${k.px}px${k.first ? "" : ";opacity:.5"}"></div>`;
+  }
+  for (const k of keep) {
+    if (k.px - lastPx < MIN_GAP) continue;   // 주 눈금끼리도 최소 간격 유지
+    head += k.first
+      ? `<div class="tl-month" style="left:${k.px}px">${k.text}</div>`
+      : `<div class="tl-day" style="left:${k.px}px">${k.text}</div>`;
+    lastPx = k.px;
   }
 
   const lanes = games.map(g => {
@@ -691,16 +740,25 @@ function renderTimeline() {
 function renderList() {
   const host = document.getElementById("view-list");
   const now = Date.now();
-  const evs = visible().filter(e => +endOf(e) >= now).sort((a, b) => +new Date(a.start) - +new Date(b.start));
-  if (!evs.length) { host.innerHTML = `<div class="empty">다가오는 일정이 없습니다.</div>`; return; }
-  const rows = evs.map((e, i) => {
+  const live = visible().filter(e => +endOf(e) >= now);
+  if (!live.length) { host.innerHTML = `<div class="empty">다가오는 일정이 없습니다.</div>`; return; }
+  /* 상단 요약과 같은 순서. 곧 시작이 먼저, 진행 중은 아래. */
+  const soon = live.filter(e => +new Date(e.start) > now)
+                   .sort((a, b) => +new Date(a.start) - +new Date(b.start));
+  const running = live.filter(e => +new Date(e.start) <= now)
+                      .sort((a, b) => +endOf(a) - +endOf(b));
+  const row = (e, i) => {
     const st = statusOf(e, now);
     return `<div class="arow" style="--gc:${colorOf(e.game)};--i:${i}">
       <span class="key"></span><span class="g">${esc(e.game)}</span>
       <span class="t">${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
       <span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
-  }).join("");
-  host.innerHTML = `<div class="active">${rows}</div>`;
+  };
+  const section = (label, items, off) => items.length
+    ? `<div class="grp">${label}</div>` + items.map((e, i) => row(e, i + off)).join("")
+    : "";
+  host.innerHTML = `<div class="active">${
+    section("곧 시작", soon, 0) + section("진행 중", running, soon.length)}</div>`;
 }
 
 /* 표 뷰 — 색 인코딩에 기대지 않는 동등한 경로 */
