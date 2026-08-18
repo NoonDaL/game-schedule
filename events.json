@@ -1017,16 +1017,26 @@
     "note": "공식 공지. 유튜브 예정 라이브가 올라오면 자동으로 대체된다",
     "confirmed": true
   },
+<<<<<<< HEAD
   "manual-efbd93ae@gameschedule": {
     "uid": "manual-efbd93ae@gameschedule",
     "game": "명조: 워더링웨이브",
+=======
+  "manual-d590faf6@gameschedule": {
+    "uid": "manual-d590faf6@gameschedule",
+    "game": "명조: 워더링 웨이브",
+>>>>>>> d2980a1 (게임 이름 오타 수정, 새 게임이 필터에서 숨는 버그 수정)
     "type": "custom",
     "title": "피자헛 콜라보",
     "start": "2026-08-20T15:00:00+00:00",
     "end": "2026-09-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
+<<<<<<< HEAD
     "updated_at": "2026-08-18T16:20:12.244479+00:00",
+=======
+    "updated_at": "2026-08-18T16:27:49.970559+00:00",
+>>>>>>> d2980a1 (게임 이름 오타 수정, 새 게임이 필터에서 숨는 버그 수정)
     "confirmed": true
   }
 }

@@ -352,7 +352,7 @@ let EVENTS = [];
 const state = load();
 
 function load() {
-  const d = { view: "timeline", games: null, types: ["banner", "broadcast"], pred: true };
+  const d = { view: "timeline", games: null, seen: null, types: ["banner", "broadcast"], pred: true };
   try { Object.assign(d, JSON.parse(localStorage.getItem("gsched2") || "{}")); } catch (e) {}
   return d;
 }
@@ -424,7 +424,17 @@ async function init() {
 
   const games = GAME_ORDER.filter(g => EVENTS.some(e => e.game === g))
     .concat([...new Set(EVENTS.map(e => e.game))].filter(g => !GAME_ORDER.includes(g)));
+  /* 나중에 등장한 게임은 기본으로 켠다. 예전엔 state.games 를 최초 1회만
+     채워서, 게임이 추가되면 저장된 필터에 영원히 안 들어가 조용히 안 보였다.
+     '한 번도 보여준 적 없는 것' 과 '사용자가 끈 것' 을 구분하려고 seen 을 따로 둔다. */
   if (!state.games) state.games = games.slice();
+  if (!state.seen) state.seen = state.games.slice();
+  const fresh = games.filter(g => !state.seen.includes(g));
+  if (fresh.length) {
+    state.games = state.games.concat(fresh);
+    state.seen = state.seen.concat(fresh);
+    save();
+  }
   buildChips(games); bindControls(); applyView(); renderAll();
 }
 
