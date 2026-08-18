@@ -864,18 +864,6 @@
     "source": "youtube",
     "updated_at": "2026-08-17T17:41:45.077803+00:00"
   },
-  "ihwan-shp-2026-07-29@gameschedule": {
-    "uid": "ihwan-shp-2026-07-29@gameschedule",
-    "game": "이환",
-    "type": "banner",
-    "title": "[픽업] 일로이",
-    "start": "2026-07-28T15:00:00+00:00",
-    "end": "2026-08-18T15:00:00+00:00",
-    "url": null,
-    "source": "showcase",
-    "updated_at": "2026-08-17T17:48:10.692027+00:00",
-    "confirmed": true
-  },
   "ihwan-shp-2026-08-19@gameschedule": {
     "uid": "ihwan-shp-2026-08-19@gameschedule",
     "game": "이환",
@@ -1015,5 +1003,18 @@
     "url": null,
     "source": "youtube",
     "updated_at": "2026-08-18T06:55:15.173435+00:00"
+  },
+  "manual-792ac0b4@gameschedule": {
+    "uid": "manual-792ac0b4@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "broadcast",
+    "title": "「눈꽃 속에 피어난 고요한 꿈」 버전 미리보기 방송",
+    "start": "2026-08-21T11:30:00+00:00",
+    "end": null,
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-18T16:02:09.900209+00:00",
+    "note": "공식 공지. 유튜브 예정 라이브가 올라오면 자동으로 대체된다",
+    "confirmed": true
   }
 }
