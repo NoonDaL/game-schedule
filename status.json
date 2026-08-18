@@ -1,12 +1,14 @@
 {
-  "checked_at": "2026-08-18T17:02:44.255264+00:00",
+  "checked_at": "2026-08-18T18:49:05.540656+00:00",
   "counts": {
     "broadcast": 11,
     "banner": 16,
     "hint": 49,
     "release": 10,
     "window": 3,
-    "event": 1
+    "event": 2
   },
-  "warnings": []
+  "warnings": [
+    "명일방주: 엔드필드: 앞으로 11일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음"
+  ]
 }
