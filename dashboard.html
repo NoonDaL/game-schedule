@@ -191,7 +191,11 @@
   .arow:hover { background: var(--surface-2); }
   .arow .key { width: 3px; height: 20px; border-radius: var(--r-mark);
                background: var(--gc); flex: none; }
-  .arow .g  { font-size: 11px; color: var(--ink-muted); width: 96px; flex: none;
+  /* 색이 유형으로 옮겨간 뒤로 게임을 알려주는 건 이 텍스트뿐이다. 11px 흐린
+     회색으로는 안 읽힌다 (잘려서가 아니라 작고 흐려서 — 가장 긴 이름도 85px 라
+     96px 칸에 들어간다). 크기·굵기·대비를 올리고 칸을 조금 넓혔다. */
+  .arow .g  { font-size: 13px; font-weight: 600; color: var(--ink-2);
+              width: 112px; flex: none;
               overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .arow .t  { flex: 1; font-size: 14px; font-weight: 600; min-width: 0;
               overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
