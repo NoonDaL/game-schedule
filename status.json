@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-08-19T13:58:28.685292+00:00",
+  "checked_at": "2026-08-19T16:55:26.579542+00:00",
   "counts": {
     "broadcast": 11,
-    "banner": 16,
+    "banner": 22,
     "hint": 56,
-    "release": 10,
+    "release": 9,
     "window": 3,
     "event": 2
   },

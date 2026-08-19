@@ -10,28 +10,6 @@ PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:청초 종료 2일 전
-TRIGGER:P2W5DT10H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:청초 종료 3시간 전
-TRIGGER:P3WT7H59M
-END:VALARM
-DTEND:20260910T015900Z
-DTSTART:20260819T150000Z
-SUMMARY:[명조: 워더링 웨이브] [픽업] 청초
-UID:wuwa-pred-2026-08-20@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20260929T150000Z
-DTSTART:20260908T150000Z
-SUMMARY:[이환] [예측] 링코
-UID:ihwan-shp-2026-09-09@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
 DESCRIPTION:PC방캉스 종료 2일 전
 TRIGGER:P2D
 END:VALARM
@@ -46,33 +24,36 @@ SUMMARY:[이환] PC방캉스
 UID:manual-88cb2e2b@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=DDapNPktn2s
 DTEND:20260906T150000Z
 DTSTART:20260816T150000Z
 SUMMARY:[리버스: 1999] [예측] 리아논
 UID:re1999-shp-2026-08-17@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20260825T140000Z
-DTSTART:20260715T020001Z
-SUMMARY:[붕괴: 스타레일] [배너 4.4] 히메코•노바\, 맥택\, 한아\, 서벌
-UID:hsr-banner-87@gameschedule
+URL:https://www.youtube.com/watch?v=DDapNPktn2s
 END:VEVENT
 BEGIN:VEVENT
 DTEND:20260825T140000Z
 DTSTART:20260805T110000Z
-SUMMARY:[붕괴: 스타레일] [배너 4.4] 케리드라\, 아낙사\, 어벤츄린\, 맥택\, 한아\, 서벌
+SUMMARY:[붕괴: 스타레일] [픽업] 케리드라\, 아낙사\, 어벤츄린\, 맥택\, 한아\, 서벌
 UID:hsr-banner-85@gameschedule
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:명일방주: 엔드필드 방송 30분 전
-TRIGGER:-PT30M
+DESCRIPTION:일로이 종료 2일 전
+TRIGGER:P2W4DT18H59M
 END:VALARM
-DTEND:20260821T130000Z
-DTSTART:20260821T113000Z
-SUMMARY:[명일방주: 엔드필드] 「눈꽃 속에 피어난 고요한 꿈」 버전 미리보기 방송
-UID:manual-792ac0b4@gameschedule
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:일로이 종료 3시간 전
+TRIGGER:P2W6DT15H59M
+END:VALARM
+DESCRIPTION:https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html
+DTEND:20260818T215900Z
+DTSTART:20260729T030000Z
+SUMMARY:[이환] [픽업] 일로이
+UID:ihwan-off-263292-일로이@gameschedule
+URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -88,10 +69,120 @@ UID:hsr-P6GC-HP4lHo@gameschedule
 URL:https://www.youtube.com/watch?v=P6GC-HP4lHo
 END:VEVENT
 BEGIN:VEVENT
-DTEND:20260930T150000Z
-DTSTART:20260909T150000Z
+DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DTEND:20261223T150000Z
+DTSTART:20261202T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 2\, 방송 확정 전)
-UID:wuwa-pred-2026-09-10@gameschedule
+UID:wuwa-pred-2026-12-03@gameschedule
+URL:https://www.youtube.com/watch?v=SELlbnDGBlA
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DTEND:20261021T150000Z
+DTSTART:20260930T150000Z
+SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 1\, 방송 확정 전)
+UID:wuwa-pred-2026-10-01@gameschedule
+URL:https://www.youtube.com/watch?v=SELlbnDGBlA
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DTEND:20261111T150000Z
+DTSTART:20261021T150000Z
+SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 2\, 방송 확정 전)
+UID:wuwa-pred-2026-10-22@gameschedule
+URL:https://www.youtube.com/watch?v=SELlbnDGBlA
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20260927T195900Z
+DTSTART:20260912T110000Z
+SUMMARY:[붕괴: 스타레일] [픽업] 어벤츄린•웨이브\, 애쉬베일\, 삼포\, 후크\, 계네빈
+UID:hsr-banner-93@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:청초 종료 2일 전
+TRIGGER:P2W5DT10H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:청초 종료 3시간 전
+TRIGGER:P3WT7H59M
+END:VALARM
+DESCRIPTION:https://www.youtube.com/watch?v=wyG4ThZGXtY
+DTEND:20260910T015900Z
+DTSTART:20260819T150000Z
+SUMMARY:[명조: 워더링 웨이브] [픽업] 청초
+UID:wuwa-pred-2026-08-20@gameschedule
+URL:https://www.youtube.com/watch?v=wyG4ThZGXtY
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:수수 종료 2일 전
+TRIGGER:P2W4DT1H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:수수 종료 3시간 전
+TRIGGER:P2W5DT22H59M
+END:VALARM
+DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5229
+DTEND:20260819T035900Z
+DTSTART:20260730T020000Z
+SUMMARY:[명조: 워더링 웨이브] [픽업] 수수
+UID:wuwa-off-5229@gameschedule
+URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5229
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:나나리 종료 2일 전
+TRIGGER:P2W4DT18H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:나나리 종료 3시간 전
+TRIGGER:P2W6DT15H59M
+END:VALARM
+DESCRIPTION:https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html
+DTEND:20260908T215900Z
+DTSTART:20260819T030000Z
+SUMMARY:[이환] [픽업] 나나리
+UID:ihwan-off-263607-나나리@gameschedule
+URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=EHrwyVbZSAo
+DTEND:20260929T150000Z
+DTSTART:20260908T150000Z
+SUMMARY:[이환] [예측] 링코
+UID:ihwan-shp-2026-09-09@gameschedule
+URL:https://www.youtube.com/watch?v=EHrwyVbZSAo
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20260825T140000Z
+DTSTART:20260715T020001Z
+SUMMARY:[붕괴: 스타레일] [픽업] 히메코•노바\, 맥택\, 한아\, 서벌
+UID:hsr-banner-87@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:잔홍 종료 2일 전
+TRIGGER:P2W4DT18H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:잔홍 종료 3시간 전
+TRIGGER:P2W6DT15H59M
+END:VALARM
+DESCRIPTION:https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html
+DTEND:20260908T215900Z
+DTSTART:20260819T030000Z
+SUMMARY:[이환] [픽업] 잔홍
+UID:ihwan-off-263607-잔홍@gameschedule
+URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -110,38 +201,37 @@ SUMMARY:[명조: 워더링 웨이브] 도미노 콜라보
 UID:manual-f0dfec53@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DTEND:20261021T150000Z
-DTSTART:20260930T150000Z
+DTEND:20260912T105900Z
+DTSTART:20260826T020000Z
+SUMMARY:[붕괴: 스타레일] [픽업] 로빈•서머레토\, 히아킨\, 단항\, 청작\, 갤러거
+UID:hsr-banner-91@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DTEND:20261202T150000Z
+DTSTART:20261111T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 1\, 방송 확정 전)
-UID:wuwa-pred-2026-10-01@gameschedule
+UID:wuwa-pred-2026-11-12@gameschedule
+URL:https://www.youtube.com/watch?v=SELlbnDGBlA
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:잔홍 종료 2일 전
-TRIGGER:P2W5D
+DESCRIPTION:명일방주: 엔드필드 방송 30분 전
+TRIGGER:-PT30M
 END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:잔홍 종료 3시간 전
-TRIGGER:P2W6DT21H
-END:VALARM
-DTEND:20260908T150000Z
-DTSTART:20260818T150000Z
-SUMMARY:[이환] [픽업] 잔홍
-UID:ihwan-shp-2026-08-19@gameschedule
+DTEND:20260821T130000Z
+DTSTART:20260821T113000Z
+SUMMARY:[명일방주: 엔드필드] 「눈꽃 속에 피어난 고요한 꿈」 버전 미리보기 방송
+UID:manual-792ac0b4@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DTEND:20261111T150000Z
-DTSTART:20261021T150000Z
+DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DTEND:20260930T150000Z
+DTSTART:20260909T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 2\, 방송 확정 전)
-UID:wuwa-pred-2026-10-22@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20260927T195900Z
-DTSTART:20260912T110000Z
-SUMMARY:[붕괴: 스타레일] [배너 4.5] 어벤츄린•웨이브\, 애쉬베일\, 삼포\, 후크\, 계네빈
-UID:hsr-banner-93@gameschedule
+UID:wuwa-pred-2026-09-10@gameschedule
+URL:https://www.youtube.com/watch?v=SELlbnDGBlA
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -154,15 +244,11 @@ ACTION:DISPLAY
 DESCRIPTION:리노 종료 3시간 전
 TRIGGER:P2W6DT21H
 END:VALARM
+DESCRIPTION:https://www.youtube.com/watch?v=RHCkcsfozvs
 DTEND:20260829T150000Z
 DTSTART:20260808T150000Z
 SUMMARY:[명일방주: 엔드필드] [픽업] 리노
 UID:endfield-shp-2026-08-09@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20260912T105900Z
-DTSTART:20260826T020000Z
-SUMMARY:[붕괴: 스타레일] [배너 4.5] 로빈•서머레토\, 히아킨\, 단항\, 청작\, 갤러거
-UID:hsr-banner-91@gameschedule
+URL:https://www.youtube.com/watch?v=RHCkcsfozvs
 END:VEVENT
 END:VCALENDAR
