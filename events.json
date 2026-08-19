@@ -981,18 +981,6 @@
     "updated_at": "2026-08-17T17:55:14.732979+00:00",
     "predicted": true
   },
-  "wuwa-pred-2026-07-30@gameschedule": {
-    "uid": "wuwa-pred-2026-07-30@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "banner",
-    "title": "[픽업] 수수",
-    "start": "2026-07-30T02:00:00+00:00",
-    "end": "2026-08-19T03:59:00+00:00",
-    "url": null,
-    "source": "cycle",
-    "updated_at": "2026-08-17T17:57:09.223231+00:00",
-    "confirmed": true
-  },
   "wuwa-hint-fybKvkz0Izs@gameschedule": {
     "uid": "wuwa-hint-fybKvkz0Izs@gameschedule",
     "game": "명조: 워더링 웨이브",
@@ -1040,5 +1028,16 @@
     "source": "manual",
     "updated_at": "2026-08-18T18:49:05.540656+00:00",
     "confirmed": true
+  },
+  "hsr-hint-cnu6dn1pHj8@gameschedule": {
+    "uid": "hsr-hint-cnu6dn1pHj8@gameschedule",
+    "game": "붕괴: 스타레일",
+    "type": "hint",
+    "title": "로빈·서머레토",
+    "start": "2026-08-19T03:00:17Z",
+    "end": null,
+    "url": null,
+    "source": "youtube",
+    "updated_at": "2026-08-19T06:55:51.740475+00:00"
   }
 }
