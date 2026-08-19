@@ -31,11 +31,17 @@
     --ink-2:     #55555f;
     --ink-muted: #74747e;
 
-    --s1: #2a78d6;   /* 명조 */
-    --s2: #eb6834;   /* 스타레일 */
-    --s3: #1baf7a;   /* 이환 */
-    --s4: #eda100;   /* 엔드필드 */
-    --s-other: #8a8a94;
+    /* 색은 '게임'이 아니라 '일정 유형'에 배정한다 (2026-08-20 변경).
+       게임은 개수가 무한히 늘지만 유형은 3개에서 멈추므로, 팔레트 검증을
+       한 번 하면 영구히 유효하다. 게임에 배정하면 게임을 추가할 때마다
+       색을 새로 만들고 다시 검증해야 하는데, 8색쯤에서 한계가 온다.
+       게임은 어차피 레인 라벨과 목록의 게임명 텍스트가 식별하고 있어서
+       색이 유일한 단서였던 자리는 없었다.
+       ※ 인접쌍이 바뀌었으니 CVD 검증은 한 번 다시 돌려야 한다. */
+    --t-pickup:  #2a78d6;   /* 픽업 */
+    --t-cast:    #eb6834;   /* 방송 */
+    --t-offline: #1baf7a;   /* 오프라인 */
+    --t-other:   #8a8a94;   /* 목록에 없는 유형 */
 
     /* 상태 = 예약 팔레트. 모드와 무관하게 고정, 시리즈로 재사용 금지.
        항상 글리프 + 라벨과 함께 쓴다 (색 단독으로 의미를 지지 않음). */
@@ -61,11 +67,10 @@
       --ink-2:     #9fb0c4;
       --ink-muted: #8296ab;
 
-      --s1: #3987e5;
-      --s2: #d95926;
-      --s3: #199e70;
-      --s4: #c98500;
-      --s-other: #7a8799;
+      --t-pickup:  #3987e5;
+      --t-cast:    #d95926;
+      --t-offline: #199e70;
+      --t-other:   #7a8799;
     }
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -86,7 +91,7 @@
     backdrop-filter: blur(12px);
   }
   .brand { font-size: 18px; font-weight: 800; letter-spacing: -.02em; }
-  .brand .dot { color: var(--s1); }
+  .brand .dot { color: var(--t-pickup); }
   .updated { font-size: 11px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
 
   /* ---- 필터: 스코프하는 모든 것 위에 한 줄로. 차트 카드 안에 두지 않는다. ---- */
@@ -355,11 +360,20 @@ const DAY = 86400000;
 
 /* 게임 → 색은 '고정 순서'로 배정한다. 필터로 계열 수가 줄어도 재배정하지 않는다
    (Recolor-on-filter 안티패턴). 목록에 없는 게임은 중립 회색으로 접는다. */
-const GAME_ORDER = ["명조: 워더링 웨이브", "붕괴: 스타레일", "이환", "명일방주: 엔드필드"];
-const SERIES = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)"];
-const colorOf = g => { const i = GAME_ORDER.indexOf(g); return i < 0 ? "var(--s-other)" : SERIES[i]; };
+/* 게임 순서는 여전히 고정한다 — 레인·범례·표의 정렬이 흔들리면 대조가 어렵다.
+   다만 '순서'일 뿐 색은 여기서 나오지 않는다. */
+const GAME_ORDER = ["명조: 워더링 웨이브", "붕괴: 스타레일", "이환",
+                    "명일방주: 엔드필드", "리버스: 1999"];
+/* 색 = 일정 유형. 목록에 없는 유형은 중립 회색으로 접는다. */
+const TYPE_COLOR = { banner: "var(--t-pickup)", broadcast: "var(--t-cast)",
+                     event: "var(--t-offline)" };
+const colorOf = t => TYPE_COLOR[t] || "var(--t-other)";
 
-const TYPE_LABELS = { banner: "픽업", broadcast: "방송", event: "이벤트" };
+/* 'event' 키는 그대로 두고 라벨만 바꿨다. 실제로 이 타입에 들어오는 건
+   manual.json 으로 넣는 콜라보·팝업 같은 오프라인 일정뿐이라 이름을 실제와
+   맞춘 것이다. 키를 바꾸면 기존 uid 와 manual.json 항목이 전부 깨진다.
+   인게임 이벤트는 COLLECT_HOYO_EVENTS=False 로 애초에 안 모은다. */
+const TYPE_LABELS = { banner: "픽업", broadcast: "방송", event: "오프라인" };
 /* hint / release / window 는 배너를 만드는 재료라 표시하지 않는다 */
 const SHOW_TYPES = new Set(["banner", "broadcast", "event"]);
 
@@ -467,20 +481,20 @@ function buildChips(games) {
   const gc = document.getElementById("game-chips");
   games.forEach(g => {
     const b = document.createElement("button");
-    b.className = "chip"; b.style.setProperty("--gc", colorOf(g));
+    b.className = "chip";
     b.setAttribute("aria-pressed", state.games.includes(g));
-    b.innerHTML = `<span class="swatch"></span>${esc(g)}`;
+    // 게임에는 더 이상 색이 없다. 뜻 없는 점은 넣지 않는다.
+    b.textContent = g;
     b.onclick = () => { toggle(state.games, g); b.setAttribute("aria-pressed", state.games.includes(g)); save(); renderAll(); };
     gc.appendChild(b);
   });
   const tc = document.getElementById("type-chips");
   Object.entries(TYPE_LABELS).forEach(([t, label]) => {
     const b = document.createElement("button");
-    b.className = "chip";
+    b.className = "chip"; b.style.setProperty("--gc", colorOf(t));
     b.setAttribute("aria-pressed", state.types.includes(t));
-    // 게임 칩의 점은 '색 키'라 정보를 지지만, 종류 칩에는 대응하는 색이 없다.
-    // 뜻 없는 점은 넣지 않는다.
-    b.textContent = label;
+    // 색이 유형으로 옮겨왔으므로 점이 여기서 '색 키' 노릇을 한다.
+    b.innerHTML = `<span class="swatch"></span>${esc(label)}`;
     b.onclick = () => { toggle(state.types, t); b.setAttribute("aria-pressed", state.types.includes(t)); save(); renderAll(); };
     tc.appendChild(b);
   });
@@ -539,7 +553,7 @@ function renderNow() {
       <div class="hero-body">
         <div class="hero-when">${fmt(target)} ${started ? "종료" : "시작"}</div>
         ${group.map(e => `<div class="hero-item">
-            <span class="key" style="--gc:${colorOf(e.game)}"></span>
+            <span class="key" style="--gc:${colorOf(e.type)}"></span>
             <b>${esc(shortTitle(e))}</b>
             <span class="hero-game">${esc(e.game)}</span>
             ${badge(statusOf(e, now))}
@@ -568,7 +582,7 @@ function renderNow() {
 
   const row = (e, i) => {
     const st = statusOf(e, now);
-    return `<div class="arow" style="--gc:${colorOf(e.game)};--i:${i}">
+    return `<div class="arow" style="--gc:${colorOf(e.type)};--i:${i}">
       <span class="key"></span><span class="g">${esc(e.game)}</span>
       <span class="t">${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
       <span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
@@ -582,12 +596,16 @@ function renderNow() {
 }
 
 function renderLegend() {
-  // 레인과 같은 고정 순서로. 범례와 차트의 순서가 어긋나면 대조가 어려워진다.
-  const present = new Set(visible().map(e => e.game));
-  const games = GAME_ORDER.filter(g => present.has(g))
-    .concat([...present].filter(g => !GAME_ORDER.includes(g)));
-  const gl = games.map(g => `<span class="item"><span class="k" style="--gc:${colorOf(g)}"></span>${esc(g)}</span>`).join("");
-  document.getElementById("legend").innerHTML = gl +
+  /* 색이 유형으로 옮겨왔으므로 범례도 유형을 설명한다. 게임은 레인 라벨과
+     목록의 게임명이 이미 말해주고 있어서 범례에 다시 적을 이유가 없다.
+     칩과 같은 순서로 둔다 — 범례와 필터가 어긋나면 대조가 어렵다. */
+  const shown = new Set(visible().map(e => e.type));
+  const tl = Object.entries(TYPE_LABELS)
+    .filter(([t]) => shown.has(t))
+    .map(([t, label]) =>
+      `<span class="item"><span class="k" style="--gc:${colorOf(t)}"></span>${esc(label)}</span>`)
+    .join("");
+  document.getElementById("legend").innerHTML = tl +
     `<span class="item"><span class="k pred"></span>예측</span>` +
     `<span class="item"><span class="k dia"></span>특별방송</span>`;
 }
@@ -654,7 +672,6 @@ function renderTimeline() {
   }
 
   const lanes = games.map(g => {
-    const col = colorOf(g);
     const ge = evs.filter(e => e.game === g).sort((a, b) => +new Date(a.start) - +new Date(b.start));
     const rowEnds = [];
     const placed = ge.map(e => {
@@ -685,7 +702,7 @@ function renderTimeline() {
         const room = gap - (l + 14);
         const lab = textW(txt) <= room
           ? `<div class="mlabel outside" style="left:${l + 14}px;top:${top}px">${esc(txt)}</div>` : "";
-        return `<div class="bc" style="--gc:${col};left:${l - 5}px;top:${top + 3}px" tabindex="0" ${tip}></div>${lab}`;
+        return `<div class="bc" style="--gc:${colorOf(e.type)};left:${l - 5}px;top:${top + 3}px" tabindex="0" ${tip}></div>${lab}`;
       }
 
       /* 인접 마크는 2px 표면 간격으로 분리한다 (테두리로 나누지 않는다) */
@@ -700,11 +717,11 @@ function renderTimeline() {
         lab = `<div class="mlabel outside" style="left:${l + w + 8}px;top:${top}px">${esc(txt)}</div>`;
       }
       // 둘 다 아니면 라벨 없음 — 잘라내지 않는다. 값은 툴팁과 표 뷰에 그대로 있다.
-      return `<div class="${cls}" style="--gc:${col};left:${l}px;top:${top}px;width:${w}px" tabindex="0" ${tip}></div>${lab}`;
+      return `<div class="${cls}" style="--gc:${colorOf(e.type)};left:${l}px;top:${top}px;width:${w}px" tabindex="0" ${tip}></div>${lab}`;
     }).join("");
 
     return `<div class="lane" style="height:${laneH}px">
-      <div class="lane-label" style="--gc:${col};height:${laneH}px"><span class="key"></span><span>${esc(g)}</span></div>
+      <div class="lane-label" style="--gc:var(--rule);height:${laneH}px"><span class="key"></span><span>${esc(g)}</span></div>
       ${marks}</div>`;
   }).join("");
 
@@ -749,7 +766,7 @@ function renderList() {
                       .sort((a, b) => +endOf(a) - +endOf(b));
   const row = (e, i) => {
     const st = statusOf(e, now);
-    return `<div class="arow" style="--gc:${colorOf(e.game)};--i:${i}">
+    return `<div class="arow" style="--gc:${colorOf(e.type)};--i:${i}">
       <span class="key"></span><span class="g">${esc(e.game)}</span>
       <span class="t">${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
       <span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
@@ -770,7 +787,7 @@ function renderTable() {
   const rows = evs.map(e => {
     const st = statusOf(e, now);
     return `<tr>
-      <td><span class="tkey" style="--gc:${colorOf(e.game)}"></span>${esc(e.game)}</td>
+      <td><span class="tkey" style="--gc:${colorOf(e.type)}"></span>${esc(e.game)}</td>
       <td>${TYPE_LABELS[e.type] || e.type}${e.predicted ? " (예측)" : e.confirmed ? " (확정)" : ""}</td>
       <td class="tt">${esc(shortTitle(e))}</td>
       <td class="num">${fmtT(new Date(e.start))}</td>
