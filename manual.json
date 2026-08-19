@@ -9,18 +9,28 @@
   {
     "game": "명조: 워더링 웨이브",
     "title": "도미노 콜라보",
+    "url": "https://game.naver.com/lounge/WutheringWaves/board/detail/8047518",
     "start": "2026-08-21",
     "end": "2026-09-17"
   },
   {
     "game": "이환",
     "title": "PC방캉스",
+    "url": "https://x.com/NTE_KO/status/2087494304990151022",
     "start": "2026-08-21",
     "end": "2026-08-25"
   },
   {
     "game": "명조: 워더링 웨이브",
     "title": "월드 투어 「To the New World」",
-    "start": "2026-08-29",
-  }  
+    "url": "https://game.naver.com/lounge/WutheringWaves/board/detail/7823821",
+    "start": "2026-08-29"
+  },
+  {
+    "game": "명조: 워더링 웨이브",
+    "type": "hint",
+    "title": "데니아",
+    "start": "2026-08-17",
+    "end": "2026-09-10"
+  }
 ]
