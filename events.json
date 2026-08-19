@@ -983,14 +983,14 @@
     "uid": "wuwa-pred-2026-08-20@gameschedule",
     "game": "명조: 워더링 웨이브",
     "type": "banner",
-    "title": "[픽업] 청초",
+    "title": "[픽업] 청초, 데니아",
     "version_name": "신기루 속 등불 그림자, 속세에 깃든 검의 결심",
     "start": "2026-08-19T15:00:00+00:00",
     "end": "2026-09-10T01:59:00+00:00",
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
+    "updated_at": "2026-08-19T18:44:36.238228+00:00",
     "confirmed": true
   },
   "wuwa-pred-2026-09-10@gameschedule": {
@@ -1067,9 +1067,9 @@
     "title": "도미노 콜라보",
     "start": "2026-08-20T15:00:00+00:00",
     "end": "2026-09-16T15:00:00+00:00",
-    "url": null,
+    "url": "https://game.naver.com/lounge/WutheringWaves/board/detail/8047518",
     "source": "manual",
-    "updated_at": "2026-08-19T12:59:47.168400+00:00",
+    "updated_at": "2026-08-19T18:44:36.238228+00:00",
     "confirmed": true
   },
   "manual-88cb2e2b@gameschedule": {
@@ -1079,9 +1079,9 @@
     "title": "PC방캉스",
     "start": "2026-08-20T15:00:00+00:00",
     "end": "2026-08-24T15:00:00+00:00",
-    "url": null,
+    "url": "https://x.com/NTE_KO/status/2087494304990151022",
     "source": "manual",
-    "updated_at": "2026-08-19T12:59:47.168400+00:00",
+    "updated_at": "2026-08-19T18:44:36.238228+00:00",
     "confirmed": true
   },
   "hsr-hint-cnu6dn1pHj8@gameschedule": {
@@ -1249,7 +1249,7 @@
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-19T17:46:32.361233+00:00"
+    "updated_at": "2026-08-19T18:44:36.238228+00:00"
   },
   "ihwan-off-263292-일로이@gameschedule": {
     "uid": "ihwan-off-263292-일로이@gameschedule",
@@ -1315,5 +1315,29 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
+  },
+  "manual-8c2457fd@gameschedule": {
+    "uid": "manual-8c2457fd@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "event",
+    "title": "월드 투어 「To the New World」",
+    "start": "2026-08-28T15:00:00+00:00",
+    "end": null,
+    "url": "https://game.naver.com/lounge/WutheringWaves/board/detail/7823821",
+    "source": "manual",
+    "updated_at": "2026-08-19T18:44:36.238228+00:00",
+    "confirmed": true
+  },
+  "manual-cefeabd6@gameschedule": {
+    "uid": "manual-cefeabd6@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "hint",
+    "title": "데니아",
+    "start": "2026-08-16T15:00:00+00:00",
+    "end": "2026-09-09T15:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-19T18:44:36.238228+00:00",
+    "confirmed": true
   }
 }
