@@ -252,8 +252,15 @@
   }
   .lane { position: relative; border-top: 1px solid var(--grid); }
   .lane:first-child { border-top: 0; }
+  /* margin-left 로 자연 위치를 컨테이너 왼쪽 끝(0)으로 당긴다.
+     이게 없으면 float 자연 위치가 .tl-inner 의 padding-left(116px) 뒤라,
+     스크롤이 116px 을 넘기 전까지 sticky 가 안 붙는다. 그동안 왼쪽에는
+     116px 빈칸이 남고, 이름 칸은 막대 위를 덮은 채 같이 밀린다.
+     mask() 도 '이름 칸이 [scrollLeft, scrollLeft+116] 을 덮는다'고 가정하므로
+     여기가 어긋나면 라벨 숨김도 같이 틀어진다. */
   .lane-label {
     position: sticky; left: 0; z-index: 8; float: left; width: 116px;
+    margin-left: -116px;
     display: flex; align-items: center; gap: 7px; padding: 0 10px;
     background: var(--surface); border-right: 1px solid var(--grid);
     font-size: 12px; font-weight: 700; color: var(--ink-2);   /* 텍스트는 잉크, 색은 옆 스와치가 */
@@ -434,8 +441,16 @@ const state = load();
 
 function load() {
   const d = { view: "list", games: null, seen: null,
-              types: ["banner", "broadcast", "event"], seenTypes: null, pred: true };
-  try { Object.assign(d, JSON.parse(localStorage.getItem("gsched2") || "{}")); } catch (e) {}
+              types: ["banner", "broadcast", "event"], seenTypes: null, pred: true, v: 2 };
+  let stored = {};
+  try { stored = JSON.parse(localStorage.getItem("gsched2") || "{}"); } catch (e) {}
+  Object.assign(d, stored);
+  /* 기본 뷰를 타임라인 → 목록으로 바꿨는데, 저장된 선택이 있으면 그게 이겨서
+     기존 방문자는 계속 타임라인을 본다. 한 번만 새 기본값으로 되돌린다.
+     게임·종류 필터는 사용자가 직접 고른 것이라 건드리지 않는다.
+     ※ 병합한 d 가 아니라 stored 를 봐야 한다. d 에는 기본값 v 가 이미 들어
+        있어서, 저장본에 v 가 없어도 조건이 참이 되지 않는다 (처음에 그랬다). */
+  if (stored.v !== 2) { d.view = "list"; d.v = 2; }
   return d;
 }
 const save = () => { try { localStorage.setItem("gsched2", JSON.stringify(state)); } catch (e) {} };
@@ -506,7 +521,7 @@ async function init() {
   if (warns.length) {
     const el = document.getElementById("warns");
     el.hidden = false;
-    el.innerHTML = `<b>수집 신호 이상</b>` +
+    el.innerHTML = `<b>점검 필요</b>` +
       warns.map(w => `<span>${esc(w)}</span>`).join("");
   }
 
