@@ -152,10 +152,24 @@
   .active { display: flex; flex-direction: column; margin-top: 14px;
             border-top: 1px solid var(--rule); }
   /* 목록 안의 구분 라벨. 곧 시작 / 진행 중 을 나눈다. */
-  .grp { font-size: 10px; font-weight: 700; color: var(--ink-muted);
-         letter-spacing: .08em; padding: 12px 2px 5px;
+  .grp { display: flex; align-items: baseline; gap: 8px;
+         font-size: 10px; font-weight: 700; color: var(--ink-muted);
+         letter-spacing: .08em; padding: 14px 2px 5px;
          border-bottom: 1px solid var(--grid); }
   .grp:first-child { padding-top: 4px; }
+  .grp .gd { font-size: 13px; letter-spacing: -.01em; color: var(--ink);
+             font-variant-numeric: tabular-nums; }
+  .grp .gw { font-size: 12px; font-weight: 600; letter-spacing: 0; }
+  .grp .gr { font-size: 10px; color: var(--t-pickup); }
+  .grp .gn { margin-left: auto; font-size: 11px; font-weight: 600; letter-spacing: 0; }
+
+  /* D-day. 이 도구의 질문이 '언제 끝나나' 라 숫자를 세운다. */
+  .arow .dd { flex: none; text-align: right; min-width: 54px; }
+  .arow .dd b { display: block; font-size: 16px; font-weight: 700; line-height: 1.05;
+                font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+  .arow .dd em { display: block; font-style: normal; font-size: 10px;
+                 color: var(--ink-muted); margin-top: 1px; }
+  @media (max-width: 720px) { .arow .d { display: none; } }
 
   .arow { display: flex; align-items: center; gap: 12px; padding: 13px 2px;
           border-bottom: 1px solid var(--grid); transition: background .14s; }
@@ -308,7 +322,11 @@
   .foot a:hover { color: var(--ink); text-decoration: underline; }
   @media (max-width: 640px) {
     .hero-num { font-size: 44px; }
-    .arow .g { display: none; }
+    /* 게임 이름을 감추면 모바일에서 '무슨 게임인지' 를 알 수 없다. 예전엔
+       열이 좁아 감췄지만, 날짜 그룹이 생기면서 행에 남은 단서가 제목뿐이라
+       더 치명적이다. 열을 없애는 대신 제목 위 한 줄로 내린다. */
+    .arow { flex-wrap: wrap; row-gap: 3px; }
+    .arow .g { width: 100%; order: -1; margin-left: 15px; }
   }
 </style>
 </head>
@@ -398,7 +416,7 @@ let EVENTS = [];
 const state = load();
 
 function load() {
-  const d = { view: "timeline", games: null, seen: null,
+  const d = { view: "list", games: null, seen: null,
               types: ["banner", "broadcast", "event"], seenTypes: null, pred: true };
   try { Object.assign(d, JSON.parse(localStorage.getItem("gsched2") || "{}")); } catch (e) {}
   return d;
@@ -777,28 +795,69 @@ function renderTimeline() {
   bindTips(host);
 }
 
+/* 날짜 그룹 헤더용. 게임 수가 늘어도 목록이 무너지지 않으려면 '언제' 가
+   1차 축이어야 한다. 게임을 축으로 쓰면 게임이 늘수록 세로로 터진다. */
+const DOW = ["일", "월", "화", "수", "목", "금", "토"];
+const midnight = d => { const x = new Date(d); x.setHours(0, 0, 0, 0); return +x; };
+const dayGap = (from, to) => Math.round((midnight(to) - midnight(from)) / 864e5);
+const relDay = n => n === 0 ? "오늘" : n === 1 ? "내일" : n === 2 ? "모레" : "";
+
+/* D-day. 시작 전이면 시작까지, 시작했으면 종료까지 — 이 도구가 답해야 하는
+   질문이 그 둘이라 하나로 합치지 않는다. */
+const ddayOf = (e, now) => {
+  const started = +new Date(e.start) <= now;
+  const target = started ? endOf(e) : new Date(e.start);
+  return { n: dayGap(now, target), when: started ? "종료" : "시작", target };
+};
+
 function renderList() {
   const host = document.getElementById("view-list");
   const now = Date.now();
   const live = visible().filter(e => +endOf(e) >= now);
   if (!live.length) { host.innerHTML = `<div class="empty">다가오는 일정이 없습니다.</div>`; return; }
-  /* 상단 요약과 같은 순서. 곧 시작이 먼저, 진행 중은 아래. */
-  const soon = live.filter(e => +new Date(e.start) > now)
-                   .sort((a, b) => +new Date(a.start) - +new Date(b.start));
+
   const running = live.filter(e => +new Date(e.start) <= now)
                       .sort((a, b) => +endOf(a) - +endOf(b));
+  const soon = live.filter(e => +new Date(e.start) > now)
+                   .sort((a, b) => +new Date(a.start) - +new Date(b.start));
+
   const row = (e, i) => {
     const st = statusOf(e, now);
+    const d = ddayOf(e, now);
     return `<div class="arow" style="--gc:${colorOf(e.type)};--i:${i}">
       <span class="key"></span><span class="g">${esc(e.game)}</span>
       <span class="t">${verTag(e)}${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
-      ${srcLink(e)}<span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
+      ${srcLink(e)}<span class="d">${esc(drange(e))}</span>
+      <span class="dd"><b>${d.n <= 0 ? "D-DAY" : "D-" + d.n}</b><em>${d.when}</em></span>
+      ${badge(st)}</div>`;
   };
-  const section = (label, items, off) => items.length
-    ? `<div class="grp">${label}</div>` + items.map((e, i) => row(e, i + off)).join("")
+
+  /* 진행 중이 먼저. '지금 뭐가 돌고 있나' 가 '뭐가 올 예정인가' 보다 급하다. */
+  let html = running.length
+    ? `<div class="grp"><span class="gd">진행 중</span><span class="gr">지금</span>
+       <span class="gn">${running.length}건</span></div>`
+      + running.map((e, i) => row(e, i)).join("")
     : "";
-  host.innerHTML = `<div class="active">${
-    section("곧 시작", soon, 0) + section("진행 중", running, soon.length)}</div>`;
+
+  let off = running.length, key = null;
+  soon.forEach(e => {
+    const sd = new Date(e.start);
+    const k = midnight(sd);
+    if (k !== key) {
+      key = k;
+      const gap = dayGap(now, sd);
+      const n = soon.filter(x => midnight(new Date(x.start)) === k).length;
+      const rel = relDay(gap);
+      html += `<div class="grp">
+        <span class="gd">${String(sd.getMonth() + 1).padStart(2, "0")}-${String(sd.getDate()).padStart(2, "0")}</span>
+        <span class="gw">${DOW[sd.getDay()]}요일</span>
+        ${rel ? `<span class="gr">${rel}</span>` : ""}
+        <span class="gn">${n}건</span></div>`;
+    }
+    html += row(e, off++);
+  });
+
+  host.innerHTML = `<div class="active">${html}</div>`;
 }
 
 /* 표 뷰 — 색 인코딩에 기대지 않는 동등한 경로 */
