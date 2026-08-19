@@ -1182,34 +1182,6 @@
     "updated_at": "2026-08-19T17:27:28.463071+00:00",
     "predicted": true
   },
-  "wuwa-pred-2026-11-12@gameschedule": {
-    "uid": "wuwa-pred-2026-11-12@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "banner",
-    "title": "[예측] 픽업 배너 (Phase 1, 방송 확정 전)",
-    "version_name": null,
-    "start": "2026-11-11T15:00:00+00:00",
-    "end": "2026-12-02T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
-    "url_kind": "공지",
-    "source": "cycle",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
-    "predicted": true
-  },
-  "wuwa-pred-2026-12-03@gameschedule": {
-    "uid": "wuwa-pred-2026-12-03@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "banner",
-    "title": "[예측] 픽업 배너 (Phase 2, 방송 확정 전)",
-    "version_name": null,
-    "start": "2026-12-02T15:00:00+00:00",
-    "end": "2026-12-23T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
-    "url_kind": "공지",
-    "source": "cycle",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
-    "predicted": true
-  },
   "wuwa-off-5229@gameschedule": {
     "uid": "wuwa-off-5229@gameschedule",
     "game": "명조: 워더링 웨이브",
@@ -1277,7 +1249,7 @@
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-08-19T17:46:32.361233+00:00"
   },
   "ihwan-off-263292-일로이@gameschedule": {
     "uid": "ihwan-off-263292-일로이@gameschedule",
