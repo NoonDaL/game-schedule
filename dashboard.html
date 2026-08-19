@@ -306,8 +306,6 @@
   .warns[hidden] { display: none; }
   .warns b { color: var(--ink); font-size: 12px; }
 
-  .more { margin-top: 10px; font-size: 12px; color: var(--ink-muted); }
-  .more b { color: var(--ink-2); font-weight: 700; }
 
   .notice { margin-top: 14px; font-size: 12px; line-height: 1.6; color: var(--ink-muted);
             max-width: 62ch; }
@@ -352,8 +350,6 @@
   <section class="now-sec">
     <div class="sec-label">다음 마감</div>
     <div id="hero"></div>
-    <div class="active" id="active"></div>
-    <p class="more" id="more"></p>
     <p class="notice">
       공식 발표 전 항목은 <b>추정</b>이라 실제와 다를 수 있습니다.
       참고용으로만 사용하시고, 정확한 일정은 각 게임 공식 공지를 확인해 주세요.
@@ -603,37 +599,9 @@ function renderNow() {
     </div>`;
   }
 
-  /* 이 프로젝트의 초점은 '앞으로 뭐가 오나' 다. 그래서 아직 시작 안 한 것을
-     시작일 순으로 먼저 놓고, 진행 중인 것은 그 아래로 내린다.
-     히어로가 이미 종료 임박을 보여주므로 정보가 빠지지 않는다.
-     (예전엔 전체를 종료일 순으로 한 줄로 늘어놔서 '곧 시작' 이 뒤로 밀렸다) */
-  const soon = live.filter(e => +new Date(e.start) > now)
-                   .sort((a, b) => +new Date(a.start) - +new Date(b.start));
-  const running = ongoing.slice().sort((a, b) => +endOf(a) - +endOf(b));
-
-  /* 요약 섹션이라 전부 늘어놓지 않는다. 다만 잘렸다는 표시가 없으면
-     "왜 이건 안 보이지" 로 오해하게 된다 (실제로 그랬다). */
-  const CAP = 5;
-  const shown = soon.slice(0, CAP).concat(running.slice(0, CAP));
-  const rest = (soon.length - Math.min(soon.length, CAP))
-             + (running.length - Math.min(running.length, CAP));
-  document.getElementById("more").innerHTML = rest
-    ? `그 밖에 <b>${rest}건</b> — 아래 <b>리스트</b> 또는 <b>표</b> 에서 전부 볼 수 있습니다`
-    : "";
-
-  const row = (e, i) => {
-    const st = statusOf(e, now);
-    return `<div class="arow" style="--gc:${colorOf(e.type)};--i:${i}">
-      <span class="key"></span><span class="g">${esc(e.game)}</span>
-      <span class="t">${verTag(e)}${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
-      ${srcLink(e)}<span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
-  };
-  const section = (label, items, off) => items.length
-    ? `<div class="grp">${label}</div>` + items.map((e, i) => row(e, i + off)).join("")
-    : "";
-  document.getElementById("active").innerHTML =
-    section("곧 시작", soon.slice(0, CAP), 0) +
-    section("진행 중", running.slice(0, CAP), Math.min(soon.length, CAP));
+  /* 예전엔 여기서 요약 목록 10건을 따로 그렸다. 기본 뷰가 목록이 되면서
+     같은 항목이 한 화면에 두 번 나오게 돼 걷어냈다. 히어로가 '다음 마감'
+     하나만 세우고, 전체 목록은 아래 뷰가 맡는다. */
 }
 
 function renderLegend() {
