@@ -1,8 +1,8 @@
 BEGIN:VCALENDAR
 X-WR-CALNAME:게임 일정
 NAME:게임 일정
-X-WR-CALDESC:명조 · 스타레일 · 이환 · 엔드필드 픽업/방송 (일부 추정 포함)
-DESCRIPTION:명조 · 스타레일 · 이환 · 엔드필드 픽업/방송 (일부 추정 포함)
+X-WR-CALDESC:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 리버스: 1999 픽업/방송 (일부 추정 포함)
+DESCRIPTION:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 리버스: 1999 픽업/방송 (일부 추정 포함)
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 VERSION:2.0
@@ -44,6 +44,12 @@ DTEND:20260824T150000Z
 DTSTART:20260820T150000Z
 SUMMARY:[이환] PC방캉스
 UID:manual-88cb2e2b@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20260906T150000Z
+DTSTART:20260816T150000Z
+SUMMARY:[리버스: 1999] [예측] 리아논
+UID:re1999-shp-2026-08-17@gameschedule
 END:VEVENT
 BEGIN:VEVENT
 DTEND:20260825T140000Z

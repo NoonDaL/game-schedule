@@ -1039,5 +1039,83 @@
     "url": null,
     "source": "youtube",
     "updated_at": "2026-08-19T06:55:51.740475+00:00"
+  },
+  "re1999-hint-DDapNPktn2s@gameschedule": {
+    "uid": "re1999-hint-DDapNPktn2s@gameschedule",
+    "game": "리버스: 1999",
+    "type": "hint",
+    "title": "리아논",
+    "start": "2026-08-12T07:15:20Z",
+    "end": null,
+    "url": null,
+    "source": "youtube",
+    "updated_at": "2026-08-19T13:58:28.685292+00:00"
+  },
+  "re1999-hint-Zc0WyxKhfyw@gameschedule": {
+    "uid": "re1999-hint-Zc0WyxKhfyw@gameschedule",
+    "game": "리버스: 1999",
+    "type": "hint",
+    "title": "쌍둥이",
+    "start": "2026-07-22T13:00:32Z",
+    "end": null,
+    "url": null,
+    "source": "youtube",
+    "updated_at": "2026-08-19T13:58:28.685292+00:00"
+  },
+  "re1999-hint-RVVQqtNeryw@gameschedule": {
+    "uid": "re1999-hint-RVVQqtNeryw@gameschedule",
+    "game": "리버스: 1999",
+    "type": "hint",
+    "title": "이니그마",
+    "start": "2026-06-30T03:00:39Z",
+    "end": null,
+    "url": null,
+    "source": "youtube",
+    "updated_at": "2026-08-19T13:58:28.685292+00:00"
+  },
+  "re1999-hint-aafHT4jiWxU@gameschedule": {
+    "uid": "re1999-hint-aafHT4jiWxU@gameschedule",
+    "game": "리버스: 1999",
+    "type": "hint",
+    "title": "라모나",
+    "start": "2026-06-16T03:00:25Z",
+    "end": null,
+    "url": null,
+    "source": "youtube",
+    "updated_at": "2026-08-19T13:58:28.685292+00:00"
+  },
+  "re1999-hint-XLUPervEgWc@gameschedule": {
+    "uid": "re1999-hint-XLUPervEgWc@gameschedule",
+    "game": "리버스: 1999",
+    "type": "hint",
+    "title": "로렌츠 버터플라이",
+    "start": "2026-05-27T10:00:04Z",
+    "end": null,
+    "url": null,
+    "source": "youtube",
+    "updated_at": "2026-08-19T13:58:28.685292+00:00"
+  },
+  "re1999-hint-HuscxZbWtEs@gameschedule": {
+    "uid": "re1999-hint-HuscxZbWtEs@gameschedule",
+    "game": "리버스: 1999",
+    "type": "hint",
+    "title": "정화광",
+    "start": "2026-05-06T11:00:35Z",
+    "end": null,
+    "url": null,
+    "source": "youtube",
+    "updated_at": "2026-08-19T13:58:28.685292+00:00"
+  },
+  "re1999-shp-2026-08-17@gameschedule": {
+    "uid": "re1999-shp-2026-08-17@gameschedule",
+    "game": "리버스: 1999",
+    "type": "banner",
+    "title": "[예측] 리아논",
+    "start": "2026-08-16T15:00:00+00:00",
+    "end": "2026-09-06T15:00:00+00:00",
+    "url": null,
+    "source": "showcase",
+    "updated_at": "2026-08-19T13:58:28.685292+00:00",
+    "predicted": true
   }
 }
