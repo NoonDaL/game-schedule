@@ -116,6 +116,21 @@
             opacity: .35; transition: .14s; flex: none; }
   .chip[aria-pressed="true"] .swatch { opacity: 1; }
 
+  /* 검색. 칩과 같은 높이·라운드로 맞춰 필터 줄에 섞이게 한다. */
+  .fsearch { margin-left: auto; }
+  .qbox {
+    font: inherit; font-size: 13px; color: var(--ink);
+    background: transparent; border: 1px solid var(--rule); border-radius: var(--r-pill);
+    padding: 5px 12px; width: 190px; max-width: 46vw;
+    transition: border-color .14s;
+  }
+  .qbox::placeholder { color: var(--ink-muted); }
+  .qbox:focus { outline: none; border-color: var(--ink-muted); }
+  .qhit { font-size: 11px; font-weight: 600; color: var(--ink-muted);
+          font-variant-numeric: tabular-nums; }
+  @media (max-width: 640px) { .fsearch { margin-left: 0; width: 100%; }
+                              .qbox { flex: 1; max-width: none; } }
+
   /* ---- 히어로: 뷰당 정확히 하나. 이 도구의 존재 이유 = '언제 끝나나' ---- */
   .now-sec { padding: 26px 0 4px; }
   .sec-label { font-size: 10px; font-weight: 700; color: var(--ink-muted);
@@ -340,6 +355,12 @@
       <div class="fgroup"><span class="flabel">게임</span><span id="game-chips" style="display:contents"></span></div>
       <div class="fgroup"><span class="flabel">종류</span><span id="type-chips" style="display:contents"></span></div>
       <div class="fgroup"><button class="chip" id="chip-pred" aria-pressed="true">예측 포함</button></div>
+      <div class="fgroup fsearch">
+        <label class="flabel" for="q">검색</label>
+        <input id="q" type="search" class="qbox" placeholder="게임 · 캐릭터 · 버전"
+               autocomplete="off" aria-label="게임·캐릭터·버전 검색">
+        <span class="qhit" id="qhit" hidden></span>
+      </div>
     </div>
   </div>
 </header>
@@ -539,6 +560,18 @@ function buildChips(games) {
 function toggle(a, v) { const i = a.indexOf(v); i < 0 ? a.push(v) : a.splice(i, 1); }
 
 function bindControls() {
+  const q = document.getElementById("q");
+  const hit = document.getElementById("qhit");
+  q.addEventListener("input", () => {
+    query = q.value.trim().toLowerCase();
+    renderAll();
+    // 0건일 때 아무 말이 없으면 '고장' 으로 읽힌다. 걸린 수를 항상 보여준다.
+    hit.hidden = !query;
+    // visible() 은 지난 일정까지 센다. 화면에 실제로 그려지는 건 '아직 안 끝난'
+    // 것뿐이라, 그 수를 세지 않으면 "11건" 이라 해놓고 4줄만 보여주게 된다.
+    const n = visible().filter(e => +endOf(e) >= Date.now()).length;
+    hit.textContent = query ? `${n}건 일치` : "";
+  });
   [["v-timeline", "timeline"], ["v-list", "list"], ["v-table", "table"]].forEach(([id, v]) => {
     document.getElementById(id).onclick = () => { state.view = v; save(); applyView(); renderAll(); };
   });
@@ -554,8 +587,18 @@ function applyView() {
     });
 }
 
+/* 검색어는 저장하지 않는다. 남겨두면 다음 방문에 아무것도 안 보이는 화면을
+   만나고, 원인이 필터라는 걸 알아채기 어렵다 (칩과 달리 눌린 표시가 없다). */
+let query = "";
+/* 캐릭터 이름은 chars 에, 버전 이름은 version_name 에 따로 있다. 제목만 훑으면
+   "천성" 으로 스타레일 배너를 못 찾는다. */
+const haystack = e => [e.game, e.title, e.version_name, e.version,
+                       (e.chars || []).join(" ")].filter(Boolean).join(" ").toLowerCase();
+
 const visible = () => EVENTS.filter(e =>
-  state.games.includes(e.game) && state.types.includes(e.type) && (state.pred || !e.predicted));
+  state.games.includes(e.game) && state.types.includes(e.type)
+  && (state.pred || !e.predicted)
+  && (!query || haystack(e).includes(query)));
 
 function renderAll() { renderNow(); renderLegend(); ({ timeline: renderTimeline, list: renderList, table: renderTable }[state.view])(); }
 
@@ -782,7 +825,14 @@ function renderList() {
   const host = document.getElementById("view-list");
   const now = Date.now();
   const live = visible().filter(e => +endOf(e) >= now);
-  if (!live.length) { host.innerHTML = `<div class="empty">다가오는 일정이 없습니다.</div>`; return; }
+  if (!live.length) {
+    // 검색 중이면 원인이 검색어라는 걸 밝혀야 한다. '일정이 없습니다' 만 뜨면
+    // 데이터가 비었다고 오해한다.
+    host.innerHTML = query
+      ? `<div class="empty">검색어 <b>${esc(query)}</b> 와 맞는 일정이 없습니다.</div>`
+      : `<div class="empty">다가오는 일정이 없습니다.</div>`;
+    return;
+  }
 
   const running = live.filter(e => +new Date(e.start) <= now)
                       .sort((a, b) => +endOf(a) - +endOf(b));
