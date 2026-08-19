@@ -168,6 +168,14 @@
               overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .arow .d  { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums;
               white-space: nowrap; }
+  /* 근거 링크. 제목을 밀어내지 않도록 작고 조용하게. */
+  /* .t 안에 두면 제목이 길 때 ellipsis 에 같이 잘려서 링크가 사라진다.
+     형제로 빼고 flex:none 을 준다. */
+  .arow .src { font-size: 11px; font-weight: 500; color: var(--ink-muted);
+               text-decoration: none; white-space: nowrap; flex: none;
+               border-bottom: 1px solid var(--rule); }
+  .arow .src span { margin-left: 2px; }
+  .arow .src:hover { color: var(--ink); border-color: currentColor; }
   .tag { font-size: 10px; font-weight: 700; color: var(--ink-muted);
          border: 1px solid var(--rule); border-radius: var(--r-mark);
          padding: 1px 5px; margin-left: 7px; }
@@ -368,6 +376,13 @@ const GAME_ORDER = ["명조: 워더링 웨이브", "붕괴: 스타레일", "이�
 const TYPE_COLOR = { banner: "var(--t-pickup)", broadcast: "var(--t-cast)",
                      event: "var(--t-offline)" };
 const colorOf = t => TYPE_COLOR[t] || "var(--t-other)";
+
+/* 이 일정의 날짜가 어디서 나왔는지. 예측 항목일수록 근거를 보여줘야 한다 —
+   '왜 이 날짜냐' 에 답하지 못하면 예측은 그냥 틀릴 수 있는 숫자로만 읽힌다. */
+const srcLink = e => e.url
+  ? `<a class="src" href="${esc(e.url)}" target="_blank" rel="noopener"
+        title="근거가 된 공지·영상 열기">근거<span aria-hidden="true">↗</span></a>`
+  : "";
 
 /* 'event' 키는 그대로 두고 라벨만 바꿨다. 실제로 이 타입에 들어오는 건
    manual.json 으로 넣는 콜라보·팝업 같은 오프라인 일정뿐이라 이름을 실제와
@@ -585,7 +600,7 @@ function renderNow() {
     return `<div class="arow" style="--gc:${colorOf(e.type)};--i:${i}">
       <span class="key"></span><span class="g">${esc(e.game)}</span>
       <span class="t">${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
-      <span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
+      ${srcLink(e)}<span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
   };
   const section = (label, items, off) => items.length
     ? `<div class="grp">${label}</div>` + items.map((e, i) => row(e, i + off)).join("")
@@ -769,7 +784,7 @@ function renderList() {
     return `<div class="arow" style="--gc:${colorOf(e.type)};--i:${i}">
       <span class="key"></span><span class="g">${esc(e.game)}</span>
       <span class="t">${esc(shortTitle(e))}${e.predicted ? '<span class="tag">예측</span>' : ""}</span>
-      <span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
+      ${srcLink(e)}<span class="d">${esc(drange(e))}</span>${badge(st)}</div>`;
   };
   const section = (label, items, off) => items.length
     ? `<div class="grp">${label}</div>` + items.map((e, i) => row(e, i + off)).join("")
