@@ -803,18 +803,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "hsr-hint-yqqjCo27J_0@gameschedule": {
-    "uid": "hsr-hint-yqqjCo27J_0@gameschedule",
-    "game": "붕괴: 스타레일",
-    "type": "hint",
-    "title": "은랑 LV.999",
-    "start": "2026-04-23T12:01:53Z",
-    "end": null,
-    "url": "https://www.youtube.com/watch?v=yqqjCo27J_0",
-    "url_kind": "쇼케이스",
-    "source": "youtube",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
   "ihwan-MmUEE_e1f1w@gameschedule": {
     "uid": "ihwan-MmUEE_e1f1w@gameschedule",
     "game": "이환",
@@ -1173,13 +1161,13 @@
     "game": "리버스: 1999",
     "type": "banner",
     "title": "[예측] 리아논",
-    "version_name": null,
+    "version_name": "타인의 슬픔",
     "start": "2026-08-16T15:00:00+00:00",
     "end": "2026-09-06T15:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=DDapNPktn2s",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
+    "updated_at": "2026-08-21T18:47:39.746208+00:00",
     "predicted": true
   },
   "wuwa-off-5229@gameschedule": {
@@ -1249,7 +1237,7 @@
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-21T13:01:21.880494+00:00"
+    "updated_at": "2026-08-21T18:47:39.746208+00:00"
   },
   "ihwan-off-263292-일로이@gameschedule": {
     "uid": "ihwan-off-263292-일로이@gameschedule",
@@ -1339,5 +1327,47 @@
     "source": "manual",
     "updated_at": "2026-08-19T18:44:36.238228+00:00",
     "confirmed": true
+  },
+  "re1999-ver-3.7@gameschedule": {
+    "uid": "re1999-ver-3.7@gameschedule",
+    "game": "리버스: 1999",
+    "type": "version",
+    "version": "3.7",
+    "version_name": "타인의 슬픔",
+    "title": "3.7 버전 「타인의 슬픔」",
+    "start": "2026-08-02T13:50:20Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-08-21T18:47:39.746208+00:00"
+  },
+  "re1999-ver-3.6@gameschedule": {
+    "uid": "re1999-ver-3.6@gameschedule",
+    "game": "리버스: 1999",
+    "type": "version",
+    "version": "3.6",
+    "version_name": "사람은 어디로 가는가",
+    "title": "3.6 버전 「사람은 어디로 가는가」",
+    "start": "2026-06-23T02:00:23Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-08-21T18:47:39.746208+00:00"
+  },
+  "re1999-ver-3.5@gameschedule": {
+    "uid": "re1999-ver-3.5@gameschedule",
+    "game": "리버스: 1999",
+    "type": "version",
+    "version": "3.5",
+    "version_name": "터콰이즈 뱀 클럽",
+    "title": "3.5 버전 「터콰이즈 뱀 클럽」",
+    "start": "2026-05-15T02:00:01Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-08-21T18:47:39.746208+00:00"
   }
 }
