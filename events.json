@@ -937,14 +937,14 @@
     "uid": "ihwan-shp-2026-09-09@gameschedule",
     "game": "이환",
     "type": "banner",
-    "title": "[예측] 링코",
+    "title": "[예측] 링코, 호토리",
     "version_name": "안개 너머의 별빛",
     "start": "2026-09-08T15:00:00+00:00",
     "end": "2026-09-29T15:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=EHrwyVbZSAo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
     "predicted": true
   },
   "wuwa-win-2026-07-30@gameschedule": {
@@ -1001,14 +1001,14 @@
     "uid": "wuwa-pred-2026-09-10@gameschedule",
     "game": "명조: 워더링 웨이브",
     "type": "banner",
-    "title": "[예측] 경연",
+    "title": "[예측] 경연, 히유키, 모니에",
     "version_name": "신기루 속 등불 그림자, 속세에 깃든 검의 결심",
     "start": "2026-09-09T15:00:00+00:00",
     "end": "2026-09-30T15:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
     "predicted": true
   },
   "wuwa-pred-2026-10-01@gameschedule": {
@@ -1050,43 +1050,6 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
-  "manual-792ac0b4@gameschedule": {
-    "uid": "manual-792ac0b4@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "broadcast",
-    "title": "「눈꽃 속에 피어난 고요한 꿈」 버전 미리보기 방송",
-    "start": "2026-08-21T11:30:00+00:00",
-    "end": null,
-    "url": null,
-    "source": "manual",
-    "updated_at": "2026-08-18T16:02:09.900209+00:00",
-    "note": "공식 공지. 유튜브 예정 라이브가 올라오면 자동으로 대체된다",
-    "confirmed": true
-  },
-  "manual-f0dfec53@gameschedule": {
-    "uid": "manual-f0dfec53@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "event",
-    "title": "도미노 콜라보",
-    "start": "2026-08-20T15:00:00+00:00",
-    "end": "2026-09-16T15:00:00+00:00",
-    "url": "https://game.naver.com/lounge/WutheringWaves/board/detail/8047518",
-    "source": "manual",
-    "updated_at": "2026-08-19T18:44:36.238228+00:00",
-    "confirmed": true
-  },
-  "manual-88cb2e2b@gameschedule": {
-    "uid": "manual-88cb2e2b@gameschedule",
-    "game": "이환",
-    "type": "event",
-    "title": "PC방캉스",
-    "start": "2026-08-20T15:00:00+00:00",
-    "end": "2026-08-24T15:00:00+00:00",
-    "url": "https://x.com/NTE_KO/status/2087494304990151022",
-    "source": "manual",
-    "updated_at": "2026-08-19T18:44:36.238228+00:00",
-    "confirmed": true
   },
   "hsr-hint-cnu6dn1pHj8@gameschedule": {
     "uid": "hsr-hint-cnu6dn1pHj8@gameschedule",
@@ -1253,7 +1216,7 @@
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-08-23T15:23:57.021825+00:00"
   },
   "ihwan-off-263292-일로이@gameschedule": {
     "uid": "ihwan-off-263292-일로이@gameschedule",
@@ -1320,30 +1283,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "manual-8c2457fd@gameschedule": {
-    "uid": "manual-8c2457fd@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "event",
-    "title": "월드 투어 「To the New World」",
-    "start": "2026-08-28T15:00:00+00:00",
-    "end": null,
-    "url": "https://game.naver.com/lounge/WutheringWaves/board/detail/7823821",
-    "source": "manual",
-    "updated_at": "2026-08-19T18:44:36.238228+00:00",
-    "confirmed": true
-  },
-  "manual-cefeabd6@gameschedule": {
-    "uid": "manual-cefeabd6@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "hint",
-    "title": "데니아",
-    "start": "2026-08-16T15:00:00+00:00",
-    "end": "2026-09-09T15:00:00+00:00",
-    "url": null,
-    "source": "manual",
-    "updated_at": "2026-08-19T18:44:36.238228+00:00",
-    "confirmed": true
-  },
   "re1999-ver-3.7@gameschedule": {
     "uid": "re1999-ver-3.7@gameschedule",
     "game": "리버스: 1999",
@@ -1356,7 +1295,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-08-23T15:23:57.021825+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1370,7 +1309,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-08-23T15:23:57.021825+00:00"
   },
   "re1999-ver-3.5@gameschedule": {
     "uid": "re1999-ver-3.5@gameschedule",
@@ -1384,7 +1323,7 @@
     "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-08-23T15:23:57.021825+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1421,7 +1360,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-08-23T15:23:57.021825+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1482,7 +1421,7 @@
     "end": "2026-09-01T09:59:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
     "url_kind": null
   },
   "zzz-banner-e4ca466d83@gameschedule": {
@@ -1522,7 +1461,7 @@
     "end": "2026-09-08T06:59:59+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
     "url_kind": null
   },
   "endfield-hint-hpnle8SnWwQ@gameschedule": {
@@ -1536,20 +1475,6 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-08-23T12:53:36.518342+00:00"
-  },
-  "endfield-shp-2026-08-28@gameschedule": {
-    "uid": "endfield-shp-2026-08-28@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[예측] 티프로스",
-    "version_name": "심연으로",
-    "start": "2026-08-27T15:00:00+00:00",
-    "end": "2026-09-17T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=hpnle8SnWwQ",
-    "url_kind": "쇼케이스",
-    "source": "showcase",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00",
-    "predicted": true
   },
   "endfield-off-0758-0@gameschedule": {
     "uid": "endfield-off-0758-0@gameschedule",
@@ -1612,11 +1537,179 @@
       "리노"
     ],
     "start": "2026-08-09T04:00:00+00:00",
-    "end": "2026-08-30T04:00:00+00:00",
+    "end": "2026-09-02T04:00:00+00:00",
     "confirmed": true,
     "url": "https://endfield.gryphline.com/ko-kr/news/5200",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-08-23T15:23:57.021825+00:00"
+  },
+  "manual-65f4cc87@gameschedule": {
+    "uid": "manual-65f4cc87@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "broadcast",
+    "title": "「눈꽃 속에 피어난 고요한 꿈」 버전 미리보기 방송",
+    "start": "2026-08-21T11:30:00+00:00",
+    "end": null,
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "note": "공식 공지. 유튜브 예정 라이브가 올라오면 자동으로 대체된다",
+    "confirmed": true
+  },
+  "manual-8b0fff95@gameschedule": {
+    "uid": "manual-8b0fff95@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "event",
+    "title": "도미노 콜라보",
+    "start": "2026-08-20T15:00:00+00:00",
+    "end": "2026-09-16T15:00:00+00:00",
+    "url": "https://game.naver.com/lounge/WutheringWaves/board/detail/8047518",
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "confirmed": true
+  },
+  "manual-a24f63c1@gameschedule": {
+    "uid": "manual-a24f63c1@gameschedule",
+    "game": "이환",
+    "type": "event",
+    "title": "PC방캉스",
+    "start": "2026-08-20T15:00:00+00:00",
+    "end": "2026-08-24T15:00:00+00:00",
+    "url": "https://x.com/NTE_KO/status/2087494304990151022",
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "confirmed": true
+  },
+  "manual-9b73b4a6@gameschedule": {
+    "uid": "manual-9b73b4a6@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "event",
+    "title": "월드 투어 「To the New World」",
+    "start": "2026-08-28T15:00:00+00:00",
+    "end": null,
+    "url": "https://game.naver.com/lounge/WutheringWaves/board/detail/7823821",
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "confirmed": true
+  },
+  "manual-aff0f2c5@gameschedule": {
+    "uid": "manual-aff0f2c5@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "hint",
+    "title": "데니아",
+    "start": "2026-08-16T15:00:00+00:00",
+    "end": "2026-09-09T15:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "confirmed": true
+  },
+  "manual-7d607dc5@gameschedule": {
+    "uid": "manual-7d607dc5@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "release",
+    "title": "일정",
+    "start": "2026-09-02T04:00:00+00:00",
+    "end": null,
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "note": "「눈꽃 속에 피어난 고요한 꿈」 버전 개방. 앞 배너(리노)의 종료를 닫는다. 공식 공지는 버전 당일에야 나온다.",
+    "version": null
+  },
+  "manual-23928268@gameschedule": {
+    "uid": "manual-23928268@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 티프로스",
+    "start": "2026-09-02T04:00:00+00:00",
+    "end": "2026-09-30T04:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "note": "버전 미리보기 방송 발표. 09-02 공식 공지가 나오면 자동이 이 자리를 가져간다.",
+    "confirmed": true
+  },
+  "manual-13a2f8f1@gameschedule": {
+    "uid": "manual-13a2f8f1@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "release",
+    "title": "일정",
+    "start": "2026-10-14T04:00:00+00:00",
+    "end": null,
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "note": "예측. 티프로스 시작(09-02)+6주. 실측 버전 간격은 36~49일(중앙값 44.5)이라 ±1주 폭이 있다. 이본 복각의 종료를 닫는 용도. 공식 공지가 나오면 대체된다.",
+    "version": null,
+    "predicted": true
+  },
+  "manual-169b0af8@gameschedule": {
+    "uid": "manual-169b0af8@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 이본",
+    "start": "2026-09-24T04:00:00+00:00",
+    "end": "2026-10-14T04:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "note": "「찬란한 색채」 재구축 헤드헌팅 #1. 개발자 통신(08-22) 발표. 시작은 확정, 종료는 '다음 버전 업데이트까지'라 예측(09-02+6주). 재구축은 이번 버전에 새로 생긴 유형이라 버전 공지에 들어올지 전례가 없다.",
+    "confirmed": true
+  },
+  "manual-ac8bc6c9@gameschedule": {
+    "uid": "manual-ac8bc6c9@gameschedule",
+    "game": "이환",
+    "type": "hint",
+    "title": "호토리",
+    "start": "2026-09-03T15:00:00+00:00",
+    "end": null,
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "note": "링코 배너에 복각으로 동반. 복각은 쇼케이스 영상이 없어 자동으로 안 잡힌다. 날짜는 배너 시작(09-09) - lead_days(5).",
+    "confirmed": true
+  },
+  "manual-d71e2852@gameschedule": {
+    "uid": "manual-d71e2852@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "hint",
+    "title": "히유키",
+    "start": "2026-09-04T15:00:00+00:00",
+    "end": null,
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "note": "경연 배너에 복각으로 동반. _hint_names 창(배너 시작 -10 ~ +3일) 안에 두면 그 페이즈에 붙는다.",
+    "confirmed": true
+  },
+  "manual-618650e2@gameschedule": {
+    "uid": "manual-618650e2@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "hint",
+    "title": "모니에",
+    "start": "2026-09-04T15:00:00+00:00",
+    "end": null,
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "note": "경연 배너에 복각으로 동반.",
+    "confirmed": true
+  },
+  "endfield-off-0751-1@gameschedule": {
+    "uid": "endfield-off-0751-1@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 찬란한 빛의 축제",
+    "version_name": "봄날의 새벽",
+    "chars": [],
+    "start": "2026-05-14T04:00:00+00:00",
+    "end": "2026-06-05T04:00:00+00:00",
+    "confirmed": true,
+    "url": "https://endfield.gryphline.com/ko-kr/news/0751",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-08-23T15:23:57.021825+00:00"
   }
 }
