@@ -36,65 +36,95 @@
     "game": "붕괴: 스타레일",
     "type": "banner",
     "title": "[픽업] 히메코•노바",
+    "chars": [
+      "히메코•노바"
+    ],
+    "confirmed": true,
+    "rerun": false,
     "version": "4.4",
     "version_name": "적막이 깃든 순간, 울리는 경적",
     "start": "2026-07-15T02:00:01+00:00",
     "end": "2026-08-25T14:00:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "hsr-banner-89@gameschedule": {
     "uid": "hsr-banner-89@gameschedule",
     "game": "붕괴: 스타레일",
     "type": "banner",
     "title": "[픽업] 토오사카 린, 길가메시",
+    "chars": [
+      "토오사카 린",
+      "길가메시"
+    ],
+    "confirmed": true,
+    "rerun": false,
     "version": "4.4",
     "version_name": "적막이 깃든 순간, 울리는 경적",
     "start": "2026-07-24T11:00:00+00:00",
     "end": null,
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-19T16:55:26.579542+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "hsr-banner-85@gameschedule": {
     "uid": "hsr-banner-85@gameschedule",
     "game": "붕괴: 스타레일",
     "type": "banner",
     "title": "[픽업] 케리드라, 아낙사, 어벤츄린",
+    "chars": [
+      "케리드라",
+      "아낙사",
+      "어벤츄린"
+    ],
+    "confirmed": true,
+    "rerun": false,
     "version": "4.4",
     "version_name": "적막이 깃든 순간, 울리는 경적",
     "start": "2026-08-05T11:00:00+00:00",
     "end": "2026-08-25T14:00:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "hsr-banner-91@gameschedule": {
     "uid": "hsr-banner-91@gameschedule",
     "game": "붕괴: 스타레일",
     "type": "banner",
     "title": "[픽업] 로빈•서머레토, 히아킨",
+    "chars": [
+      "로빈•서머레토",
+      "히아킨"
+    ],
+    "confirmed": true,
+    "rerun": false,
     "version": "4.5",
     "version_name": "천성에 던진 승부수",
     "start": "2026-08-26T02:00:00+00:00",
     "end": "2026-09-12T10:59:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "hsr-banner-93@gameschedule": {
     "uid": "hsr-banner-93@gameschedule",
     "game": "붕괴: 스타레일",
     "type": "banner",
     "title": "[픽업] 어벤츄린•웨이브, 애쉬베일",
+    "chars": [
+      "어벤츄린•웨이브",
+      "애쉬베일"
+    ],
+    "confirmed": true,
+    "rerun": false,
     "version": "4.5",
     "version_name": "천성에 던진 승부수",
     "start": "2026-09-12T11:00:00+00:00",
     "end": "2026-09-27T19:59:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "wuwa-AyLdwN2PNU4@gameschedule": {
     "uid": "wuwa-AyLdwN2PNU4@gameschedule",
@@ -917,20 +947,6 @@
     "updated_at": "2026-08-19T17:27:28.463071+00:00",
     "predicted": true
   },
-  "endfield-shp-2026-08-09@gameschedule": {
-    "uid": "endfield-shp-2026-08-09@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[픽업] 리노",
-    "version_name": "심연으로",
-    "start": "2026-08-08T15:00:00+00:00",
-    "end": "2026-08-29T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=zwijZviOauA",
-    "url_kind": "공지",
-    "source": "showcase",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
-    "confirmed": true
-  },
   "wuwa-win-2026-07-30@gameschedule": {
     "uid": "wuwa-win-2026-07-30@gameschedule",
     "game": "명조: 워더링 웨이브",
@@ -1237,7 +1253,7 @@
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-23T06:52:57.378392+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "ihwan-off-263292-일로이@gameschedule": {
     "uid": "ihwan-off-263292-일로이@gameschedule",
@@ -1340,7 +1356,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-23T06:52:57.378392+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1354,7 +1370,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-23T06:52:57.378392+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "re1999-ver-3.5@gameschedule": {
     "uid": "re1999-ver-3.5@gameschedule",
@@ -1368,7 +1384,7 @@
     "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-23T06:52:57.378392+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1405,7 +1421,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-23T06:52:57.378392+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1453,65 +1469,154 @@
     "uid": "genshin-banner-222@gameschedule",
     "game": "원신",
     "type": "banner",
-    "title": "[픽업] 오데트",
+    "title": "[픽업] 오데트, 아를레키노",
+    "chars": [
+      "오데트",
+      "아를레키노"
+    ],
+    "confirmed": true,
+    "rerun": false,
     "version": "7.0",
     "version_name": "신이 사랑하지 않은 설국",
     "start": "2026-08-11T23:00:00+00:00",
     "end": "2026-09-01T09:59:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-22T12:52:18.671720+00:00"
-  },
-  "genshin-banner-223@gameschedule": {
-    "uid": "genshin-banner-223@gameschedule",
-    "game": "원신",
-    "type": "banner",
-    "title": "[픽업] 아를레키노",
-    "version": "7.0",
-    "version_name": "신이 사랑하지 않은 설국",
-    "start": "2026-08-11T23:00:00+00:00",
-    "end": "2026-09-01T09:59:00+00:00",
-    "url": null,
-    "source": "hoyolab",
-    "updated_at": "2026-08-22T12:52:18.671720+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00",
+    "url_kind": null
   },
   "zzz-banner-e4ca466d83@gameschedule": {
     "uid": "zzz-banner-e4ca466d83@gameschedule",
     "game": "젠레스 존 제로",
     "type": "banner",
     "title": "[픽업] 레미엘",
+    "chars": [
+      "레미엘"
+    ],
+    "confirmed": true,
+    "rerun": false,
     "version": "3.1",
     "version_name": "기나긴 이별",
     "start": "2026-07-29T02:00:00+00:00",
     "end": "2026-09-08T06:59:59+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-22T12:52:18.671720+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   },
   "zzz-banner-d1647e19f3@gameschedule": {
     "uid": "zzz-banner-d1647e19f3@gameschedule",
     "game": "젠레스 존 제로",
     "type": "banner",
-    "title": "[픽업] 시그리드",
+    "title": "[픽업] 시그리드, 다이아린, 유즈하, 하루마사",
+    "chars": [
+      "시그리드",
+      "다이아린",
+      "유즈하",
+      "하루마사"
+    ],
+    "confirmed": true,
+    "rerun": false,
     "version": "3.1",
     "version_name": "기나긴 이별",
     "start": "2026-08-19T04:00:00+00:00",
     "end": "2026-09-08T06:59:59+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-22T12:52:18.671720+00:00"
+    "updated_at": "2026-08-23T12:53:36.518342+00:00",
+    "url_kind": null
   },
-  "zzz-banner-bda4e06c3f@gameschedule": {
-    "uid": "zzz-banner-bda4e06c3f@gameschedule",
-    "game": "젠레스 존 제로",
+  "endfield-hint-hpnle8SnWwQ@gameschedule": {
+    "uid": "endfield-hint-hpnle8SnWwQ@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "hint",
+    "title": "티프로스",
+    "start": "2026-08-23T10:00:21Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=hpnle8SnWwQ",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+  },
+  "endfield-shp-2026-08-28@gameschedule": {
+    "uid": "endfield-shp-2026-08-28@gameschedule",
+    "game": "명일방주: 엔드필드",
     "type": "banner",
-    "title": "[픽업] 다이아린, 유즈하, 하루마사",
-    "version": "3.1",
-    "version_name": "기나긴 이별",
-    "start": "2026-08-19T04:00:00+00:00",
-    "end": "2026-09-08T06:59:59+00:00",
-    "url": null,
-    "source": "hoyolab",
-    "updated_at": "2026-08-22T12:52:18.671720+00:00"
+    "title": "[예측] 티프로스",
+    "version_name": "심연으로",
+    "start": "2026-08-27T15:00:00+00:00",
+    "end": "2026-09-17T15:00:00+00:00",
+    "url": "https://www.youtube.com/watch?v=hpnle8SnWwQ",
+    "url_kind": "쇼케이스",
+    "source": "showcase",
+    "updated_at": "2026-08-23T12:53:36.518342+00:00",
+    "predicted": true
+  },
+  "endfield-off-0758-0@gameschedule": {
+    "uid": "endfield-off-0758-0@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 미브",
+    "version_name": "과거를 찾아서",
+    "chars": [
+      "미브"
+    ],
+    "start": "2026-06-05T04:00:00+00:00",
+    "end": "2026-06-26T03:59:00+00:00",
+    "confirmed": true,
+    "url": "https://endfield.gryphline.com/ko-kr/news/0758",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+  },
+  "endfield-off-0758-1@gameschedule": {
+    "uid": "endfield-off-0758-1@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 카뮤",
+    "version_name": "과거를 찾아서",
+    "chars": [
+      "카뮤"
+    ],
+    "start": "2026-06-26T04:00:00+00:00",
+    "end": "2026-07-16T04:00:00+00:00",
+    "confirmed": true,
+    "url": "https://endfield.gryphline.com/ko-kr/news/0758",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+  },
+  "endfield-off-5200-0@gameschedule": {
+    "uid": "endfield-off-5200-0@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 결",
+    "version_name": "심연으로",
+    "chars": [
+      "결"
+    ],
+    "start": "2026-07-16T04:00:00+00:00",
+    "end": "2026-08-09T03:59:00+00:00",
+    "confirmed": true,
+    "url": "https://endfield.gryphline.com/ko-kr/news/5200",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+  },
+  "endfield-off-5200-1@gameschedule": {
+    "uid": "endfield-off-5200-1@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 리노",
+    "version_name": "심연으로",
+    "chars": [
+      "리노"
+    ],
+    "start": "2026-08-09T04:00:00+00:00",
+    "end": "2026-08-30T04:00:00+00:00",
+    "confirmed": true,
+    "url": "https://endfield.gryphline.com/ko-kr/news/5200",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-08-23T12:53:36.518342+00:00"
   }
 }
