@@ -32,24 +32,6 @@ SUMMARY:[붕괴: 스타레일] [픽업] 케리드라\, 아낙사\, 어벤츄린
 UID:hsr-banner-85@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:일로이 종료 2일 전
-TRIGGER:P2W4DT18H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:일로이 종료 3시간 전
-TRIGGER:P2W6DT15H59M
-END:VALARM
-DESCRIPTION:https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html
-DTEND:20260818T215900Z
-DTSTART:20260729T030000Z
-SUMMARY:[이환] [픽업] 일로이
-UID:ihwan-off-263292-일로이@gameschedule
-URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:https://game.naver.com/lounge/WutheringWaves/board/detail/7823821
 DTEND:20260828T163000Z
 DTSTART:20260828T150000Z
