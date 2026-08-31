@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-08-31T04:01:42.368078+00:00",
+  "checked_at": "2026-08-31T04:11:43.357919+00:00",
   "counts": {
     "broadcast": 12,
-    "banner": 30,
+    "banner": 31,
     "hint": 63,
     "release": 12,
     "window": 3,
@@ -10,7 +10,5 @@
     "version": 7,
     "event": 3
   },
-  "warnings": [
-    "원신: 앞으로 1일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음"
-  ]
+  "warnings": []
 }

@@ -1001,42 +1001,42 @@
     "uid": "wuwa-pred-2026-09-10@gameschedule",
     "game": "명조: 워더링 웨이브",
     "type": "banner",
-    "title": "[예측] 경연, 쇄명, 여우의 별자리, 히유키, 모니에",
+    "title": "[예측] 경연, 히유키, 모니에",
     "version_name": "신기루 속 등불 그림자, 속세에 깃든 검의 결심",
     "start": "2026-09-09T15:00:00+00:00",
     "end": "2026-09-30T15:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-08-31T04:00:31.829981+00:00",
+    "updated_at": "2026-08-31T04:10:38.963895+00:00",
     "predicted": true
   },
   "wuwa-pred-2026-10-01@gameschedule": {
     "uid": "wuwa-pred-2026-10-01@gameschedule",
     "game": "명조: 워더링 웨이브",
     "type": "banner",
-    "title": "[예측] 픽업 배너 (Phase 1, 방송 확정 전)",
+    "title": "[예측] 여우의 별자리",
     "version_name": null,
     "start": "2026-09-30T15:00:00+00:00",
     "end": "2026-10-21T15:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
+    "updated_at": "2026-08-31T04:10:38.963895+00:00",
     "predicted": true
   },
   "wuwa-pred-2026-10-22@gameschedule": {
     "uid": "wuwa-pred-2026-10-22@gameschedule",
     "game": "명조: 워더링 웨이브",
     "type": "banner",
-    "title": "[예측] 픽업 배너 (Phase 2, 방송 확정 전)",
+    "title": "[예측] 쇄명",
     "version_name": null,
     "start": "2026-10-21T15:00:00+00:00",
     "end": "2026-11-11T15:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
+    "updated_at": "2026-08-31T04:10:38.963895+00:00",
     "predicted": true
   },
   "wuwa-hint-fybKvkz0Izs@gameschedule": {
@@ -1135,20 +1135,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "re1999-shp-2026-08-17@gameschedule": {
-    "uid": "re1999-shp-2026-08-17@gameschedule",
-    "game": "리버스: 1999",
-    "type": "banner",
-    "title": "[예측] 리아논",
-    "version_name": "타인의 슬픔",
-    "start": "2026-08-16T15:00:00+00:00",
-    "end": "2026-09-02T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=DDapNPktn2s",
-    "url_kind": "쇼케이스",
-    "source": "showcase",
-    "updated_at": "2026-08-31T04:00:31.829981+00:00",
-    "predicted": true
-  },
   "wuwa-off-5229@gameschedule": {
     "uid": "wuwa-off-5229@gameschedule",
     "game": "명조: 워더링 웨이브",
@@ -1216,7 +1202,7 @@
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-31T04:01:42.368078+00:00"
+    "updated_at": "2026-08-31T04:11:43.357919+00:00"
   },
   "ihwan-off-263292-일로이@gameschedule": {
     "uid": "ihwan-off-263292-일로이@gameschedule",
@@ -1295,7 +1281,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-31T04:01:42.368078+00:00"
+    "updated_at": "2026-08-31T04:11:43.357919+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1309,7 +1295,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-31T04:01:42.368078+00:00"
+    "updated_at": "2026-08-31T04:11:43.357919+00:00"
   },
   "re1999-ver-3.5@gameschedule": {
     "uid": "re1999-ver-3.5@gameschedule",
@@ -1323,7 +1309,7 @@
     "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-31T04:01:42.368078+00:00"
+    "updated_at": "2026-08-31T04:11:43.357919+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1360,7 +1346,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-08-31T04:01:42.368078+00:00"
+    "updated_at": "2026-08-31T04:11:43.357919+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1421,7 +1407,7 @@
     "end": "2026-09-01T09:59:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-31T04:01:42.368078+00:00",
+    "updated_at": "2026-08-31T04:11:43.357919+00:00",
     "url_kind": null
   },
   "zzz-banner-e4ca466d83@gameschedule": {
@@ -1461,7 +1447,7 @@
     "end": "2026-09-08T06:59:59+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-31T04:01:42.368078+00:00",
+    "updated_at": "2026-08-31T04:11:43.357919+00:00",
     "url_kind": null
   },
   "endfield-hint-hpnle8SnWwQ@gameschedule": {
@@ -1795,6 +1781,32 @@
     "note": "공식 발표. 09-03~09-24",
     "version": null
   },
+  "manual-f619f480@gameschedule": {
+    "uid": "manual-f619f480@gameschedule",
+    "game": "리버스: 1999",
+    "type": "banner",
+    "title": "[픽업] 리아논",
+    "start": "2026-08-16T15:00:00+00:00",
+    "end": "2026-09-24T14:59:59+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-08-31T04:10:38.963895+00:00",
+    "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
+    "confirmed": true
+  },
+  "manual-9c3b241b@gameschedule": {
+    "uid": "manual-9c3b241b@gameschedule",
+    "game": "원신",
+    "type": "banner",
+    "title": "[픽업] 플린스, 이네파",
+    "start": "2026-09-01T10:00:00+00:00",
+    "end": "2026-09-22T09:59:00+00:00",
+    "url": "https://www.hoyolab.com/article/46469879",
+    "source": "manual",
+    "updated_at": "2026-08-31T04:10:38.963895+00:00",
+    "note": "복각 픽업. HoYoLAB API 는 현재 페이즈만 주므로 시작 전까지 자동으로 안 잡힌다.",
+    "confirmed": true
+  },
   "re1999-shp-2026-09-03@gameschedule": {
     "uid": "re1999-shp-2026-09-03@gameschedule",
     "game": "리버스: 1999",
@@ -1806,7 +1818,7 @@
     "url": null,
     "url_kind": null,
     "source": "showcase",
-    "updated_at": "2026-08-31T04:00:31.829981+00:00",
+    "updated_at": "2026-08-31T04:11:43.357919+00:00",
     "confirmed": true
   }
 }
