@@ -49,18 +49,10 @@ URL:https://game.naver.com/lounge/WutheringWaves/board/detail/7823821
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
-DTEND:20261021T150000Z
-DTSTART:20260930T150000Z
+DTEND:20261020T150000Z
+DTSTART:20260929T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 여우의 별자리
-UID:wuwa-pred-2026-10-01@gameschedule
-URL:https://www.youtube.com/watch?v=SELlbnDGBlA
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
-DTEND:20261111T150000Z
-DTSTART:20261021T150000Z
-SUMMARY:[명조: 워더링 웨이브] [예측] 쇄명
-UID:wuwa-pred-2026-10-22@gameschedule
+UID:wuwa-pred-2026-09-30@gameschedule
 URL:https://www.youtube.com/watch?v=SELlbnDGBlA
 END:VEVENT
 BEGIN:VEVENT
@@ -198,6 +190,14 @@ DTSTART:20260820T150000Z
 SUMMARY:[이환] PC방캉스
 UID:manual-a24f63c1@gameschedule
 URL:https://x.com/NTE_KO/status/2087494304990151022
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DTEND:20261110T150000Z
+DTSTART:20261020T150000Z
+SUMMARY:[명조: 워더링 웨이브] [예측] 쇄명
+UID:wuwa-pred-2026-10-21@gameschedule
+URL:https://www.youtube.com/watch?v=SELlbnDGBlA
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -340,10 +340,20 @@ SUMMARY:[붕괴: 스타레일] [픽업] 로빈•서머레토\, 히아킨
 UID:hsr-banner-91@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:경연\, 히유키\, 모니에 종료 2일 전
+TRIGGER:P2W4DT10H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:경연\, 히유키\, 모니에 종료 3시간 전
+TRIGGER:P2W6DT7H59M
+END:VALARM
 DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
-DTEND:20260930T150000Z
+DTEND:20260930T015900Z
 DTSTART:20260909T150000Z
-SUMMARY:[명조: 워더링 웨이브] [예측] 경연\, 히유키\, 모니에
+SUMMARY:[명조: 워더링 웨이브] [픽업] 경연\, 히유키\, 모니에
 UID:wuwa-pred-2026-09-10@gameschedule
 URL:https://www.youtube.com/watch?v=SELlbnDGBlA
 END:VEVENT
