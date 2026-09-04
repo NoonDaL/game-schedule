@@ -182,10 +182,20 @@ SUMMARY:[원신] [픽업] 플린스\, 이네파
 UID:genshin-banner-225@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:링코\, 호토리 종료 2일 전
+TRIGGER:P2W5D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:링코\, 호토리 종료 3시간 전
+TRIGGER:P2W6DT21H
+END:VALARM
 DESCRIPTION:https://www.youtube.com/watch?v=EHrwyVbZSAo
 DTEND:20260929T150000Z
 DTSTART:20260908T150000Z
-SUMMARY:[이환] [예측] 링코\, 호토리
+SUMMARY:[이환] [픽업] 링코\, 호토리
 UID:ihwan-shp-2026-09-09@gameschedule
 URL:https://www.youtube.com/watch?v=EHrwyVbZSAo
 END:VEVENT
