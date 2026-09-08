@@ -486,15 +486,19 @@ const tlLabel = e => e.type === "broadcast"
 /* 상태 = 예약 팔레트. 색 단독으로 의미를 지지 않게 글리프와 라벨을 함께 돌려준다.
    글리프는 모양이 서로 달라서 흑백/CVD 에서도 구분된다. */
 function statusOf(e, now) {
+  /* 남은 일수는 달력 날짜 차이(dayGap)로 센다. 리스트 D-day 와 같은 식이라야
+     히어로·배지·표·리스트가 한 항목에 대해 같은 숫자를 말한다. 예전엔 여기서만
+     ceil((종료시각-지금)/DAY) 를 써서, 자투리 시간이 하루로 부풀어 히어로가
+     리스트보다 상시 +1 되곤 했다 (9/8 종료를 히어로 5일 / 리스트 D-4 로). */
   const s = +new Date(e.start), en = +endOf(e);
   if (en < now) return { k: "done", label: "종료", g: "·", c: "var(--ink-muted)" };
   if (s <= now) {
-    const d = Math.max(0, Math.ceil((en - now) / DAY));
+    const d = Math.max(0, dayGap(now, en));
     if (d <= 2) return { k: "critical", label: "곧 종료", g: "▲", c: "var(--st-critical)", d, ing: true };
     if (d <= 7) return { k: "warning",  label: "종료 임박", g: "◆", c: "var(--st-warning)", d, ing: true };
     return { k: "good", label: "진행 중", g: "●", c: "var(--st-good)", d, ing: true };
   }
-  const d = Math.max(0, Math.ceil((s - now) / DAY));
+  const d = Math.max(0, dayGap(now, s));
   if (d <= 3) return { k: "soon", label: "곧 시작", g: "◇", c: "var(--st-serious)", d };
   return { k: "future", label: "예정", g: "○", c: "var(--ink-muted)", d };
 }
