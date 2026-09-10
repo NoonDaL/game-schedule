@@ -151,20 +151,10 @@ SUMMARY:[원신] [픽업] 플린스\, 이네파
 UID:genshin-banner-225@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:링코\, 호토리 종료 2일 전
-TRIGGER:P2W5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:링코\, 호토리 종료 3시간 전
-TRIGGER:P2W6DT21H
-END:VALARM
 DESCRIPTION:https://www.youtube.com/watch?v=EHrwyVbZSAo
 DTEND:20260929T150000Z
 DTSTART:20260908T150000Z
-SUMMARY:[이환] [픽업] 링코\, 호토리
+SUMMARY:[이환] [예측] 링코\, 호토리
 UID:ihwan-shp-2026-09-09@gameschedule
 URL:https://www.youtube.com/watch?v=EHrwyVbZSAo
 END:VEVENT
@@ -187,20 +177,10 @@ UID:manual-8b0fff95@gameschedule
 URL:https://game.naver.com/lounge/WutheringWaves/board/detail/8047518
 END:VEVENT
 BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:잔홍\, 나나리 종료 2일 전
-TRIGGER:P2W4DT18H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:잔홍\, 나나리 종료 3시간 전
-TRIGGER:P2W6DT15H59M
-END:VALARM
 DESCRIPTION:https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html
 DTEND:20260908T215900Z
 DTSTART:20260819T030000Z
-SUMMARY:[이환] [픽업] 잔홍\, 나나리
+SUMMARY:[이환] [예측] 잔홍\, 나나리
 UID:ihwan-off-263607-잔홍@gameschedule
 URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html
 END:VEVENT
@@ -234,19 +214,9 @@ SUMMARY:[젠레스 존 제로] [픽업] 레미엘
 UID:zzz-banner-e4ca466d83@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:미스 스트레인저 종료 2일 전
-TRIGGER:P2W5D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:미스 스트레인저 종료 3시간 전
-TRIGGER:P2W6DT21H
-END:VALARM
 DTEND:20260923T150000Z
 DTSTART:20260902T150000Z
-SUMMARY:[리버스: 1999] [픽업] 미스 스트레인저
+SUMMARY:[리버스: 1999] [예측] 미스 스트레인저
 UID:re1999-shp-2026-09-03@gameschedule
 END:VEVENT
 BEGIN:VEVENT
@@ -266,20 +236,10 @@ SUMMARY:[붕괴: 스타레일] [픽업] 로빈•서머레토\, 히아킨
 UID:hsr-banner-91@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:이본 종료 2일 전
-TRIGGER:P2W4D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:이본 종료 3시간 전
-TRIGGER:P2W5DT21H
-END:VALARM
 DESCRIPTION:https://endfield.gryphline.com/ko-kr/news/5208
 DTEND:20261014T040000Z
 DTSTART:20260924T040000Z
-SUMMARY:[명일방주: 엔드필드] [픽업] 이본
+SUMMARY:[명일방주: 엔드필드] [예측] 이본
 UID:endfield-off-5208-1@gameschedule
 URL:https://endfield.gryphline.com/ko-kr/news/5208
 END:VEVENT

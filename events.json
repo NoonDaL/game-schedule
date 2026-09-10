@@ -100,6 +100,11 @@
       "히아킨"
     ],
     "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "date_evidence": {
+      "method": "fan_api_period"
+    },
     "rerun": false,
     "version": "4.5",
     "version_name": "천성에 던진 승부수",
@@ -107,7 +112,7 @@
     "end": "2026-09-12T10:59:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "hsr-banner-93@gameschedule": {
     "uid": "hsr-banner-93@gameschedule",
@@ -119,6 +124,11 @@
       "애쉬베일"
     ],
     "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "date_evidence": {
+      "method": "fan_api_period"
+    },
     "rerun": false,
     "version": "4.5",
     "version_name": "천성에 던진 승부수",
@@ -126,7 +136,7 @@
     "end": "2026-09-27T19:59:00+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "wuwa-AyLdwN2PNU4@gameschedule": {
     "uid": "wuwa-AyLdwN2PNU4@gameschedule",
@@ -927,15 +937,22 @@
     "uid": "ihwan-shp-2026-09-09@gameschedule",
     "game": "이환",
     "type": "banner",
-    "title": "[픽업] 링코, 호토리",
+    "title": "[예측] 링코, 호토리",
     "version_name": "안개 너머의 별빛",
     "start": "2026-09-08T15:00:00+00:00",
     "end": "2026-09-29T15:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=EHrwyVbZSAo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00",
-    "confirmed": true
+    "updated_at": "2026-09-10T20:45:06.950254+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "showcase_duration",
+      "url": "https://www.youtube.com/watch?v=EHrwyVbZSAo"
+    }
   },
   "wuwa-win-2026-07-30@gameschedule": {
     "uid": "wuwa-win-2026-07-30@gameschedule",
@@ -984,8 +1001,15 @@
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00",
-    "confirmed": true
+    "updated_at": "2026-09-10T20:45:06.950254+00:00",
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "explicit_window",
+      "url": "https://www.youtube.com/watch?v=SELlbnDGBlA"
+    }
   },
   "wuwa-hint-fybKvkz0Izs@gameschedule": {
     "uid": "wuwa-hint-fybKvkz0Izs@gameschedule",
@@ -1083,50 +1107,69 @@
       "수수"
     ],
     "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5229",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "wuwa-off-5049@gameschedule": {
     "uid": "wuwa-off-5049@gameschedule",
     "game": "명조: 워더링 웨이브",
     "type": "banner",
-    "title": "[픽업] 양양 · 현령",
+    "title": "[예측] 양양 · 현령",
     "version_name": "깃털에 실은 만물의 소리",
     "start": "2026-07-09T15:00:00+00:00",
     "end": "2026-07-30T01:59:00+00:00",
     "chars": [
       "양양 · 현령"
     ],
-    "confirmed": true,
+    "confirmed": false,
+    "start_confirmed": false,
+    "end_confirmed": true,
+    "predicted": true,
+    "date_evidence": {
+      "method": "notice_end_only"
+    },
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5049",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "wuwa-off-4888@gameschedule": {
     "uid": "wuwa-off-4888@gameschedule",
     "game": "명조: 워더링 웨이브",
     "type": "banner",
-    "title": "[픽업] 루실라",
+    "title": "[예측] 루실라",
     "version_name": "내일에 인화될 기억",
     "start": "2026-06-13T02:00:00+00:00",
     "end": "2026-07-09T03:59:00+00:00",
     "chars": [
       "루실라"
     ],
-    "confirmed": true,
+    "confirmed": false,
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/4888",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-08-19T17:27:28.463071+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "legacy_requires_recheck",
+      "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/4888"
+    }
   },
   "ihwan-off-263607-잔홍@gameschedule": {
     "uid": "ihwan-off-263607-잔홍@gameschedule",
     "game": "이환",
     "type": "banner",
-    "title": "[픽업] 잔홍, 나나리",
+    "title": "[예측] 잔홍, 나나리",
     "version_name": "안개 너머의 별빛",
     "start": "2026-08-19T03:00:00+00:00",
     "end": "2026-09-08T21:59:00+00:00",
@@ -1134,28 +1177,42 @@
       "잔홍",
       "나나리"
     ],
-    "confirmed": true,
+    "confirmed": false,
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00"
+    "updated_at": "2026-09-10T16:15:23.925475+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "legacy_requires_recheck",
+      "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html"
+    }
   },
   "ihwan-off-263292-일로이@gameschedule": {
     "uid": "ihwan-off-263292-일로이@gameschedule",
     "game": "이환",
     "type": "banner",
-    "title": "[픽업] 일로이",
+    "title": "[예측] 일로이",
     "version_name": "생명선",
     "start": "2026-07-29T03:00:00+00:00",
     "end": "2026-08-18T21:59:00+00:00",
     "chars": [
       "일로이"
     ],
-    "confirmed": true,
+    "confirmed": false,
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
+    "updated_at": "2026-08-19T17:27:28.463071+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "legacy_requires_recheck",
+      "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html"
+    }
   },
   "wuwa-up-97wYXzPrjcQ@gameschedule": {
     "uid": "wuwa-up-97wYXzPrjcQ@gameschedule",
@@ -1217,7 +1274,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1231,7 +1288,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "re1999-ver-3.5@gameschedule": {
     "uid": "re1999-ver-3.5@gameschedule",
@@ -1245,7 +1302,7 @@
     "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1282,7 +1339,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1395,28 +1452,40 @@
     ],
     "start": "2026-06-05T04:00:00+00:00",
     "end": "2026-06-26T03:59:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": true,
     "confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
     "url": "https://endfield.gryphline.com/ko-kr/news/0758",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "endfield-off-0758-1@gameschedule": {
     "uid": "endfield-off-0758-1@gameschedule",
     "game": "명일방주: 엔드필드",
     "type": "banner",
-    "title": "[픽업] 카뮤",
+    "title": "[예측] 카뮤",
     "version_name": "과거를 찾아서",
     "chars": [
       "카뮤"
     ],
     "start": "2026-06-26T04:00:00+00:00",
     "end": "2026-07-16T04:00:00+00:00",
-    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "next_version_estimate"
+    },
     "url": "https://endfield.gryphline.com/ko-kr/news/0758",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "endfield-off-5200-0@gameschedule": {
     "uid": "endfield-off-5200-0@gameschedule",
@@ -1429,28 +1498,40 @@
     ],
     "start": "2026-07-16T04:00:00+00:00",
     "end": "2026-08-09T03:59:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": true,
     "confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
     "url": "https://endfield.gryphline.com/ko-kr/news/5200",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-23T12:53:36.518342+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "endfield-off-5200-1@gameschedule": {
     "uid": "endfield-off-5200-1@gameschedule",
     "game": "명일방주: 엔드필드",
     "type": "banner",
-    "title": "[픽업] 리노",
+    "title": "[예측] 리노",
     "version_name": "심연으로",
     "chars": [
       "리노"
     ],
     "start": "2026-08-09T04:00:00+00:00",
     "end": "2026-09-02T04:00:00+00:00",
-    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "next_version_estimate"
+    },
     "url": "https://endfield.gryphline.com/ko-kr/news/5200",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-23T15:23:57.021825+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "manual-65f4cc87@gameschedule": {
     "uid": "manual-65f4cc87@gameschedule",
@@ -1584,16 +1665,23 @@
     "uid": "endfield-off-0751-1@gameschedule",
     "game": "명일방주: 엔드필드",
     "type": "banner",
-    "title": "[픽업] 찬란한 빛의 축제",
+    "title": "[예측] 찬란한 빛의 축제",
     "version_name": "봄날의 새벽",
     "chars": [],
     "start": "2026-05-14T04:00:00+00:00",
     "end": "2026-06-05T04:00:00+00:00",
-    "confirmed": true,
+    "confirmed": false,
     "url": "https://endfield.gryphline.com/ko-kr/news/0751",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-23T15:23:57.021825+00:00"
+    "updated_at": "2026-08-23T15:23:57.021825+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "legacy_requires_recheck",
+      "url": "https://endfield.gryphline.com/ko-kr/news/0751"
+    }
   },
   "wuwa-up-U0pv2cRGgTs@gameschedule": {
     "uid": "wuwa-up-U0pv2cRGgTs@gameschedule",
@@ -1653,6 +1741,11 @@
       "남궁우"
     ],
     "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "date_evidence": {
+      "method": "fan_api_period"
+    },
     "rerun": false,
     "version": "3.2",
     "version_name": null,
@@ -1660,7 +1753,7 @@
     "end": "2026-09-30T03:59:59+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-08-31T04:25:25.132698+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "manual-09f003f5@gameschedule": {
     "uid": "manual-09f003f5@gameschedule",
@@ -1687,7 +1780,7 @@
     "end": "2026-09-24T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00",
+    "updated_at": "2026-09-10T20:45:06.950254+00:00",
     "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1696,15 +1789,22 @@
     "uid": "re1999-shp-2026-09-03@gameschedule",
     "game": "리버스: 1999",
     "type": "banner",
-    "title": "[픽업] 미스 스트레인저",
+    "title": "[예측] 미스 스트레인저",
     "version_name": null,
     "start": "2026-09-02T15:00:00+00:00",
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "url_kind": null,
     "source": "showcase",
-    "updated_at": "2026-08-31T13:19:50.948633+00:00",
-    "confirmed": true
+    "updated_at": "2026-09-10T20:45:06.950254+00:00",
+    "start_confirmed": true,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "showcase_duration",
+      "url": null
+    }
   },
   "manual-d9ddd476@gameschedule": {
     "uid": "manual-d9ddd476@gameschedule",
@@ -1730,8 +1830,15 @@
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-08-31T13:19:50.948633+00:00",
-    "predicted": true
+    "updated_at": "2026-09-10T20:45:06.950254+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "cycle",
+      "url": "https://www.youtube.com/watch?v=SELlbnDGBlA"
+    }
   },
   "wuwa-pred-2026-10-21@gameschedule": {
     "uid": "wuwa-pred-2026-10-21@gameschedule",
@@ -1744,8 +1851,15 @@
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-08-31T04:55:24.276578+00:00",
-    "predicted": true
+    "updated_at": "2026-09-10T20:45:06.950254+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "cycle",
+      "url": "https://www.youtube.com/watch?v=SELlbnDGBlA"
+    }
   },
   "genshin-banner-225@gameschedule": {
     "uid": "genshin-banner-225@gameschedule",
@@ -1757,6 +1871,11 @@
       "이네파"
     ],
     "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "date_evidence": {
+      "method": "fan_api_period"
+    },
     "rerun": false,
     "version": "7.0",
     "version_name": "신이 사랑하지 않은 설국",
@@ -1764,7 +1883,13 @@
     "end": "2026-09-22T06:59:59+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00",
+    "updated_at": "2026-09-10T20:45:06.950254+00:00",
+    "predicted": false,
+    "evidence_uids": [
+      "genshin-banner-225@gameschedule",
+      "genshin-banner-226@gameschedule"
+    ],
+    "evidence_urls": [],
     "url_kind": null
   },
   "re1999-hint-45WScu3uUFc@gameschedule": {
@@ -1790,28 +1915,40 @@
     ],
     "start": "2026-09-02T04:00:00+00:00",
     "end": "2026-09-30T03:59:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": true,
     "confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
     "url": "https://endfield.gryphline.com/ko-kr/news/5208",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-09-02T04:07:43.389564+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "endfield-off-5208-1@gameschedule": {
     "uid": "endfield-off-5208-1@gameschedule",
     "game": "명일방주: 엔드필드",
     "type": "banner",
-    "title": "[픽업] 이본",
+    "title": "[예측] 이본",
     "version_name": "눈꽃 속에 피어난 고요한 꿈",
     "chars": [
       "이본"
     ],
     "start": "2026-09-24T04:00:00+00:00",
     "end": "2026-10-14T04:00:00+00:00",
-    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "next_version_estimate"
+    },
     "url": "https://endfield.gryphline.com/ko-kr/news/5208",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-09-02T04:07:43.389564+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "hsr-hint-oU2LWrO-w-A@gameschedule": {
     "uid": "hsr-hint-oU2LWrO-w-A@gameschedule",
@@ -1882,7 +2019,7 @@
     "start": "2026-09-12T12:00:00Z",
     "url": "https://www.youtube.com/watch?v=woqqdemMAgQ",
     "source": "youtube",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "wuwa-hint-wRupj1mzBQE@gameschedule": {
     "uid": "wuwa-hint-wRupj1mzBQE@gameschedule",
@@ -1905,6 +2042,11 @@
       "프로미아"
     ],
     "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "date_evidence": {
+      "method": "fan_api_period"
+    },
     "rerun": false,
     "version": "3.2",
     "version_name": null,
@@ -1912,7 +2054,7 @@
     "end": "2026-10-20T06:59:59+00:00",
     "url": null,
     "source": "hoyolab",
-    "updated_at": "2026-09-09T04:20:09.204327+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "ihwan-wUvOmdxcQnY@gameschedule": {
     "uid": "ihwan-wUvOmdxcQnY@gameschedule",
@@ -1923,6 +2065,6 @@
     "start": "2026-09-16T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=wUvOmdxcQnY",
     "source": "youtube",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00"
+    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   }
 }
