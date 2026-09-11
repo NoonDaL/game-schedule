@@ -933,27 +933,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "ihwan-shp-2026-09-09@gameschedule": {
-    "uid": "ihwan-shp-2026-09-09@gameschedule",
-    "game": "이환",
-    "type": "banner",
-    "title": "[예측] 링코, 호토리",
-    "version_name": "안개 너머의 별빛",
-    "start": "2026-09-08T15:00:00+00:00",
-    "end": "2026-09-29T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=EHrwyVbZSAo",
-    "url_kind": "공지",
-    "source": "showcase",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00",
-    "start_confirmed": false,
-    "end_confirmed": false,
-    "confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "showcase_duration",
-      "url": "https://www.youtube.com/watch?v=EHrwyVbZSAo"
-    }
-  },
   "wuwa-win-2026-07-30@gameschedule": {
     "uid": "wuwa-win-2026-07-30@gameschedule",
     "game": "명조: 워더링 웨이브",
@@ -1001,7 +980,7 @@
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00",
+    "updated_at": "2026-09-11T03:11:34.234617+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1169,7 +1148,7 @@
     "uid": "ihwan-off-263607-잔홍@gameschedule",
     "game": "이환",
     "type": "banner",
-    "title": "[예측] 잔홍, 나나리",
+    "title": "[픽업] 잔홍, 나나리",
     "version_name": "안개 너머의 별빛",
     "start": "2026-08-19T03:00:00+00:00",
     "end": "2026-09-08T21:59:00+00:00",
@@ -1177,42 +1156,47 @@
       "잔홍",
       "나나리"
     ],
-    "confirmed": false,
+    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-09-10T16:15:23.925475+00:00",
-    "start_confirmed": false,
-    "end_confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "legacy_requires_recheck",
-      "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html"
-    }
+    "updated_at": "2026-09-11T03:11:34.234617+00:00",
+    "evidence_uids": [
+      "ihwan-off-263607-나나리@gameschedule",
+      "ihwan-off-263607-잔홍@gameschedule"
+    ],
+    "evidence_urls": [
+      "https://nte.perfectworld.com/kr/article/news/gamenews/20260817/263607.html"
+    ]
   },
   "ihwan-off-263292-일로이@gameschedule": {
     "uid": "ihwan-off-263292-일로이@gameschedule",
     "game": "이환",
     "type": "banner",
-    "title": "[예측] 일로이",
+    "title": "[픽업] 일로이",
     "version_name": "생명선",
     "start": "2026-07-29T03:00:00+00:00",
     "end": "2026-08-18T21:59:00+00:00",
     "chars": [
       "일로이"
     ],
-    "confirmed": false,
+    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
     "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
-    "start_confirmed": false,
-    "end_confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "legacy_requires_recheck",
-      "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260728/263292.html"
-    }
+    "updated_at": "2026-09-11T03:11:34.234617+00:00"
   },
   "wuwa-up-97wYXzPrjcQ@gameschedule": {
     "uid": "wuwa-up-97wYXzPrjcQ@gameschedule",
@@ -1274,7 +1258,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00"
+    "updated_at": "2026-09-11T03:11:34.234617+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1288,7 +1272,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00"
+    "updated_at": "2026-09-11T03:11:34.234617+00:00"
   },
   "re1999-ver-3.5@gameschedule": {
     "uid": "re1999-ver-3.5@gameschedule",
@@ -1302,7 +1286,7 @@
     "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00"
+    "updated_at": "2026-09-11T03:11:34.234617+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1780,7 +1764,7 @@
     "end": "2026-09-24T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00",
+    "updated_at": "2026-09-11T03:11:34.234617+00:00",
     "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2065,6 +2049,37 @@
     "start": "2026-09-16T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=wUvOmdxcQnY",
     "source": "youtube",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00"
+    "updated_at": "2026-09-11T03:11:34.234617+00:00"
+  },
+  "ihwan-off-263945-링코@gameschedule": {
+    "uid": "ihwan-off-263945-링코@gameschedule",
+    "game": "이환",
+    "type": "banner",
+    "title": "[픽업] 링코, 호토리",
+    "version_name": "안개 너머의 별빛",
+    "start": "2026-09-09T03:00:00+00:00",
+    "end": "2026-09-29T21:59:00+00:00",
+    "chars": [
+      "링코",
+      "호토리"
+    ],
+    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
+    "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260908/263945.html",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-09-11T03:11:34.234617+00:00",
+    "evidence_uids": [
+      "ihwan-off-263945-링코@gameschedule",
+      "ihwan-off-263945-호토리@gameschedule"
+    ],
+    "evidence_urls": [
+      "https://nte.perfectworld.com/kr/article/news/gamenews/20260908/263945.html"
+    ]
   }
 }

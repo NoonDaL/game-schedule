@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-10T20:45:06.950254+00:00",
+  "checked_at": "2026-09-11T03:11:34.234617+00:00",
   "counts": {
     "broadcast": 14,
     "banner": 31,
@@ -14,14 +14,14 @@
     "붕괴: 스타레일: 앞으로 17일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
     "이환: 앞으로 19일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
     "원신: 앞으로 11일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
-    "이환 / official: 수집 실패 — 기존 정보 유지 (Banner notice found but period could not be parsed)"
+    "원신 / youtube: 수집 실패 — 기존 정보 유지 (YouTube discovery or metadata collection failed)"
   ],
   "sources": {
     "wuwa:youtube": {
       "game": "명조: 워더링 웨이브",
       "source": "youtube",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 34,
       "missing": []
@@ -29,8 +29,8 @@
     "hsr:youtube": {
       "game": "붕괴: 스타레일",
       "source": "youtube",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 21,
       "missing": []
@@ -38,8 +38,8 @@
     "ihwan:youtube": {
       "game": "이환",
       "source": "youtube",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 14,
       "missing": []
@@ -47,8 +47,8 @@
     "endfield:youtube": {
       "game": "명일방주: 엔드필드",
       "source": "youtube",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 9,
       "missing": []
@@ -56,17 +56,17 @@
     "genshin:youtube": {
       "game": "원신",
       "source": "youtube",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
       "last_success_at": "2026-09-10T20:45:06.950254+00:00",
-      "state": "ok",
-      "count": 3,
-      "missing": []
+      "state": "error",
+      "error": "YouTube discovery or metadata collection failed",
+      "count": 0
     },
     "zzz:youtube": {
       "game": "젠레스 존 제로",
       "source": "youtube",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 3,
       "missing": []
@@ -74,8 +74,8 @@
     "re1999:youtube": {
       "game": "리버스: 1999",
       "source": "youtube",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 11,
       "missing": []
@@ -83,8 +83,8 @@
     "hsr:hoyolab": {
       "game": "붕괴: 스타레일",
       "source": "hoyolab",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -92,8 +92,8 @@
     "genshin:hoyolab": {
       "game": "원신",
       "source": "hoyolab",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -101,8 +101,8 @@
     "zzz:hoyolab": {
       "game": "젠레스 존 제로",
       "source": "hoyolab",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -110,8 +110,8 @@
     "wuwa:official": {
       "game": "명조: 워더링 웨이브",
       "source": "official",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -119,17 +119,17 @@
     "ihwan:official": {
       "game": "이환",
       "source": "official",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": null,
-      "state": "error",
-      "error": "Banner notice found but period could not be parsed",
-      "count": 0
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
+      "state": "ok",
+      "count": 5,
+      "missing": []
     },
     "endfield:official": {
       "game": "명일방주: 엔드필드",
       "source": "official",
-      "attempted_at": "2026-09-10T20:45:06.950254+00:00",
-      "last_success_at": "2026-09-10T20:45:06.950254+00:00",
+      "attempted_at": "2026-09-11T03:11:34.234617+00:00",
+      "last_success_at": "2026-09-11T03:11:34.234617+00:00",
       "state": "ok",
       "count": 6,
       "missing": []
@@ -157,8 +157,8 @@
       "including_estimates_until": "2026-09-22T06:59:59+00:00"
     },
     "이환": {
-      "confirmed_until": "2026-09-10T20:45:06.950254+00:00",
-      "including_estimates_until": "2026-09-29T15:00:00+00:00"
+      "confirmed_until": "2026-09-29T21:59:00+00:00",
+      "including_estimates_until": "2026-09-29T21:59:00+00:00"
     },
     "젠레스 존 제로": {
       "confirmed_until": "2026-10-20T06:59:59+00:00",
