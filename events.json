@@ -968,7 +968,7 @@
     "url": "https://www.youtube.com/watch?v=DxQWoAaT7ZI",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-11T16:36:04.257472+00:00",
+    "updated_at": "2026-09-11T16:50:48.135819+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1311,7 +1311,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:36:04.257472+00:00"
+    "updated_at": "2026-09-11T16:50:48.135819+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1752,7 +1752,7 @@
     "end": "2026-09-24T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-11T16:36:04.257472+00:00",
+    "updated_at": "2026-09-11T16:50:48.135819+00:00",
     "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1991,7 +1991,7 @@
     "start": "2026-09-12T12:00:00Z",
     "url": "https://www.youtube.com/watch?v=woqqdemMAgQ",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:36:04.257472+00:00"
+    "updated_at": "2026-09-11T16:50:48.135819+00:00"
   },
   "wuwa-hint-wRupj1mzBQE@gameschedule": {
     "uid": "wuwa-hint-wRupj1mzBQE@gameschedule",
@@ -2037,7 +2037,7 @@
     "start": "2026-09-16T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=wUvOmdxcQnY",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:36:04.257472+00:00"
+    "updated_at": "2026-09-11T16:50:48.135819+00:00"
   },
   "ihwan-off-263945-링코@gameschedule": {
     "uid": "ihwan-off-263945-링코@gameschedule",
@@ -2129,7 +2129,7 @@
     "url": "https://www.youtube.com/watch?v=v6SDjsbpKYA",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-11T16:36:04.257472+00:00",
+    "updated_at": "2026-09-11T16:50:48.135819+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2150,7 +2150,7 @@
     "url": "https://www.youtube.com/watch?v=hOPONN3Ynqk",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-11T16:36:04.257472+00:00",
+    "updated_at": "2026-09-11T16:50:48.135819+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2298,11 +2298,13 @@
     "title": "버전 출시",
     "start": "2026-09-23T15:00:00+00:00",
     "end": null,
-    "chars": [],
+    "chars": [
+      "아델라이드·파연"
+    ],
     "url": "https://www.youtube.com/watch?v=j4GviTMmQU4",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:23:07.293191+00:00"
+    "updated_at": "2026-09-11T16:50:48.135819+00:00"
   },
   "pgr-hint-VgxOiwKyDZU@gameschedule": {
     "uid": "pgr-hint-VgxOiwKyDZU@gameschedule",
@@ -2418,5 +2420,43 @@
     "url_kind": "공지",
     "source": "official",
     "updated_at": "2026-09-11T16:23:07.293191+00:00"
+  },
+  "pgr-rel-2026-06-01@gameschedule": {
+    "uid": "pgr-rel-2026-06-01@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "release",
+    "version": null,
+    "version_name": "장로귀항",
+    "title": "버전 출시",
+    "start": "2026-06-01T15:00:00+00:00",
+    "end": null,
+    "chars": [
+      "루시아·역면"
+    ],
+    "url": "https://www.youtube.com/watch?v=OXBI-lrK3aU",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-09-11T16:50:48.135819+00:00"
+  },
+  "pgr-shp-2026-09-24@gameschedule": {
+    "uid": "pgr-shp-2026-09-24@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "banner",
+    "title": "[예측] 아델라이드·파연",
+    "version_name": "신념의 메아리",
+    "start": "2026-09-23T15:00:00+00:00",
+    "end": "2026-10-26T15:00:00+00:00",
+    "url": "https://www.youtube.com/watch?v=j4GviTMmQU4",
+    "url_kind": "공지",
+    "source": "showcase",
+    "updated_at": "2026-09-11T16:50:48.135819+00:00",
+    "start_confirmed": true,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "showcase_duration",
+      "url": "https://www.youtube.com/watch?v=j4GviTMmQU4"
+    }
   }
 }

@@ -90,6 +90,14 @@ SUMMARY:[붕괴: 스타레일] [픽업] 어벤츄린•웨이브\, 애쉬베일
 UID:hsr-banner-93@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=j4GviTMmQU4
+DTEND:20261026T150000Z
+DTSTART:20260923T150000Z
+SUMMARY:[퍼니싱: 그레이 레이븐] [예측] 아델라이드·파연
+UID:pgr-shp-2026-09-24@gameschedule
+URL:https://www.youtube.com/watch?v=j4GviTMmQU4
+END:VEVENT
+BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:행사 종료 2일 전
