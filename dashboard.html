@@ -988,11 +988,10 @@ function bindTips(root) {
 }
 
 init();
-// Recompute today's sections at midnight and scheduled start/end boundaries.
-setInterval(() => { if (EVENTS.length) renderAll(); }, 60000);
-document.addEventListener("visibilitychange", () => {
-  if (!document.hidden && EVENTS.length) renderAll();
-});
+/* 주기적으로 다시 그리지 않는다. 1분마다(그리고 탭으로 돌아올 때) renderAll 을
+   돌렸더니, 목록 행 등장 애니메이션이 매번 다시 재생되고 타임라인 가로 스크롤이
+   오늘 위치로 튀어서 페이지가 계속 새로고침되는 것처럼 보였다(2026-09-11 제거).
+   날짜·D-day 는 페이지를 새로 열면 갱신된다. */
 </script>
 </body>
 </html>
