@@ -821,18 +821,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "hsr-hint-tZsPKEtpg2I@gameschedule": {
-    "uid": "hsr-hint-tZsPKEtpg2I@gameschedule",
-    "game": "붕괴: 스타레일",
-    "type": "hint",
-    "title": "에바네시아",
-    "start": "2026-05-14T12:01:23Z",
-    "end": null,
-    "url": "https://www.youtube.com/watch?v=tZsPKEtpg2I",
-    "url_kind": "쇼케이스",
-    "source": "youtube",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
   "ihwan-MmUEE_e1f1w@gameschedule": {
     "uid": "ihwan-MmUEE_e1f1w@gameschedule",
     "game": "이환",
@@ -980,7 +968,7 @@
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00",
+    "updated_at": "2026-09-11T14:25:16.662707+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1258,7 +1246,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00"
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1272,7 +1260,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00"
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
   },
   "re1999-ver-3.5@gameschedule": {
     "uid": "re1999-ver-3.5@gameschedule",
@@ -1286,7 +1274,7 @@
     "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00"
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1323,7 +1311,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00"
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1764,7 +1752,7 @@
     "end": "2026-09-24T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00",
+    "updated_at": "2026-09-11T14:25:16.662707+00:00",
     "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2003,7 +1991,7 @@
     "start": "2026-09-12T12:00:00Z",
     "url": "https://www.youtube.com/watch?v=woqqdemMAgQ",
     "source": "youtube",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00"
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
   },
   "wuwa-hint-wRupj1mzBQE@gameschedule": {
     "uid": "wuwa-hint-wRupj1mzBQE@gameschedule",
@@ -2049,7 +2037,7 @@
     "start": "2026-09-16T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=wUvOmdxcQnY",
     "source": "youtube",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00"
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
   },
   "ihwan-off-263945-링코@gameschedule": {
     "uid": "ihwan-off-263945-링코@gameschedule",
@@ -2135,13 +2123,13 @@
     "game": "이환",
     "type": "banner",
     "title": "[예측] 레이븐",
-    "version_name": "안개 너머의 별빛",
+    "version_name": "누구를 위하여 기도를 올리나",
     "start": "2026-09-29T21:59:00+00:00",
     "end": "2026-10-20T21:59:00+00:00",
     "url": "https://www.youtube.com/watch?v=v6SDjsbpKYA",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00",
+    "updated_at": "2026-09-11T14:25:16.662707+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2156,7 +2144,7 @@
     "game": "이환",
     "type": "banner",
     "title": "[예측] 아카네 린",
-    "version_name": null,
+    "version_name": "누구를 위하여 기도를 올리나",
     "start": "2026-10-20T21:59:00+00:00",
     "end": "2026-11-10T21:59:00+00:00",
     "url": "https://www.youtube.com/watch?v=hOPONN3Ynqk",
@@ -2171,5 +2159,45 @@
       "method": "upcoming_phase",
       "url": "https://www.youtube.com/watch?v=hOPONN3Ynqk"
     }
+  },
+  "wuwa-hint-Y1Ep8Zr56u4@gameschedule": {
+    "uid": "wuwa-hint-Y1Ep8Zr56u4@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "hint",
+    "title": "경연",
+    "start": "2026-09-11T10:00:02Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=Y1Ep8Zr56u4",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
+  },
+  "ihwan-ver-1.3@gameschedule": {
+    "uid": "ihwan-ver-1.3@gameschedule",
+    "game": "이환",
+    "type": "version",
+    "version": "1.3",
+    "version_name": "안개 너머의 별빛",
+    "title": "1.3 버전 「안개 너머의 별빛」",
+    "start": "2026-08-08T13:22:15Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=7KQ_fEnYLqo",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
+  },
+  "ihwan-ver-1.4@gameschedule": {
+    "uid": "ihwan-ver-1.4@gameschedule",
+    "game": "이환",
+    "type": "version",
+    "version": "1.4",
+    "version_name": "누구를 위하여 기도를 올리나",
+    "title": "1.4 버전 「누구를 위하여 기도를 올리나」",
+    "start": "2026-09-10T08:30:15Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=wUvOmdxcQnY",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-09-11T14:25:16.662707+00:00"
   }
 }
