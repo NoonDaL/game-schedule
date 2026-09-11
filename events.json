@@ -968,7 +968,7 @@
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00",
+    "updated_at": "2026-09-11T16:00:07.139602+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1246,7 +1246,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00"
+    "updated_at": "2026-09-11T16:00:07.139602+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1260,7 +1260,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00"
+    "updated_at": "2026-09-11T16:00:07.139602+00:00"
   },
   "re1999-ver-3.5@gameschedule": {
     "uid": "re1999-ver-3.5@gameschedule",
@@ -1274,7 +1274,7 @@
     "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00"
+    "updated_at": "2026-09-11T16:00:07.139602+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1311,7 +1311,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00"
+    "updated_at": "2026-09-11T16:00:07.139602+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1752,7 +1752,7 @@
     "end": "2026-09-24T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00",
+    "updated_at": "2026-09-11T16:00:07.139602+00:00",
     "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1991,7 +1991,7 @@
     "start": "2026-09-12T12:00:00Z",
     "url": "https://www.youtube.com/watch?v=woqqdemMAgQ",
     "source": "youtube",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00"
+    "updated_at": "2026-09-11T16:00:07.139602+00:00"
   },
   "wuwa-hint-wRupj1mzBQE@gameschedule": {
     "uid": "wuwa-hint-wRupj1mzBQE@gameschedule",
@@ -2037,7 +2037,7 @@
     "start": "2026-09-16T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=wUvOmdxcQnY",
     "source": "youtube",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00"
+    "updated_at": "2026-09-11T16:00:07.139602+00:00"
   },
   "ihwan-off-263945-링코@gameschedule": {
     "uid": "ihwan-off-263945-링코@gameschedule",
@@ -2129,7 +2129,7 @@
     "url": "https://www.youtube.com/watch?v=v6SDjsbpKYA",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00",
+    "updated_at": "2026-09-11T16:00:07.139602+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2150,7 +2150,7 @@
     "url": "https://www.youtube.com/watch?v=hOPONN3Ynqk",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-11T15:47:54.885450+00:00",
+    "updated_at": "2026-09-11T16:00:07.139602+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2209,12 +2209,11 @@
     "end": "2026-10-05T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-11T14:33:44.871226+00:00",
+    "updated_at": "2026-09-11T16:00:07.139602+00:00",
     "games": [
       "원신",
       "젠레스 존 제로",
-      "붕괴: 스타레일",
-      "붕괴3rd"
+      "붕괴: 스타레일"
     ],
     "confirmed": true
   },
@@ -2227,12 +2226,11 @@
     "end": "2026-10-05T08:00:00+00:00",
     "url": "https://m.ticketlink.co.kr/product/65564",
     "source": "manual",
-    "updated_at": "2026-09-11T14:40:42.953428+00:00",
+    "updated_at": "2026-09-11T16:00:07.139602+00:00",
     "games": [
       "원신",
       "젠레스 존 제로",
-      "붕괴: 스타레일",
-      "붕괴3rd"
+      "붕괴: 스타레일"
     ],
     "url_kind": "예매",
     "confirmed": true
