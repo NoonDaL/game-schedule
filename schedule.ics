@@ -1,8 +1,8 @@
 BEGIN:VCALENDAR
 X-WR-CALNAME:게임 일정
 NAME:게임 일정
-X-WR-CALDESC:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 원신 · 젠레스 존 제로 · 리버스: 1999 픽업/방송 (일부 추정 포함)
-DESCRIPTION:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 원신 · 젠레스 존 제로 · 리버스: 1999 픽업/방송 (일부 추정 포함)
+X-WR-CALDESC:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 원신 · 젠레스 존 제로 · 리버스: 1999 · 퍼니싱: 그레이 레이븐 픽업/방송 (일부 추정 포함)
+DESCRIPTION:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 원신 · 젠레스 존 제로 · 리버스: 1999 · 퍼니싱: 그레이 레이븐 픽업/방송 (일부 추정 포함)
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 VERSION:2.0
@@ -231,6 +231,24 @@ END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
+DESCRIPTION:도쿄 게임쇼 2026 종료 2일 전
+TRIGGER:P2DT23H59M59S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:도쿄 게임쇼 2026 종료 3시간 전
+TRIGGER:P4DT20H59M59S
+END:VALARM
+DESCRIPTION:https://www.inven.co.kr/webzine/news/?news=320734
+DTEND:20260921T145959Z
+DTSTART:20260916T150000Z
+SUMMARY:[기타] 도쿄 게임쇼 2026
+UID:manual-790f0ced@gameschedule
+URL:https://www.inven.co.kr/webzine/news/?news=320734
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
 DESCRIPTION:잔홍\, 나나리 종료 2일 전
 TRIGGER:P2W4DT18H59M
 END:VALARM
@@ -284,6 +302,19 @@ END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
+DESCRIPTION:일러스타 페스 14 종료 3시간 전
+TRIGGER:P1DT20H59M59S
+END:VALARM
+DESCRIPTION:https://illustar.net/performance-list/mEQ8Nzne
+DTEND:20261011T145959Z
+DTSTART:20261009T150000Z
+SUMMARY:[기타] 일러스타 페스 14
+UID:manual-875c8da6@gameschedule
+URL:https://illustar.net/performance-list/mEQ8Nzne
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
 DESCRIPTION:로빈•서머레토\, 히아킨 종료 2일 전
 TRIGGER:P2W1DT8H59M
 END:VALARM
@@ -296,6 +327,19 @@ DTEND:20260912T105900Z
 DTSTART:20260826T020000Z
 SUMMARY:[붕괴: 스타레일] [픽업] 로빈•서머레토\, 히아킨
 UID:hsr-banner-91@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:코믹월드 336 일산 (서코) 종료 3시간 전
+TRIGGER:P1DT20H59M59S
+END:VALARM
+DESCRIPTION:https://comicw.net/c/400
+DTEND:20260913T145959Z
+DTSTART:20260911T150000Z
+SUMMARY:[기타] 코믹월드 336 일산 (서코)
+UID:manual-6ec69df4@gameschedule
+URL:https://comicw.net/c/400
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=v6SDjsbpKYA
@@ -330,6 +374,24 @@ DTSTART:20260910T020000Z
 SUMMARY:[명조: 워더링 웨이브] [픽업] 경연\, 히유키\, 모니에
 UID:wuwa-pred-2026-09-10@gameschedule
 URL:https://www.youtube.com/watch?v=SELlbnDGBlA
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:카레니나·신항 종료 2일 전
+TRIGGER:P4W5DT17H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:카레니나·신항 종료 3시간 전
+TRIGGER:P5WT14H
+END:VALARM
+DESCRIPTION:https://pgr.kurogames.com/kr/news/5286
+DTEND:20260923T200000Z
+DTSTART:20260819T030000Z
+SUMMARY:[퍼니싱: 그레이 레이븐] [픽업] 카레니나·신항
+UID:pgr-off-5286-2026-08-19@gameschedule
+URL:https://pgr.kurogames.com/kr/news/5286
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM

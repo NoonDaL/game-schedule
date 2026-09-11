@@ -125,5 +125,34 @@
     "end": "2026-11-29",
     "url": "https://playeternalreturn.com/posts/news/3837",
     "note": "평촌CGV점·금강스마트점. 4주마다 주차별 특전 변경, 현장 이벤트(일일카페 등)는 추후 공지. 경기도 IP기업 지원사업."
+  },
+  {
+    "game": "기타",
+    "type": "event",
+    "title": "도쿄 게임쇼 2026",
+    "start": "2026-09-17",
+    "end": "2026-09-21",
+    "url": "https://www.inven.co.kr/webzine/news/?news=320734",
+    "url_kind": "기사",
+    "note": "TGS2026. 마쿠하리 멧세. 올해 처음 5일간 개최. 공식 사이트가 아직 2024 페이지로 연결돼 기사 링크."
+  },
+  {
+    "game": "기타",
+    "type": "event",
+    "title": "코믹월드 336 일산 (서코)",
+    "start": "2026-09-12",
+    "end": "2026-09-13",
+    "url": "https://comicw.net/c/400",
+    "note": "일산 킨텍스 제1전시장, 11:00~16:30."
+  },
+  {
+    "game": "기타",
+    "type": "event",
+    "title": "일러스타 페스 14",
+    "start": "2026-10-10",
+    "end": "2026-10-11",
+    "url": "https://illustar.net/performance-list/mEQ8Nzne",
+    "url_kind": "예매",
+    "note": "일산 킨텍스 제1전시장 1·2홀."
   }
 ]

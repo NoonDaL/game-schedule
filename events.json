@@ -968,7 +968,7 @@
     "url": "https://www.youtube.com/watch?v=SELlbnDGBlA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1246,7 +1246,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00"
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1260,7 +1260,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00"
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
   },
   "re1999-ver-3.5@gameschedule": {
     "uid": "re1999-ver-3.5@gameschedule",
@@ -1274,7 +1274,7 @@
     "url": "https://www.youtube.com/watch?v=ainxGEDZpjw",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00"
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1311,7 +1311,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00"
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1752,7 +1752,7 @@
     "end": "2026-09-24T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00",
     "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1991,7 +1991,7 @@
     "start": "2026-09-12T12:00:00Z",
     "url": "https://www.youtube.com/watch?v=woqqdemMAgQ",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00"
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
   },
   "wuwa-hint-wRupj1mzBQE@gameschedule": {
     "uid": "wuwa-hint-wRupj1mzBQE@gameschedule",
@@ -2037,7 +2037,7 @@
     "start": "2026-09-16T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=wUvOmdxcQnY",
     "source": "youtube",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00"
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
   },
   "ihwan-off-263945-링코@gameschedule": {
     "uid": "ihwan-off-263945-링코@gameschedule",
@@ -2129,7 +2129,7 @@
     "url": "https://www.youtube.com/watch?v=v6SDjsbpKYA",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2150,7 +2150,7 @@
     "url": "https://www.youtube.com/watch?v=hOPONN3Ynqk",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-11T16:18:55.444955+00:00",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2247,5 +2247,177 @@
     "updated_at": "2026-09-11T15:47:54.885450+00:00",
     "note": "평촌CGV점·금강스마트점. 4주마다 주차별 특전 변경, 현장 이벤트(일일카페 등)는 추후 공지. 경기도 IP기업 지원사업.",
     "confirmed": true
+  },
+  "pgr-hint-qu6zTSJ6Sbk@gameschedule": {
+    "uid": "pgr-hint-qu6zTSJ6Sbk@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "hint",
+    "title": "카레니나·신항",
+    "start": "2026-08-11T04:00:25Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=qu6zTSJ6Sbk",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
+  },
+  "pgr-rel-2026-08-18@gameschedule": {
+    "uid": "pgr-rel-2026-08-18@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "release",
+    "version": null,
+    "version_name": "빛을 좇는 항로",
+    "title": "버전 출시",
+    "start": "2026-08-18T15:00:00+00:00",
+    "end": null,
+    "chars": [
+      "카레니나·신항"
+    ],
+    "url": "https://www.youtube.com/watch?v=39kbtfj-g3s",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
+  },
+  "pgr-hint-3Qwnt1GFc2g@gameschedule": {
+    "uid": "pgr-hint-3Qwnt1GFc2g@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "hint",
+    "title": "루시아·역면",
+    "start": "2026-05-24T10:00:03Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=3Qwnt1GFc2g",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
+  },
+  "pgr-rel-2026-09-23@gameschedule": {
+    "uid": "pgr-rel-2026-09-23@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "release",
+    "version": null,
+    "version_name": "신념의 메아리",
+    "title": "버전 출시",
+    "start": "2026-09-23T15:00:00+00:00",
+    "end": null,
+    "chars": [],
+    "url": "https://www.youtube.com/watch?v=j4GviTMmQU4",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
+  },
+  "pgr-hint-VgxOiwKyDZU@gameschedule": {
+    "uid": "pgr-hint-VgxOiwKyDZU@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "hint",
+    "title": "헬렌틴·안혼",
+    "start": "2026-07-09T10:00:13Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=VgxOiwKyDZU",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
+  },
+  "pgr-rel-2026-07-16@gameschedule": {
+    "uid": "pgr-rel-2026-07-16@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "release",
+    "version": null,
+    "version_name": "무념 독행",
+    "title": "버전 출시",
+    "start": "2026-07-16T15:00:00+00:00",
+    "end": null,
+    "chars": [
+      "헬렌틴·안혼"
+    ],
+    "url": "https://www.youtube.com/watch?v=5wgFiTkB3AY",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
+  },
+  "manual-790f0ced@gameschedule": {
+    "uid": "manual-790f0ced@gameschedule",
+    "game": "기타",
+    "type": "event",
+    "title": "도쿄 게임쇼 2026",
+    "start": "2026-09-16T15:00:00+00:00",
+    "end": "2026-09-21T14:59:59+00:00",
+    "url": "https://www.inven.co.kr/webzine/news/?news=320734",
+    "source": "manual",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00",
+    "url_kind": "기사",
+    "note": "TGS2026. 마쿠하리 멧세. 올해 처음 5일간 개최. 공식 사이트가 아직 2024 페이지로 연결돼 기사 링크.",
+    "confirmed": true
+  },
+  "manual-6ec69df4@gameschedule": {
+    "uid": "manual-6ec69df4@gameschedule",
+    "game": "기타",
+    "type": "event",
+    "title": "코믹월드 336 일산 (서코)",
+    "start": "2026-09-11T15:00:00+00:00",
+    "end": "2026-09-13T14:59:59+00:00",
+    "url": "https://comicw.net/c/400",
+    "source": "manual",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00",
+    "note": "일산 킨텍스 제1전시장, 11:00~16:30.",
+    "confirmed": true
+  },
+  "manual-875c8da6@gameschedule": {
+    "uid": "manual-875c8da6@gameschedule",
+    "game": "기타",
+    "type": "event",
+    "title": "일러스타 페스 14",
+    "start": "2026-10-09T15:00:00+00:00",
+    "end": "2026-10-11T14:59:59+00:00",
+    "url": "https://illustar.net/performance-list/mEQ8Nzne",
+    "source": "manual",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00",
+    "url_kind": "예매",
+    "note": "일산 킨텍스 제1전시장 1·2홀.",
+    "confirmed": true
+  },
+  "pgr-off-5286-2026-08-19@gameschedule": {
+    "uid": "pgr-off-5286-2026-08-19@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "banner",
+    "title": "[픽업] 카레니나·신항",
+    "version_name": "빛을 좇는 항로",
+    "start": "2026-08-19T03:00:00+00:00",
+    "end": "2026-09-23T20:00:00+00:00",
+    "chars": [
+      "카레니나·신항"
+    ],
+    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
+    "url": "https://pgr.kurogames.com/kr/news/5286",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
+  },
+  "pgr-off-5138-2026-07-17@gameschedule": {
+    "uid": "pgr-off-5138-2026-07-17@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "banner",
+    "title": "[픽업] 헬렌틴·안혼",
+    "version_name": "무념 독행",
+    "start": "2026-07-17T03:00:00+00:00",
+    "end": "2026-08-18T20:00:00+00:00",
+    "chars": [
+      "헬렌틴·안혼"
+    ],
+    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
+    "url": "https://pgr.kurogames.com/kr/news/5138",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-09-11T16:23:07.293191+00:00"
   }
 }
