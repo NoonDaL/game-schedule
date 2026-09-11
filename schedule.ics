@@ -50,12 +50,12 @@ UID:ihwan-shp-2026-10-21@gameschedule
 URL:https://www.youtube.com/watch?v=hOPONN3Ynqk
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DESCRIPTION:https://www.youtube.com/watch?v=KXFX2iyAveI
 DTEND:20261020T150000Z
 DTSTART:20260929T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 여우의 별자리
 UID:wuwa-pred-2026-09-30@gameschedule
-URL:https://www.youtube.com/watch?v=SELlbnDGBlA
+URL:https://www.youtube.com/watch?v=KXFX2iyAveI
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -137,12 +137,12 @@ UID:ihwan-off-263945-링코@gameschedule
 URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260908/263945.html
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DESCRIPTION:https://www.youtube.com/watch?v=U0pv2cRGgTs
 DTEND:20261110T150000Z
 DTSTART:20261020T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 쇄명
 UID:wuwa-pred-2026-10-21@gameschedule
-URL:https://www.youtube.com/watch?v=SELlbnDGBlA
+URL:https://www.youtube.com/watch?v=U0pv2cRGgTs
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -239,12 +239,10 @@ ACTION:DISPLAY
 DESCRIPTION:도쿄 게임쇼 2026 종료 3시간 전
 TRIGGER:P4DT20H59M59S
 END:VALARM
-DESCRIPTION:https://www.inven.co.kr/webzine/news/?news=320734
 DTEND:20260921T145959Z
 DTSTART:20260916T150000Z
 SUMMARY:[기타] 도쿄 게임쇼 2026
 UID:manual-790f0ced@gameschedule
-URL:https://www.inven.co.kr/webzine/news/?news=320734
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -294,10 +292,12 @@ SUMMARY:[젠레스 존 제로] [픽업] 레미엘
 UID:zzz-banner-e4ca466d83@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=45WScu3uUFc
 DTEND:20260923T150000Z
 DTSTART:20260902T150000Z
 SUMMARY:[리버스: 1999] [예측] 미스 스트레인저
 UID:re1999-shp-2026-09-03@gameschedule
+URL:https://www.youtube.com/watch?v=45WScu3uUFc
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -368,12 +368,12 @@ ACTION:DISPLAY
 DESCRIPTION:경연\, 히유키\, 모니에 종료 3시간 전
 TRIGGER:P2W4DT22H59M
 END:VALARM
-DESCRIPTION:https://www.youtube.com/watch?v=SELlbnDGBlA
+DESCRIPTION:https://www.youtube.com/watch?v=DxQWoAaT7ZI
 DTEND:20260929T035900Z
 DTSTART:20260910T020000Z
 SUMMARY:[명조: 워더링 웨이브] [픽업] 경연\, 히유키\, 모니에
 UID:wuwa-pred-2026-09-10@gameschedule
-URL:https://www.youtube.com/watch?v=SELlbnDGBlA
+URL:https://www.youtube.com/watch?v=DxQWoAaT7ZI
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
