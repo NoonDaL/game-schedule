@@ -331,4 +331,22 @@ SUMMARY:[명조: 워더링 웨이브] [픽업] 경연\, 히유키\, 모니에
 UID:wuwa-pred-2026-09-10@gameschedule
 URL:https://www.youtube.com/watch?v=SELlbnDGBlA
 END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:카페 세일링 (블루버드 로스터스) 종료 2일 전
+TRIGGER:P10W6DT23H59M59S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:카페 세일링 (블루버드 로스터스) 종료 3시간 전
+TRIGGER:P11W1DT20H59M59S
+END:VALARM
+DESCRIPTION:https://playeternalreturn.com/posts/news/3837
+DTEND:20261129T145959Z
+DTSTART:20260911T150000Z
+SUMMARY:[이터널 리턴] 카페 세일링 (블루버드 로스터스)
+UID:manual-74273f04@gameschedule
+URL:https://playeternalreturn.com/posts/news/3837
+END:VEVENT
 END:VCALENDAR

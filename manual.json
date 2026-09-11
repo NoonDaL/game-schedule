@@ -118,5 +118,14 @@
     ],
     "url": "https://m.ticketlink.co.kr/product/65564",
     "url_kind": "예매"
+  },
+  {
+    "game": "이터널 리턴",
+    "type": "event",
+    "title": "카페 세일링 (블루버드 로스터스)",
+    "start": "2026-09-12",
+    "end": "2026-11-29",
+    "url": "https://playeternalreturn.com/posts/news/3837",
+    "note": "평촌CGV점·금강스마트점. 4주마다 주차별 특전 변경, 현장 이벤트(일일카페 등)는 추후 공지. 경기도 IP기업 지원사업."
   }
 ]
