@@ -931,14 +931,8 @@ function renderList() {
       ${badge(st)}</div>`;
   };
 
-  /* 진행 중이 먼저. '지금 뭐가 돌고 있나' 가 '뭐가 올 예정인가' 보다 급하다. */
-  let html = running.length
-    ? `<div class="grp"><span class="gd">진행 중</span><span class="gr">지금</span>
-       <span class="gn">${running.length}건</span></div>`
-      + running.map((e, i) => row(e, i)).join("")
-    : "";
-
-  let off = running.length, key = null;
+  // 다음 일정을 먼저 보고, 진행 중인 일정은 아래에서 확인한다.
+  let html = "", off = 0, key = null;
   soon.forEach(e => {
     const sd = new Date(e.start);
     const k = midnight(sd);
@@ -956,6 +950,11 @@ function renderList() {
     html += row(e, off++);
   });
 
+  if (running.length) {
+    html += `<div class="grp"><span class="gd">진행 중</span><span class="gr">지금</span>
+      <span class="gn">${running.length}건</span></div>`
+      + running.map(e => row(e, off++)).join("");
+  }
   host.innerHTML = `<div class="active">${html}</div>`;
 }
 
