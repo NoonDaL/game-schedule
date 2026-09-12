@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-12T04:48:08.281292+00:00",
+  "checked_at": "2026-09-12T10:32:09.394552+00:00",
   "counts": {
     "broadcast": 15,
     "banner": 37,
@@ -12,22 +12,15 @@
     "collab": 1
   },
   "warnings": [
-    "붕괴: 스타레일: 앞으로 16일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
-    "원신: 앞으로 10일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
-    "명조: 워더링 웨이브 / youtube: 예정 라이브 검색 실패 — 업로드 목록으로만 수집 (429 Client Error: Too Many Requests)",
-    "붕괴: 스타레일 / youtube: 예정 라이브 검색 실패 — 업로드 목록으로만 수집 (429 Client Error: Too Many Requests)",
-    "이환 / youtube: 예정 라이브 검색 실패 — 업로드 목록으로만 수집 (429 Client Error: Too Many Requests)",
-    "명일방주: 엔드필드 / youtube: 예정 라이브 검색 실패 — 업로드 목록으로만 수집 (429 Client Error: Too Many Requests)",
-    "젠레스 존 제로 / youtube: 예정 라이브 검색 실패 — 업로드 목록으로만 수집 (429 Client Error: Too Many Requests)",
-    "리버스: 1999 / youtube: 예정 라이브 검색 실패 — 업로드 목록으로만 수집 (429 Client Error: Too Many Requests)",
-    "퍼니싱: 그레이 레이븐 / youtube: 예정 라이브 검색 실패 — 업로드 목록으로만 수집 (429 Client Error: Too Many Requests)"
+    "붕괴: 스타레일: 앞으로 15일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
+    "원신: 앞으로 10일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음"
   ],
   "sources": {
     "wuwa:youtube": {
       "game": "명조: 워더링 웨이브",
       "source": "youtube",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 35,
       "missing": []
@@ -35,8 +28,8 @@
     "hsr:youtube": {
       "game": "붕괴: 스타레일",
       "source": "youtube",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 21,
       "missing": []
@@ -44,8 +37,8 @@
     "ihwan:youtube": {
       "game": "이환",
       "source": "youtube",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 20,
       "missing": []
@@ -53,8 +46,8 @@
     "endfield:youtube": {
       "game": "명일방주: 엔드필드",
       "source": "youtube",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 9,
       "missing": []
@@ -62,8 +55,8 @@
     "genshin:youtube": {
       "game": "원신",
       "source": "youtube",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 3,
       "missing": []
@@ -71,8 +64,8 @@
     "zzz:youtube": {
       "game": "젠레스 존 제로",
       "source": "youtube",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 3,
       "missing": []
@@ -80,8 +73,8 @@
     "re1999:youtube": {
       "game": "리버스: 1999",
       "source": "youtube",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 11,
       "missing": []
@@ -89,8 +82,8 @@
     "hsr:hoyolab": {
       "game": "붕괴: 스타레일",
       "source": "hoyolab",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -98,8 +91,8 @@
     "genshin:hoyolab": {
       "game": "원신",
       "source": "hoyolab",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -107,8 +100,8 @@
     "zzz:hoyolab": {
       "game": "젠레스 존 제로",
       "source": "hoyolab",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -116,8 +109,8 @@
     "wuwa:official": {
       "game": "명조: 워더링 웨이브",
       "source": "official",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 4,
       "missing": []
@@ -125,8 +118,8 @@
     "ihwan:official": {
       "game": "이환",
       "source": "official",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 5,
       "missing": []
@@ -134,8 +127,8 @@
     "endfield:official": {
       "game": "명일방주: 엔드필드",
       "source": "official",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 6,
       "missing": []
@@ -143,8 +136,8 @@
     "pgr:youtube": {
       "game": "퍼니싱: 그레이 레이븐",
       "source": "youtube",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 8,
       "missing": []
@@ -152,8 +145,8 @@
     "pgr:official": {
       "game": "퍼니싱: 그레이 레이븐",
       "source": "official",
-      "attempted_at": "2026-09-12T04:48:08.281292+00:00",
-      "last_success_at": "2026-09-12T04:48:08.281292+00:00",
+      "attempted_at": "2026-09-12T10:32:09.394552+00:00",
+      "last_success_at": "2026-09-12T10:32:09.394552+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -161,8 +154,8 @@
   },
   "coverage": {
     "기타": {
-      "confirmed_until": "2026-09-12T04:48:08.281292+00:00",
-      "including_estimates_until": "2026-09-12T04:48:08.281292+00:00"
+      "confirmed_until": "2026-09-12T10:32:09.394552+00:00",
+      "including_estimates_until": "2026-09-12T10:32:09.394552+00:00"
     },
     "리버스: 1999": {
       "confirmed_until": "2026-09-24T14:59:59+00:00",
@@ -185,8 +178,8 @@
       "including_estimates_until": "2026-09-22T06:59:59+00:00"
     },
     "이터널 리턴": {
-      "confirmed_until": "2026-09-12T04:48:08.281292+00:00",
-      "including_estimates_until": "2026-09-12T04:48:08.281292+00:00"
+      "confirmed_until": "2026-09-12T10:32:09.394552+00:00",
+      "including_estimates_until": "2026-09-12T10:32:09.394552+00:00"
     },
     "이환": {
       "confirmed_until": "2026-09-29T21:59:00+00:00",
@@ -201,8 +194,8 @@
       "including_estimates_until": "2026-10-26T15:00:00+00:00"
     },
     "호요랜드": {
-      "confirmed_until": "2026-09-12T04:48:08.281292+00:00",
-      "including_estimates_until": "2026-09-12T04:48:08.281292+00:00"
+      "confirmed_until": "2026-09-12T10:32:09.394552+00:00",
+      "including_estimates_until": "2026-09-12T10:32:09.394552+00:00"
     }
   }
 }
