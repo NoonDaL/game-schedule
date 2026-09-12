@@ -42,6 +42,19 @@ UID:endfield-off-5208-0@gameschedule
 URL:https://endfield.gryphline.com/ko-kr/news/5208
 END:VEVENT
 BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:원신 방송 30분 전
+TRIGGER:-PT30M
+END:VALARM
+DESCRIPTION:https://www.youtube.com/watch?v=IaQ8rjkqGec
+DTEND:20260912T150513Z
+DTSTART:20260912T133513Z
+SUMMARY:[원신] 〈원신〉 7.1 버전 특별 방송 돌아보기
+UID:genshin-IaQ8rjkqGec@gameschedule
+URL:https://www.youtube.com/watch?v=IaQ8rjkqGec
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=hOPONN3Ynqk
 DTEND:20261110T215900Z
 DTSTART:20261020T215900Z
