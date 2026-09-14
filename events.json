@@ -809,18 +809,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "wuwa-hint-N5Chemdwqhg@gameschedule": {
-    "uid": "wuwa-hint-N5Chemdwqhg@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "hint",
-    "title": "데니아",
-    "start": "2026-05-16T11:00:19Z",
-    "end": null,
-    "url": "https://www.youtube.com/watch?v=N5Chemdwqhg",
-    "url_kind": "쇼케이스",
-    "source": "youtube",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
   "ihwan-MmUEE_e1f1w@gameschedule": {
     "uid": "ihwan-MmUEE_e1f1w@gameschedule",
     "game": "이환",
@@ -968,7 +956,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5358",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1246,7 +1234,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00"
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1260,7 +1248,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00"
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1297,7 +1285,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00"
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1738,7 +1726,7 @@
     "end": "2026-09-24T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00",
     "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2023,7 +2011,7 @@
     "start": "2026-09-16T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=wUvOmdxcQnY",
     "source": "youtube",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00"
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
   },
   "ihwan-off-263945-링코@gameschedule": {
     "uid": "ihwan-off-263945-링코@gameschedule",
@@ -2115,7 +2103,7 @@
     "url": "https://www.youtube.com/watch?v=v6SDjsbpKYA",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2136,7 +2124,7 @@
     "url": "https://www.youtube.com/watch?v=hOPONN3Ynqk",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2435,7 +2423,7 @@
     "url": "https://www.youtube.com/watch?v=GpmCAFu9eVo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2496,7 +2484,7 @@
     "url": "https://www.youtube.com/watch?v=j4GviTMmQU4",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2515,7 +2503,7 @@
     "start": "2026-09-19T11:00:00Z",
     "url": "https://www.youtube.com/watch?v=fY7pOAzNwq4",
     "source": "youtube",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00"
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
   },
   "genshin-ver-7.1@gameschedule": {
     "uid": "genshin-ver-7.1@gameschedule",
@@ -2529,7 +2517,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-12T20:26:47.116514+00:00"
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2541,5 +2529,43 @@
     "url": "https://www.youtube.com/watch?v=IaQ8rjkqGec",
     "source": "youtube",
     "updated_at": "2026-09-12T15:24:40.088930+00:00"
+  },
+  "hsr-hint-klumdKs3UeE@gameschedule": {
+    "uid": "hsr-hint-klumdKs3UeE@gameschedule",
+    "game": "붕괴: 스타레일",
+    "type": "hint",
+    "title": "어벤츄린·웨이브",
+    "start": "2026-09-13T12:00:29Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=klumdKs3UeE",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
+  },
+  "re1999-ver-3.8@gameschedule": {
+    "uid": "re1999-ver-3.8@gameschedule",
+    "game": "리버스: 1999",
+    "type": "version",
+    "version": "3.8",
+    "version_name": "세기말의 척도",
+    "title": "3.8 버전 「세기말의 척도」",
+    "start": "2026-09-13T02:00:37Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
+  },
+  "pgr-hint-GCA2A0EXR4c@gameschedule": {
+    "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "hint",
+    "title": "아델라이드·파연",
+    "start": "2026-09-14T04:00:31Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=GCA2A0EXR4c",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-14T04:28:15.263499+00:00"
   }
 }
