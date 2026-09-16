@@ -133,8 +133,8 @@ DESCRIPTION:이환 방송 30분 전
 TRIGGER:-PT30M
 END:VALARM
 DESCRIPTION:https://www.youtube.com/watch?v=wUvOmdxcQnY
-DTEND:20260916T130000Z
-DTSTART:20260916T113000Z
+DTEND:20260916T125000Z
+DTSTART:20260916T112000Z
 SUMMARY:[이환] 「이환」 1.4 버전 프리뷰 특별 방송
 UID:ihwan-wUvOmdxcQnY@gameschedule
 URL:https://www.youtube.com/watch?v=wUvOmdxcQnY
