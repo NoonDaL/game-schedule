@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-18T04:21:16.659343+00:00",
+  "checked_at": "2026-09-18T11:00:29.761573+00:00",
   "counts": {
     "broadcast": 17,
     "banner": 37,
@@ -12,7 +12,7 @@
     "collab": 1
   },
   "warnings": [
-    "붕괴: 스타레일: 앞으로 10일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
+    "붕괴: 스타레일: 앞으로 9일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
     "원신: 앞으로 4일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
     "리버스: 1999: 앞으로 6일치만 남음 (기준 7일) — manual.json 으로 메워야 할 수 있음"
   ],
@@ -20,8 +20,8 @@
     "wuwa:youtube": {
       "game": "명조: 워더링 웨이브",
       "source": "youtube",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 34,
       "missing": []
@@ -29,8 +29,8 @@
     "hsr:youtube": {
       "game": "붕괴: 스타레일",
       "source": "youtube",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 22,
       "missing": []
@@ -38,8 +38,8 @@
     "ihwan:youtube": {
       "game": "이환",
       "source": "youtube",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 20,
       "missing": []
@@ -47,8 +47,8 @@
     "endfield:youtube": {
       "game": "명일방주: 엔드필드",
       "source": "youtube",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 9,
       "missing": []
@@ -56,8 +56,8 @@
     "genshin:youtube": {
       "game": "원신",
       "source": "youtube",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 5,
       "missing": []
@@ -65,8 +65,8 @@
     "zzz:youtube": {
       "game": "젠레스 존 제로",
       "source": "youtube",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 3,
       "missing": []
@@ -74,8 +74,8 @@
     "re1999:youtube": {
       "game": "리버스: 1999",
       "source": "youtube",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 11,
       "missing": []
@@ -83,8 +83,8 @@
     "hsr:hoyolab": {
       "game": "붕괴: 스타레일",
       "source": "hoyolab",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 1,
       "missing": []
@@ -92,8 +92,8 @@
     "genshin:hoyolab": {
       "game": "원신",
       "source": "hoyolab",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -101,8 +101,8 @@
     "zzz:hoyolab": {
       "game": "젠레스 존 제로",
       "source": "hoyolab",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -110,8 +110,8 @@
     "wuwa:official": {
       "game": "명조: 워더링 웨이브",
       "source": "official",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 4,
       "missing": []
@@ -119,8 +119,8 @@
     "ihwan:official": {
       "game": "이환",
       "source": "official",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 4,
       "missing": []
@@ -128,8 +128,8 @@
     "endfield:official": {
       "game": "명일방주: 엔드필드",
       "source": "official",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 6,
       "missing": []
@@ -137,8 +137,8 @@
     "pgr:youtube": {
       "game": "퍼니싱: 그레이 레이븐",
       "source": "youtube",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 9,
       "missing": []
@@ -146,8 +146,8 @@
     "pgr:official": {
       "game": "퍼니싱: 그레이 레이븐",
       "source": "official",
-      "attempted_at": "2026-09-18T04:21:16.659343+00:00",
-      "last_success_at": "2026-09-18T04:21:16.659343+00:00",
+      "attempted_at": "2026-09-18T11:00:29.761573+00:00",
+      "last_success_at": "2026-09-18T11:00:29.761573+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -155,8 +155,8 @@
   },
   "coverage": {
     "기타": {
-      "confirmed_until": "2026-09-18T04:21:16.659343+00:00",
-      "including_estimates_until": "2026-09-18T04:21:16.659343+00:00"
+      "confirmed_until": "2026-09-18T11:00:29.761573+00:00",
+      "including_estimates_until": "2026-09-18T11:00:29.761573+00:00"
     },
     "리버스: 1999": {
       "confirmed_until": "2026-09-24T14:59:59+00:00",
@@ -179,8 +179,8 @@
       "including_estimates_until": "2026-09-22T06:59:59+00:00"
     },
     "이터널 리턴": {
-      "confirmed_until": "2026-09-18T04:21:16.659343+00:00",
-      "including_estimates_until": "2026-09-18T04:21:16.659343+00:00"
+      "confirmed_until": "2026-09-18T11:00:29.761573+00:00",
+      "including_estimates_until": "2026-09-18T11:00:29.761573+00:00"
     },
     "이환": {
       "confirmed_until": "2026-09-29T21:59:00+00:00",
@@ -195,8 +195,8 @@
       "including_estimates_until": "2026-10-26T15:00:00+00:00"
     },
     "호요랜드": {
-      "confirmed_until": "2026-09-18T04:21:16.659343+00:00",
-      "including_estimates_until": "2026-09-18T04:21:16.659343+00:00"
+      "confirmed_until": "2026-09-18T11:00:29.761573+00:00",
+      "including_estimates_until": "2026-09-18T11:00:29.761573+00:00"
     }
   }
 }
