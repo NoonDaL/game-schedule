@@ -302,17 +302,6 @@
     "source": "youtube",
     "updated_at": "2026-08-17T17:41:45.077803+00:00"
   },
-  "hsr-Q2ZxjPxeibw@gameschedule": {
-    "uid": "hsr-Q2ZxjPxeibw@gameschedule",
-    "game": "붕괴: 스타레일",
-    "type": "broadcast",
-    "version": "4.3",
-    "title": "〈붕괴: 스타레일〉 4.3 버전 「산 자의 망천에 잠겨」 프리뷰 스페셜 프로그램",
-    "start": "2026-05-22T11:25:00Z",
-    "url": "https://www.youtube.com/watch?v=Q2ZxjPxeibw",
-    "source": "youtube",
-    "updated_at": "2026-08-17T17:41:45.077803+00:00"
-  },
   "hsr-hint-anyCEw5977g@gameschedule": {
     "uid": "hsr-hint-anyCEw5977g@gameschedule",
     "game": "붕괴: 스타레일",
@@ -932,7 +921,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5358",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00",
+    "updated_at": "2026-09-19T15:46:07.249963+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1210,7 +1199,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00"
+    "updated_at": "2026-09-19T15:46:07.249963+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1224,7 +1213,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00"
+    "updated_at": "2026-09-19T15:46:07.249963+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1261,7 +1250,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00"
+    "updated_at": "2026-09-19T15:46:07.249963+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1702,7 +1691,7 @@
     "end": "2026-09-24T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00",
+    "updated_at": "2026-09-19T15:46:07.249963+00:00",
     "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1728,38 +1717,25 @@
       "url": "https://www.youtube.com/watch?v=45WScu3uUFc"
     }
   },
-  "manual-d9ddd476@gameschedule": {
-    "uid": "manual-d9ddd476@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "release",
-    "title": "일정",
-    "start": "2026-09-29T15:00:00+00:00",
-    "end": null,
-    "url": null,
-    "source": "manual",
-    "updated_at": "2026-08-31T04:55:24.276578+00:00",
-    "note": "3.7 버전 시작. 주기 앵커가 여기로 옮겨간다.",
-    "version": null
-  },
   "wuwa-pred-2026-09-30@gameschedule": {
     "uid": "wuwa-pred-2026-09-30@gameschedule",
     "game": "명조: 워더링 웨이브",
     "type": "banner",
     "title": "[예측] 여우의 별자리",
-    "version_name": null,
+    "version_name": "거울에 잠긴 허상, 마음이 비추는 인간 세상",
     "start": "2026-09-29T15:00:00+00:00",
     "end": "2026-10-20T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=KXFX2iyAveI",
-    "url_kind": "쇼케이스",
+    "url": "https://www.youtube.com/watch?v=_NzfG5BpcSk",
+    "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-11T16:36:04.257472+00:00",
+    "updated_at": "2026-09-19T15:46:07.249963+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
     "predicted": true,
     "date_evidence": {
       "method": "cycle",
-      "url": "https://www.youtube.com/watch?v=KXFX2iyAveI"
+      "url": "https://www.youtube.com/watch?v=_NzfG5BpcSk"
     }
   },
   "wuwa-pred-2026-10-21@gameschedule": {
@@ -1767,7 +1743,7 @@
     "game": "명조: 워더링 웨이브",
     "type": "banner",
     "title": "[예측] 쇄명",
-    "version_name": null,
+    "version_name": "거울에 잠긴 허상, 마음이 비추는 인간 세상",
     "start": "2026-10-20T15:00:00+00:00",
     "end": "2026-11-10T15:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=U0pv2cRGgTs",
@@ -2080,7 +2056,7 @@
     "url": "https://www.youtube.com/watch?v=lLmUGwqap6Y",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00",
+    "updated_at": "2026-09-19T15:46:07.249963+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2101,7 +2077,7 @@
     "url": "https://www.youtube.com/watch?v=lLmUGwqap6Y",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00",
+    "updated_at": "2026-09-19T15:46:07.249963+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2400,7 +2376,7 @@
     "url": "https://www.youtube.com/watch?v=GpmCAFu9eVo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00",
+    "updated_at": "2026-09-19T15:46:07.249963+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2461,7 +2437,7 @@
     "url": "https://www.youtube.com/watch?v=j4GviTMmQU4",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00",
+    "updated_at": "2026-09-19T15:46:07.249963+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2494,7 +2470,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00"
+    "updated_at": "2026-09-19T15:46:07.249963+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2531,7 +2507,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00"
+    "updated_at": "2026-09-19T15:46:07.249963+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2554,7 +2530,7 @@
     "start": "2026-09-20T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=QX12OPKr7eg",
     "source": "youtube",
-    "updated_at": "2026-09-19T10:44:09.458991+00:00"
+    "updated_at": "2026-09-19T15:46:07.249963+00:00"
   },
   "ihwan-rel-2026-09-29@gameschedule": {
     "uid": "ihwan-rel-2026-09-29@gameschedule",
@@ -2573,5 +2549,20 @@
     "url_kind": "공지",
     "source": "youtube",
     "updated_at": "2026-09-17T11:27:23.589516+00:00"
+  },
+  "wuwa-rel-2026-09-29@gameschedule": {
+    "uid": "wuwa-rel-2026-09-29@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "release",
+    "version": "3.7",
+    "version_name": "거울에 잠긴 허상, 마음이 비추는 인간 세상",
+    "title": "3.7 버전 출시",
+    "start": "2026-09-29T15:00:00+00:00",
+    "end": null,
+    "chars": [],
+    "url": "https://www.youtube.com/watch?v=_NzfG5BpcSk",
+    "url_kind": "공지",
+    "source": "youtube",
+    "updated_at": "2026-09-19T15:46:07.249963+00:00"
   }
 }
