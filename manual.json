@@ -160,5 +160,33 @@
     "start": "2026-10-19",
     "url": "https://x.com/WW_KR_Official/status/2101290208796766621",
     "note": "명조 X 롯데시네마 콜라보 시작일. 기간·극장 등 세부 공지는 아직 없음 (공식 X 예고 기준)."
+  },
+  {
+    "game": "아주르 프로밀리아",
+    "type": "launch"
+  },
+  {
+    "game": "실버팰리스",
+    "type": "launch"
+  },
+  {
+    "game": "아스트라에 오라티오",
+    "type": "launch"
+  },
+  {
+    "game": "파레이돌리아",
+    "type": "launch"
+  },
+  {
+    "game": "무한대",
+    "type": "launch"
+  },
+  {
+    "game": "붕괴: 스타레일",
+    "type": "event",
+    "title": "메가커피 콜라보",
+    "start": "2026-10-15",
+    "end": "2026-11-19",
+    "note": "MGC 콜라보. 공식 공지 주소는 아직 못 찾음 — 공지가 올라오면 link 로 붙일 것."
   }
 ]
