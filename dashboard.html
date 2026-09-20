@@ -148,6 +148,19 @@
   .hero-panel .tag { margin-left: 0; }
   @media (max-width: 720px) { .hero-grid { grid-template-columns: 1fr; gap: 10px; } .hero-panel { padding: 18px; } }
 
+  /* 출시 예정 — 일정이 아니라 '언제 나오나' 목록이라 위쪽에 따로 둔다.
+     픽업·방송과 섞으면 아직 없는 게임이 타임라인 레인을 차지한다. */
+  .launch-sec { margin-top: 26px; }
+  .launch-grid { display: grid; gap: 10px;
+                 grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+  .launch-card { background: var(--surface); border: 1px solid var(--rule);
+                 border-radius: var(--r-panel); padding: 13px 15px; }
+  .launch-card b { display: block; font-size: 15px; line-height: 1.45; overflow-wrap: anywhere; }
+  .launch-when { margin-top: 5px; font-size: 12.5px; color: var(--ink-2);
+                 font-variant-numeric: tabular-nums; }
+  .launch-when .dday { color: var(--ink); font-weight: 700; margin-left: 4px; }
+  .launch-when.tbd { color: var(--ink-muted); }
+
   .sec-label { font-size: 10px; font-weight: 700; color: var(--ink-muted);
                letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px; }
   .hero { display: flex; align-items: flex-start; gap: 18px; flex-wrap: wrap; margin-bottom: 6px; }
@@ -411,6 +424,11 @@
     </p>
   </section>
 
+  <section class="launch-sec" id="launch-sec" hidden>
+    <h2 class="sec-label">출시 예정</h2>
+    <div class="launch-grid" id="launch-list"></div>
+  </section>
+
   <div class="viewbar">
     <div class="toggle" role="group" aria-label="보기 방식">
       <button id="v-timeline" aria-pressed="true">타임라인</button>
@@ -477,6 +495,9 @@ const TYPE_LABELS = { banner: "픽업", broadcast: "방송", event: "오프라�
 const SHOW_TYPES = new Set(["banner", "broadcast", "event"]);
 
 let EVENTS = [];
+/* 출시 예정 게임. 일정이 아니라 '언제 나오나' 목록이라 EVENTS 와 따로 둔다
+   (SHOW_TYPES 에 없어서 EVENTS 에는 애초에 안 들어온다). */
+let LAUNCHES = [];
 const state = load();
 
 function load() {
@@ -548,9 +569,9 @@ async function init() {
      updated_at 은 내용이 실제로 바뀔 때만 갱신되므로 확인 시각이 아니다. */
   try { const r = await fetch("status.json", { cache: "no-store" }); if (r.ok) status = await r.json(); } catch (e) {}
 
-  EVENTS = Object.entries(data || {})
-    .map(([uid, e]) => ({ uid, ...e }))
-    .filter(e => SHOW_TYPES.has(e.type) && shortTitle(e).trim() !== "");
+  const all = Object.entries(data || {}).map(([uid, e]) => ({ uid, ...e }));
+  EVENTS = all.filter(e => SHOW_TYPES.has(e.type) && shortTitle(e).trim() !== "");
+  LAUNCHES = all.filter(e => e.type === "launch");
 
   const checked = status && status.checked_at
     ? new Date(status.checked_at)
@@ -670,7 +691,7 @@ const visible = () => EVENTS.filter(e =>
   && (state.pred || !e.predicted)
   && (!query || haystack(e).includes(query)));
 
-function renderAll() { renderNow(); renderLegend(); ({ timeline: renderTimeline, list: renderList, table: renderTable }[state.view])(); }
+function renderAll() { renderLaunches(); renderNow(); renderLegend(); ({ timeline: renderTimeline, list: renderList, table: renderTable }[state.view])(); }
 
 /* ---- 히어로 + 활성 목록: '무엇이 중요한가'를 색이 아니라 위치와 상태로 말한다 ---- */
 const sameDay = (a, b) => a.getFullYear() === b.getFullYear()
@@ -727,6 +748,37 @@ function renderNow() {
   const group = ongoing.filter(e => kstDateKey(endOf(e)) === kstDateKey(target));
   hero.innerHTML = `<div class="hero-when">${days === 0 ? "오늘" : `${days}일 후`} 마감</div>` +
     heroRows(group, e => `${fmt(endOf(e))} ${kstTime(endOf(e))} ${endKnown(e) ? "종료" : "종료 예상"}`);
+}
+
+/* 출시 예정: 확정일은 D-day, 그 밖은 아는 만큼만 적는다. 없는 정밀도를 지어내
+   '10월 1일' 로 적으면 안 나온 날짜가 확정처럼 보인다. */
+const LAUNCH_RANK = { day: 0, month: 1, year: 2, none: 3 };
+
+function launchWhen(e) {
+  const p = e.date_precision || "day";
+  if (p === "none") return { text: "날짜 미정", tbd: true };
+  const [y, m, d] = kstDateKey(e.start).split("-");
+  if (p === "year") return { text: `${+y}년`, tbd: true };
+  if (p === "month") return { text: `${+y}년 ${+m}월`, tbd: true };
+  const gap = dayGap(Date.now(), +new Date(e.start));
+  return { text: `${+y}년 ${+m}월 ${+d}일`,
+           dday: gap > 0 ? `D-${gap}` : gap === 0 ? "오늘" : null };
+}
+
+function renderLaunches() {
+  const sec = document.getElementById("launch-sec");
+  if (!LAUNCHES.length) { sec.hidden = true; return; }
+  sec.hidden = false;
+  const rows = LAUNCHES.slice().sort((a, b) =>
+    (LAUNCH_RANK[a.date_precision || "day"] - LAUNCH_RANK[b.date_precision || "day"])
+    || (a.start < b.start ? -1 : a.start > b.start ? 1 : 0));
+  document.getElementById("launch-list").innerHTML = rows.map(e => {
+    const w = launchWhen(e);
+    const sub = e.title && e.title !== "출시" ? ` · ${esc(e.title)}` : "";
+    return `<article class="launch-card"><b>${esc(e.game)}</b>
+      <div class="launch-when${w.tbd ? " tbd" : ""}">${esc(w.text)}${sub}${
+        w.dday ? `<span class="dday">${w.dday}</span>` : ""}</div>${srcLink(e)}</article>`;
+  }).join("");
 }
 
 function renderLegend() {
