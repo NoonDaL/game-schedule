@@ -380,6 +380,12 @@ UID:pgr-shp-collab-2026-09-29@gameschedule
 URL:https://www.youtube.com/watch?v=j4GviTMmQU4
 END:VEVENT
 BEGIN:VEVENT
+DTEND:20261202T145959Z
+DTSTART:20261111T030000Z
+SUMMARY:[붕괴: 스타레일] [예측] 에이언즈★아하
+UID:manual-7d4afbf2@gameschedule
+END:VEVENT
+BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:경연\, 히유키\, 모니에 종료 2일 전

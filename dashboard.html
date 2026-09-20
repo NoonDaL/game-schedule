@@ -151,6 +151,15 @@
   /* 출시 예정 — 일정이 아니라 '언제 나오나' 목록이라 위쪽에 따로 둔다.
      픽업·방송과 섞으면 아직 없는 게임이 타임라인 레인을 차지한다. */
   .launch-sec { margin-top: 26px; }
+  /* 접었다 펼 수 있게 둔다. 항목이 늘어도 위쪽을 잡아먹지 않는다. */
+  .launch-sec > summary { cursor: pointer; display: flex; align-items: center; gap: 7px;
+                          padding: 6px 0; user-select: none; margin-bottom: 0; }
+  .launch-sec > summary::-webkit-details-marker { display: none; }
+  .launch-sec > summary::before { content: "▸"; font-size: 10px; color: var(--ink-muted); }
+  .launch-sec[open] > summary::before { content: "▾"; }
+  .launch-sec > summary:hover { color: var(--ink-2); }
+  .launch-sec .launch-count { color: var(--ink-muted); letter-spacing: 0; }
+  .launch-sec[open] .launch-grid { margin-top: 10px; }
   .launch-grid { display: grid; gap: 10px;
                  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
   .launch-card { background: var(--surface); border: 1px solid var(--rule);
@@ -424,10 +433,10 @@
     </p>
   </section>
 
-  <section class="launch-sec" id="launch-sec" hidden>
-    <h2 class="sec-label">출시 예정</h2>
+  <details class="launch-sec" id="launch-sec" hidden>
+    <summary class="sec-label">출시 예정 <span class="launch-count" id="launch-count"></span></summary>
     <div class="launch-grid" id="launch-list"></div>
-  </section>
+  </details>
 
   <div class="viewbar">
     <div class="toggle" role="group" aria-label="보기 방식">
@@ -502,7 +511,8 @@ const state = load();
 
 function load() {
   const d = { view: "list", games: null, seen: null,
-              types: ["banner", "broadcast", "event"], seenTypes: null, pred: true, v: 2 };
+              types: ["banner", "broadcast", "event"], seenTypes: null, pred: true,
+              launchOpen: false, v: 2 };
   let stored = {};
   try { stored = JSON.parse(localStorage.getItem("gsched2") || "{}"); } catch (e) {}
   Object.assign(d, stored);
@@ -769,6 +779,11 @@ function renderLaunches() {
   const sec = document.getElementById("launch-sec");
   if (!LAUNCHES.length) { sec.hidden = true; return; }
   sec.hidden = false;
+  /* 접힘/펼침은 필터와 같이 기억한다. 기본은 접힘 — 당장 오는 일정이 먼저다.
+     open 을 먼저 맞추고 나서 핸들러를 건다 (먼저 걸면 첫 설정이 토글로 잡힌다). */
+  sec.open = !!state.launchOpen;
+  sec.ontoggle = () => { state.launchOpen = sec.open; save(); };
+  document.getElementById("launch-count").textContent = `${LAUNCHES.length}`;
   const rows = LAUNCHES.slice().sort((a, b) =>
     (LAUNCH_RANK[a.date_precision || "day"] - LAUNCH_RANK[b.date_precision || "day"])
     || (a.start < b.start ? -1 : a.start > b.start ? 1 : 0));
