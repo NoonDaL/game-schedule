@@ -921,7 +921,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5358",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1199,7 +1199,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00"
+    "updated_at": "2026-09-20T12:52:45.464584+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1213,7 +1213,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00"
+    "updated_at": "2026-09-20T12:52:45.464584+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1250,7 +1250,7 @@
     "url": "https://www.youtube.com/watch?v=8PmfGC0FbYc",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00"
+    "updated_at": "2026-09-20T12:52:45.464584+00:00"
   },
   "zzz-ver-3.1@gameschedule": {
     "uid": "zzz-ver-3.1@gameschedule",
@@ -1682,20 +1682,6 @@
     "note": "공식 발표. 09-03~09-24",
     "version": null
   },
-  "manual-f619f480@gameschedule": {
-    "uid": "manual-f619f480@gameschedule",
-    "game": "리버스: 1999",
-    "type": "banner",
-    "title": "[픽업] 리아논",
-    "start": "2026-08-16T15:00:00+00:00",
-    "end": "2026-09-24T14:59:59+00:00",
-    "url": null,
-    "source": "manual",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
-    "note": "종료 09-24 (미스 스트레인저와 겹쳐 진행)",
-    "confirmed": true,
-    "version_name": "타인의 슬픔"
-  },
   "re1999-shp-2026-09-03@gameschedule": {
     "uid": "re1999-shp-2026-09-03@gameschedule",
     "game": "리버스: 1999",
@@ -1728,7 +1714,7 @@
     "url": "https://www.youtube.com/watch?v=_NzfG5BpcSk",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -1749,7 +1735,7 @@
     "url": "https://www.youtube.com/watch?v=U0pv2cRGgTs",
     "url_kind": "쇼케이스",
     "source": "cycle",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2056,7 +2042,7 @@
     "url": "https://www.youtube.com/watch?v=lLmUGwqap6Y",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2077,7 +2063,7 @@
     "url": "https://www.youtube.com/watch?v=lLmUGwqap6Y",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2376,7 +2362,7 @@
     "url": "https://www.youtube.com/watch?v=GpmCAFu9eVo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2437,7 +2423,7 @@
     "url": "https://www.youtube.com/watch?v=j4GviTMmQU4",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2470,7 +2456,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00"
+    "updated_at": "2026-09-20T12:52:45.464584+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2507,7 +2493,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00"
+    "updated_at": "2026-09-20T12:52:45.464584+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2530,7 +2516,7 @@
     "start": "2026-09-20T11:25:00Z",
     "url": "https://www.youtube.com/watch?v=QX12OPKr7eg",
     "source": "youtube",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00"
+    "updated_at": "2026-09-20T12:52:45.464584+00:00"
   },
   "ihwan-rel-2026-09-29@gameschedule": {
     "uid": "ihwan-rel-2026-09-29@gameschedule",
@@ -2793,7 +2779,7 @@
     "end": "2026-10-13T09:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "chars": [
       "베스나",
       "보댜니차"
@@ -2811,7 +2797,7 @@
     "end": "2026-11-03T06:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-20T12:49:02.855980+00:00",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
     "chars": [
       "스커크",
       "에스코피에"
@@ -2819,5 +2805,85 @@
     "note": "7.1 2부(복각). 캐릭터는 7.1 특별 방송 정리 기준. 시작은 1부 종료 직후 19:00 KST, 종료는 버전 종료 15:59 KST — 7.0 실측(09-22 15:59)과 같다. 10-13 에 HoYoLAB 이 실제 배너를 주면 자동이 덮는다.",
     "confirmed": true,
     "version_name": "죽음의 진혼곡"
+  },
+  "manual-ae2a12e6@gameschedule": {
+    "uid": "manual-ae2a12e6@gameschedule",
+    "game": "리버스: 1999",
+    "type": "banner",
+    "title": "[픽업] 리아논",
+    "start": "2026-08-12T15:00:00+00:00",
+    "end": "2026-09-23T15:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
+    "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
+    "confirmed": true,
+    "version_name": "타인의 슬픔"
+  },
+  "manual-65cb19a7@gameschedule": {
+    "uid": "manual-65cb19a7@gameschedule",
+    "game": "리버스: 1999",
+    "type": "banner",
+    "title": "[픽업] 에버에코",
+    "start": "2026-09-23T15:00:00+00:00",
+    "end": "2026-10-14T15:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
+    "chars": [
+      "에버에코"
+    ],
+    "note": "3.8 전반기. reverse1999-simulator.com 미래시(한국 서버) 기준.",
+    "confirmed": true,
+    "version_name": "세기말의 척도"
+  },
+  "manual-cffee0ba@gameschedule": {
+    "uid": "manual-cffee0ba@gameschedule",
+    "game": "리버스: 1999",
+    "type": "banner",
+    "title": "[픽업] 코너스톤",
+    "start": "2026-10-14T15:00:00+00:00",
+    "end": "2026-11-04T15:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
+    "chars": [
+      "코너스톤"
+    ],
+    "note": "3.8 후반기. reverse1999-simulator.com 미래시(한국 서버) 기준.",
+    "confirmed": true,
+    "version_name": "세기말의 척도"
+  },
+  "manual-383f14f7@gameschedule": {
+    "uid": "manual-383f14f7@gameschedule",
+    "game": "리버스: 1999",
+    "type": "banner",
+    "title": "[픽업] 헤도네",
+    "start": "2026-11-04T15:00:00+00:00",
+    "end": "2026-11-25T15:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
+    "chars": [
+      "헤도네"
+    ],
+    "note": "3.9 전반기. reverse1999-simulator.com 미래시(한국 서버) 기준. 버전 이름은 공식 PV 가 나오면 자동으로 붙는다.",
+    "confirmed": true
+  },
+  "manual-bcf6f7ec@gameschedule": {
+    "uid": "manual-bcf6f7ec@gameschedule",
+    "game": "리버스: 1999",
+    "type": "banner",
+    "title": "[픽업] 나르키소스",
+    "start": "2026-11-25T15:00:00+00:00",
+    "end": "2026-12-16T15:00:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-09-20T12:52:45.464584+00:00",
+    "chars": [
+      "나르키소스"
+    ],
+    "note": "3.9 후반기. reverse1999-simulator.com 미래시(한국 서버) 기준.",
+    "confirmed": true
   }
 }
