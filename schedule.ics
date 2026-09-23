@@ -32,12 +32,12 @@ SUMMARY:[무한대] 출시
 UID:manual-555fbf8f@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=lLmUGwqap6Y
+DESCRIPTION:https://www.youtube.com/watch?v=0XMRCUtrN5k
 DTEND:20261110T150000Z
 DTSTART:20261020T150000Z
 SUMMARY:[이환] [예측] 아카네 린
 UID:ihwan-shp-2026-10-21@gameschedule
-URL:https://www.youtube.com/watch?v=lLmUGwqap6Y
+URL:https://www.youtube.com/watch?v=0XMRCUtrN5k
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=_NzfG5BpcSk
@@ -62,6 +62,22 @@ DTEND:20261020T065959Z
 DTSTART:20260930T040000Z
 SUMMARY:[젠레스 존 제로] [픽업] 록시\, 프로미아
 UID:zzz-banner-3d8e884b14@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:베스나\, 보댜니차 종료 2일 전
+TRIGGER:P2W4DT6H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:베스나\, 보댜니차 종료 3시간 전
+TRIGGER:P2W6DT3H59M
+END:VALARM
+DTEND:20261013T095900Z
+DTSTART:20260923T030000Z
+SUMMARY:[원신] [픽업] 베스나\, 보댜니차
+UID:genshin-banner-231@gameschedule
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -266,22 +282,6 @@ END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:베스나\, 보댜니차 종료 2일 전
-TRIGGER:P2W4DT6H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:베스나\, 보댜니차 종료 3시간 전
-TRIGGER:P2W6DT3H59M
-END:VALARM
-DTEND:20261013T095900Z
-DTSTART:20260923T030000Z
-SUMMARY:[원신] [픽업] 베스나\, 보댜니차
-UID:manual-4b800c17@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
 DESCRIPTION:도쿄 게임쇼 2026 종료 2일 전
 TRIGGER:P2DT23H59M59S
 END:VALARM
@@ -429,12 +429,12 @@ SUMMARY:[붕괴: 스타레일] [픽업] 펄
 UID:hsr-banner-95@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=lLmUGwqap6Y
+DESCRIPTION:https://www.youtube.com/watch?v=0XMRCUtrN5k
 DTEND:20261020T150000Z
 DTSTART:20260929T150000Z
 SUMMARY:[이환] [예측] 레이븐
 UID:ihwan-shp-2026-09-30@gameschedule
-URL:https://www.youtube.com/watch?v=lLmUGwqap6Y
+URL:https://www.youtube.com/watch?v=0XMRCUtrN5k
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:https://endfield.gryphline.com/ko-kr/news/5208
