@@ -825,27 +825,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "wuwa-pred-2026-09-10@gameschedule": {
-    "uid": "wuwa-pred-2026-09-10@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "banner",
-    "title": "[픽업] 경연, 히유키, 모니에",
-    "version_name": "신기루 속 등불 그림자, 속세에 깃든 검의 결심",
-    "start": "2026-09-10T02:00:00+00:00",
-    "end": "2026-09-29T03:59:00+00:00",
-    "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5358",
-    "url_kind": "공지",
-    "source": "cycle",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
-    "start_confirmed": true,
-    "end_confirmed": true,
-    "confirmed": true,
-    "predicted": false,
-    "date_evidence": {
-      "method": "explicit_window",
-      "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5358"
-    }
-  },
   "wuwa-hint-fybKvkz0Izs@gameschedule": {
     "uid": "wuwa-hint-fybKvkz0Izs@gameschedule",
     "game": "명조: 워더링 웨이브",
@@ -1102,7 +1081,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00"
+    "updated_at": "2026-09-29T05:26:17.418102+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1116,7 +1095,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00"
+    "updated_at": "2026-09-29T05:26:17.418102+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1596,7 +1575,7 @@
     "url": "https://www.youtube.com/watch?v=2-ub5LcSHvA",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1617,7 +1596,7 @@
     "url": "https://www.youtube.com/watch?v=U0pv2cRGgTs",
     "url_kind": "쇼케이스",
     "source": "cycle",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -1913,27 +1892,6 @@
     "source": "youtube",
     "updated_at": "2026-09-11T03:37:25.018350+00:00"
   },
-  "ihwan-shp-2026-09-30@gameschedule": {
-    "uid": "ihwan-shp-2026-09-30@gameschedule",
-    "game": "이환",
-    "type": "banner",
-    "title": "[예측] 레이븐",
-    "version_name": "누구를 위하여 기도를 올리나",
-    "start": "2026-09-29T15:00:00+00:00",
-    "end": "2026-10-20T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=7p3PLgNvlY0",
-    "url_kind": "공지",
-    "source": "showcase",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
-    "start_confirmed": true,
-    "end_confirmed": false,
-    "confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "showcase_duration",
-      "url": "https://www.youtube.com/watch?v=7p3PLgNvlY0"
-    }
-  },
   "ihwan-shp-2026-10-21@gameschedule": {
     "uid": "ihwan-shp-2026-10-21@gameschedule",
     "game": "이환",
@@ -1942,17 +1900,17 @@
     "version_name": "누구를 위하여 기도를 올리나",
     "start": "2026-10-20T15:00:00+00:00",
     "end": "2026-11-10T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=7p3PLgNvlY0",
+    "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
     "predicted": true,
     "date_evidence": {
       "method": "showcase_duration",
-      "url": "https://www.youtube.com/watch?v=7p3PLgNvlY0"
+      "url": "https://www.youtube.com/watch?v=yT2sG_tosBg"
     }
   },
   "wuwa-hint-Y1Ep8Zr56u4@gameschedule": {
@@ -2284,7 +2242,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00"
+    "updated_at": "2026-09-29T05:26:17.418102+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2321,7 +2279,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00"
+    "updated_at": "2026-09-29T05:26:17.418102+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2359,10 +2317,10 @@
       "레이븐",
       "아카네 린"
     ],
-    "url": "https://www.youtube.com/watch?v=7p3PLgNvlY0",
+    "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-26T11:12:25.966813+00:00"
+    "updated_at": "2026-09-29T05:26:17.418102+00:00"
   },
   "wuwa-rel-2026-09-29@gameschedule": {
     "uid": "wuwa-rel-2026-09-29@gameschedule",
@@ -2594,7 +2552,7 @@
     "end": "2026-11-03T06:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00",
     "chars": [
       "스커크",
       "에스코피에"
@@ -2612,7 +2570,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2626,7 +2584,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2643,7 +2601,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-28T23:09:51.241228+00:00",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2883,5 +2841,72 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-09-28T05:01:07.021474+00:00"
+  },
+  "ihwan-hint-OyAIEHozbDM@gameschedule": {
+    "uid": "ihwan-hint-OyAIEHozbDM@gameschedule",
+    "game": "이환",
+    "type": "hint",
+    "title": "레이븐",
+    "start": "2026-09-29T03:00:04Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=OyAIEHozbDM",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00"
+  },
+  "ihwan-hint-yT2sG_tosBg@gameschedule": {
+    "uid": "ihwan-hint-yT2sG_tosBg@gameschedule",
+    "game": "이환",
+    "type": "hint",
+    "title": "레이븐",
+    "start": "2026-09-29T03:10:25Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00"
+  },
+  "ihwan-hint-IOyz73oMS0E@gameschedule": {
+    "uid": "ihwan-hint-IOyz73oMS0E@gameschedule",
+    "game": "이환",
+    "type": "hint",
+    "title": "레이븐",
+    "start": "2026-09-29T03:05:38Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=IOyz73oMS0E",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00"
+  },
+  "ihwan-off-264413-레이븐@gameschedule": {
+    "uid": "ihwan-off-264413-레이븐@gameschedule",
+    "game": "이환",
+    "type": "banner",
+    "title": "[픽업] 레이븐, 라크리모사",
+    "version_name": "누구를 위하여 기도를 올리나",
+    "start": "2026-09-30T03:00:00+00:00",
+    "end": "2026-10-20T21:59:00+00:00",
+    "chars": [
+      "레이븐",
+      "라크리모사"
+    ],
+    "confirmed": true,
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
+    "url": "https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-09-29T05:26:17.418102+00:00",
+    "evidence_uids": [
+      "ihwan-off-264413-라크리모사@gameschedule",
+      "ihwan-off-264413-레이븐@gameschedule"
+    ],
+    "evidence_urls": [
+      "https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html"
+    ]
   }
 }

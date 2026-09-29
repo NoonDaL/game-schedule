@@ -32,12 +32,12 @@ SUMMARY:[무한대] 출시
 UID:manual-555fbf8f@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=7p3PLgNvlY0
+DESCRIPTION:https://www.youtube.com/watch?v=yT2sG_tosBg
 DTEND:20261110T150000Z
 DTSTART:20261020T150000Z
 SUMMARY:[이환] [예측] 아카네 린
 UID:ihwan-shp-2026-10-21@gameschedule
-URL:https://www.youtube.com/watch?v=7p3PLgNvlY0
+URL:https://www.youtube.com/watch?v=yT2sG_tosBg
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -216,6 +216,24 @@ END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
+DESCRIPTION:레이븐\, 라크리모사 종료 2일 전
+TRIGGER:P2W4DT18H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:레이븐\, 라크리모사 종료 3시간 전
+TRIGGER:P2W6DT15H59M
+END:VALARM
+DESCRIPTION:https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html
+DTEND:20261020T215900Z
+DTSTART:20260930T030000Z
+SUMMARY:[이환] [픽업] 레이븐\, 라크리모사
+UID:ihwan-off-264413-레이븐@gameschedule
+URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
 DESCRIPTION:에버에코 종료 2일 전
 TRIGGER:P2W5D
 END:VALARM
@@ -371,14 +389,6 @@ SUMMARY:[붕괴: 스타레일] [픽업] 펄
 UID:hsr-banner-95@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=7p3PLgNvlY0
-DTEND:20261020T150000Z
-DTSTART:20260929T150000Z
-SUMMARY:[이환] [예측] 레이븐
-UID:ihwan-shp-2026-09-30@gameschedule
-URL:https://www.youtube.com/watch?v=7p3PLgNvlY0
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:https://endfield.gryphline.com/ko-kr/news/5208
 DTEND:20261014T040000Z
 DTSTART:20260924T040000Z
@@ -407,24 +417,6 @@ DTEND:20261125T150000Z
 DTSTART:20261104T150000Z
 SUMMARY:[리버스: 1999] [픽업] 헤도네
 UID:manual-383f14f7@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:경연\, 히유키\, 모니에 종료 2일 전
-TRIGGER:P2W3DT1H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:경연\, 히유키\, 모니에 종료 3시간 전
-TRIGGER:P2W4DT22H59M
-END:VALARM
-DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5358
-DTEND:20260929T035900Z
-DTSTART:20260910T020000Z
-SUMMARY:[명조: 워더링 웨이브] [픽업] 경연\, 히유키\, 모니에
-UID:wuwa-pred-2026-09-10@gameschedule
-URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5358
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
