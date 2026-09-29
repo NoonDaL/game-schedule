@@ -8,6 +8,12 @@ X-PUBLISHED-TTL:PT6H
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DTEND:20261201T150000Z
+DTSTART:20261110T150000Z
+SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 1\, 방송 확정 전)
+UID:wuwa-pred-2026-11-11@gameschedule
+END:VEVENT
+BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:티프로스 종료 2일 전
@@ -50,12 +56,12 @@ ACTION:DISPLAY
 DESCRIPTION:여우의 별자리 종료 3시간 전
 TRIGGER:P3W1DT7H59M
 END:VALARM
-DESCRIPTION:https://www.youtube.com/watch?v=2-ub5LcSHvA
+DESCRIPTION:https://www.youtube.com/watch?v=U6UcfmymXrY
 DTEND:20261022T015900Z
 DTSTART:20260929T150000Z
 SUMMARY:[명조: 워더링 웨이브] [픽업] 여우의 별자리
 UID:wuwa-pred-2026-09-30@gameschedule
-URL:https://www.youtube.com/watch?v=2-ub5LcSHvA
+URL:https://www.youtube.com/watch?v=U6UcfmymXrY
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -136,6 +142,12 @@ DTEND:20261005T145959Z
 DTSTART:20261001T150000Z
 SUMMARY:[호요랜드] 행사
 UID:manual-5802f4fb@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20261222T150000Z
+DTSTART:20261201T150000Z
+SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 2\, 방송 확정 전)
+UID:wuwa-pred-2026-12-02@gameschedule
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM

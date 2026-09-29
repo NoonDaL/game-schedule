@@ -1069,7 +1069,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00"
+    "updated_at": "2026-09-29T22:08:12.985136+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1083,7 +1083,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00"
+    "updated_at": "2026-09-29T22:08:12.985136+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1560,17 +1560,17 @@
     "version_name": "거울에 잠긴 허상, 마음이 비추는 인간 세상",
     "start": "2026-09-29T15:00:00+00:00",
     "end": "2026-10-22T01:59:00+00:00",
-    "url": "https://www.youtube.com/watch?v=2-ub5LcSHvA",
+    "url": "https://www.youtube.com/watch?v=U6UcfmymXrY",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
     "predicted": false,
     "date_evidence": {
       "method": "explicit_window",
-      "url": "https://www.youtube.com/watch?v=2-ub5LcSHvA"
+      "url": "https://www.youtube.com/watch?v=U6UcfmymXrY"
     }
   },
   "wuwa-pred-2026-10-21@gameschedule": {
@@ -1584,7 +1584,7 @@
     "url": "https://www.youtube.com/watch?v=U0pv2cRGgTs",
     "url_kind": "쇼케이스",
     "source": "cycle",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -1891,7 +1891,7 @@
     "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2150,23 +2150,6 @@
     "source": "official",
     "updated_at": "2026-09-11T16:23:07.293191+00:00"
   },
-  "pgr-rel-2026-06-01@gameschedule": {
-    "uid": "pgr-rel-2026-06-01@gameschedule",
-    "game": "퍼니싱: 그레이 레이븐",
-    "type": "release",
-    "version": null,
-    "version_name": "장로귀항",
-    "title": "버전 출시",
-    "start": "2026-06-01T15:00:00+00:00",
-    "end": null,
-    "chars": [
-      "루시아·역면"
-    ],
-    "url": "https://www.youtube.com/watch?v=OXBI-lrK3aU",
-    "url_kind": "공지",
-    "source": "youtube",
-    "updated_at": "2026-09-11T16:50:48.135819+00:00"
-  },
   "pgr-collab-j4GviTMmQU4@gameschedule": {
     "uid": "pgr-collab-j4GviTMmQU4@gameschedule",
     "game": "퍼니싱: 그레이 레이븐",
@@ -2230,7 +2213,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00"
+    "updated_at": "2026-09-29T22:08:12.985136+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2267,7 +2250,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00"
+    "updated_at": "2026-09-29T22:08:12.985136+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2320,10 +2303,10 @@
     "start": "2026-09-29T15:00:00+00:00",
     "end": "2026-10-22T01:59:00+00:00",
     "chars": [],
-    "url": "https://www.youtube.com/watch?v=2-ub5LcSHvA",
+    "url": "https://www.youtube.com/watch?v=U6UcfmymXrY",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-09-26T16:13:42.237205+00:00"
+    "updated_at": "2026-09-29T22:08:12.985136+00:00"
   },
   "hsr-banner-97@gameschedule": {
     "uid": "hsr-banner-97@gameschedule",
@@ -2540,7 +2523,7 @@
     "end": "2026-11-03T06:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
     "chars": [
       "스커크",
       "에스코피에"
@@ -2558,7 +2541,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2572,7 +2555,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2589,7 +2572,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-09-29T12:36:36.232279+00:00",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2908,5 +2891,47 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-09-29T12:36:36.232279+00:00"
+  },
+  "wuwa-pred-2026-11-11@gameschedule": {
+    "uid": "wuwa-pred-2026-11-11@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "banner",
+    "title": "[예측] 픽업 배너 (Phase 1, 방송 확정 전)",
+    "version_name": null,
+    "start": "2026-11-10T15:00:00+00:00",
+    "end": "2026-12-01T15:00:00+00:00",
+    "url": null,
+    "url_kind": null,
+    "source": "cycle",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "cycle",
+      "url": null
+    }
+  },
+  "wuwa-pred-2026-12-02@gameschedule": {
+    "uid": "wuwa-pred-2026-12-02@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "banner",
+    "title": "[예측] 픽업 배너 (Phase 2, 방송 확정 전)",
+    "version_name": null,
+    "start": "2026-12-01T15:00:00+00:00",
+    "end": "2026-12-22T15:00:00+00:00",
+    "url": null,
+    "url_kind": null,
+    "source": "cycle",
+    "updated_at": "2026-09-29T22:08:12.985136+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "cycle",
+      "url": null
+    }
   }
 }
