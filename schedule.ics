@@ -8,10 +8,12 @@ X-PUBLISHED-TTL:PT6H
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 DTEND:20261201T150000Z
 DTSTART:20261110T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 1\, 방송 확정 전)
 UID:wuwa-pred-2026-11-11@gameschedule
+URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -56,12 +58,12 @@ ACTION:DISPLAY
 DESCRIPTION:여우의 별자리 종료 3시간 전
 TRIGGER:P3W1DT7H59M
 END:VALARM
-DESCRIPTION:https://www.youtube.com/watch?v=U6UcfmymXrY
+DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 DTEND:20261022T015900Z
 DTSTART:20260929T150000Z
 SUMMARY:[명조: 워더링 웨이브] [픽업] 여우의 별자리
 UID:wuwa-pred-2026-09-30@gameschedule
-URL:https://www.youtube.com/watch?v=U6UcfmymXrY
+URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -144,10 +146,25 @@ SUMMARY:[호요랜드] 행사
 UID:manual-5802f4fb@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 DTEND:20261222T150000Z
 DTSTART:20261201T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 2\, 방송 확정 전)
 UID:wuwa-pred-2026-12-02@gameschedule
+URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:명일방주: 엔드필드 방송 30분 전
+TRIGGER:-PT30M
+END:VALARM
+DESCRIPTION:https://www.youtube.com/watch?v=1TPiuhgcEO8
+DTEND:20261006T130000Z
+DTSTART:20261006T113000Z
+SUMMARY:[명일방주: 엔드필드] 「명일방주: 엔드필드」 「단청도」 버전 미리보기 특별 방송
+UID:endfield-1TPiuhgcEO8@gameschedule
+URL:https://www.youtube.com/watch?v=1TPiuhgcEO8
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -168,12 +185,12 @@ UID:ihwan-off-263945-링코@gameschedule
 URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260908/263945.html
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=U0pv2cRGgTs
+DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 DTEND:20261110T150000Z
 DTSTART:20261020T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 쇄명
 UID:wuwa-pred-2026-10-21@gameschedule
-URL:https://www.youtube.com/watch?v=U0pv2cRGgTs
+URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
