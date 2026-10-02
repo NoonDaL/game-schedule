@@ -1015,7 +1015,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00"
+    "updated_at": "2026-10-02T12:19:42.874090+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1029,7 +1029,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00"
+    "updated_at": "2026-10-02T12:19:42.874090+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1509,7 +1509,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1530,7 +1530,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -1837,7 +1837,7 @@
     "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2159,7 +2159,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00"
+    "updated_at": "2026-10-02T12:19:42.874090+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2196,7 +2196,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00"
+    "updated_at": "2026-10-02T12:19:42.874090+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2469,7 +2469,7 @@
     "end": "2026-11-03T06:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00",
     "chars": [
       "스커크",
       "에스코피에"
@@ -2487,7 +2487,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2501,7 +2501,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2518,7 +2518,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2849,7 +2849,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-02T05:16:31.906102+00:00",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2903,5 +2903,17 @@
     "url_kind": "공지",
     "source": "official",
     "updated_at": "2026-09-30T05:13:57.500208+00:00"
+  },
+  "wuwa-hint-7dxIizEBZaQ@gameschedule": {
+    "uid": "wuwa-hint-7dxIizEBZaQ@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "hint",
+    "title": "여우의 별자리",
+    "start": "2026-10-02T10:00:19Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=7dxIizEBZaQ",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-10-02T12:19:42.874090+00:00"
   }
 }
