@@ -664,18 +664,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "wuwa-hint-FOum33_Rewo@gameschedule": {
-    "uid": "wuwa-hint-FOum33_Rewo@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "hint",
-    "title": "루시",
-    "start": "2026-06-05T03:00:06Z",
-    "end": null,
-    "url": "https://www.youtube.com/watch?v=FOum33_Rewo",
-    "url_kind": "쇼케이스",
-    "source": "youtube",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
   "ihwan-MmUEE_e1f1w@gameschedule": {
     "uid": "ihwan-MmUEE_e1f1w@gameschedule",
     "game": "이환",
@@ -1015,7 +1003,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00"
+    "updated_at": "2026-10-03T04:59:32.061158+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1029,7 +1017,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00"
+    "updated_at": "2026-10-03T04:59:32.061158+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1388,28 +1376,6 @@
     "note": "경연 배너에 복각으로 동반.",
     "confirmed": true
   },
-  "endfield-off-0751-1@gameschedule": {
-    "uid": "endfield-off-0751-1@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[예측] 찬란한 빛의 축제",
-    "version_name": "봄날의 새벽",
-    "chars": [],
-    "start": "2026-05-14T04:00:00+00:00",
-    "end": "2026-06-05T04:00:00+00:00",
-    "confirmed": false,
-    "url": "https://endfield.gryphline.com/ko-kr/news/0751",
-    "url_kind": "공지",
-    "source": "official",
-    "updated_at": "2026-08-23T15:23:57.021825+00:00",
-    "start_confirmed": false,
-    "end_confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "legacy_requires_recheck",
-      "url": "https://endfield.gryphline.com/ko-kr/news/0751"
-    }
-  },
   "wuwa-up-U0pv2cRGgTs@gameschedule": {
     "uid": "wuwa-up-U0pv2cRGgTs@gameschedule",
     "game": "명조: 워더링 웨이브",
@@ -1509,7 +1475,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00",
+    "updated_at": "2026-10-03T04:59:32.061158+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1530,7 +1496,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00",
+    "updated_at": "2026-10-03T04:59:32.061158+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -1837,7 +1803,7 @@
     "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00",
+    "updated_at": "2026-10-03T04:59:32.061158+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2159,7 +2125,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00"
+    "updated_at": "2026-10-03T04:59:32.061158+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2196,7 +2162,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00"
+    "updated_at": "2026-10-03T04:59:32.061158+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2469,7 +2435,7 @@
     "end": "2026-11-03T06:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00",
+    "updated_at": "2026-10-03T04:59:32.061158+00:00",
     "chars": [
       "스커크",
       "에스코피에"
@@ -2487,7 +2453,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00",
+    "updated_at": "2026-10-03T04:59:32.061158+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2501,7 +2467,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00",
+    "updated_at": "2026-10-03T04:59:32.061158+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2518,7 +2484,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00",
+    "updated_at": "2026-10-03T04:59:32.061158+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2849,7 +2815,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-02T22:03:59.346855+00:00",
+    "updated_at": "2026-10-03T04:59:32.061158+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
