@@ -354,6 +354,14 @@ UID:manual-875c8da6@gameschedule
 URL:https://illustar.net/performance-list/mEQ8Nzne
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=wPh8jqiUhVg
+DTEND:20261201T150000Z
+DTSTART:20261110T150000Z
+SUMMARY:[이환] [예측] 엘림
+UID:ihwan-shp-2026-11-11@gameschedule
+URL:https://www.youtube.com/watch?v=wPh8jqiUhVg
+END:VEVENT
+BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:나르키소스 종료 2일 전
