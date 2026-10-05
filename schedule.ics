@@ -8,6 +8,14 @@ X-PUBLISHED-TTL:PT6H
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=6D2uSqNKmUM
+DTEND:20261222T150000Z
+DTSTART:20261201T150000Z
+SUMMARY:[이환] [예측] Exe
+UID:ihwan-shp-2026-12-02@gameschedule
+URL:https://www.youtube.com/watch?v=6D2uSqNKmUM
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 DTEND:20261201T150000Z
 DTSTART:20261110T150000Z
