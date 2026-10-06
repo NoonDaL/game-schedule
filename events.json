@@ -991,7 +991,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00"
+    "updated_at": "2026-10-06T12:50:43.483051+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -1005,7 +1005,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00"
+    "updated_at": "2026-10-06T12:50:43.483051+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1449,7 +1449,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1470,7 +1470,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -1777,7 +1777,7 @@
     "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2099,7 +2099,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00"
+    "updated_at": "2026-10-06T12:50:43.483051+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2136,7 +2136,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00"
+    "updated_at": "2026-10-06T12:50:43.483051+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2409,7 +2409,7 @@
     "end": "2026-11-03T06:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "chars": [
       "스커크",
       "에스코피에"
@@ -2427,7 +2427,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2441,7 +2441,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2458,7 +2458,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2789,7 +2789,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2879,7 +2879,7 @@
     "url": "https://www.youtube.com/watch?v=wPh8jqiUhVg",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2987,5 +2987,35 @@
     "url_kind": "버전 가이드",
     "source": "official",
     "updated_at": "2026-10-06T12:43:17.266189+00:00"
+  },
+  "manual-e492f14d@gameschedule": {
+    "uid": "manual-e492f14d@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 탕탕",
+    "start": "2026-10-29T04:00:00+00:00",
+    "end": "2026-11-19T03:59:00+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
+    "chars": [
+      "탕탕"
+    ],
+    "note": "재구축(복각) 헤드헌팅. 단청도 버전 중간에 사·명하와 병행한다. 서버 시간(UTC+8) 10/29 12:00 ~ 11/19 11:59 을 KST 로 옮긴 값. 10-15 공식 공지가 나오면 자동이 덮는다.",
+    "confirmed": true,
+    "version_name": "단청도"
+  },
+  "manual-129a72b2@gameschedule": {
+    "uid": "manual-129a72b2@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "event",
+    "title": "1주년 기념 오프라인 행사",
+    "start": "2027-01-08T15:00:00+00:00",
+    "end": "2027-01-10T14:59:59+00:00",
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-10-06T12:50:43.483051+00:00",
+    "note": "사용자 확인. 장소·시간 등 세부는 공지가 나오면 보강.",
+    "confirmed": true
   }
 }
