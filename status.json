@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-06T06:08:54.166855+00:00",
+  "checked_at": "2026-10-06T12:43:17.266189+00:00",
   "counts": {
     "broadcast": 15,
-    "banner": 49,
+    "banner": 51,
     "hint": 70,
     "release": 18,
     "window": 3,
@@ -13,7 +13,6 @@
     "launch": 6
   },
   "warnings": [
-    "명일방주: 엔드필드: 앞으로 8일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
     "젠레스 존 제로: 앞으로 14일치만 남음 (기준 21일) — manual.json 으로 메워야 할 수 있음",
     "수동 항목이 자동과 겹쳐 쓰이지 않음 (manual.json 에서 지워도 됨): 원신 09-23 [픽업] 베스나, 보댜니차"
   ],
@@ -21,8 +20,8 @@
     "wuwa:youtube": {
       "game": "명조: 워더링 웨이브",
       "source": "youtube",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 34,
       "missing": []
@@ -30,8 +29,8 @@
     "hsr:youtube": {
       "game": "붕괴: 스타레일",
       "source": "youtube",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 24,
       "missing": []
@@ -39,8 +38,8 @@
     "ihwan:youtube": {
       "game": "이환",
       "source": "youtube",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 24,
       "missing": []
@@ -48,8 +47,8 @@
     "endfield:youtube": {
       "game": "명일방주: 엔드필드",
       "source": "youtube",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 10,
       "missing": []
@@ -57,8 +56,8 @@
     "genshin:youtube": {
       "game": "원신",
       "source": "youtube",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 3,
       "missing": []
@@ -66,8 +65,8 @@
     "zzz:youtube": {
       "game": "젠레스 존 제로",
       "source": "youtube",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -75,8 +74,8 @@
     "re1999:youtube": {
       "game": "리버스: 1999",
       "source": "youtube",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 12,
       "missing": []
@@ -84,8 +83,8 @@
     "hsr:hoyolab": {
       "game": "붕괴: 스타레일",
       "source": "hoyolab",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 3,
       "missing": []
@@ -93,8 +92,8 @@
     "genshin:hoyolab": {
       "game": "원신",
       "source": "hoyolab",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 2,
       "missing": []
@@ -102,8 +101,8 @@
     "zzz:hoyolab": {
       "game": "젠레스 존 제로",
       "source": "hoyolab",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 1,
       "missing": []
@@ -111,8 +110,8 @@
     "wuwa:official": {
       "game": "명조: 워더링 웨이브",
       "source": "official",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 5,
       "missing": []
@@ -120,8 +119,8 @@
     "ihwan:official": {
       "game": "이환",
       "source": "official",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 4,
       "missing": []
@@ -129,17 +128,17 @@
     "endfield:official": {
       "game": "명일방주: 엔드필드",
       "source": "official",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
-      "count": 5,
+      "count": 8,
       "missing": []
     },
     "pgr:youtube": {
       "game": "퍼니싱: 그레이 레이븐",
       "source": "youtube",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 7,
       "missing": []
@@ -147,8 +146,8 @@
     "pgr:official": {
       "game": "퍼니싱: 그레이 레이븐",
       "source": "official",
-      "attempted_at": "2026-10-06T06:08:54.166855+00:00",
-      "last_success_at": "2026-10-06T06:08:54.166855+00:00",
+      "attempted_at": "2026-10-06T12:43:17.266189+00:00",
+      "last_success_at": "2026-10-06T12:43:17.266189+00:00",
       "state": "ok",
       "count": 4,
       "missing": []
@@ -156,52 +155,52 @@
   },
   "coverage": {
     "기타": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     },
     "리버스: 1999": {
       "confirmed_until": "2026-12-16T15:00:00+00:00",
       "including_estimates_until": "2026-12-16T15:00:00+00:00"
     },
     "명일방주: 엔드필드": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-14T04:00:00+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-11-25T22:00:00+00:00"
     },
     "명조: 워더링 웨이브": {
       "confirmed_until": "2026-10-22T01:59:00+00:00",
       "including_estimates_until": "2026-12-22T15:00:00+00:00"
     },
     "무한대": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     },
     "붕괴: 넥서스 아니마": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     },
     "붕괴: 스타레일": {
       "confirmed_until": "2026-11-10T14:00:00+00:00",
       "including_estimates_until": "2026-11-10T14:00:00+00:00"
     },
     "실버팰리스": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     },
     "아스트라에 오라티오": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     },
     "아주르 프로밀리아": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     },
     "원신": {
       "confirmed_until": "2026-11-03T06:59:00+00:00",
       "including_estimates_until": "2026-11-03T06:59:00+00:00"
     },
     "이터널 리턴": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     },
     "이환": {
       "confirmed_until": "2026-10-20T21:59:00+00:00",
@@ -212,16 +211,16 @@
       "including_estimates_until": "2026-10-20T06:59:59+00:00"
     },
     "파레이돌리아": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     },
     "퍼니싱: 그레이 레이븐": {
       "confirmed_until": "2026-11-04T20:00:00+00:00",
       "including_estimates_until": "2026-11-04T20:00:00+00:00"
     },
     "호요랜드": {
-      "confirmed_until": "2026-10-06T06:08:54.166855+00:00",
-      "including_estimates_until": "2026-10-06T06:08:54.166855+00:00"
+      "confirmed_until": "2026-10-06T12:43:17.266189+00:00",
+      "including_estimates_until": "2026-10-06T12:43:17.266189+00:00"
     }
   }
 }
