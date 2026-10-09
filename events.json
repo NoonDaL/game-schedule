@@ -628,18 +628,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "wuwa-hint-SE47ef9ZnDE@gameschedule": {
-    "uid": "wuwa-hint-SE47ef9ZnDE@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "hint",
-    "title": "루실라",
-    "start": "2026-06-11T03:00:02Z",
-    "end": null,
-    "url": "https://www.youtube.com/watch?v=SE47ef9ZnDE",
-    "url_kind": "쇼케이스",
-    "source": "youtube",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
   "ihwan-MmUEE_e1f1w@gameschedule": {
     "uid": "ihwan-MmUEE_e1f1w@gameschedule",
     "game": "이환",
@@ -967,7 +955,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00"
+    "updated_at": "2026-10-09T05:47:21.632652+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -981,7 +969,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00"
+    "updated_at": "2026-10-09T05:47:21.632652+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1425,7 +1413,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1446,7 +1434,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -1753,7 +1741,7 @@
     "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2075,7 +2063,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00"
+    "updated_at": "2026-10-09T05:47:21.632652+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2112,7 +2100,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00"
+    "updated_at": "2026-10-09T05:47:21.632652+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2385,7 +2373,7 @@
     "end": "2026-11-03T06:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "chars": [
       "스커크",
       "에스코피에"
@@ -2403,7 +2391,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2417,7 +2405,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2434,7 +2422,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2765,7 +2753,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2855,7 +2843,7 @@
     "url": "https://www.youtube.com/watch?v=wPh8jqiUhVg",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2973,7 +2961,7 @@
     "end": "2026-11-19T03:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-08T23:12:34.621214+00:00",
+    "updated_at": "2026-10-09T05:47:21.632652+00:00",
     "chars": [
       "탕탕"
     ],
