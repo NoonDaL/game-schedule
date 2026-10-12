@@ -49,6 +49,14 @@ UID:ihwan-shp-2026-10-21@gameschedule
 URL:https://www.youtube.com/watch?v=yT2sG_tosBg
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=R2P71x6v7mo
+DTEND:20261207T150000Z
+DTSTART:20261104T150000Z
+SUMMARY:[퍼니싱: 그레이 레이븐] [예측] 레이아·기성
+UID:pgr-shp-2026-11-05@gameschedule
+URL:https://www.youtube.com/watch?v=R2P71x6v7mo
+END:VEVENT
+BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:록시\, 프로미아 종료 2일 전
