@@ -101,6 +101,24 @@ END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
+DESCRIPTION:쇄명 종료 2일 전
+TRIGGER:P2W4DT1H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:쇄명 종료 3시간 전
+TRIGGER:P2W5DT22H59M
+END:VALARM
+DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
+DTEND:20261111T035900Z
+DTSTART:20261022T020000Z
+SUMMARY:[명조: 워더링 웨이브] [픽업] 쇄명
+UID:wuwa-pred-2026-10-22@gameschedule
+URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
 DESCRIPTION:천야•블레이드 종료 2일 전
 TRIGGER:P2W4DT10H
 END:VALARM
@@ -155,14 +173,6 @@ DTEND:20261103T065959Z
 DTSTART:20261013T100000Z
 SUMMARY:[원신] [픽업] 스커크\, 에스코피에
 UID:genshin-banner-234@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
-DTEND:20261110T150000Z
-DTSTART:20261020T150000Z
-SUMMARY:[명조: 워더링 웨이브] [예측] 쇄명
-UID:wuwa-pred-2026-10-21@gameschedule
-URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
