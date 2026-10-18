@@ -895,7 +895,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00"
+    "updated_at": "2026-10-18T04:09:52.069347+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -909,7 +909,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00"
+    "updated_at": "2026-10-18T04:09:52.069347+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1339,7 +1339,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1360,7 +1360,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -1655,27 +1655,6 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-09-11T03:37:25.018350+00:00"
-  },
-  "ihwan-shp-2026-10-21@gameschedule": {
-    "uid": "ihwan-shp-2026-10-21@gameschedule",
-    "game": "이환",
-    "type": "banner",
-    "title": "[예측] 아카네 린",
-    "version_name": "누구를 위하여 기도를 올리나",
-    "start": "2026-10-20T15:00:00+00:00",
-    "end": "2026-11-10T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
-    "url_kind": "공지",
-    "source": "showcase",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
-    "start_confirmed": false,
-    "end_confirmed": false,
-    "confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "showcase_duration",
-      "url": "https://www.youtube.com/watch?v=yT2sG_tosBg"
-    }
   },
   "wuwa-hint-Y1Ep8Zr56u4@gameschedule": {
     "uid": "wuwa-hint-Y1Ep8Zr56u4@gameschedule",
@@ -1989,7 +1968,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00"
+    "updated_at": "2026-10-18T04:09:52.069347+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -2026,7 +2005,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00"
+    "updated_at": "2026-10-18T04:09:52.069347+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2299,7 +2278,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2313,7 +2292,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2330,7 +2309,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2661,7 +2640,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2740,27 +2719,6 @@
     "source": "youtube",
     "updated_at": "2026-10-04T05:31:58.381549+00:00"
   },
-  "ihwan-shp-2026-11-11@gameschedule": {
-    "uid": "ihwan-shp-2026-11-11@gameschedule",
-    "game": "이환",
-    "type": "banner",
-    "title": "[예측] 엘림",
-    "version_name": "누구를 위하여 기도를 올리나",
-    "start": "2026-11-10T15:00:00+00:00",
-    "end": "2026-12-01T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=wPh8jqiUhVg",
-    "url_kind": "쇼케이스",
-    "source": "showcase",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
-    "start_confirmed": false,
-    "end_confirmed": false,
-    "confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "upcoming_phase",
-      "url": "https://www.youtube.com/watch?v=wPh8jqiUhVg"
-    }
-  },
   "ihwan-up-6D2uSqNKmUM@gameschedule": {
     "uid": "ihwan-up-6D2uSqNKmUM@gameschedule",
     "game": "이환",
@@ -2772,27 +2730,6 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-10-05T05:15:20.974812+00:00"
-  },
-  "ihwan-shp-2026-12-02@gameschedule": {
-    "uid": "ihwan-shp-2026-12-02@gameschedule",
-    "game": "이환",
-    "type": "banner",
-    "title": "[예측] Exe",
-    "version_name": null,
-    "start": "2026-12-01T15:00:00+00:00",
-    "end": "2026-12-22T15:00:00+00:00",
-    "url": "https://www.youtube.com/watch?v=6D2uSqNKmUM",
-    "url_kind": "쇼케이스",
-    "source": "showcase",
-    "updated_at": "2026-10-05T05:15:20.974812+00:00",
-    "start_confirmed": false,
-    "end_confirmed": false,
-    "confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "upcoming_phase",
-      "url": "https://www.youtube.com/watch?v=6D2uSqNKmUM"
-    }
   },
   "endfield-brief-release@gameschedule": {
     "uid": "endfield-brief-release@gameschedule",
@@ -2869,7 +2806,7 @@
     "end": "2026-11-19T03:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
     "chars": [
       "탕탕"
     ],
@@ -2966,7 +2903,7 @@
     "url": "https://www.youtube.com/watch?v=R2P71x6v7mo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-10-17T20:25:59.754860+00:00",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -3042,5 +2979,92 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-10-17T04:02:19.279118+00:00"
+  },
+  "wuwa-hint-h9M1cEVHPlw@gameschedule": {
+    "uid": "wuwa-hint-h9M1cEVHPlw@gameschedule",
+    "game": "명조: 워더링 웨이브",
+    "type": "hint",
+    "title": "쇄명",
+    "start": "2026-10-18T03:00:35Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=h9M1cEVHPlw",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00"
+  },
+  "ihwan-hint-SXUIicY-g2c@gameschedule": {
+    "uid": "ihwan-hint-SXUIicY-g2c@gameschedule",
+    "game": "이환",
+    "type": "hint",
+    "title": "아카네 린",
+    "start": "2026-10-18T03:00:08Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=SXUIicY-g2c",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00"
+  },
+  "ihwan-shp-2026-10-23@gameschedule": {
+    "uid": "ihwan-shp-2026-10-23@gameschedule",
+    "game": "이환",
+    "type": "banner",
+    "title": "[예측] 아카네 린",
+    "version_name": "누구를 위하여 기도를 올리나",
+    "start": "2026-10-22T15:00:00+00:00",
+    "end": "2026-11-12T15:00:00+00:00",
+    "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
+    "url_kind": "공지",
+    "source": "showcase",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "showcase_duration",
+      "url": "https://www.youtube.com/watch?v=yT2sG_tosBg"
+    }
+  },
+  "ihwan-shp-2026-11-13@gameschedule": {
+    "uid": "ihwan-shp-2026-11-13@gameschedule",
+    "game": "이환",
+    "type": "banner",
+    "title": "[예측] 엘림",
+    "version_name": "누구를 위하여 기도를 올리나",
+    "start": "2026-11-12T15:00:00+00:00",
+    "end": "2026-12-03T15:00:00+00:00",
+    "url": "https://www.youtube.com/watch?v=wPh8jqiUhVg",
+    "url_kind": "쇼케이스",
+    "source": "showcase",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "upcoming_phase",
+      "url": "https://www.youtube.com/watch?v=wPh8jqiUhVg"
+    }
+  },
+  "ihwan-shp-2026-12-04@gameschedule": {
+    "uid": "ihwan-shp-2026-12-04@gameschedule",
+    "game": "이환",
+    "type": "banner",
+    "title": "[예측] Exe",
+    "version_name": null,
+    "start": "2026-12-03T15:00:00+00:00",
+    "end": "2026-12-24T15:00:00+00:00",
+    "url": "https://www.youtube.com/watch?v=6D2uSqNKmUM",
+    "url_kind": "쇼케이스",
+    "source": "showcase",
+    "updated_at": "2026-10-18T04:09:52.069347+00:00",
+    "start_confirmed": false,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "upcoming_phase",
+      "url": "https://www.youtube.com/watch?v=6D2uSqNKmUM"
+    }
   }
 }
