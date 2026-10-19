@@ -141,30 +141,48 @@ SUMMARY:[붕괴: 스타레일] [픽업] 천야•블레이드
 UID:hsr-banner-97@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:사 종료 2일 전
+TRIGGER:P2W4DT23H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:사 종료 3시간 전
+TRIGGER:P2W6DT20H59M
+END:VALARM
+DESCRIPTION:https://endfield.gryphline.com/ko-kr/news/9560
+DTEND:20261105T035900Z
+DTSTART:20261015T040000Z
+SUMMARY:[명일방주: 엔드필드] [픽업] 사
+UID:endfield-off-9560-0@gameschedule
+URL:https://endfield.gryphline.com/ko-kr/news/9560
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:탕탕 종료 2일 전
+TRIGGER:P2W4DT23H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:탕탕 종료 3시간 전
+TRIGGER:P2W6DT20H59M
+END:VALARM
+DESCRIPTION:https://endfield.gryphline.com/ko-kr/news/9560
+DTEND:20261119T035900Z
+DTSTART:20261029T040000Z
+SUMMARY:[명일방주: 엔드필드] [픽업] 탕탕
+UID:endfield-off-9560-1@gameschedule
+URL:https://endfield.gryphline.com/ko-kr/news/9560
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 DTEND:20261222T150000Z
 DTSTART:20261201T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 픽업 배너 (Phase 2\, 방송 확정 전)
 UID:wuwa-pred-2026-12-02@gameschedule
 URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:명하 종료 2일 전
-TRIGGER:P2W4DT18H
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:명하 종료 3시간 전
-TRIGGER:P2W6DT15H
-END:VALARM
-DESCRIPTION:https://endfield.gryphline.com/version_briefing/latest
-DTEND:20261125T220000Z
-DTSTART:20261105T040000Z
-SUMMARY:[명일방주: 엔드필드] [픽업] 명하
-UID:endfield-brief-special_1_6_2@gameschedule
-URL:https://endfield.gryphline.com/version_briefing/latest
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -297,24 +315,6 @@ SUMMARY:[붕괴: 스타레일] 메가커피 콜라보
 UID:manual-7ddf57bb@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:사 종료 2일 전
-TRIGGER:P2W4DT23H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:사 종료 3시간 전
-TRIGGER:P2W6DT20H59M
-END:VALARM
-DESCRIPTION:https://endfield.gryphline.com/version_briefing/latest
-DTEND:20261105T035900Z
-DTSTART:20261015T040000Z
-SUMMARY:[명일방주: 엔드필드] [픽업] 사
-UID:endfield-brief-special_1_6_1@gameschedule
-URL:https://endfield.gryphline.com/version_briefing/latest
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=wPh8jqiUhVg
 DTEND:20261202T030000Z
 DTSTART:20261111T030000Z
@@ -339,6 +339,14 @@ SUMMARY:[리버스: 1999] [픽업] 나르키소스
 UID:manual-bcf6f7ec@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://endfield.gryphline.com/ko-kr/news/9560
+DTEND:20261126T040000Z
+DTSTART:20261105T040000Z
+SUMMARY:[명일방주: 엔드필드] [예측] 명하
+UID:endfield-off-9560-2@gameschedule
+URL:https://endfield.gryphline.com/ko-kr/news/9560
+END:VEVENT
+BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:펄 종료 2일 전
@@ -353,22 +361,6 @@ DTEND:20261110T140000Z
 DTSTART:20260928T030000Z
 SUMMARY:[붕괴: 스타레일] [픽업] 펄
 UID:hsr-banner-95@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:탕탕 종료 2일 전
-TRIGGER:P2W4DT23H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:탕탕 종료 3시간 전
-TRIGGER:P2W6DT20H59M
-END:VALARM
-DTEND:20261119T035900Z
-DTSTART:20261029T040000Z
-SUMMARY:[명일방주: 엔드필드] [픽업] 탕탕
-UID:manual-e492f14d@gameschedule
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM

@@ -895,7 +895,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00"
+    "updated_at": "2026-10-19T11:57:31.973755+00:00"
   },
   "re1999-ver-3.6@gameschedule": {
     "uid": "re1999-ver-3.6@gameschedule",
@@ -909,7 +909,7 @@
     "url": "https://www.youtube.com/watch?v=fT8vaiuefVU",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00"
+    "updated_at": "2026-10-19T11:57:31.973755+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1339,7 +1339,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -1947,7 +1947,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00"
+    "updated_at": "2026-10-19T11:57:31.973755+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -1984,7 +1984,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00"
+    "updated_at": "2026-10-19T11:57:31.973755+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2257,7 +2257,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2271,7 +2271,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2288,7 +2288,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2619,7 +2619,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2710,89 +2710,6 @@
     "source": "youtube",
     "updated_at": "2026-10-05T05:15:20.974812+00:00"
   },
-  "endfield-brief-release@gameschedule": {
-    "uid": "endfield-brief-release@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "release",
-    "title": "버전 출시",
-    "version_name": "단청도",
-    "start": "2026-10-15T04:00:00+00:00",
-    "end": null,
-    "start_confirmed": true,
-    "end_confirmed": false,
-    "confirmed": false,
-    "predicted": false,
-    "date_evidence": {
-      "method": "version_briefing"
-    },
-    "url": "https://endfield.gryphline.com/version_briefing/latest",
-    "url_kind": "버전 가이드",
-    "source": "official",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00"
-  },
-  "endfield-brief-special_1_6_1@gameschedule": {
-    "uid": "endfield-brief-special_1_6_1@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[픽업] 사",
-    "version_name": "단청도",
-    "chars": [
-      "사"
-    ],
-    "start": "2026-10-15T04:00:00+00:00",
-    "end": "2026-11-05T03:59:00+00:00",
-    "start_confirmed": true,
-    "end_confirmed": true,
-    "confirmed": true,
-    "predicted": false,
-    "date_evidence": {
-      "method": "version_briefing"
-    },
-    "url": "https://endfield.gryphline.com/version_briefing/latest",
-    "url_kind": "버전 가이드",
-    "source": "official",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00"
-  },
-  "endfield-brief-special_1_6_2@gameschedule": {
-    "uid": "endfield-brief-special_1_6_2@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[픽업] 명하",
-    "version_name": "단청도",
-    "chars": [
-      "명하"
-    ],
-    "start": "2026-11-05T04:00:00+00:00",
-    "end": "2026-11-25T22:00:00+00:00",
-    "start_confirmed": true,
-    "end_confirmed": true,
-    "confirmed": true,
-    "predicted": false,
-    "date_evidence": {
-      "method": "version_briefing"
-    },
-    "url": "https://endfield.gryphline.com/version_briefing/latest",
-    "url_kind": "버전 가이드",
-    "source": "official",
-    "updated_at": "2026-10-06T12:43:17.266189+00:00"
-  },
-  "manual-e492f14d@gameschedule": {
-    "uid": "manual-e492f14d@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[픽업] 탕탕",
-    "start": "2026-10-29T04:00:00+00:00",
-    "end": "2026-11-19T03:59:00+00:00",
-    "url": null,
-    "source": "manual",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
-    "chars": [
-      "탕탕"
-    ],
-    "note": "재구축(복각) 헤드헌팅. 단청도 버전 중간에 사·명하와 병행한다. 서버 시간(UTC+8) 10/29 12:00 ~ 11/19 11:59 을 KST 로 옮긴 값. 10-15 공식 공지가 나오면 자동이 덮는다.",
-    "confirmed": true,
-    "version_name": "단청도"
-  },
   "manual-129a72b2@gameschedule": {
     "uid": "manual-129a72b2@gameschedule",
     "game": "명일방주: 엔드필드",
@@ -2882,7 +2799,7 @@
     "url": "https://www.youtube.com/watch?v=R2P71x6v7mo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -3006,7 +2923,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -3027,7 +2944,7 @@
     "url": "https://www.youtube.com/watch?v=yT2sG_tosBg",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3048,7 +2965,7 @@
     "url": "https://www.youtube.com/watch?v=wPh8jqiUhVg",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-10-19T11:49:26.436688+00:00",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3078,5 +2995,74 @@
       "method": "upcoming_phase",
       "url": "https://www.youtube.com/watch?v=6D2uSqNKmUM"
     }
+  },
+  "endfield-off-9560-2@gameschedule": {
+    "uid": "endfield-off-9560-2@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[예측] 명하",
+    "version_name": "단청도",
+    "chars": [
+      "명하"
+    ],
+    "start": "2026-11-05T04:00:00+00:00",
+    "end": "2026-11-26T04:00:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "next_version_estimate"
+    },
+    "url": "https://endfield.gryphline.com/ko-kr/news/9560",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00"
+  },
+  "endfield-off-9560-1@gameschedule": {
+    "uid": "endfield-off-9560-1@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 탕탕",
+    "version_name": "단청도",
+    "chars": [
+      "탕탕"
+    ],
+    "start": "2026-10-29T04:00:00+00:00",
+    "end": "2026-11-19T03:59:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
+    "url": "https://endfield.gryphline.com/ko-kr/news/9560",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00"
+  },
+  "endfield-off-9560-0@gameschedule": {
+    "uid": "endfield-off-9560-0@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 사",
+    "version_name": "단청도",
+    "chars": [
+      "사"
+    ],
+    "start": "2026-10-15T04:00:00+00:00",
+    "end": "2026-11-05T03:59:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
+    "url": "https://endfield.gryphline.com/ko-kr/news/9560",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-10-19T11:57:31.973755+00:00"
   }
 }
