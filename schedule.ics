@@ -8,6 +8,14 @@ X-PUBLISHED-TTL:PT6H
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=6D2uSqNKmUM
+DTEND:20261223T030000Z
+DTSTART:20261202T030000Z
+SUMMARY:[이환] [예측] Exe
+UID:ihwan-shp-2026-12-02@gameschedule
+URL:https://www.youtube.com/watch?v=6D2uSqNKmUM
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 DTEND:20261201T150000Z
 DTSTART:20261110T150000Z
@@ -31,6 +39,14 @@ DTEND:20270114T163000Z
 DTSTART:20270114T150000Z
 SUMMARY:[무한대] 출시
 UID:manual-555fbf8f@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=yT2sG_tosBg
+DTEND:20261111T030000Z
+DTSTART:20261021T030000Z
+SUMMARY:[이환] [예측] 아카네 린
+UID:ihwan-shp-2026-10-21@gameschedule
+URL:https://www.youtube.com/watch?v=yT2sG_tosBg
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=R2P71x6v7mo
@@ -73,14 +89,6 @@ DTSTART:20260929T150000Z
 SUMMARY:[명조: 워더링 웨이브] [픽업] 여우의 별자리
 UID:wuwa-pred-2026-09-30@gameschedule
 URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=wPh8jqiUhVg
-DTEND:20261203T150000Z
-DTSTART:20261112T150000Z
-SUMMARY:[이환] [예측] 엘림
-UID:ihwan-shp-2026-11-13@gameschedule
-URL:https://www.youtube.com/watch?v=wPh8jqiUhVg
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -225,28 +233,12 @@ SUMMARY:[리버스: 1999] [픽업] 에버에코
 UID:manual-65cb19a7@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=6D2uSqNKmUM
-DTEND:20261224T150000Z
-DTSTART:20261203T150000Z
-SUMMARY:[이환] [예측] Exe
-UID:ihwan-shp-2026-12-04@gameschedule
-URL:https://www.youtube.com/watch?v=6D2uSqNKmUM
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:https://x.com/WW_KR_Official/status/2101290208796766621
 DTEND:20261018T163000Z
 DTSTART:20261018T150000Z
 SUMMARY:[명조: 워더링 웨이브] 롯데시네마 콜라보
 UID:manual-7d8c174c@gameschedule
 URL:https://x.com/WW_KR_Official/status/2101290208796766621
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=yT2sG_tosBg
-DTEND:20261112T150000Z
-DTSTART:20261022T150000Z
-SUMMARY:[이환] [예측] 아카네 린
-UID:ihwan-shp-2026-10-23@gameschedule
-URL:https://www.youtube.com/watch?v=yT2sG_tosBg
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -321,6 +313,14 @@ DTSTART:20261015T040000Z
 SUMMARY:[명일방주: 엔드필드] [픽업] 사
 UID:endfield-brief-special_1_6_1@gameschedule
 URL:https://endfield.gryphline.com/version_briefing/latest
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=wPh8jqiUhVg
+DTEND:20261202T030000Z
+DTSTART:20261111T030000Z
+SUMMARY:[이환] [예측] 엘림
+UID:ihwan-shp-2026-11-11@gameschedule
+URL:https://www.youtube.com/watch?v=wPh8jqiUhVg
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
