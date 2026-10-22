@@ -41,12 +41,12 @@ SUMMARY:[무한대] 출시
 UID:manual-555fbf8f@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=R2P71x6v7mo
+DESCRIPTION:https://www.youtube.com/watch?v=F9EIEKYQ_i4
 DTEND:20261207T150000Z
 DTSTART:20261104T150000Z
 SUMMARY:[퍼니싱: 그레이 레이븐] [예측] 레이아·기성
 UID:pgr-shp-2026-11-05@gameschedule
-URL:https://www.youtube.com/watch?v=R2P71x6v7mo
+URL:https://www.youtube.com/watch?v=F9EIEKYQ_i4
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -63,24 +63,6 @@ DTEND:20261020T065959Z
 DTSTART:20260930T040000Z
 SUMMARY:[젠레스 존 제로] [픽업] 록시\, 프로미아
 UID:zzz-banner-3d8e884b14@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:여우의 별자리 종료 2일 전
-TRIGGER:P2W6DT10H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:여우의 별자리 종료 3시간 전
-TRIGGER:P3W1DT7H59M
-END:VALARM
-DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
-DTEND:20261022T015900Z
-DTSTART:20260929T150000Z
-SUMMARY:[명조: 워더링 웨이브] [픽업] 여우의 별자리
-UID:wuwa-pred-2026-09-30@gameschedule
-URL:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -384,14 +366,6 @@ DTEND:20261111T035959Z
 DTSTART:20261021T030000Z
 SUMMARY:[젠레스 존 제로] [픽업] 피닉스\, 벨리나
 UID:zzz-banner-a474ee9d9e@gameschedule
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:https://endfield.gryphline.com/ko-kr/news/5208
-DTEND:20261015T040000Z
-DTSTART:20260924T040000Z
-SUMMARY:[명일방주: 엔드필드] [예측] 이본
-UID:endfield-off-5208-1@gameschedule
-URL:https://endfield.gryphline.com/ko-kr/news/5208
 END:VEVENT
 BEGIN:VEVENT
 DTEND:20261202T145959Z
