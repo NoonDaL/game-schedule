@@ -872,7 +872,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00"
+    "updated_at": "2026-10-25T04:19:20.948104+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1866,7 +1866,7 @@
     "url": "https://www.youtube.com/watch?v=oTWvNlRu8xI",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00"
+    "updated_at": "2026-10-25T04:19:20.948104+00:00"
   },
   "genshin-IaQ8rjkqGec@gameschedule": {
     "uid": "genshin-IaQ8rjkqGec@gameschedule",
@@ -1903,7 +1903,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00"
+    "updated_at": "2026-10-25T04:19:20.948104+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -2163,7 +2163,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2177,7 +2177,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2194,7 +2194,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2211,7 +2211,7 @@
     "end": "2026-11-25T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "chars": [
       "헤도네"
     ],
@@ -2228,7 +2228,7 @@
     "end": "2026-12-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "chars": [
       "나르키소스"
     ],
@@ -2708,7 +2708,7 @@
     "url": "https://www.youtube.com/watch?v=F9EIEKYQ_i4",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2832,7 +2832,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -2853,7 +2853,7 @@
     "url": "https://www.youtube.com/watch?v=wPh8jqiUhVg",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2874,7 +2874,7 @@
     "url": "https://www.youtube.com/watch?v=6D2uSqNKmUM",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00",
+    "updated_at": "2026-10-25T04:19:20.948104+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3046,7 +3046,7 @@
     "start": "2026-10-28T11:30:00Z",
     "url": "https://www.youtube.com/watch?v=SXTEyXX__I8",
     "source": "youtube",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00"
+    "updated_at": "2026-10-25T04:19:20.948104+00:00"
   },
   "re1999-ver-3.9@gameschedule": {
     "uid": "re1999-ver-3.9@gameschedule",
@@ -3060,7 +3060,7 @@
     "url": "https://www.youtube.com/watch?v=18Y_2ncWLHQ",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-10-24T20:34:17.084361+00:00"
+    "updated_at": "2026-10-25T04:19:20.948104+00:00"
   },
   "manual-09bc8445@gameschedule": {
     "uid": "manual-09bc8445@gameschedule",
