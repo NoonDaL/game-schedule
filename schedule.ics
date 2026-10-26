@@ -153,6 +153,19 @@ UID:endfield-off-9560-1@gameschedule
 URL:https://endfield.gryphline.com/ko-kr/news/9560
 END:VEVENT
 BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:붕괴: 스타레일 방송 30분 전
+TRIGGER:-PT30M
+END:VALARM
+DESCRIPTION:https://www.youtube.com/watch?v=ODRQ2MXjKTY
+DTEND:20261030T130000Z
+DTSTART:20261030T113000Z
+SUMMARY:[붕괴: 스타레일] 〈붕괴: 스타레일〉 4.7 버전 「지금\, 뭇별을 웃음으로」 프리뷰 스페셜 프로그램
+UID:hsr-ODRQ2MXjKTY@gameschedule
+URL:https://www.youtube.com/watch?v=ODRQ2MXjKTY
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
 DTEND:20261222T150000Z
 DTSTART:20261201T150000Z
