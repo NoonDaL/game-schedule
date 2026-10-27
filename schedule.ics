@@ -203,24 +203,6 @@ SUMMARY:[붕괴: 스타레일] [픽업] 에바네시아
 UID:hsr-banner-96@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:레이븐\, 라크리모사 종료 2일 전
-TRIGGER:P2W4DT18H59M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:레이븐\, 라크리모사 종료 3시간 전
-TRIGGER:P2W6DT15H59M
-END:VALARM
-DESCRIPTION:https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html
-DTEND:20261020T215900Z
-DTSTART:20260930T030000Z
-SUMMARY:[이환] [픽업] 레이븐\, 라크리모사
-UID:ihwan-off-264413-레이븐@gameschedule
-URL:https://nte.perfectworld.com/kr/article/news/gamenews/20260929/264413.html
-END:VEVENT
-BEGIN:VEVENT
 DTEND:20261125T163000Z
 DTSTART:20261125T150000Z
 SUMMARY:[아주르 프로밀리아] 출시
