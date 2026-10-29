@@ -8,12 +8,12 @@ X-PUBLISHED-TTL:PT6H
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=6D2uSqNKmUM
-DTEND:20261223T030000Z
-DTSTART:20261202T030000Z
+DESCRIPTION:https://www.youtube.com/watch?v=iF5hxpmEPsk
+DTEND:20261222T150000Z
+DTSTART:20261201T150000Z
 SUMMARY:[이환] [예측] Exe
 UID:ihwan-shp-2026-12-02@gameschedule
-URL:https://www.youtube.com/watch?v=6D2uSqNKmUM
+URL:https://www.youtube.com/watch?v=iF5hxpmEPsk
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:https://wutheringwaves.kurogames.com/kr/main/news/detail/5572
@@ -265,12 +265,12 @@ SUMMARY:[젠레스 존 제로] [픽업] 노르마
 UID:zzz-banner-bb7a913a3c@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=wPh8jqiUhVg
-DTEND:20261202T030000Z
-DTSTART:20261111T030000Z
+DESCRIPTION:https://www.youtube.com/watch?v=iF5hxpmEPsk
+DTEND:20261201T150000Z
+DTSTART:20261110T150000Z
 SUMMARY:[이환] [예측] 엘림
 UID:ihwan-shp-2026-11-11@gameschedule
-URL:https://www.youtube.com/watch?v=wPh8jqiUhVg
+URL:https://www.youtube.com/watch?v=iF5hxpmEPsk
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
