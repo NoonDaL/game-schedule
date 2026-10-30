@@ -35,6 +35,19 @@ SUMMARY:[명일방주: 엔드필드] 1주년 기념 오프라인 행사
 UID:manual-129a72b2@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:명조: 워더링 웨이브 방송 30분 전
+TRIGGER:-PT30M
+END:VALARM
+DESCRIPTION:https://www.youtube.com/watch?v=f2T-9DIyuWI
+DTEND:20261106T123000Z
+DTSTART:20261106T110000Z
+SUMMARY:[명조: 워더링 웨이브] 『명조:워더링 웨이브』 3.8 버전 프리뷰 특별 방송
+UID:wuwa-f2T-9DIyuWI@gameschedule
+URL:https://www.youtube.com/watch?v=f2T-9DIyuWI
+END:VEVENT
+BEGIN:VEVENT
 DTEND:20270114T163000Z
 DTSTART:20270114T150000Z
 SUMMARY:[무한대] 출시
