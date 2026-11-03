@@ -60,14 +60,6 @@ SUMMARY:[무한대] 출시
 UID:manual-555fbf8f@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=F9EIEKYQ_i4
-DTEND:20261207T150000Z
-DTSTART:20261104T150000Z
-SUMMARY:[퍼니싱: 그레이 레이븐] [예측] 레이아·기성
-UID:pgr-shp-2026-11-05@gameschedule
-URL:https://www.youtube.com/watch?v=F9EIEKYQ_i4
-END:VEVENT
-BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:아카네 린 종료 2일 전
@@ -424,6 +416,24 @@ DTSTART:20260924T030000Z
 SUMMARY:[퍼니싱: 그레이 레이븐] [픽업] 아델라이드·파연
 UID:pgr-off-5464-2026-09-24@gameschedule
 URL:https://pgr.kurogames.com/kr/news/5464
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:레이아·기성 종료 2일 전
+TRIGGER:P5W4DT17H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:레이아·기성 종료 3시간 전
+TRIGGER:P5W6DT14H
+END:VALARM
+DESCRIPTION:https://pgr.kurogames.com/kr/news/5681
+DTEND:20261216T200000Z
+DTSTART:20261105T030000Z
+SUMMARY:[퍼니싱: 그레이 레이븐] [픽업] 레이아·기성
+UID:pgr-off-5681-2026-11-05@gameschedule
+URL:https://pgr.kurogames.com/kr/news/5681
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
