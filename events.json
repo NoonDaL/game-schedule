@@ -540,18 +540,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "wuwa-win-2026-06-13@gameschedule": {
-    "uid": "wuwa-win-2026-06-13@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "window",
-    "title": "확정 기간",
-    "start": "2026-06-13T02:00:00+00:00",
-    "end": "2026-07-09T03:59:00+00:00",
-    "url": "https://www.youtube.com/watch?v=t-4E1rJuyDg",
-    "url_kind": "공지",
-    "source": "youtube",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
   "wuwa-hint-fybKvkz0Izs@gameschedule": {
     "uid": "wuwa-hint-fybKvkz0Izs@gameschedule",
     "game": "명조: 워더링 웨이브",
@@ -646,30 +634,6 @@
     "source": "official",
     "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
-  "wuwa-off-4888@gameschedule": {
-    "uid": "wuwa-off-4888@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "banner",
-    "title": "[예측] 루실라",
-    "version_name": "내일에 인화될 기억",
-    "start": "2026-06-13T02:00:00+00:00",
-    "end": "2026-07-09T03:59:00+00:00",
-    "chars": [
-      "루실라"
-    ],
-    "confirmed": false,
-    "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/4888",
-    "url_kind": "공지",
-    "source": "official",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00",
-    "start_confirmed": false,
-    "end_confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "legacy_requires_recheck",
-      "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/4888"
-    }
-  },
   "ihwan-off-263607-잔홍@gameschedule": {
     "uid": "ihwan-off-263607-잔홍@gameschedule",
     "game": "이환",
@@ -760,7 +724,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00"
+    "updated_at": "2026-11-06T06:11:40.373013+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1406,18 +1370,6 @@
     "source": "youtube",
     "updated_at": "2026-09-11T03:37:25.018350+00:00"
   },
-  "ihwan-up-Adrah3YyABc@gameschedule": {
-    "uid": "ihwan-up-Adrah3YyABc@gameschedule",
-    "game": "이환",
-    "type": "upcoming",
-    "title": "잔홍",
-    "start": "2026-07-09T03:00:31Z",
-    "end": null,
-    "url": "https://www.youtube.com/watch?v=Adrah3YyABc",
-    "url_kind": "쇼케이스",
-    "source": "youtube",
-    "updated_at": "2026-09-11T03:37:25.018350+00:00"
-  },
   "ihwan-up-v6SDjsbpKYA@gameschedule": {
     "uid": "ihwan-up-v6SDjsbpKYA@gameschedule",
     "game": "이환",
@@ -1791,7 +1743,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00"
+    "updated_at": "2026-11-06T06:11:40.373013+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -1994,7 +1946,7 @@
     "end": "2026-12-02T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "chars": [
       "에이언즈★아하"
     ],
@@ -2025,7 +1977,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -2039,7 +1991,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "chars": [
       "에버에코"
     ],
@@ -2056,7 +2008,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -2073,7 +2025,7 @@
     "end": "2026-11-25T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "chars": [
       "헤도네"
     ],
@@ -2090,7 +2042,7 @@
     "end": "2026-12-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "chars": [
       "나르키소스"
     ],
@@ -2673,7 +2625,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5572",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -2694,7 +2646,7 @@
     "url": "https://www.youtube.com/watch?v=MK4bIOILTHM",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -2715,7 +2667,7 @@
     "url": "https://www.youtube.com/watch?v=MK4bIOILTHM",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00",
+    "updated_at": "2026-11-06T06:11:40.373013+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2902,7 +2854,7 @@
     "url": "https://www.youtube.com/watch?v=18Y_2ncWLHQ",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00"
+    "updated_at": "2026-11-06T06:11:40.373013+00:00"
   },
   "manual-09bc8445@gameschedule": {
     "uid": "manual-09bc8445@gameschedule",
@@ -3008,7 +2960,7 @@
     "start": "2026-11-06T11:00:00Z",
     "url": "https://www.youtube.com/watch?v=f2T-9DIyuWI",
     "source": "youtube",
-    "updated_at": "2026-11-05T19:48:08.991631+00:00"
+    "updated_at": "2026-11-06T06:11:40.373013+00:00"
   },
   "hsr-rel-2026-11-10@gameschedule": {
     "uid": "hsr-rel-2026-11-10@gameschedule",
