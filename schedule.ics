@@ -180,19 +180,6 @@ END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:붕괴: 스타레일 방송 30분 전
-TRIGGER:-PT30M
-END:VALARM
-DESCRIPTION:https://www.youtube.com/watch?v=ODRQ2MXjKTY
-DTEND:20261030T125500Z
-DTSTART:20261030T112500Z
-SUMMARY:[붕괴: 스타레일] 〈붕괴: 스타레일〉 4.7 버전 「지금\, 뭇별을 웃음으로」 프리뷰 스페셜 프로그램
-UID:hsr-ODRQ2MXjKTY@gameschedule
-URL:https://www.youtube.com/watch?v=ODRQ2MXjKTY
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
 DESCRIPTION:스커크\, 에스코피에 종료 2일 전
 TRIGGER:P2W4DT20H59M59S
 END:VALARM
@@ -365,12 +352,12 @@ SUMMARY:[젠레스 존 제로] [픽업] 피닉스\, 벨리나
 UID:zzz-banner-a474ee9d9e@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=gknmYfbX57g
+DESCRIPTION:https://www.youtube.com/watch?v=3TU_i70R4S4
 DTEND:20261202T150000Z
 DTSTART:20261111T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 릴리\, 시그리카\, 구원
 UID:wuwa-pred-2026-11-12@gameschedule
-URL:https://www.youtube.com/watch?v=gknmYfbX57g
+URL:https://www.youtube.com/watch?v=3TU_i70R4S4
 END:VEVENT
 BEGIN:VEVENT
 DTEND:20261203T163000Z
