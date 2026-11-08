@@ -352,12 +352,22 @@ SUMMARY:[젠레스 존 제로] [픽업] 피닉스\, 벨리나
 UID:zzz-banner-a474ee9d9e@gameschedule
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:https://www.youtube.com/watch?v=3TU_i70R4S4
-DTEND:20261202T150000Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:릴리\, 시그리카\, 구원 종료 2일 전
+TRIGGER:P2W5DT12H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:릴리\, 시그리카\, 구원 종료 3시간 전
+TRIGGER:P3WT9H59M
+END:VALARM
+DESCRIPTION:https://www.youtube.com/watch?v=8IIg-HWA-OM
+DTEND:20261203T035900Z
 DTSTART:20261111T150000Z
-SUMMARY:[명조: 워더링 웨이브] [예측] 릴리\, 시그리카\, 구원
+SUMMARY:[명조: 워더링 웨이브] [픽업] 릴리\, 시그리카\, 구원
 UID:wuwa-pred-2026-11-12@gameschedule
-URL:https://www.youtube.com/watch?v=3TU_i70R4S4
+URL:https://www.youtube.com/watch?v=8IIg-HWA-OM
 END:VEVENT
 BEGIN:VEVENT
 DTEND:20261203T163000Z
