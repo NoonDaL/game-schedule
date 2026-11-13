@@ -651,7 +651,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00"
+    "updated_at": "2026-11-13T06:14:28.691658+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -775,29 +775,6 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-08-23T12:53:36.518342+00:00"
-  },
-  "endfield-off-0758-1@gameschedule": {
-    "uid": "endfield-off-0758-1@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[예측] 카뮤",
-    "version_name": "과거를 찾아서",
-    "chars": [
-      "카뮤"
-    ],
-    "start": "2026-06-26T04:00:00+00:00",
-    "end": "2026-07-16T04:00:00+00:00",
-    "start_confirmed": true,
-    "end_confirmed": false,
-    "confirmed": false,
-    "predicted": true,
-    "date_evidence": {
-      "method": "next_version_estimate"
-    },
-    "url": "https://endfield.gryphline.com/ko-kr/news/0758",
-    "url_kind": "공지",
-    "source": "official",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
   "endfield-off-5200-0@gameschedule": {
     "uid": "endfield-off-5200-0@gameschedule",
@@ -1581,7 +1558,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00"
+    "updated_at": "2026-11-13T06:14:28.691658+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -1784,7 +1761,7 @@
     "end": "2026-12-02T14:59:59+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "chars": [
       "에이언즈★아하"
     ],
@@ -1815,7 +1792,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1829,7 +1806,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "chars": [
       "에버에코"
     ],
@@ -1846,7 +1823,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -1863,7 +1840,7 @@
     "end": "2026-11-25T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "chars": [
       "헤도네"
     ],
@@ -1880,7 +1857,7 @@
     "end": "2026-12-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "chars": [
       "나르키소스"
     ],
@@ -2421,7 +2398,7 @@
     "url": "https://www.youtube.com/watch?v=MK4bIOILTHM",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2608,7 +2585,7 @@
     "url": "https://www.youtube.com/watch?v=18Y_2ncWLHQ",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00"
+    "updated_at": "2026-11-13T06:14:28.691658+00:00"
   },
   "manual-09bc8445@gameschedule": {
     "uid": "manual-09bc8445@gameschedule",
@@ -2934,7 +2911,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -2955,7 +2932,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-12T23:27:11.303519+00:00",
+    "updated_at": "2026-11-13T06:14:28.691658+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
