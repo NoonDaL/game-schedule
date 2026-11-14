@@ -33,6 +33,14 @@ SUMMARY:[명일방주: 엔드필드] 1주년 기념 오프라인 행사
 UID:manual-129a72b2@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=dwt-MKfMblI
+DTEND:20270112T150000Z
+DTSTART:20261222T150000Z
+SUMMARY:[이환] [예측] 니샤
+UID:ihwan-shp-2026-12-23@gameschedule
+URL:https://www.youtube.com/watch?v=dwt-MKfMblI
+END:VEVENT
+BEGIN:VEVENT
 DTEND:20270114T163000Z
 DTSTART:20270114T150000Z
 SUMMARY:[무한대] 출시
