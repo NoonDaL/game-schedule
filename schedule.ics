@@ -230,6 +230,14 @@ SUMMARY:[붕괴: 스타레일] [픽업] 은랑 LV.999\, 스파키\, 효광
 UID:hsr-banner-101@gameschedule
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:https://www.youtube.com/watch?v=q1F4Zjb8YE0
+DTEND:20270202T150000Z
+DTSTART:20270112T150000Z
+SUMMARY:[이환] [예측] 앨리
+UID:ihwan-shp-2027-01-13@gameschedule
+URL:https://www.youtube.com/watch?v=q1F4Zjb8YE0
+END:VEVENT
+BEGIN:VEVENT
 DTEND:20261223T043000Z
 DTSTART:20261223T030000Z
 SUMMARY:[붕괴: 스타레일] [예측] 젠레스 존 제로 콜라보
