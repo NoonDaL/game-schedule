@@ -238,6 +238,19 @@ UID:ihwan-shp-2027-01-13@gameschedule
 URL:https://www.youtube.com/watch?v=q1F4Zjb8YE0
 END:VEVENT
 BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:명일방주: 엔드필드 방송 30분 전
+TRIGGER:-PT30M
+END:VALARM
+DESCRIPTION:https://www.youtube.com/watch?v=vpr1L_5SJ4A
+DTEND:20261121T130000Z
+DTSTART:20261121T113000Z
+SUMMARY:[명일방주: 엔드필드] 「명일방주: 엔드필드」신규 버전 & 2.0 공개 미리보기 특별 방송
+UID:endfield-vpr1L_5SJ4A@gameschedule
+URL:https://www.youtube.com/watch?v=vpr1L_5SJ4A
+END:VEVENT
+BEGIN:VEVENT
 DTEND:20261223T043000Z
 DTSTART:20261223T030000Z
 SUMMARY:[붕괴: 스타레일] [예측] 젠레스 존 제로 콜라보
