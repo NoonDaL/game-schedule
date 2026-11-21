@@ -12,11 +12,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="app.css?v=12">
+<link rel="stylesheet" href="app.css?v=13">
 </head>
 <body>
 
-<nav class="nav" aria-label="주 메뉴">
+<nav class="nav over-hero" aria-label="주 메뉴">
   <a class="brand" href="index.html"><img class="brand-mark" src="favicon.svg" alt="" width="28" height="28">게임 일정</a>
   <div class="nav-links">
     <a href="index.html" aria-current="page">홈</a>
@@ -24,7 +24,7 @@
     <a class="opt" href="#games">게임</a>
     <a class="opt" href="#launches">출시 예정</a>
   </div>
-  <a class="btn btn-main btn-sm" href="#subscribe"><i class="ph ph-calendar-plus"></i>캘린더 구독</a>
+  <a class="nav-sub" href="#subscribe" aria-label="캘린더 구독"><i class="ph ph-calendar-plus"></i><span>캘린더 구독</span></a>
 </nav>
 
 <main>
@@ -47,7 +47,7 @@
     </div>
   </section>
 
-  <nav class="marquee" aria-label="게임 바로가기"><div class="track" id="marquee"></div></nav>
+  <nav class="bubbles" aria-label="게임 바로가기"><div class="wrap bubble-row" id="bubbles"></div></nav>
 
   <section class="block" id="stack-sec">
     <div class="wrap">
@@ -116,8 +116,8 @@
   </div>
 </footer>
 
-<script src="app.js?v=12"></script>
-<script src="fx.js?v=12" defer></script>
+<script src="app.js?v=13"></script>
+<script src="fx.js?v=13" defer></script>
 <script>
 (async () => {
   const A = App, D = await A.load();
@@ -163,13 +163,14 @@
     stackItems.length = 0;
   }
 
-  // 게임 띠: 같은 목록을 두 번 이어 붙여 끊김 없이 돈다. 두 번째는 보조기기에 숨긴다.
-  const tiles = D.order.filter(g => g !== A.MISC && A.meta(g)).map(g => {
+  // 게임 버블: 게임마다 진행 중 픽업 수를 배지로.
+  document.getElementById("bubbles").innerHTML = D.order.filter(g => g !== A.MISC && A.meta(g)).map(g => {
     const m = A.meta(g);
-    return `<a href="game.html?g=${encodeURIComponent(m.key)}"><img src="${A.esc(m.avatar)}" alt="" loading="lazy">${A.esc(A.short(g))}</a>`;
+    const n = live.filter(e => A.gamesOf(e).includes(g)).length;
+    const badge = n ? `<b><span class="vh">진행 중 </span>${n}</b>` : "";
+    return `<a class="bubble${n ? "" : " idle"}" href="game.html?g=${encodeURIComponent(m.key)}" style="${A.gvar(g)}">
+      <span class="ring"><img src="${A.esc(m.avatar)}" alt="" loading="lazy">${badge}</span><span class="nm">${A.esc(A.short(g))}</span></a>`;
   }).join("");
-  document.getElementById("marquee").innerHTML = tiles
-    + `<span class="dup" aria-hidden="true" style="display:contents">${tiles.replaceAll("<a ", '<a tabindex="-1" ')}</span>`;
 
   const rail = live.filter(e => e !== hero && !stackItems.includes(e));
   document.getElementById("live-count").textContent = live.length ? `${live.length}개` : "";

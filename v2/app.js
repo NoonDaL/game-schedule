@@ -368,6 +368,14 @@
     set(k, v) { try { localStorage.setItem("gsched-v2:" + k, JSON.stringify(v)); } catch (e) {} },
   };
 
+  // 내비게이션: 조금이라도 내리면 바탕과 아래 선을 깐다.
+  const nav = document.querySelector(".nav");
+  if (nav) {
+    const navScroll = () => nav.classList.toggle("scrolled", scrollY > 8);
+    addEventListener("scroll", navScroll, { passive: true });
+    navScroll();
+  }
+
   window.App = { D, load, gvar, gcolor, ticket, bindTickets, bindHolo, apertureFallback, media, HOLO, timing, isLive, isUpcoming, card, feature, row, launchCard, gameTile,
     title, gamesOf, short, meta, chip, esc, reveal, footer, dateLabel, shortDate, dayIndex, parts, store, MISC };
 })();
