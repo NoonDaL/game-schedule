@@ -14,6 +14,15 @@
     "아주르 프로밀리아": "아주르",
   };
   const MISC = "기타";
+  // 게임 색. 게임 이름 글자와, 카드에 올렸을 때 그림 주변 빛에만 쓴다 (넓은 면엔 안 쓴다).
+  // 각 게임 대표 그림의 주된 색에서 골랐다. 없는 게임은 기본 글자색.
+  const GAME_COLOR = {
+    "명조: 워더링 웨이브": "#5ed6c8", "붕괴: 스타레일": "#8fa2ff", "원신": "#f0c46a",
+    "젠레스 존 제로": "#c4ee3a", "이환": "#ff7aa6", "명일방주: 엔드필드": "#f2d43a",
+    "리버스: 1999": "#e7a165", "퍼니싱: 그레이 레이븐": "#ff6262", "아주르 프로밀리아": "#bd9bff",
+  };
+  const gcolor = g => GAME_COLOR[g] || "";
+  const gvar = g => (gcolor(g) ? `--g:${gcolor(g)};` : "");
 
   const D = { events: [], games: {}, status: null, order: [], now: new Date() };
 
@@ -150,32 +159,35 @@
 
   const TYPE_LABEL = { banner: "픽업", broadcast: "방송", event: "행사" };
 
+  function flags(e, opt = {}) {
+    return [e.new_char ? `<span class="flag new">신규</span>` : "",
+            opt.kind ? `<span class="flag kind">${TYPE_LABEL[e.type] || ""}</span>` : "",
+            e.predicted ? `<span class="flag pred">예측</span>` : ""].join("");
+  }
+
   function card(e, opt = {}) {
     const t = timing(e);
-    const pred = e.predicted ? `<span class="pill soft">예측</span>` : "";
-    const fresh = e.new_char ? `<span class="pill soft">신규</span>` : "";
-    const kind = opt.kind ? `<span class="pill soft">${TYPE_LABEL[e.type] || ""}</span>` : "";
     const ver = e.version_name ? `<div class="card-sub">${esc(e.version_name)}</div>` : "";
     const range = e.type === "event" && e.e ? `<div class="card-sub">${shortDate(e.s)} - ${shortDate(e.e)}</div>` : "";
-    return `<a class="card reveal" href="${esc(link(e))}" target="_blank" rel="noopener" style="--i:${opt.i || 0}">
+    return `<a class="card reveal" href="${esc(link(e))}" target="_blank" rel="noopener" style="--i:${opt.i || 0};${gvar(e.game)}">
       <div class="media">${media(e)}</div>
       <div class="card-body">
-        <div class="when">${chip(e.game)}<span class="pill${t.hot ? " hot" : ""}">${esc(t.text)}</span></div>
+        <div class="meta">${chip(e.game)}<span class="dd${t.hot ? " hot" : ""}">${esc(t.text)}</span></div>
         <div class="card-title">${esc(title(e))}</div>
         ${ver}${range}
-        <div class="when"><span class="card-sub">${esc(t.sub)}</span><span>${fresh}${kind}${pred}</span></div>
+        <div class="date"><span>${esc(t.sub)}</span>${flags(e, opt)}</div>
       </div></a>`;
   }
 
   function feature(e) {
     const t = timing(e);
-    return `<a class="card feature reveal" href="${esc(link(e))}" target="_blank" rel="noopener">
+    return `<a class="card feature reveal" href="${esc(link(e))}" target="_blank" rel="noopener" style="${gvar(e.game)}">
       <div class="media">${media(e)}<div class="scrim"></div></div>
       <div class="over">
         <div>${chip(e.game)}</div>
         <div class="card-title">${esc(title(e))}</div>
-        <div class="when"><span class="card-sub">${esc(e.version_name || t.sub)}</span>
-          <span class="pill${t.hot ? " hot" : ""}">${esc(t.text)}</span></div>
+        <div class="meta"><span class="card-sub">${esc(e.version_name || t.sub)}</span>
+          <span class="dd${t.hot ? " hot" : ""}">${esc(t.text)}</span></div>
       </div></a>`;
   }
 
@@ -185,9 +197,9 @@
     const date = e.type === "event" && e.e
       ? `<b>${shortDate(e.s)}</b>${shortDate(e.e)} 까지`
       : `<b>${p.month}.${p.day}</b>${p.weekday} ${p.hour}:${p.minute}`;
-    return `<a class="row reveal" href="${esc(link(e))}" target="_blank" rel="noopener" style="--i:${i}">
+    return `<a class="row reveal" href="${esc(link(e))}" target="_blank" rel="noopener" style="--i:${i};${gvar(e.game)}">
       <div class="media">${media(e)}</div>
-      <div><div class="t">${esc(title(e))}</div><div class="s">${esc(short(e.game))} · ${esc(t.text)}</div></div>
+      <div><div class="t">${esc(title(e))}</div><div class="s"><span class="g">${esc(short(e.game))}</span> · <span class="dd${t.hot ? " hot" : ""}">${esc(t.text)}</span></div></div>
       <div class="date">${date}</div></a>`;
   }
 
@@ -195,7 +207,7 @@
     const w = launchWhen(e);
     const m = meta(e.game);
     const img = m && m.avatar ? `<img src="${esc(m.avatar)}" alt="" style="width:30px;height:30px;border-radius:50%">` : "";
-    return `<div class="launch reveal${w.tbd ? " tbd" : ""}" style="--i:${i}">
+    return `<div class="launch reveal${w.tbd ? " tbd" : ""}" style="--i:${i};${gvar(e.game)}">
       <div style="display:flex;gap:10px;align-items:center">${img}<div class="n">${esc(e.game)}</div></div>
       <div class="d"><span>${esc(w.sub || "출시")}</span><b>${esc(w.text)}</b></div></div>`;
   }
@@ -207,7 +219,7 @@
     const art = m.banner ? `style="background-image:url('${esc(m.banner)}')"` : "";
     const av = m.avatar ? `<img src="${esc(m.avatar)}" alt="" loading="lazy">` : "";
     const href = m.key ? `game.html?g=${encodeURIComponent(m.key)}` : `schedule.html`;
-    return `<a class="game-tile reveal" href="${href}" style="--i:${i}">
+    return `<a class="game-tile reveal" href="${href}" style="--i:${i};${gvar(g)}">
       <div class="art" ${art}></div>
       <div class="info">${av}<div><div class="name">${esc(g)}</div>
       <div class="count">진행 중 ${live} · 예정 ${next}</div></div></div></a>`;
@@ -238,6 +250,6 @@
     set(k, v) { try { localStorage.setItem("gsched-v2:" + k, JSON.stringify(v)); } catch (e) {} },
   };
 
-  window.App = { D, load, timing, isLive, isUpcoming, card, feature, row, launchCard, gameTile,
+  window.App = { D, load, gvar, gcolor, timing, isLive, isUpcoming, card, feature, row, launchCard, gameTile,
     title, gamesOf, short, meta, chip, esc, reveal, footer, dateLabel, shortDate, dayIndex, parts, store, MISC };
 })();

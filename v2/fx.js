@@ -29,7 +29,7 @@ float noise(vec2 p){
 }
 float fbm(vec2 p){
   float v = 0., a = .5;
-  for (int i = 0; i < 5; i++) { v += a * noise(p); p = p * 2.03 + 11.7; a *= .5; }
+  for (int i = 0; i < 4; i++) { v += a * noise(p); p = p * 2.03 + 11.7; a *= .5; }
   return v;
 }
 void main(){
@@ -44,15 +44,15 @@ void main(){
   vec3 dark  = vec3(.047, .047, .059);
   vec3 light = vec3(.953, .949, .937);
   vec3 base  = mix(dark, light, uLight);
-  vec3 ember = vec3(1., .46, .22);
+  vec3 ember = vec3(1., .5, .24);
   vec3 rose  = vec3(1., .30, .52);
   vec3 cobalt = vec3(.34, .44, 1.);
 
   vec3 glow = mix(ember, rose, smoothstep(.25, .85, q.x));
   glow = mix(glow, cobalt, smoothstep(.45, .95, r.y) * .55);
-  float amt = smoothstep(.34, .95, f) * .9;
+  float amt = smoothstep(.18, .78, f);
   // 아래로 갈수록 페이지 바탕으로 녹인다. 경계선이 보이면 안 된다.
-  amt *= smoothstep(.0, .6, uv.y) * mix(1., .6, uLight);
+  amt *= smoothstep(.0, .5, uv.y) * mix(1., .6, uLight);
   vec3 col = mix(base, glow, amt);
   col += (hash(gl_FragCoord.xy + fract(uTime) * 91.7) - .5) * mix(.05, .03, uLight);
   gl_FragColor = vec4(col, 1.);
@@ -87,8 +87,12 @@ void main(){
 
   const lightQ = matchMedia("(prefers-color-scheme: light)");
   const reduceQ = matchMedia("(prefers-reduced-motion: reduce)");
-  // 해상도는 절반으로 그린다. 흐릿한 빛이라 차이가 안 보이고, 픽셀 수가 1/4 이 된다.
-  const SCALE = 0.5;
+  // 해상도는 1/3 로 그린다. 흐릿한 빛이라 차이가 안 보인다. 절반일 때 사용자 화면에서
+  // FPS 가 19~30 까지 떨어졌다 — 픽셀 수가 절반의 0.44배가 된다.
+  const SCALE = 0.34;
+  // 빛은 천천히 움직이므로 초당 30번이면 충분하다. 매 프레임 그리면 GPU 를 쓸데없이 쓴다.
+  const FRAME_MS = 1000 / 30;
+  let last = 0;
 
   function resize() {
     const w = Math.max(1, Math.floor(canvas.clientWidth * SCALE));
@@ -106,7 +110,10 @@ void main(){
     gl.uniform1f(uTime, reduceQ.matches ? 14 : (now - t0) / 1000 + 14);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   }
-  function loop(now) { draw(now); raf = requestAnimationFrame(loop); }
+  function loop(now) {
+    if (now - last >= FRAME_MS) { last = now; draw(now); }
+    raf = requestAnimationFrame(loop);
+  }
   function sync() {
     cancelAnimationFrame(raf);
     raf = 0;
