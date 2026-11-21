@@ -81,6 +81,8 @@ body::after {
 }
 
 .wrap { width: min(1320px, 100% - 40px); margin-inline: auto; }
+/* 바로가기로 온 칸이 고정된 상단 바 밑에 가려지지 않게 */
+[id] { scroll-margin-top: 76px; }
 
 /* ---------- 내비게이션: 밑줄 탭 ----------
    맨 위에선 바탕 없이 떠 있고, 내리면(.scrolled) 얇은 바와 아래 선이 생긴다.
@@ -120,10 +122,12 @@ body::after {
 .nav-sub { display: flex; align-items: center; gap: 7px; color: var(--ink-2); font-size: 14px; font-weight: 600; transition: color .2s; }
 .nav-sub i { font-size: 18px; }
 .nav-sub:hover { color: var(--accent); }
-.nav.over-hero:not(.scrolled) { color: #fff; }
-.nav.over-hero:not(.scrolled) .nav-links a, .nav.over-hero:not(.scrolled) .nav-sub { color: rgba(255, 255, 255, .72); }
-.nav.over-hero:not(.scrolled) .nav-links a[aria-current="page"], .nav.over-hero:not(.scrolled) .nav-links a:hover { color: #fff; }
-.nav.over-hero:not(.scrolled)::before { content: ""; position: absolute; inset: 0 0 -30px; z-index: -1; pointer-events: none; background: linear-gradient(rgba(8, 8, 12, .45), transparent); }
+/* 대표 창이 다 열린 채 맨 위에 있을 때만 바 아래가 그림이다. 그때만 흰 글자.
+   (닫힌 첫 화면은 셰이더 바탕이라 라이트 모드에선 흰 글자가 묻힌다) */
+body:has(.aperture.opened) .nav.over-hero:not(.scrolled) { color: #fff; }
+body:has(.aperture.opened) .nav.over-hero:not(.scrolled) .nav-links a, body:has(.aperture.opened) .nav.over-hero:not(.scrolled) .nav-sub { color: rgba(255, 255, 255, .78); }
+body:has(.aperture.opened) .nav.over-hero:not(.scrolled) .nav-links a[aria-current="page"], body:has(.aperture.opened) .nav.over-hero:not(.scrolled) .nav-links a:hover { color: #fff; }
+body:has(.aperture.opened) .nav.over-hero:not(.scrolled)::before { content: ""; position: absolute; inset: 0 0 -30px; z-index: -1; pointer-events: none; background: linear-gradient(rgba(8, 8, 12, .45), transparent); }
 
 /* ---------- 버튼 ---------- */
 .btn {
@@ -600,8 +604,9 @@ footer.site {
   opacity: calc(1 - var(--e) * 2.4);
   transform: translateY(calc(var(--e) * 40px));
 }
-.ap-intro .hero-stats { margin: 0; color: #fff; }
-.ap-intro .stat span { color: rgba(255, 255, 255, .72); }
+/* 첫 화면 숫자는 셰이더 바탕(다크: 어둡게, 라이트: 밝게) 위에 놓인다. 흰색 고정이면 라이트에서 안 보인다. */
+.ap-intro .hero-stats { margin: 0; color: var(--ink); }
+.ap-intro .stat span { color: var(--ink-2); }
 .ap-intro .hero-cta { margin: 0; justify-content: center; }
 .ap-caption {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;

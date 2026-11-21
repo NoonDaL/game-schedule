@@ -338,9 +338,18 @@
       if (max >= 1) finish();
     };
     const onScroll = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
+    // 같은 페이지 안 바로가기(#games 등): 부드럽게 내려가는 도중에 창이 접히면 이동이 중간에 끊긴다.
+    // 누르는 순간 먼저 열어 접어 두고, 바뀐 배치에서 이동하게 한다.
+    document.addEventListener("click", ev => {
+      const a = ev.target.closest && ev.target.closest('a[href*="#"]');
+      if (done || !a || a.pathname !== location.pathname || !a.hash) return;
+      stick.style.setProperty("--p", "1");
+      finish();
+    }, true);
     addEventListener("scroll", onScroll, { passive: true });
     addEventListener("resize", update);
-    update();
+    // 다른 페이지에서 #칸 으로 들어왔으면 대표 창은 이미 지나친 것. 열린 채로 시작한다.
+    if (location.hash) { stick.style.setProperty("--p", "1"); finish(); } else update();
   }
 
   // ---------- 공용 ----------
