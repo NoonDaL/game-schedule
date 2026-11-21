@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="app.css?v=8">
+<link rel="stylesheet" href="app.css?v=11">
 </head>
 <body>
 
@@ -28,10 +28,11 @@
 </nav>
 
 <main>
-  <header class="hero" data-shader>
-    <div class="wrap hero-grid">
-      <div>
-        <h1><em>픽업</em> 일정</h1>
+  <section class="aperture" aria-label="대표 픽업">
+    <div class="ap-stick" data-shader>
+      <a class="ap-window" id="ap-window" href="schedule.html" aria-label="대표 픽업 자세히"><div class="media"></div><div class="ap-scrim"></div></a>
+      <h1 class="ap-title"><span class="w1">픽업</span><span class="w2">일정</span></h1>
+      <div class="ap-intro">
         <div class="hero-stats" id="stats" aria-live="polite">
           <div class="stat"><b>-</b><span>진행 중</span></div>
           <div class="stat"><b>-</b><span>이번 주 시작</span></div>
@@ -42,9 +43,9 @@
           <a class="btn btn-ghost" href="#subscribe">캘린더 구독</a>
         </div>
       </div>
-      <div id="featured"><div class="skeleton" style="aspect-ratio:16/10"></div></div>
+      <div class="ap-caption" id="ap-caption"></div>
     </div>
-  </header>
+  </section>
 
   <nav class="marquee" aria-label="게임 바로가기"><div class="track" id="marquee"></div></nav>
 
@@ -72,10 +73,17 @@
     </div>
   </section>
 
-  <section class="block" id="events-sec">
-    <div class="wrap duo">
-      <div class="panel" id="cast-panel"><h3>특별방송</h3><div id="casts"></div></div>
-      <div class="panel" id="offline-panel"><h3>콜라보·행사</h3><div id="offline"></div></div>
+  <section class="block" id="cast-sec">
+    <div class="wrap">
+      <div class="block-head"><h2>특별방송</h2></div>
+      <div class="panel" id="casts"></div>
+    </div>
+  </section>
+
+  <section class="block" id="offline-sec">
+    <div class="wrap">
+      <div class="block-head"><h2>콜라보·행사</h2></div>
+      <div class="tickets" id="offline"></div>
     </div>
   </section>
 
@@ -108,8 +116,8 @@
   </div>
 </footer>
 
-<script src="app.js?v=8"></script>
-<script src="fx.js?v=8" defer></script>
+<script src="app.js?v=11"></script>
+<script src="fx.js?v=11" defer></script>
 <script>
 (async () => {
   const A = App, D = await A.load();
@@ -118,11 +126,24 @@
   const live = banners.filter(e => A.isLive(e)).sort((a, b) => a.e - b.e);
   const next = banners.filter(e => A.isUpcoming(e)).sort((a, b) => a.s - b.s);
 
-  // 대표: 가장 최근에 열린, 그림이 있는 진행 중 배너. 없으면 다음 픽업.
-  const pool = live.filter(e => e.image && e.image.yt);
+  // 대표: 가장 최근에 열린, 가로 영상 그림이 있는 진행 중 배너. 없으면 다음 픽업.
+  // 화면 가득 열리는 창이라 쇼츠(세로)·아이콘은 피한다.
+  const pool = live.filter(e => e.image && e.image.yt && !e.image.short);
   const hero = pool.sort((a, b) => b.s - a.s)[0] || live[0] || next[0];
-  document.getElementById("featured").innerHTML = hero ? A.feature(hero)
-    : `<div class="empty">지금 표시할 픽업이 없습니다.</div>`;
+  if (hero) {
+    const win = document.getElementById("ap-window");
+    win.href = A.D && hero.url ? hero.url : "schedule.html";
+    win.target = "_blank"; win.rel = "noopener";
+    win.querySelector(".media").innerHTML = A.media(hero);
+    const t = A.timing(hero);
+    const cap = document.getElementById("ap-caption");
+    cap.setAttribute("style", A.gvar(hero.game));
+    cap.innerHTML = `${A.chip(hero.game)}
+      <div class="card-title">${A.esc(A.title(hero))}</div>
+      <div class="sub"><span>${A.esc(hero.version_name || t.sub)}</span>
+        <span class="dd${t.hot ? " hot" : ""}">${A.esc(t.text)}</span></div>
+      <a class="btn btn-main btn-sm" href="${A.esc(hero.url || "schedule.html")}" target="_blank" rel="noopener">자세히 <i class="ph ph-arrow-up-right"></i></a>`;
+  }
 
   const weekEnd = A.dayIndex(now) + 7;
   const stats = [live.length, next.filter(e => A.dayIndex(e.s) < weekEnd).length,
@@ -170,11 +191,14 @@
 
   const in14 = new Date(now.getTime() + 14 * 86400000);
   const casts = D.events.filter(e => e.type === "broadcast" && e.e > now && e.s < in14).sort((a, b) => a.s - b.s).slice(0, 5);
-  const offline = D.events.filter(e => e.type === "event" && (e.e || e.s) > now).sort((a, b) => a.s - b.s).slice(0, 5);
-  document.getElementById("casts").innerHTML = casts.map((e, i) => A.row(e, i)).join("")
-    || `<p class="card-sub" style="padding:8px 12px 16px">2주 안에 예정된 방송이 없습니다.</p>`;
-  document.getElementById("offline").innerHTML = offline.map((e, i) => A.row(e, i)).join("")
-    || `<p class="card-sub" style="padding:8px 12px 16px">예정된 행사가 없습니다.</p>`;
+  const offline = D.events.filter(e => e.type === "event" && (e.e || e.s) > now).sort((a, b) => a.s - b.s).slice(0, 6);
+  document.getElementById("casts").innerHTML = casts.map((e, i) => A.row(e, i)).join("");
+  if (!casts.length) document.getElementById("cast-sec").hidden = true;
+  document.getElementById("offline").innerHTML = offline.map((e, i) => A.ticket(e, i)).join("");
+  if (!offline.length) document.getElementById("offline-sec").hidden = true;
+  A.bindTickets();
+  A.bindHolo();
+  A.apertureFallback();
 
   document.getElementById("game-list").innerHTML =
     D.order.filter(g => g !== A.MISC && A.meta(g)).map((g, i) => A.gameTile(g, i)).join("");

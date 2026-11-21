@@ -474,7 +474,7 @@ footer.site {
 }
 
 /* ---------- 셰이더 배경 (fx.js) ---------- */
-.hero canvas.shader { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; display: block; }
+[data-shader] > canvas.shader { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; display: block; }
 .hero.has-shader::before { display: none; }
 
 /* ---------- 신규 픽업: 스크롤하면 한 장씩 겹쳐 쌓인다 ----------
@@ -537,3 +537,160 @@ footer.site {
 }
 .launch { --g-ink: var(--g); }
 .launch .n { color: var(--g-ink, var(--ink)); }
+
+/* ======================================================================
+   Aperture Zoom (홈 첫 화면). 참고: snapblocks "Aperture Zoom" (미리보기를 보고 직접 작성).
+   대표 픽업 그림이 작은 둥근 창에서 시작해 스크롤하면 화면을 채우고, "픽업 / 일정" 이
+   양옆으로 갈라진다. 다 열리면 배너 정보가 나타난다.
+   진행도 --p(0에서 1)를 CSS 스크롤 타임라인이 움직이고, 지원하지 않는 브라우저는 app.js 가
+   같은 값을 넣는다. 모든 모양은 --p 하나로 계산한다 (경로가 하나라 두 곳이 어긋나지 않는다).
+   ====================================================================== */
+@property --p { syntax: "<number>"; inherits: true; initial-value: 0; }
+.aperture { position: relative; height: 240vh; view-timeline: --ap block; }
+.ap-stick {
+  position: sticky; top: 0; height: 100dvh; overflow: hidden; isolation: isolate;
+  /* 부드러운 가속·감속 (smoothstep) */
+  --e: calc(var(--p) * var(--p) * (3 - 2 * var(--p)));
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .ap-stick { animation: ap-open linear both; animation-timeline: --ap; animation-range: contain 0% contain 100%; }
+  }
+}
+@keyframes ap-open { from { --p: 0; } to { --p: 1; } }
+.ap-window {
+  position: absolute; inset: 0; display: block; overflow: hidden;
+  clip-path: inset(calc((1 - var(--e)) * 24%) calc((1 - var(--e)) * 30%) round calc((1 - var(--e)) * 32px));
+  will-change: clip-path;
+}
+.ap-window .media { position: absolute; inset: 0; aspect-ratio: auto; height: 100%; border-radius: 0; box-shadow: none; }
+.ap-window .media img.cover { transform: scale(calc(1.18 - .18 * var(--e))); transition: none; }
+.ap-scrim { position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(8, 8, 12, .55) 0%, transparent 30%, transparent 45%, rgba(8, 8, 12, .85) 100%);
+  opacity: calc(.35 + .65 * var(--e)); }
+.ap-title {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: .32em;
+  pointer-events: none; z-index: 2;
+  font-size: clamp(56px, 11vw, 168px); font-weight: 820; letter-spacing: -.06em; line-height: 1;
+  color: #fff; text-shadow: 0 6px 40px rgba(0, 0, 0, .35);
+}
+.ap-title .w1 { color: var(--accent); transform: translateX(calc(var(--e) * -30vw)); }
+.ap-title .w2 { transform: translateX(calc(var(--e) * 30vw)); }
+.ap-title span { display: inline-block; opacity: calc(1 - var(--e) * 1.05); }
+.ap-intro {
+  position: absolute; left: 0; right: 0; bottom: 7vh; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; gap: 22px;
+  opacity: calc(1 - var(--e) * 2.4);
+  transform: translateY(calc(var(--e) * 40px));
+}
+.ap-intro .hero-stats { margin: 0; color: #fff; }
+.ap-intro .stat span { color: rgba(255, 255, 255, .72); }
+.ap-intro .hero-cta { margin: 0; justify-content: center; }
+.ap-caption {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
+  padding: 0 max(20px, calc((100vw - 1320px) / 2)) 7vh;
+  display: grid; gap: 12px; justify-items: start;
+  opacity: calc((var(--e) - .72) * 3.6);
+  transform: translateY(calc((1 - var(--e)) * 30px));
+  pointer-events: none;
+}
+.ap-caption > * { pointer-events: auto; }
+.ap-caption .card-title { font-size: clamp(32px, 4.4vw, 64px); letter-spacing: -.045em; color: #fff; line-height: 1.05; }
+.ap-caption .game-chip { color: color-mix(in srgb, var(--g, #fff) 70%, #fff); font-size: 15px; }
+.ap-caption .game-chip img { width: 28px; height: 28px; }
+.ap-caption .sub { color: rgba(255, 255, 255, .82); font-size: 16px; display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
+.ap-caption .dd { font-size: 16px; color: #fff; }
+.ap-caption .dd.hot { color: var(--accent); }
+@media (max-width: 700px) {
+  .aperture { height: 200vh; }
+  .ap-window { clip-path: inset(calc((1 - var(--e)) * 30%) calc((1 - var(--e)) * 12%) round calc((1 - var(--e)) * 24px)); }
+  .ap-title { flex-direction: column; gap: 0; }
+  .ap-title .w1 { transform: translateY(calc(var(--e) * -22vh)); }
+  .ap-title .w2 { transform: translateY(calc(var(--e) * 22vh)); }
+}
+/* 움직임 줄이기: 처음부터 열린 화면 한 장. 스크롤 길이도 없앤다. */
+@media (prefers-reduced-motion: reduce) {
+  .aperture { height: auto; }
+  .ap-stick { position: relative; --p: 1; }
+  .ap-intro { display: none; }
+  .ap-title { display: none; }
+}
+
+/* ======================================================================
+   홀로그램 카드 (신규 픽업). 참고: scrollshaders "Holo" 효과 (직접 작성, 셰이더 아님).
+   가챠의 SSR 카드처럼 마우스를 따라 무지갯빛 광택이 흐르고 카드가 살짝 기운다.
+   광택 위치 --mx/--my, 기울기 --rx/--ry 는 app.js 가 넣는다.
+   ====================================================================== */
+.holo .media { transform-style: preserve-3d; transition: transform .25s ease-out, box-shadow .5s var(--ease); }
+.holo .foil, .holo .glare { position: absolute; inset: 0; pointer-events: none; border-radius: inherit; opacity: 0; transition: opacity .35s var(--ease); z-index: 2; }
+.holo .foil {
+  mix-blend-mode: color-dodge;
+  background: repeating-linear-gradient(115deg,
+    #ff6f91 0%, #ffc75f 7%, #7dffb3 14%, #6fb7ff 21%, #c58bff 28%, #ff6f91 35%);
+  background-size: 260% 260%;
+  background-position: var(--mx, 50%) var(--my, 50%);
+  filter: brightness(.62) saturate(1.3);
+}
+.holo .glare { mix-blend-mode: overlay; background: radial-gradient(circle at var(--mx, 50%) var(--my, 30%), rgba(255, 255, 255, .55), transparent 48%); }
+.holo:hover .foil { opacity: .6; }
+.holo:hover .glare { opacity: 1; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .holo:hover .media { transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(-4px); }
+  .holo.feature:hover .media { transform: perspective(1400px) rotateX(calc(var(--rx, 0deg) * .5)) rotateY(calc(var(--ry, 0deg) * .5)); }
+}
+
+/* ======================================================================
+   Tear Ticket (콜라보·행사). 참고: snapblocks "Tear Ticket" (직접 작성, WebGL 없이).
+   행사를 기차표로. 오른쪽 그루터기를 끌어 뜯으면 날아가고 다시 인쇄된다.
+   종이 색은 다크 화면에서도 표가 표처럼 보이게 밝게 두고, 띠·그루터기에 게임 색을 쓴다.
+   ====================================================================== */
+.tickets { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 30px 22px; }
+.ticket {
+  --paper: #f2efe8; --paper-ink: #1d1c22; --paper-2: #6b6872;
+  --tg: var(--g, var(--accent));
+  position: relative;
+  display: grid; grid-template-columns: minmax(0, 1fr) 132px;
+  color: var(--paper-ink);
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .35));
+  user-select: none;
+}
+.ticket .main {
+  background: var(--paper); border-radius: 14px 0 0 14px; padding: 18px 22px 20px 26px;
+  position: relative; display: grid; gap: 12px; min-width: 0;
+  box-shadow: inset 6px 0 0 color-mix(in srgb, var(--tg) 85%, #000);
+}
+.ticket .line { display: flex; justify-content: space-between; gap: 12px; font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; color: var(--paper-2); }
+.ticket .line b { color: color-mix(in srgb, var(--tg) 70%, #000); font-weight: 700; }
+.ticket .tt { font-size: 26px; font-weight: 800; letter-spacing: -.04em; line-height: 1.1; }
+.ticket .tt a { color: inherit; }
+.ticket .tt a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.ticket .grid4 { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; column-gap: 26px; row-gap: 4px; }
+.ticket .grid4 small { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; color: var(--paper-2); }
+.ticket .grid4 span { font-size: 15px; font-weight: 700; letter-spacing: -.01em; }
+.ticket .stub {
+  position: relative; background-color: var(--paper); border-radius: 0 14px 14px 0;
+  display: grid; place-items: center; align-content: center; gap: 6px; padding: 30px 10px 14px;
+  /* 절취선: 점선 + 위아래 반원 홈 */
+  background-image: radial-gradient(circle at 0 0, var(--bg) 9px, transparent 9.5px), radial-gradient(circle at 0 100%, var(--bg) 9px, transparent 9.5px);
+  border-left: 2px dashed color-mix(in srgb, var(--paper-ink) 25%, transparent);
+  cursor: grab; touch-action: pan-y;
+  transition: transform .45s var(--ease), opacity .45s var(--ease);
+}
+.ticket .stub .band { position: absolute; top: 0; left: 0; right: 0; height: 26px; border-radius: 0 14px 0 0; background: var(--tg); color: #121216; font-size: 11px; font-weight: 800; letter-spacing: .12em; display: grid; place-items: center; }
+.ticket .stub .big { font-size: 34px; font-weight: 820; letter-spacing: -.04em; line-height: 1; }
+.ticket .stub .cap { font-size: 11px; color: var(--paper-2); font-family: var(--mono); letter-spacing: .06em; }
+.ticket .stub .code { width: 86px; height: 22px; margin-top: 4px; background: repeating-linear-gradient(90deg, var(--paper-ink) 0 2px, transparent 2px 4px, var(--paper-ink) 4px 5px, transparent 5px 8px, var(--paper-ink) 8px 11px, transparent 11px 12px); opacity: .85; }
+.ticket .stub:active { cursor: grabbing; }
+.ticket .stub.drag { transition: none; }
+.ticket .stub.torn { transform: translate(140px, 60px) rotate(24deg); opacity: 0; }
+.ticket .stub.reprint { transition: none; transform: none; opacity: 0; }
+.ticket .hint { position: absolute; right: 6px; bottom: -22px; font-size: 11.5px; color: var(--ink-3); }
+@media (max-width: 560px) {
+  .ticket { grid-template-columns: minmax(0, 1fr) 104px; }
+  .ticket .tt { font-size: 21px; }
+  .ticket .grid4 { grid-template-columns: repeat(2, auto); }
+  .ticket .stub .big { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticket .stub { transition: none; }
+}

@@ -158,6 +158,7 @@
   }
 
   const TYPE_LABEL = { banner: "픽업", broadcast: "방송", event: "행사" };
+  const HOLO = `<span class="foil" aria-hidden="true"></span><span class="glare" aria-hidden="true"></span>`;
 
   function flags(e, opt = {}) {
     return [e.new_char ? `<span class="flag new">신규</span>` : "",
@@ -169,8 +170,8 @@
     const t = timing(e);
     const ver = e.version_name ? `<div class="card-sub">${esc(e.version_name)}</div>` : "";
     const range = e.type === "event" && e.e ? `<div class="card-sub">${shortDate(e.s)} - ${shortDate(e.e)}</div>` : "";
-    return `<a class="card reveal" href="${esc(link(e))}" target="_blank" rel="noopener" style="--i:${opt.i || 0};${gvar(e.game)}">
-      <div class="media">${media(e)}</div>
+    return `<a class="card reveal${e.new_char ? " holo" : ""}" href="${esc(link(e))}" target="_blank" rel="noopener" style="--i:${opt.i || 0};${gvar(e.game)}">
+      <div class="media">${media(e)}${e.new_char ? HOLO : ""}</div>
       <div class="card-body">
         <div class="meta">${chip(e.game)}<span class="dd${t.hot ? " hot" : ""}">${esc(t.text)}</span></div>
         <div class="card-title">${esc(title(e))}</div>
@@ -181,8 +182,8 @@
 
   function feature(e) {
     const t = timing(e);
-    return `<a class="card feature reveal" href="${esc(link(e))}" target="_blank" rel="noopener" style="${gvar(e.game)}">
-      <div class="media">${media(e)}<div class="scrim"></div></div>
+    return `<a class="card feature reveal${e.new_char ? " holo" : ""}" href="${esc(link(e))}" target="_blank" rel="noopener" style="${gvar(e.game)}">
+      <div class="media">${media(e)}<div class="scrim"></div>${e.new_char ? HOLO : ""}</div>
       <div class="over">
         <div>${chip(e.game)}</div>
         <div class="card-title">${esc(title(e))}</div>
@@ -225,6 +226,106 @@
       <div class="count">진행 중 ${live} · 예정 ${next}</div></div></div></a>`;
   }
 
+  // ---------- 티켓 (콜라보·행사) ----------
+  function ticket(e, i = 0) {
+    const t = timing(e);
+    const live = isLive(e);
+    const days = e.e ? Math.max(1, dayIndex(e.e) - dayIndex(e.s) + 1) : 1;
+    const dd = dayIndex(e.s) - dayIndex(D.now);
+    const kind = /콜라보/.test(e.title || "") ? "COLLAB" : "EVENT";
+    const big = live ? (e.e ? Math.max(0, dayIndex(e.e) - dayIndex(D.now)) : 0) : dd;
+    const cap = live ? "일 남음" : "일 뒤 시작";
+    return `<div class="ticket reveal" style="--i:${i};${gvar(e.game)}">
+      <div class="main">
+        <div class="line"><span>${kind} · ${esc(short(e.game))}</span><b>${live ? "진행 중" : esc(t.text)}</b></div>
+        <div class="tt"><a href="${esc(link(e))}" target="_blank" rel="noopener">${esc(title(e))}</a></div>
+        <div class="grid4">
+          <div><small>시작</small><span>${esc(dateLabel(e.s, false))}</span></div>
+          <div><small>종료</small><span>${e.e ? esc(dateLabel(e.e, false)) : "미정"}</span></div>
+          <div><small>기간</small><span>${days}일</span></div>
+        </div>
+      </div>
+      <div class="stub" aria-hidden="true">
+        <div class="band">${esc(short(e.game))}</div>
+        <div class="big">${big}</div><div class="cap">${cap}</div><div class="code"></div>
+      </div></div>`;
+  }
+
+  // 그루터기를 오른쪽으로 끌어 뜯으면 날아가고, 잠시 뒤 다시 인쇄된다 (장난감 같은 손맛).
+  function bindTickets(root = document) {
+    root.querySelectorAll(".ticket .stub").forEach(stub => {
+      let x0 = 0, y0 = 0, on = false;
+      stub.addEventListener("pointerdown", ev => {
+        on = true; x0 = ev.clientX; y0 = ev.clientY;
+        stub.setPointerCapture(ev.pointerId); stub.classList.add("drag");
+      });
+      stub.addEventListener("pointermove", ev => {
+        if (!on) return;
+        const dx = Math.max(0, ev.clientX - x0), dy = (ev.clientY - y0) * .3;
+        stub.style.transform = `translate(${dx}px, ${dy}px) rotate(${dx / 14}deg)`;
+      });
+      const end = ev => {
+        if (!on) return;
+        on = false; stub.classList.remove("drag");
+        const dx = ev.clientX - x0;
+        stub.style.transform = "";
+        if (dx > 70) {
+          stub.classList.add("torn");
+          setTimeout(() => {
+            stub.classList.add("reprint"); stub.classList.remove("torn");
+            // 화면 갱신(rAF)은 숨겨진 탭에서 멈춰 투명한 채 남았다. 짧은 타이머로 푼다.
+            setTimeout(() => stub.classList.remove("reprint"), 40);
+          }, 650);
+        }
+      };
+      stub.addEventListener("pointerup", end);
+      stub.addEventListener("pointercancel", end);
+    });
+  }
+
+  // 홀로그램: 포인터 위치를 광택·기울기 값으로. 프레임마다 한 번만 적는다.
+  function bindHolo(root = document) {
+    if (!matchMedia("(hover: hover)").matches) return;
+    let pending = null, scheduled = false;
+    root.addEventListener("pointermove", ev => {
+      const el = ev.target.closest && ev.target.closest(".holo");
+      if (!el) return;
+      pending = [el, ev.clientX, ev.clientY];
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(() => {
+        scheduled = false;
+        const [card, cx, cy] = pending;
+        const r = card.querySelector(".media").getBoundingClientRect();
+        const x = Math.min(1, Math.max(0, (cx - r.left) / r.width));
+        const y = Math.min(1, Math.max(0, (cy - r.top) / r.height));
+        card.style.setProperty("--mx", `${(x * 100).toFixed(1)}%`);
+        card.style.setProperty("--my", `${(y * 100).toFixed(1)}%`);
+        card.style.setProperty("--rx", `${((.5 - y) * 10).toFixed(2)}deg`);
+        card.style.setProperty("--ry", `${((x - .5) * 12).toFixed(2)}deg`);
+      });
+    }, { passive: true });
+  }
+
+  // 스크롤 타임라인이 없는 브라우저(사파리 등)에서 대표 창 진행도 --p 를 직접 넣는다.
+  // 스크롤마다 한 번이 아니라 프레임마다 한 번만 계산한다.
+  function apertureFallback() {
+    const sec = document.querySelector(".aperture"), stick = sec && sec.querySelector(".ap-stick");
+    if (!stick || CSS.supports("animation-timeline: view()")) return;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let queued = false;
+    const update = () => {
+      queued = false;
+      const r = sec.getBoundingClientRect();
+      const span = r.height - innerHeight;
+      const p = span > 0 ? Math.min(1, Math.max(0, -r.top / span)) : 1;
+      stick.style.setProperty("--p", p.toFixed(4));
+    };
+    addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+    addEventListener("resize", update);
+    update();
+  }
+
   // ---------- 공용 ----------
   function reveal(root = document) {
     const els = root.querySelectorAll(".reveal:not(.in)");
@@ -250,6 +351,6 @@
     set(k, v) { try { localStorage.setItem("gsched-v2:" + k, JSON.stringify(v)); } catch (e) {} },
   };
 
-  window.App = { D, load, gvar, gcolor, timing, isLive, isUpcoming, card, feature, row, launchCard, gameTile,
+  window.App = { D, load, gvar, gcolor, ticket, bindTickets, bindHolo, apertureFallback, media, HOLO, timing, isLive, isUpcoming, card, feature, row, launchCard, gameTile,
     title, gamesOf, short, meta, chip, esc, reveal, footer, dateLabel, shortDate, dayIndex, parts, store, MISC };
 })();
