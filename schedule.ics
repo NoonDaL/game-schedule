@@ -1,8 +1,8 @@
 BEGIN:VCALENDAR
 X-WR-CALNAME:게임 일정
 NAME:게임 일정
-X-WR-CALDESC:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 원신 · 젠레스 존 제로 · 리버스: 1999 · 퍼니싱: 그레이 레이븐 픽업/방송 (일부 추정 포함)
-DESCRIPTION:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 원신 · 젠레스 존 제로 · 리버스: 1999 · 퍼니싱: 그레이 레이븐 픽업/방송 (일부 추정 포함)
+X-WR-CALDESC:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 원신 · 젠레스 존 제로 · 리버스: 1999 · 퍼니싱: 그레이 레이븐 · 아주르 프로밀리아 픽업/방송 (일부 추정 포함)
+DESCRIPTION:명조: 워더링 웨이브 · 붕괴: 스타레일 · 이환 · 명일방주: 엔드필드 · 원신 · 젠레스 존 제로 · 리버스: 1999 · 퍼니싱: 그레이 레이븐 · 아주르 프로밀리아 픽업/방송 (일부 추정 포함)
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 VERSION:2.0
@@ -431,6 +431,22 @@ END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
+DESCRIPTION:미나모토 치요 종료 2일 전
+TRIGGER:P2W2DT23H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:미나모토 치요 종료 3시간 전
+TRIGGER:P2W4DT20H59M
+END:VALARM
+DTEND:20270104T195900Z
+DTSTART:20261216T200000Z
+SUMMARY:[아주르 프로밀리아] [픽업] 미나모토 치요
+UID:manual-b5f3f555@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
 DESCRIPTION:짱오락실 콜라보 종료 2일 전
 TRIGGER:P2W4DT23H59M59S
 END:VALARM
@@ -443,6 +459,22 @@ DTEND:20261231T145959Z
 DTSTART:20261210T150000Z
 SUMMARY:[아주르 프로밀리아] 짱오락실 콜라보
 UID:manual-0f8c36dd@gameschedule
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:도산소옥 종료 2일 전
+TRIGGER:P2W5DT4H59M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:도산소옥 종료 3시간 전
+TRIGGER:P3WT1H59M
+END:VALARM
+DTEND:20261216T195900Z
+DTSTART:20261125T150000Z
+SUMMARY:[아주르 프로밀리아] [픽업] 도산소옥
+UID:manual-46fffe0d@gameschedule
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
