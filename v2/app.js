@@ -233,8 +233,10 @@
     const days = e.e ? Math.max(1, dayIndex(e.e) - dayIndex(e.s) + 1) : 1;
     const dd = dayIndex(e.s) - dayIndex(D.now);
     const kind = /콜라보/.test(e.title || "") ? "COLLAB" : "EVENT";
-    const big = live ? (e.e ? Math.max(0, dayIndex(e.e) - dayIndex(D.now)) : 0) : dd;
-    const cap = live ? "일 남음" : "일 뒤 시작";
+    const left = live ? (e.e ? Math.max(0, dayIndex(e.e) - dayIndex(D.now)) : 0) : dd;
+    // 0일 남음·0일 뒤 시작 대신 '오늘 마감'·'오늘 시작'.
+    const big = left > 0 ? left : "오늘";
+    const cap = left > 0 ? (live ? "일 남음" : "일 뒤 시작") : (live ? "마감" : "시작");
     return `<div class="ticket reveal" style="--i:${i};${gvar(e.game)}">
       <div class="main">
         <div class="line"><span>${kind} · ${esc(short(e.game))}</span><b>${live ? "진행 중" : esc(t.text)}</b></div>
@@ -307,21 +309,36 @@
     }, { passive: true });
   }
 
-  // 스크롤 타임라인이 없는 브라우저(사파리 등)에서 대표 창 진행도 --p 를 직접 넣는다.
-  // 스크롤마다 한 번이 아니라 프레임마다 한 번만 계산한다.
+  // 대표 창 진행도 --p. 내릴 때만 커지고 올려도 줄지 않는다 (다시 닫힐 이유가 없다).
+  // 다 열리면 .opened 로 남은 스크롤 길이를 접고, 줄어든 만큼 스크롤 위치를 당겨 화면이 튀지 않게 한다.
+  // 프레임마다 한 번만 계산한다.
   function apertureFallback() {
     const sec = document.querySelector(".aperture"), stick = sec && sec.querySelector(".ap-stick");
-    if (!stick || CSS.supports("animation-timeline: view()")) return;
+    if (!stick) return;
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let queued = false;
+    let max = 0, queued = false, done = false;
+    const finish = () => {
+      done = true;
+      const before = sec.offsetHeight;
+      sec.classList.add("opened");
+      const shrink = before - sec.offsetHeight;
+      if (shrink > 0 && scrollY > 0) window.scrollTo({ top: Math.max(0, scrollY - shrink), behavior: "instant" });
+      removeEventListener("scroll", onScroll);
+      removeEventListener("resize", update);
+    };
     const update = () => {
       queued = false;
+      if (done) return;
       const r = sec.getBoundingClientRect();
       const span = r.height - innerHeight;
       const p = span > 0 ? Math.min(1, Math.max(0, -r.top / span)) : 1;
-      stick.style.setProperty("--p", p.toFixed(4));
+      if (p <= max) return;
+      max = p;
+      stick.style.setProperty("--p", max.toFixed(4));
+      if (max >= 1) finish();
     };
-    addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+    const onScroll = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
+    addEventListener("scroll", onScroll, { passive: true });
     addEventListener("resize", update);
     update();
   }

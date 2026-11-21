@@ -546,18 +546,16 @@ footer.site {
    같은 값을 넣는다. 모든 모양은 --p 하나로 계산한다 (경로가 하나라 두 곳이 어긋나지 않는다).
    ====================================================================== */
 @property --p { syntax: "<number>"; inherits: true; initial-value: 0; }
-.aperture { position: relative; height: 240vh; view-timeline: --ap block; }
+.aperture { position: relative; height: 240vh; }
 .ap-stick {
   position: sticky; top: 0; height: 100dvh; overflow: hidden; isolation: isolate;
   /* 부드러운 가속·감속 (smoothstep) */
   --e: calc(var(--p) * var(--p) * (3 - 2 * var(--p)));
 }
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .ap-stick { animation: ap-open linear both; animation-timeline: --ap; animation-range: contain 0% contain 100%; }
-  }
-}
-@keyframes ap-open { from { --p: 0; } to { --p: 1; } }
+/* 한 방향으로만 열린다. 진행도는 app.js 가 '지금까지 가장 많이 내린 만큼'만 넣으므로
+   위로 올려도 다시 닫히지 않는다. 다 열리면 남은 스크롤 길이를 접어(.opened) 한 화면짜리가 된다. */
+.aperture.opened { height: 100dvh; }
+.aperture.opened .ap-stick { position: relative; --p: 1; }
 .ap-window {
   position: absolute; inset: 0; display: block; overflow: hidden;
   clip-path: inset(calc((1 - var(--e)) * 24%) calc((1 - var(--e)) * 30%) round calc((1 - var(--e)) * 32px));
@@ -602,7 +600,7 @@ footer.site {
 .ap-caption .dd { font-size: 16px; color: #fff; }
 .ap-caption .dd.hot { color: var(--accent); }
 @media (max-width: 700px) {
-  .aperture { height: 200vh; }
+  .aperture:not(.opened) { height: 200vh; }
   .ap-window { clip-path: inset(calc((1 - var(--e)) * 30%) calc((1 - var(--e)) * 12%) round calc((1 - var(--e)) * 24px)); }
   .ap-title { flex-direction: column; gap: 0; }
   .ap-title .w1 { transform: translateY(calc(var(--e) * -22vh)); }
@@ -678,7 +676,7 @@ footer.site {
 }
 .ticket .stub .band { position: absolute; top: 0; left: 0; right: 0; height: 26px; border-radius: 0 14px 0 0; background: var(--tg); color: #121216; font-size: 11px; font-weight: 800; letter-spacing: .12em; display: grid; place-items: center; }
 .ticket .stub .big { font-size: 34px; font-weight: 820; letter-spacing: -.04em; line-height: 1; }
-.ticket .stub .cap { font-size: 11px; color: var(--paper-2); font-family: var(--mono); letter-spacing: .06em; }
+.ticket .stub .cap { font-size: 13.5px; font-weight: 750; letter-spacing: -.01em; color: color-mix(in srgb, var(--tg) 55%, var(--paper-ink)); }
 .ticket .stub .code { width: 86px; height: 22px; margin-top: 4px; background: repeating-linear-gradient(90deg, var(--paper-ink) 0 2px, transparent 2px 4px, var(--paper-ink) 4px 5px, transparent 5px 8px, var(--paper-ink) 8px 11px, transparent 11px 12px); opacity: .85; }
 .ticket .stub:active { cursor: grabbing; }
 .ticket .stub.drag { transition: none; }
