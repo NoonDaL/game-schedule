@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="app.css?v=6">
 </head>
 <body>
 
@@ -26,7 +26,7 @@
 </nav>
 
 <main>
-  <header class="hero">
+  <header class="hero" data-shader>
     <div class="wrap hero-grid">
       <div>
         <h1><em>픽업</em> 일정</h1>
@@ -43,6 +43,15 @@
       <div id="featured"><div class="skeleton" style="aspect-ratio:16/10"></div></div>
     </div>
   </header>
+
+  <nav class="marquee" aria-label="게임 바로가기"><div class="track" id="marquee"></div></nav>
+
+  <section class="block" id="stack-sec">
+    <div class="wrap">
+      <div class="block-head"><h2>신규 픽업</h2></div>
+      <div class="stack" id="stack"></div>
+    </div>
+  </section>
 
   <section class="block" id="live-sec">
     <div class="wrap">
@@ -97,7 +106,8 @@
   </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="app.js?v=6"></script>
+<script src="fx.js?v=6" defer></script>
 <script>
 (async () => {
   const A = App, D = await A.load();
@@ -117,7 +127,28 @@
                  live.filter(e => e.e - now < 3 * 86400000).length];
   document.querySelectorAll("#stats .stat b").forEach((b, i) => b.textContent = stats[i]);
 
-  const rail = live.filter(e => e !== hero);
+  // 신규 픽업: 진행 중인 신규 캐릭터 배너를 최근 열린 순으로 쌓는다. 둘 미만이면 쌓을 게 없다.
+  const stackItems = live.filter(e => e !== hero && e.new_char).sort((a, b) => b.s - a.s).slice(0, 4);
+  const stackEl = document.getElementById("stack");
+  if (stackItems.length >= 2) {
+    stackEl.innerHTML = stackItems.map((e, i) => {
+      const next = i + 1 < stackItems.length ? `--next: --s${i + 2};` : "";
+      return `<div class="stack-item" style="--n:${i}; view-timeline-name: --s${i + 1}; ${next}">${A.feature(e)}</div>`;
+    }).join("");
+  } else {
+    document.getElementById("stack-sec").hidden = true;
+    stackItems.length = 0;
+  }
+
+  // 게임 띠: 같은 목록을 두 번 이어 붙여 끊김 없이 돈다. 두 번째는 보조기기에 숨긴다.
+  const tiles = D.order.filter(g => g !== A.MISC && A.meta(g)).map(g => {
+    const m = A.meta(g);
+    return `<a href="game.html?g=${encodeURIComponent(m.key)}"><img src="${A.esc(m.avatar)}" alt="" loading="lazy">${A.esc(A.short(g))}</a>`;
+  }).join("");
+  document.getElementById("marquee").innerHTML = tiles
+    + `<span class="dup" aria-hidden="true" style="display:contents">${tiles.replaceAll("<a ", '<a tabindex="-1" ')}</span>`;
+
+  const rail = live.filter(e => e !== hero && !stackItems.includes(e));
   document.getElementById("live-count").textContent = live.length ? `${live.length}개` : "";
   document.getElementById("live").innerHTML = rail.map((e, i) => A.card(e, { i })).join("")
     || `<div class="empty">진행 중인 다른 픽업이 없습니다.</div>`;

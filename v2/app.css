@@ -450,3 +450,58 @@ footer.site {
   .bento.four, .bento.three { grid-template-columns: 1fr; }
   .bento.three > :first-child { grid-column: auto; }
 }
+
+/* ---------- 셰이더 배경 (fx.js) ---------- */
+.hero canvas.shader { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; display: block; }
+.hero.has-shader::before { display: none; }
+
+/* ---------- 신규 픽업: 스크롤하면 한 장씩 겹쳐 쌓인다 ----------
+   카드마다 sticky 로 붙고, 다음 카드가 올라오는 동안 앞 카드가 작아지며 어두워진다.
+   작아지는 연출은 CSS 스크롤 타임라인(다음 카드의 view-timeline)이 되는 브라우저에서만.
+   안 되면 겹쳐 쌓이기만 한다. 움직임 줄이기면 쌓이지도 않고 그냥 차례로 놓인다. */
+.stack { display: grid; gap: 28px; timeline-scope: --s1, --s2, --s3, --s4, --s5; }
+.stack-item { position: sticky; top: calc(96px + var(--n, 0) * 16px); }
+.stack-item .feature .media { aspect-ratio: 21 / 9; }
+.stack-item .feature { box-shadow: 0 -20px 60px rgba(0, 0, 0, .35); }
+@media (prefers-reduced-motion: reduce) {
+  .stack-item { position: static; }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .stack-item > .card { animation: stack-back linear both; animation-timeline: var(--next, none); animation-range: entry 0% entry 100%; transform-origin: 50% 0; }
+    /* 마지막 카드는 뒤에 올 카드가 없다. 타임라인이 없으면 끝난 상태로 굳어 처음부터 어둡게 뜬다. */
+    .stack-item:last-child > .card { animation: none; }
+  }
+}
+@keyframes stack-back { to { transform: scale(.94); filter: brightness(.55); } }
+@media (max-width: 900px) {
+  .stack-item .feature .media { aspect-ratio: 4 / 3; }
+}
+
+/* ---------- 게임 띠: 옆으로 천천히 흐른다. 올리면 멈춘다. ---------- */
+.marquee {
+  margin-top: 8px;
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee .track { display: flex; gap: 12px; width: max-content; padding: 14px 12px 14px 0; }
+.marquee a {
+  display: inline-flex; align-items: center; gap: 10px; flex: none;
+  height: 48px; padding: 0 18px 0 6px; border-radius: var(--r-pill);
+  border: 1px solid var(--line); background: var(--surface);
+  font-weight: 650; font-size: 15px; color: var(--ink-2);
+  transition: color .2s, border-color .2s;
+}
+.marquee a:hover { color: var(--ink); border-color: var(--line-2); }
+.marquee a img { width: 36px; height: 36px; border-radius: 50%; }
+@media (prefers-reduced-motion: no-preference) {
+  .marquee .track { animation: marquee 48s linear infinite; }
+  .marquee:hover .track, .marquee:focus-within .track { animation-play-state: paused; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee { overflow-x: auto; }
+  .marquee .track .dup, .marquee .track .dup a { display: none !important; }
+}
+@keyframes marquee { to { transform: translateX(-50%); } }
