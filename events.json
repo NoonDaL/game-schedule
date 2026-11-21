@@ -548,7 +548,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00"
+    "updated_at": "2026-11-21T13:40:03.591086+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1438,7 +1438,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00"
+    "updated_at": "2026-11-21T13:40:03.591086+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -1655,7 +1655,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1669,7 +1669,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "chars": [
       "에버에코"
     ],
@@ -1686,7 +1686,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -1703,13 +1703,14 @@
     "end": "2026-11-25T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "chars": [
       "헤도네"
     ],
     "note": "3.9 전반기. reverse1999-simulator.com 미래시(한국 서버) 기준. 버전 이름은 공식 PV 가 나오면 자동으로 붙는다.",
     "confirmed": true,
     "version_name": "다시 타올라라, 황금빛 바다여!",
+    "new_char": true,
     "image": {
       "yt": "aG374hoA1nQ"
     }
@@ -1723,13 +1724,14 @@
     "end": "2026-12-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "chars": [
       "나르키소스"
     ],
     "note": "3.9 후반기. reverse1999-simulator.com 미래시(한국 서버) 기준.",
     "confirmed": true,
     "version_name": "다시 타올라라, 황금빛 바다여!",
+    "new_char": true,
     "image": {
       "yt": "OES3ld08UzY"
     }
@@ -2267,7 +2269,7 @@
     "url": "https://www.youtube.com/watch?v=MK4bIOILTHM",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2276,6 +2278,7 @@
       "method": "showcase_duration",
       "url": "https://www.youtube.com/watch?v=MK4bIOILTHM"
     },
+    "new_char": true,
     "image": {
       "yt": "6D2uSqNKmUM",
       "short": true
@@ -2303,8 +2306,9 @@
     "url_kind": "공지",
     "source": "official",
     "updated_at": "2026-11-21T12:20:32.634631+00:00",
+    "new_char": true,
     "image": {
-      "yt": "1WFaTjqe94o"
+      "yt": "LGRJvchK9jg"
     }
   },
   "endfield-off-9560-1@gameschedule": {
@@ -2329,6 +2333,7 @@
     "url_kind": "공지",
     "source": "official",
     "updated_at": "2026-10-19T11:57:31.973755+00:00",
+    "new_char": true,
     "image": {
       "yt": "XMXX4SjQVPk"
     }
@@ -2444,6 +2449,7 @@
     "url": null,
     "source": "hoyolab",
     "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "new_char": true,
     "image": {
       "yt": "h2OJlxye9Fo"
     }
@@ -2471,7 +2477,7 @@
     "url": "https://www.youtube.com/watch?v=18Y_2ncWLHQ",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00"
+    "updated_at": "2026-11-21T13:40:03.591086+00:00"
   },
   "manual-09bc8445@gameschedule": {
     "uid": "manual-09bc8445@gameschedule",
@@ -2657,7 +2663,7 @@
     "source": "hoyolab",
     "updated_at": "2026-11-21T13:24:16.585443+00:00",
     "image": {
-      "src": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ubd4re/c071bbe4c455985e206fa702b6a56723.png"
+      "yt": "lwH1ty3NlLs"
     }
   },
   "manual-4d58ef37@gameschedule": {
@@ -2746,6 +2752,7 @@
     "url_kind": "공지",
     "source": "official",
     "updated_at": "2026-11-03T13:58:32.535860+00:00",
+    "new_char": true,
     "image": {
       "yt": "gjeMrTWlZS8"
     }
@@ -2795,6 +2802,7 @@
     ],
     "evidence_urls": [],
     "url_kind": null,
+    "new_char": true,
     "image": {
       "yt": "6V0kctC2-Tg"
     }
@@ -2822,7 +2830,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -2831,6 +2839,7 @@
       "method": "explicit_window",
       "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784"
     },
+    "new_char": true,
     "image": {
       "yt": "nNuN0rPi2YA"
     }
@@ -2846,7 +2855,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3006,6 +3015,7 @@
     "evidence_urls": [
       "https://nte.perfectworld.com/kr/article/news/gamenews/20261109/264952.html"
     ],
+    "new_char": true,
     "image": {
       "yt": "MK4bIOILTHM"
     }
@@ -3096,7 +3106,8 @@
     "image": {
       "yt": "dwt-MKfMblI",
       "short": true
-    }
+    },
+    "new_char": true
   },
   "hsr-banner-105@gameschedule": {
     "uid": "hsr-banner-105@gameschedule",
@@ -3123,8 +3134,9 @@
     "url": null,
     "source": "hoyolab",
     "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "new_char": true,
     "image": {
-      "yt": "hcwRWe0UyKI"
+      "yt": "T1d3GwCDG8w"
     }
   },
   "manual-f0e1bd92@gameschedule": {
@@ -3189,7 +3201,8 @@
     "image": {
       "yt": "q1F4Zjb8YE0",
       "short": true
-    }
+    },
+    "new_char": true
   },
   "endfield-vpr1L_5SJ4A@gameschedule": {
     "uid": "endfield-vpr1L_5SJ4A@gameschedule",
@@ -3294,13 +3307,16 @@
     "end": "2026-12-16T03:59:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "chars": [
       "질베르타"
     ],
     "note": "재구축 헤드헌팅 #1 「떠도는 모든 소망에게」 (복각). 「뜻밖의 만남, 버섯 동산 대모험」 버전 업데이트 후 ~ 12/16 11:59(서버). 미리보기 방송 화면 기준. 공지가 나오면 자동이 대체한다.",
     "confirmed": true,
-    "version_name": "뜻밖의 만남, 버섯 동산 대모험"
+    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
+    "image": {
+      "yt": "tiASX3mv5oU"
+    }
   },
   "manual-474794e4@gameschedule": {
     "uid": "manual-474794e4@gameschedule",
@@ -3311,13 +3327,16 @@
     "end": "2027-01-06T22:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "updated_at": "2026-11-21T13:40:03.591086+00:00",
     "chars": [
       "로시"
     ],
     "note": "재구축 헤드헌팅 #1 「붉은색의 진주」 (복각). 12/16 12:00(서버) ~ 버전 업데이트 점검 전. 종료는 버전 가이드의 다음 점검 시작(01/07 06:00 서버). 공지가 나오면 자동이 대체한다.",
     "confirmed": true,
-    "version_name": "뜻밖의 만남, 버섯 동산 대모험"
+    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
+    "image": {
+      "yt": "Uxu0wlEnRQg"
+    }
   },
   "endfield-brief-special_1_7_1@gameschedule": {
     "uid": "endfield-brief-special_1_7_1@gameschedule",
@@ -3340,7 +3359,8 @@
     "url": "https://endfield.gryphline.com/version_briefing/latest",
     "url_kind": "버전 가이드",
     "source": "official",
-    "updated_at": "2026-11-21T12:20:32.634631+00:00"
+    "updated_at": "2026-11-21T12:20:32.634631+00:00",
+    "new_char": true
   },
   "endfield-brief-release@gameschedule": {
     "uid": "endfield-brief-release@gameschedule",
@@ -3383,7 +3403,8 @@
     "url": "https://endfield.gryphline.com/version_briefing/latest",
     "url_kind": "버전 가이드",
     "source": "official",
-    "updated_at": "2026-11-21T12:20:32.634631+00:00"
+    "updated_at": "2026-11-21T12:20:32.634631+00:00",
+    "new_char": true
   },
   "manual-2e45214d@gameschedule": {
     "uid": "manual-2e45214d@gameschedule",
@@ -3424,7 +3445,8 @@
     "image": {
       "yt": "Nhq1-GPogDg",
       "short": true
-    }
+    },
+    "new_char": true
   },
   "wuwa-pred-2027-01-12@gameschedule": {
     "uid": "wuwa-pred-2027-01-12@gameschedule",
@@ -3449,7 +3471,8 @@
     "image": {
       "yt": "tiew3-YmxDg",
       "short": true
-    }
+    },
+    "new_char": true
   },
   "manual-46fffe0d@gameschedule": {
     "uid": "manual-46fffe0d@gameschedule",

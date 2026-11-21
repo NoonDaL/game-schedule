@@ -153,6 +153,7 @@
   function card(e, opt = {}) {
     const t = timing(e);
     const pred = e.predicted ? `<span class="pill soft">예측</span>` : "";
+    const fresh = e.new_char ? `<span class="pill soft">신규</span>` : "";
     const kind = opt.kind ? `<span class="pill soft">${TYPE_LABEL[e.type] || ""}</span>` : "";
     const ver = e.version_name ? `<div class="card-sub">${esc(e.version_name)}</div>` : "";
     const range = e.type === "event" && e.e ? `<div class="card-sub">${shortDate(e.s)} - ${shortDate(e.e)}</div>` : "";
@@ -162,7 +163,7 @@
         <div class="when">${chip(e.game)}<span class="pill${t.hot ? " hot" : ""}">${esc(t.text)}</span></div>
         <div class="card-title">${esc(title(e))}</div>
         ${ver}${range}
-        <div class="when"><span class="card-sub">${esc(t.sub)}</span><span>${kind}${pred}</span></div>
+        <div class="when"><span class="card-sub">${esc(t.sub)}</span><span>${fresh}${kind}${pred}</span></div>
       </div></a>`;
   }
 

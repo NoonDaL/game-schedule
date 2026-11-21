@@ -3,54 +3,378 @@
     "key": "wuwa",
     "avatar": "https://yt3.ggpht.com/cSPkhOsGA2bfRzBnmgwcZSJHzkdOwEsQr4Pj-PMj5Ak-axCj_OOCNp09Uazt9H6s6Bzes4k3=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/z5oveZn0kIH4xmyQqbu7gPRzus5oxgG6lQEYQk6xIh02a2SmUbWNqApAsuGQg-zFMg0HaSH40w=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UCKuq0c-RXYaulECSuu5hFug"
+    "channel": "https://www.youtube.com/channel/UCKuq0c-RXYaulECSuu5hFug",
+    "chars": {
+      "청초": {
+        "first": "2026-08-16T03:00:26+00:00"
+      },
+      "수수": {
+        "first": "2026-07-25T09:00:32+00:00",
+        "yt": "0Lv9dQF_H-0"
+      },
+      "양양 · 현령": {
+        "first": "2026-07-09T15:00:00+00:00"
+      },
+      "쇄명": {
+        "first": "2026-08-28T04:05:28+00:00"
+      },
+      "여우의 별자리": {
+        "first": "2026-08-28T03:05:17+00:00"
+      },
+      "경연": {
+        "first": "2026-09-05T03:00:05+00:00"
+      },
+      "릴리": {
+        "first": "2026-10-08T03:05:27+00:00",
+        "yt": "nNuN0rPi2YA"
+      },
+      "안나": {
+        "first": "2026-11-21T03:05:24+00:00",
+        "yt": "Nhq1-GPogDg",
+        "short": true
+      },
+      "루시엘": {
+        "first": "2026-11-21T04:05:14+00:00",
+        "yt": "tiew3-YmxDg",
+        "short": true
+      }
+    }
   },
   "붕괴: 스타레일": {
     "key": "hsr",
     "avatar": "https://yt3.ggpht.com/0q5GTUGF9wLSqPlCIOdySDzPW0o95Uz1bRARvO63n-5RCUF4PM6LIOohEyMyTBNXsABAG1oE=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/BQ-VTARYPUMv5AKGcXquh9OxMSDyvlvy3XgIoak7VnKAfYJWbBiwVu6SYyBCQzJXu5zdGBwsCq4=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UCH33CJMcI0XZUpIhWRHiUuw"
+    "channel": "https://www.youtube.com/channel/UCH33CJMcI0XZUpIhWRHiUuw",
+    "chars": {
+      "히메코•노바": {
+        "first": "2026-07-15T02:00:01+00:00"
+      },
+      "케리드라": {
+        "first": "2026-08-05T11:00:00+00:00"
+      },
+      "아낙사": {
+        "first": "2026-08-05T11:00:00+00:00"
+      },
+      "어벤츄린": {
+        "first": "2026-08-05T11:00:00+00:00"
+      },
+      "로빈•서머레토": {
+        "first": "2026-08-26T04:00:00+00:00"
+      },
+      "히아킨": {
+        "first": "2026-08-26T04:00:00+00:00"
+      },
+      "어벤츄린•웨이브": {
+        "first": "2026-09-12T04:00:00+00:00"
+      },
+      "애쉬베일": {
+        "first": "2026-09-12T04:00:00+00:00"
+      },
+      "길가메시": {
+        "first": "2026-07-26T12:00:39+00:00"
+      },
+      "토오사카 린": {
+        "first": "2026-07-25T12:00:08+00:00"
+      },
+      "로빈·서머레토": {
+        "first": "2026-08-19T03:00:17+00:00"
+      },
+      "어벤츄린·웨이브": {
+        "first": "2026-09-04T03:00:07+00:00"
+      },
+      "천야•블레이드": {
+        "first": "2026-10-21T04:00:00+00:00"
+      },
+      "에바네시아": {
+        "first": "2026-09-28T03:00:00+00:00"
+      },
+      "펄": {
+        "first": "2026-09-22T03:00:37+00:00"
+      },
+      "은랑 LV.999": {
+        "first": "2026-11-11T03:00:00+00:00"
+      },
+      "스파키": {
+        "first": "2026-11-11T03:00:00+00:00"
+      },
+      "효광": {
+        "first": "2026-11-11T03:00:00+00:00"
+      },
+      "아케론": {
+        "first": "2026-12-02T04:00:00+00:00",
+        "yt": "lwH1ty3NlLs"
+      },
+      "단항•음월": {
+        "first": "2026-12-02T04:00:00+00:00"
+      },
+      "경원": {
+        "first": "2026-12-02T04:00:00+00:00"
+      },
+      "에이언즈★아하": {
+        "first": "2026-11-04T03:00:27+00:00",
+        "yt": "T1d3GwCDG8w"
+      }
+    }
   },
   "이환": {
     "key": "ihwan",
     "avatar": "https://yt3.ggpht.com/ktcuQ4zOZaOb6G99uK3wAoNosKYef_rENepj3pKx_Fgigaiopi36Hkxr-wONPzlf_yn--vIKreU=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/1tm2Jj9kEEgXDqWA_izJMtj8RY5K6DjbkcpjO3BXf7ByV7magyNce4ZHsSt9uTVR6XiukMyfCQ=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UC0042GfGERAl0AzXR0j8TPA"
+    "channel": "https://www.youtube.com/channel/UC0042GfGERAl0AzXR0j8TPA",
+    "chars": {
+      "잔홍": {
+        "first": "2026-08-08T03:00:17+00:00"
+      },
+      "링코": {
+        "first": "2026-08-18T15:00:00+00:00"
+      },
+      "나나리": {
+        "first": "2026-08-19T03:00:00+00:00"
+      },
+      "일로이": {
+        "first": "2026-07-29T03:00:00+00:00"
+      },
+      "호토리": {
+        "first": "2026-09-09T03:00:00+00:00"
+      },
+      "아카네 린": {
+        "first": "2026-08-24T03:00:27+00:00"
+      },
+      "레이븐": {
+        "first": "2026-08-23T03:00:23+00:00"
+      },
+      "라크리모사": {
+        "first": "2026-09-30T03:00:00+00:00"
+      },
+      "엘림": {
+        "first": "2026-10-04T03:00:09+00:00",
+        "yt": "MK4bIOILTHM"
+      },
+      "Exe": {
+        "first": "2026-10-05T03:00:18+00:00",
+        "yt": "6D2uSqNKmUM",
+        "short": true
+      },
+      "신쿠": {
+        "first": "2026-11-11T03:00:00+00:00"
+      },
+      "니샤": {
+        "first": "2026-11-14T03:00:37+00:00",
+        "yt": "dwt-MKfMblI",
+        "short": true
+      },
+      "앨리": {
+        "first": "2026-11-15T03:00:05+00:00",
+        "yt": "q1F4Zjb8YE0",
+        "short": true
+      }
+    }
   },
   "명일방주: 엔드필드": {
     "key": "endfield",
     "avatar": "https://yt3.ggpht.com/cusmOaijuzGzjJ47dDreI6zxXHuE00gSMKXe0XrG0chuW1rUwZqKyX15A1hGHCCGFYcBViLp=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/30gC0cnKpCp5wnurJU5odt6ty4VGXB2PbCgIaTSbByWVrhMFT-QQD1O7cYgDqPPn-YiupveDeg=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UCIf9gYpmmIJV7flBhUhuqYQ"
+    "channel": "https://www.youtube.com/channel/UCIf9gYpmmIJV7flBhUhuqYQ",
+    "chars": {
+      "리노": {
+        "first": "2026-08-07T03:00:12+00:00"
+      },
+      "티프로스": {
+        "first": "2026-08-23T10:00:21+00:00"
+      },
+      "결": {
+        "first": "2026-07-16T04:00:00+00:00"
+      },
+      "이본": {
+        "first": "2026-09-24T04:00:00+00:00"
+      },
+      "푸치나": {
+        "first": "2026-09-22T03:00:02+00:00"
+      },
+      "사": {
+        "first": "2026-10-10T10:00:21+00:00"
+      },
+      "명하": {
+        "first": "2026-11-03T03:00:37+00:00",
+        "yt": "LGRJvchK9jg"
+      },
+      "탕탕": {
+        "first": "2026-10-29T04:00:00+00:00",
+        "yt": "XMXX4SjQVPk"
+      },
+      "질베르타": {
+        "first": "2026-11-25T04:00:00+00:00",
+        "yt": "tiASX3mv5oU"
+      },
+      "로시": {
+        "first": "2026-12-16T04:00:00+00:00",
+        "yt": "Uxu0wlEnRQg"
+      },
+      "케르": {
+        "first": "2026-11-25T04:00:00+00:00"
+      },
+      "미미노": {
+        "first": "2026-12-17T04:00:00+00:00"
+      }
+    }
   },
   "원신": {
     "key": "genshin",
     "avatar": "https://yt3.ggpht.com/T5k5mRy3qivY4r9eVgpMTNsx0Iz2ccp-EQhR5M6Ehf4Wz453-gfjbL2kUqDw_NWG_IT9Cfux=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/BamrsCIit5Ia6DiFg8bSmkeXkFnzyO4ZndaaFCa6ChJ_3mzAzQaCS_fsvCc3ll6ue49NHPZIgw=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UCcum1rCJ5GJeQ_xv0xrohqg"
+    "channel": "https://www.youtube.com/channel/UCcum1rCJ5GJeQ_xv0xrohqg",
+    "chars": {
+      "오데트": {
+        "first": "2026-08-11T23:00:00+00:00"
+      },
+      "아를레키노": {
+        "first": "2026-08-11T23:00:00+00:00"
+      },
+      "플린스": {
+        "first": "2026-09-01T10:00:00+00:00"
+      },
+      "이네파": {
+        "first": "2026-09-01T10:00:00+00:00"
+      },
+      "베스나": {
+        "first": "2026-09-23T03:00:00+00:00"
+      },
+      "보댜니차": {
+        "first": "2026-09-23T03:00:00+00:00"
+      },
+      "스커크": {
+        "first": "2026-10-13T10:00:00+00:00"
+      },
+      "에스코피에": {
+        "first": "2026-10-13T10:00:00+00:00"
+      },
+      "미탸": {
+        "first": "2026-11-04T03:00:00+00:00",
+        "yt": "6V0kctC2-Tg"
+      },
+      "푸리나": {
+        "first": "2026-11-04T03:00:00+00:00"
+      }
+    }
   },
   "젠레스 존 제로": {
     "key": "zzz",
     "avatar": "https://yt3.ggpht.com/rfTTogeZQk2qVCYZijplFFJWAYqbZTL7FwYZzGSNni8zw2cIkfGm5dhA4J2nPz0v6os7qp88bg=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/_a1InubSW0-Tl-rjInfc6UWcCVhsWDvt3_Fq5APopG0K-A4obex9mO4Ks9uAK35Lg__0HtLTVII=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UCmry1hfaRHI_iTfxUMhC8mA"
+    "channel": "https://www.youtube.com/channel/UCmry1hfaRHI_iTfxUMhC8mA",
+    "chars": {
+      "레미엘": {
+        "first": "2026-07-29T02:00:00+00:00"
+      },
+      "시그리드": {
+        "first": "2026-08-19T04:00:00+00:00"
+      },
+      "다이아린": {
+        "first": "2026-08-19T04:00:00+00:00"
+      },
+      "유즈하": {
+        "first": "2026-08-19T04:00:00+00:00"
+      },
+      "하루마사": {
+        "first": "2026-08-19T04:00:00+00:00"
+      },
+      "클라렛": {
+        "first": "2026-09-09T03:00:00+00:00"
+      },
+      "남궁우": {
+        "first": "2026-09-09T03:00:00+00:00"
+      },
+      "록시": {
+        "first": "2026-09-30T04:00:00+00:00"
+      },
+      "프로미아": {
+        "first": "2026-09-30T04:00:00+00:00"
+      },
+      "피닉스": {
+        "first": "2026-10-21T03:00:00+00:00"
+      },
+      "벨리나": {
+        "first": "2026-10-21T03:00:00+00:00"
+      },
+      "세베리안": {
+        "first": "2026-11-11T04:00:00+00:00",
+        "yt": "h2OJlxye9Fo"
+      },
+      "노르마": {
+        "first": "2026-11-11T04:00:00+00:00"
+      },
+      "태양을 가져온 자": {
+        "first": "2026-12-02T03:00:00+00:00"
+      },
+      "로빈": {
+        "first": "2026-12-02T03:00:00+00:00"
+      }
+    }
   },
   "리버스: 1999": {
     "key": "re1999",
     "avatar": "https://yt3.ggpht.com/pOaXm8Xb2XrrlX1QKhP7c9e0myoxh-qWN6B5PJ6ZqMqwvA-B9G0lFRLJCrpCxwya75QSvlRg=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/x2GRDhtLoP5iImdcwxEMa4M-RyqOA1zcJjCTCYnCAMPJJ5fE_W6zszCYzuJ-NCIt5Xgma756lg=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UCFEQZ0y9XtQ-nrt_If4qj2g"
+    "channel": "https://www.youtube.com/channel/UCFEQZ0y9XtQ-nrt_If4qj2g",
+    "chars": {
+      "리아논": {
+        "first": "2026-08-12T07:15:20+00:00"
+      },
+      "미스 스트레인저": {
+        "first": "2026-09-02T02:00:18+00:00"
+      },
+      "에버에코": {
+        "first": "2026-09-22T03:00:13+00:00"
+      },
+      "코너스톤": {
+        "first": "2026-10-13T03:00:22+00:00"
+      },
+      "헤도네": {
+        "first": "2026-11-03T02:00:06+00:00",
+        "yt": "aG374hoA1nQ"
+      },
+      "나르키소스": {
+        "first": "2026-11-25T15:00:00+00:00",
+        "yt": "OES3ld08UzY"
+      }
+    }
   },
   "퍼니싱: 그레이 레이븐": {
     "key": "pgr",
     "avatar": "https://yt3.ggpht.com/ue0j73c7U0UAN_gfxl216ZgQacKxfNzWwiPp3t0x0hz9DSU61IfriO7OVvHHaHRTNXad0bwSqhc=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/Q4595ekdG_vXanRqNZ1VL10VK2q4F0U57IqiwZ0tqykyofpe4MW89GDfvNSXMBeMDh6LwlV7=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UCD3ClCZBZ8VLg_PfYMGOJjA"
+    "channel": "https://www.youtube.com/channel/UCD3ClCZBZ8VLg_PfYMGOJjA",
+    "chars": {
+      "카레니나·신항": {
+        "first": "2026-08-11T04:00:25+00:00"
+      },
+      "아델라이드·파연": {
+        "first": "2026-09-14T04:00:31+00:00"
+      },
+      "헬렌틴·안혼": {
+        "first": "2026-07-17T03:00:00+00:00"
+      },
+      "토키사키 쿠루미": {
+        "first": "2026-09-29T01:00:00+00:00"
+      },
+      "레이아·기성": {
+        "first": "2026-10-27T04:00:38+00:00",
+        "yt": "gjeMrTWlZS8"
+      }
+    }
   },
   "아주르 프로밀리아": {
     "key": "azur",
     "avatar": "https://yt3.ggpht.com/4ECqQSFLWeAOl22FQh89sXWhL3hw7ox6MjvW47hMYw9XXZ7f6SwdL9Lr4a6rbO-HnfHEYjg=s800-c-k-c0x00ffffff-no-rj",
     "banner": "https://yt3.googleusercontent.com/5TdJvn_J75ooZjr5rk_kvyevKiBoUnzuVOV19qDnHmZ2GBCM1WDauA9FpuwerDkOct2sfLHqQTg=w1920-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-    "channel": "https://www.youtube.com/channel/UC-oeDuoqDPpQ_OmgVP2Rh2Q"
+    "channel": "https://www.youtube.com/channel/UC-oeDuoqDPpQ_OmgVP2Rh2Q",
+    "chars": {
+      "도산소옥": {
+        "first": "2026-11-25T15:00:00+00:00"
+      },
+      "미나모토 치요": {
+        "first": "2026-12-16T20:00:00+00:00"
+      }
+    }
   }
 }
