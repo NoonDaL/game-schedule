@@ -148,7 +148,7 @@
     if (live.length) html += section("진행 중", `${live.length}개`, live, kind);
     for (const [k, items] of groups) { const [n, r] = weekLabel(k); html += section(n, r, items, kind); }
     document.getElementById("out").innerHTML = html
-      || `<div class="empty">조건에 맞는 일정이 없다. 게임이나 종류 선택을 넓혀 보면 된다.</div>`;
+      || `<div class="empty">조건에 맞는 일정이 없습니다. 게임이나 종류 선택을 넓히면 다른 일정을 확인할 수 있습니다.</div>`;
     A.reveal();
   }
   function section(name, sub, items, kind) {

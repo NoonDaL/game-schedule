@@ -110,7 +110,7 @@
   const pool = live.filter(e => e.image && e.image.yt);
   const hero = pool.sort((a, b) => b.s - a.s)[0] || live[0] || next[0];
   document.getElementById("featured").innerHTML = hero ? A.feature(hero)
-    : `<div class="empty">지금 표시할 픽업이 없다.</div>`;
+    : `<div class="empty">지금 표시할 픽업이 없습니다.</div>`;
 
   const weekEnd = A.dayIndex(now) + 7;
   const stats = [live.length, next.filter(e => A.dayIndex(e.s) < weekEnd).length,
@@ -120,7 +120,7 @@
   const rail = live.filter(e => e !== hero);
   document.getElementById("live-count").textContent = live.length ? `${live.length}개` : "";
   document.getElementById("live").innerHTML = rail.map((e, i) => A.card(e, { i })).join("")
-    || `<div class="empty">진행 중인 다른 픽업이 없다.</div>`;
+    || `<div class="empty">진행 중인 다른 픽업이 없습니다.</div>`;
 
   // 다가오는 픽업은 다섯 개까지. 칸 수는 항목 수에 맞춘다 (빈 칸을 두지 않는다).
   const window5 = next.slice(0, 8);
@@ -130,16 +130,16 @@
   const shape = ["", "few", "few", "three", "four"][soon.length];
   if (shape) bento.classList.add(shape);
   bento.innerHTML = soon.map((e, i) => A.card(e, { i })).join("")
-    || `<div class="empty">예고된 픽업이 아직 없다.</div>`;
+    || `<div class="empty">아직 예고된 픽업이 없습니다.</div>`;
   if (!soon.length) document.getElementById("next-sec").hidden = true;
 
   const in14 = new Date(now.getTime() + 14 * 86400000);
   const casts = D.events.filter(e => e.type === "broadcast" && e.e > now && e.s < in14).sort((a, b) => a.s - b.s).slice(0, 5);
   const offline = D.events.filter(e => e.type === "event" && (e.e || e.s) > now).sort((a, b) => a.s - b.s).slice(0, 5);
   document.getElementById("casts").innerHTML = casts.map((e, i) => A.row(e, i)).join("")
-    || `<p class="card-sub" style="padding:8px 12px 16px">2주 안에 잡힌 방송이 없다.</p>`;
+    || `<p class="card-sub" style="padding:8px 12px 16px">2주 안에 예정된 방송이 없습니다.</p>`;
   document.getElementById("offline").innerHTML = offline.map((e, i) => A.row(e, i)).join("")
-    || `<p class="card-sub" style="padding:8px 12px 16px">예정된 행사가 없다.</p>`;
+    || `<p class="card-sub" style="padding:8px 12px 16px">예정된 행사가 없습니다.</p>`;
 
   document.getElementById("game-list").innerHTML =
     D.order.filter(g => g !== A.MISC && A.meta(g)).map((g, i) => A.gameTile(g, i)).join("");

@@ -64,7 +64,7 @@
   const key = new URLSearchParams(location.search).get("g");
   const name = Object.keys(D.games).find(g => D.games[g].key === key);
   if (!name) {
-    document.getElementById("name").textContent = "게임을 찾지 못했다";
+    document.getElementById("name").textContent = "게임을 찾을 수 없습니다";
     document.querySelectorAll("section.block").forEach(s => s.hidden = true);
     A.footer(); return;
   }

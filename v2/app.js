@@ -229,7 +229,7 @@
     const btn = document.getElementById("copy-ics");
     if (btn) btn.addEventListener("click", async () => {
       const url = new URL("../schedule.ics", location.href).href;
-      try { await navigator.clipboard.writeText(url); btn.textContent = "복사됨"; } catch (e) { prompt("캘린더 주소", url); }
+      try { await navigator.clipboard.writeText(url); btn.textContent = "복사했습니다"; } catch (e) { prompt("캘린더 주소", url); }
     });
   }
 
