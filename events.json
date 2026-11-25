@@ -144,18 +144,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "wuwa-hint-0Lv9dQF_H-0@gameschedule": {
-    "uid": "wuwa-hint-0Lv9dQF_H-0@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "hint",
-    "title": "수수",
-    "start": "2026-07-28T03:00:38Z",
-    "end": null,
-    "url": "https://www.youtube.com/watch?v=0Lv9dQF_H-0",
-    "url_kind": "쇼케이스",
-    "source": "youtube",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
   "hsr-P6GC-HP4lHo@gameschedule": {
     "uid": "hsr-P6GC-HP4lHo@gameschedule",
     "game": "붕괴: 스타레일",
@@ -500,7 +488,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00"
+    "updated_at": "2026-11-25T08:05:16.733287+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1390,7 +1378,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00"
+    "updated_at": "2026-11-25T08:05:16.733287+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -1607,7 +1595,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1621,7 +1609,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "chars": [
       "에버에코"
     ],
@@ -1638,7 +1626,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -1655,7 +1643,7 @@
     "end": "2026-11-25T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "chars": [
       "헤도네"
     ],
@@ -1676,7 +1664,7 @@
     "end": "2026-12-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "chars": [
       "나르키소스"
     ],
@@ -1685,7 +1673,7 @@
     "version_name": "다시 타올라라, 황금빛 바다여!",
     "new_char": true,
     "image": {
-      "yt": "OES3ld08UzY"
+      "yt": "i7Qe1FpG-MI"
     }
   },
   "manual-27d5f51c@gameschedule": {
@@ -2221,7 +2209,7 @@
     "url": "https://www.youtube.com/watch?v=MK4bIOILTHM",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2233,7 +2221,8 @@
     "new_char": true,
     "image": {
       "yt": "6D2uSqNKmUM",
-      "short": true
+      "short": true,
+      "wide": "iF5hxpmEPsk"
     }
   },
   "endfield-off-9560-2@gameschedule": {
@@ -2429,7 +2418,7 @@
     "url": "https://www.youtube.com/watch?v=18Y_2ncWLHQ",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00"
+    "updated_at": "2026-11-25T08:05:16.733287+00:00"
   },
   "manual-09bc8445@gameschedule": {
     "uid": "manual-09bc8445@gameschedule",
@@ -2582,7 +2571,8 @@
     "source": "hoyolab",
     "updated_at": "2026-11-21T13:24:16.585443+00:00",
     "image": {
-      "src": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ubd4re/7382a178049ca251557d5f7472f74022.png"
+      "src": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ubd4re/7382a178049ca251557d5f7472f74022.png",
+      "wide": "2sUF2R9FtjE"
     }
   },
   "hsr-banner-102@gameschedule": {
@@ -2782,7 +2772,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -2807,7 +2797,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2995,7 +2985,11 @@
     "source": "manual",
     "updated_at": "2026-11-12T13:45:31.830401+00:00",
     "note": "「나누는 조각만큼 설레는 맛남!」 아주르 프로밀리아 × 반올림피자. 공식 이미지 기준 (사용자 제공).",
-    "confirmed": true
+    "confirmed": true,
+    "image": {
+      "src": "https://dszw1qtcnsa5e.cloudfront.net/community/20261112/2f50af83-9cad-434b-ad48-f3855fe45f3a/%EB%B0%98%EC%98%AC%EB%A6%BC%ED%94%BC%EC%9E%90%EC%BD%9C%EB%9D%BC%EB%B3%B4.jpg",
+      "page": "https://azurpromilia.nexon.com/news/notice/3580075"
+    }
   },
   "wuwa-vnotice-5784@gameschedule": {
     "uid": "wuwa-vnotice-5784@gameschedule",
@@ -3197,7 +3191,7 @@
     "source": "hoyolab",
     "updated_at": "2026-11-21T13:24:16.585443+00:00",
     "image": {
-      "src": "https://act-webstatic.hoyoverse.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1601.png"
+      "yt": "ZNf4RekyVJ8"
     }
   },
   "manual-0f8c36dd@gameschedule": {
@@ -3250,26 +3244,6 @@
     "source": "youtube",
     "updated_at": "2026-11-21T06:47:49.727373+00:00"
   },
-  "manual-c716c680@gameschedule": {
-    "uid": "manual-c716c680@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[픽업] 질베르타",
-    "start": "2026-11-25T04:00:00+00:00",
-    "end": "2026-12-16T03:59:00+00:00",
-    "url": null,
-    "source": "manual",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
-    "chars": [
-      "질베르타"
-    ],
-    "note": "재구축 헤드헌팅 #1 「떠도는 모든 소망에게」 (복각). 「뜻밖의 만남, 버섯 동산 대모험」 버전 업데이트 후 ~ 12/16 11:59(서버). 미리보기 방송 화면 기준. 공지가 나오면 자동이 대체한다.",
-    "confirmed": true,
-    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
-    "image": {
-      "yt": "tiASX3mv5oU"
-    }
-  },
   "manual-474794e4@gameschedule": {
     "uid": "manual-474794e4@gameschedule",
     "game": "명일방주: 엔드필드",
@@ -3279,90 +3253,14 @@
     "end": "2027-01-06T22:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-24T22:15:11.661701+00:00",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
     "chars": [
       "로시"
     ],
     "note": "재구축 헤드헌팅 #1 「붉은색의 진주」 (복각). 12/16 12:00(서버) ~ 버전 업데이트 점검 전. 종료는 버전 가이드의 다음 점검 시작(01/07 06:00 서버). 공지가 나오면 자동이 대체한다.",
     "confirmed": true,
-    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
     "image": {
       "yt": "Uxu0wlEnRQg"
-    }
-  },
-  "endfield-brief-special_1_7_1@gameschedule": {
-    "uid": "endfield-brief-special_1_7_1@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[픽업] 케르",
-    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
-    "chars": [
-      "케르"
-    ],
-    "start": "2026-11-25T04:00:00+00:00",
-    "end": "2026-12-23T03:59:00+00:00",
-    "start_confirmed": true,
-    "end_confirmed": true,
-    "confirmed": true,
-    "predicted": false,
-    "date_evidence": {
-      "method": "version_briefing"
-    },
-    "url": "https://endfield.gryphline.com/version_briefing/latest",
-    "url_kind": "버전 가이드",
-    "source": "official",
-    "updated_at": "2026-11-21T12:20:32.634631+00:00",
-    "new_char": true,
-    "image": {
-      "yt": "zC1T7jlhPpQ"
-    }
-  },
-  "endfield-brief-release@gameschedule": {
-    "uid": "endfield-brief-release@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "release",
-    "title": "버전 출시",
-    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
-    "start": "2026-11-25T04:00:00+00:00",
-    "end": null,
-    "start_confirmed": true,
-    "end_confirmed": false,
-    "confirmed": false,
-    "predicted": false,
-    "date_evidence": {
-      "method": "version_briefing"
-    },
-    "url": "https://endfield.gryphline.com/version_briefing/latest",
-    "url_kind": "버전 가이드",
-    "source": "official",
-    "updated_at": "2026-11-21T12:20:32.634631+00:00"
-  },
-  "endfield-brief-1@gameschedule": {
-    "uid": "endfield-brief-1@gameschedule",
-    "game": "명일방주: 엔드필드",
-    "type": "banner",
-    "title": "[픽업] 미미노",
-    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
-    "chars": [
-      "미미노"
-    ],
-    "start": "2026-12-17T04:00:00+00:00",
-    "end": "2027-01-06T22:00:00+00:00",
-    "start_confirmed": true,
-    "end_confirmed": true,
-    "confirmed": true,
-    "predicted": false,
-    "date_evidence": {
-      "method": "version_briefing"
-    },
-    "url": "https://endfield.gryphline.com/version_briefing/latest",
-    "url_kind": "버전 가이드",
-    "source": "official",
-    "updated_at": "2026-11-21T12:20:32.634631+00:00",
-    "new_char": true,
-    "image": {
-      "yt": "DM3btTWohLo",
-      "of": "version"
     }
   },
   "manual-2e45214d@gameschedule": {
@@ -3502,11 +3400,13 @@
     "title": "버전 출시",
     "start": "2026-12-16T15:00:00+00:00",
     "end": null,
-    "chars": [],
+    "chars": [
+      "카오스"
+    ],
     "url": "https://www.youtube.com/watch?v=eHkaECBEoUo",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-24T09:34:05.759729+00:00"
+    "updated_at": "2026-11-25T08:05:16.733287+00:00"
   },
   "genshin-banner-242@gameschedule": {
     "uid": "genshin-banner-242@gameschedule",
@@ -3549,6 +3449,123 @@
     "url_kind": null,
     "image": {
       "yt": "l2PSQ1qCCqw"
+    }
+  },
+  "re1999-hint-i7Qe1FpG-MI@gameschedule": {
+    "uid": "re1999-hint-i7Qe1FpG-MI@gameschedule",
+    "game": "리버스: 1999",
+    "type": "hint",
+    "title": "나르키소스",
+    "start": "2026-11-25T03:00:06Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=i7Qe1FpG-MI",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00"
+  },
+  "endfield-off-0740-1@gameschedule": {
+    "uid": "endfield-off-0740-1@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 질베르타",
+    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
+    "chars": [
+      "질베르타"
+    ],
+    "start": "2026-11-25T04:00:00+00:00",
+    "end": "2026-12-16T03:59:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
+    "url": "https://endfield.gryphline.com/ko-kr/news/0740",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
+    "image": {
+      "yt": "tiASX3mv5oU"
+    }
+  },
+  "endfield-off-0740-0@gameschedule": {
+    "uid": "endfield-off-0740-0@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[픽업] 케르",
+    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
+    "chars": [
+      "케르"
+    ],
+    "start": "2026-11-25T04:00:00+00:00",
+    "end": "2026-12-23T03:59:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": true,
+    "confirmed": true,
+    "predicted": false,
+    "date_evidence": {
+      "method": "notice_period"
+    },
+    "url": "https://endfield.gryphline.com/ko-kr/news/0740",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
+    "new_char": true,
+    "image": {
+      "yt": "zC1T7jlhPpQ"
+    }
+  },
+  "endfield-off-0740-2@gameschedule": {
+    "uid": "endfield-off-0740-2@gameschedule",
+    "game": "명일방주: 엔드필드",
+    "type": "banner",
+    "title": "[예측] 로시",
+    "version_name": "뜻밖의 만남, 버섯 동산 대모험",
+    "chars": [
+      "로시"
+    ],
+    "start": "2026-12-16T04:00:00+00:00",
+    "end": "2027-01-06T04:00:00+00:00",
+    "start_confirmed": true,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "next_version_estimate"
+    },
+    "url": "https://endfield.gryphline.com/ko-kr/news/0740",
+    "url_kind": "공지",
+    "source": "official",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
+    "image": {
+      "yt": "Uxu0wlEnRQg"
+    }
+  },
+  "pgr-shp-2026-12-17@gameschedule": {
+    "uid": "pgr-shp-2026-12-17@gameschedule",
+    "game": "퍼니싱: 그레이 레이븐",
+    "type": "banner",
+    "title": "[예측] 카오스",
+    "version_name": "그대가 내일에 태어나기를",
+    "start": "2026-12-16T15:00:00+00:00",
+    "end": "2027-01-18T15:00:00+00:00",
+    "url": "https://www.youtube.com/watch?v=eHkaECBEoUo",
+    "url_kind": "공지",
+    "source": "showcase",
+    "updated_at": "2026-11-25T08:05:16.733287+00:00",
+    "start_confirmed": true,
+    "end_confirmed": false,
+    "confirmed": false,
+    "predicted": true,
+    "date_evidence": {
+      "method": "showcase_duration",
+      "url": "https://www.youtube.com/watch?v=eHkaECBEoUo"
+    },
+    "new_char": true,
+    "image": {
+      "yt": "eHkaECBEoUo",
+      "short": true
     }
   }
 }
