@@ -128,10 +128,13 @@
     return `<span class="game-chip">${img}<span>${esc(short(g))}</span></span>`;
   }
 
-  function media(e) {
+  // opt.wide: 화면을 넓게 채우는 칸(대표 창·신규 픽업·다가오는 픽업의 큰 칸).
+  // 캐릭터 그림이 쇼츠·아이콘뿐이면 수집기가 단 가로 예비(버전 PV)를 대신 쓴다.
+  function media(e, opt = {}) {
     const m = meta(e.game) || meta(gamesOf(e)[0]);
     const art = m && (m.banner || m.avatar);
-    const im = e.image || {};
+    let im = e.image || {};
+    if (opt.wide && im.wide && (im.short || im.src)) im = { yt: im.wide };
     if (im.yt) {
       const id = esc(im.yt);
       const src = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
@@ -171,7 +174,7 @@
     const ver = e.version_name ? `<div class="card-sub">${esc(e.version_name)}</div>` : "";
     const range = e.type === "event" && e.e ? `<div class="card-sub">${shortDate(e.s)} - ${shortDate(e.e)}</div>` : "";
     return `<a class="card reveal${e.new_char ? " holo" : ""}" href="${esc(link(e))}" target="_blank" rel="noopener" style="--i:${opt.i || 0};${gvar(e.game)}">
-      <div class="media">${media(e)}${e.new_char ? HOLO : ""}</div>
+      <div class="media">${media(e, opt)}${e.new_char ? HOLO : ""}</div>
       <div class="card-body">
         <div class="meta">${chip(e.game)}<span class="dd${t.hot ? " hot" : ""}">${esc(t.text)}</span></div>
         <div class="card-title">${esc(title(e))}</div>
@@ -183,7 +186,7 @@
   function feature(e) {
     const t = timing(e);
     return `<a class="card feature reveal${e.new_char ? " holo" : ""}" href="${esc(link(e))}" target="_blank" rel="noopener" style="${gvar(e.game)}">
-      <div class="media">${media(e)}<div class="scrim"></div>${e.new_char ? HOLO : ""}</div>
+      <div class="media">${media(e, { wide: true })}<div class="scrim"></div>${e.new_char ? HOLO : ""}</div>
       <div class="over">
         <div>${chip(e.game)}</div>
         <div class="card-title">${esc(title(e))}</div>
