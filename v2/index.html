@@ -126,10 +126,13 @@
   const live = banners.filter(e => A.isLive(e)).sort((a, b) => a.e - b.e);
   const next = banners.filter(e => A.isUpcoming(e)).sort((a, b) => a.s - b.s);
 
-  // 대표: 가장 최근에 열린, 가로 영상 그림이 있는 진행 중 배너. 없으면 다음 픽업.
-  // 화면 가득 열리는 창이라 쇼츠(세로)·아이콘은 피한다.
-  const pool = live.filter(e => e.image && e.image.yt && !e.image.short);
-  const hero = pool.sort((a, b) => b.s - a.s)[0] || live[0] || next[0];
+  // 대표: 진행 중 신규 캐릭터 배너를 먼저, 그중 가장 최근에 열린 것. 신규가 없으면 진행 중 아무 배너.
+  // 화면 가득 열리는 창이라 가로 영상 그림(쇼츠·아이콘 제외)이 있는 쪽을 우선하고,
+  // 그런 게 없으면 그림 종류와 상관없이 고른다. 진행 중이 없으면 다음 픽업.
+  const wide = e => e.image && e.image.yt && !e.image.short;
+  const latest = list => list.slice().sort((a, b) => b.s - a.s)[0];
+  const fresh = live.filter(e => e.new_char);
+  const hero = latest(fresh.filter(wide)) || latest(fresh) || latest(live.filter(wide)) || live[0] || next[0];
   if (hero) {
     const win = document.getElementById("ap-window");
     win.href = A.D && hero.url ? hero.url : "schedule.html";
