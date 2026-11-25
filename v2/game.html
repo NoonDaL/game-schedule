@@ -3,98 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>게임 | 게임 일정</title>
-<meta name="theme-color" content="#0c0c0f">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://i.ytimg.com">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="app.css?v=15">
+<title>게임</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="../game.html">
+<meta http-equiv="refresh" content="0; url=../game.html">
+<script>location.replace("../game.html" + location.search + location.hash);</script>
 </head>
 <body>
-
-<nav class="nav" aria-label="주 메뉴">
-  <a class="brand" href="index.html"><img class="brand-mark" src="favicon.svg" alt="" width="28" height="28">게임 일정</a>
-  <div class="nav-links">
-    <a href="index.html">홈</a>
-    <a href="schedule.html">전체 일정</a>
-    <a class="opt" href="index.html#games" aria-current="page">게임</a>
-    <a class="opt" href="index.html#launches">출시 예정</a>
-  </div>
-  <a class="nav-sub" href="#subscribe" aria-label="캘린더 구독"><i class="ph ph-calendar-plus"></i><span>캘린더 구독</span></a>
-</nav>
-
-<main class="wrap">
-  <header class="game-hero">
-    <div class="banner" id="banner"></div>
-    <div class="id">
-      <img id="avatar" alt="" hidden>
-      <h1 id="name">&nbsp;</h1>
-      <div class="act">
-        <a class="btn btn-ghost btn-sm" id="channel" target="_blank" rel="noopener"><i class="ph ph-youtube-logo"></i>유튜브</a>
-        <a class="btn btn-main btn-sm" id="all">전체 일정에서 보기</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="block" id="live-sec"><div class="block-head"><h2>진행 중</h2></div><div class="grid-cards" id="live"></div></section>
-  <section class="block" id="next-sec"><div class="block-head"><h2>예정</h2></div><div class="grid-cards" id="next"></div></section>
-  <section class="block" id="extra-sec"><div class="panel"><h3>방송·행사</h3><div id="extra"></div></div></section>
-  <section class="block" id="past-sec"><div class="block-head"><h2>최근 종료</h2></div><div class="grid-cards" id="past"></div></section>
-</main>
-
-<footer class="site" id="subscribe">
-  <div class="wrap foot">
-    <div class="ics">
-      <strong style="color:var(--ink)">캘린더 구독</strong>
-      <code>noondal.github.io/game-schedule/schedule.ics</code>
-      <button class="btn btn-ghost btn-sm" id="copy-ics" type="button">주소 복사</button>
-    </div>
-    <div style="display:flex;gap:18px;flex-wrap:wrap">
-      <span id="updated"></span>
-      <a href="../legacy/dashboard.html">이전 화면</a>
-    </div>
-  </div>
-</footer>
-
-<script src="app.js?v=15"></script>
-<script>
-(async () => {
-  const A = App, D = await A.load();
-  const now = D.now;
-  const key = new URLSearchParams(location.search).get("g");
-  const name = Object.keys(D.games).find(g => D.games[g].key === key);
-  if (!name) {
-    document.getElementById("name").textContent = "게임을 찾을 수 없습니다";
-    document.querySelectorAll("section.block").forEach(s => s.hidden = true);
-    A.footer(); return;
-  }
-  const m = A.meta(name);
-  document.title = `${name} | 게임 일정`;
-  document.getElementById("name").textContent = name;
-  if (m.banner) document.getElementById("banner").style.backgroundImage = `url('${m.banner}')`;
-  const av = document.getElementById("avatar");
-  if (m.avatar) { av.src = m.avatar; av.hidden = false; }
-  document.getElementById("channel").href = m.channel;
-  document.getElementById("all").href = `schedule.html?g=${encodeURIComponent(key)}`;
-
-  const mine = D.events.filter(e => e.type !== "launch" && A.gamesOf(e).includes(name));
-  const banners = mine.filter(e => e.type === "banner");
-  const fill = (id, items, fn, empty) => {
-    const el = document.getElementById(id);
-    el.innerHTML = items.map(fn).join("");
-    if (!items.length) el.closest("section").hidden = true;
-  };
-  fill("live", banners.filter(e => A.isLive(e)).sort((a, b) => a.e - b.e), (e, i) => A.card(e, { i }));
-  fill("next", banners.filter(e => A.isUpcoming(e)).sort((a, b) => a.s - b.s), (e, i) => A.card(e, { i }));
-  fill("extra", mine.filter(e => e.type !== "banner" && (e.e || e.s) > now).sort((a, b) => a.s - b.s), (e, i) => A.row(e, i));
-  const month = new Date(now.getTime() - 30 * 86400000);
-  fill("past", banners.filter(e => e.e && e.e <= now && e.e > month).sort((a, b) => b.e - a.e), (e, i) => A.card(e, { i }));
-  A.footer();
-  A.reveal();
-  A.bindHolo();
-})();
-</script>
+<p>새 화면으로 옮겼습니다. <a href="../game.html">게임</a>으로 이동합니다.</p>
 </body>
 </html>

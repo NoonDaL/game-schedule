@@ -1,5 +1,5 @@
 /* 게임 일정 v2 — 공용 데이터·렌더러.
-   데이터는 수집기 산출물 그대로 읽는다: ../events.json, ../games.json, ../status.json.
+   데이터는 수집기 산출물 그대로 읽는다: events.json, games.json, status.json.
    시각은 전부 KST 로 보여준다. */
 (() => {
   "use strict";
@@ -36,7 +36,7 @@
 
   async function load() {
     const [ev, games, status] = await Promise.all([
-      getJSON("../events.json"), getJSON("../games.json"), getJSON("../status.json")]);
+      getJSON("events.json"), getJSON("games.json"), getJSON("status.json")]);
     D.games = games || {};
     D.status = status;
     D.now = new Date();
@@ -367,7 +367,7 @@
     if (el && D.status && D.status.checked_at) el.textContent = `${dateLabel(new Date(D.status.checked_at))} 갱신`;
     const btn = document.getElementById("copy-ics");
     if (btn) btn.addEventListener("click", async () => {
-      const url = new URL("../schedule.ics", location.href).href;
+      const url = new URL("schedule.ics", location.href).href;
       try { await navigator.clipboard.writeText(url); btn.textContent = "복사했습니다"; } catch (e) { prompt("캘린더 주소", url); }
     });
   }
