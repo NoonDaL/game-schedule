@@ -157,7 +157,8 @@
 
   function link(e) {
     const m = meta(e.game);
-    return e.url || (m && m.channel) || "#";
+    // 콜라보·행사는 주소 대신 수집기가 찾은 공지 글(image.page)이 있을 수 있다.
+    return e.url || (e.image && e.image.page) || (m && m.channel) || "#";
   }
 
   const TYPE_LABEL = { banner: "픽업", broadcast: "방송", event: "행사" };
@@ -240,8 +241,11 @@
     // 0일 남음·0일 뒤 시작 대신 '오늘 마감'·'오늘 시작'.
     const big = left > 0 ? left : "오늘";
     const cap = left > 0 ? (live ? "일 남음" : "일 뒤 시작") : (live ? "마감" : "시작");
-    return `<div class="ticket reveal" style="--i:${i};${gvar(e.game)}">
-      <div class="main">
+    // 공지 대표 그림이 있으면 티켓 위쪽에 사진처럼 붙인다.
+    const shot = e.image && e.image.src
+      ? `<a class="shot" href="${esc(link(e))}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="${esc(e.image.src)}" alt="" loading="lazy"></a>` : "";
+    return `<div class="ticket reveal${shot ? " has-shot" : ""}" style="--i:${i};${gvar(e.game)}">
+      <div class="main">${shot}
         <div class="line"><span>${kind} · ${esc(short(e.game))}</span><b>${live ? "진행 중" : esc(t.text)}</b></div>
         <div class="tt"><a href="${esc(link(e))}" target="_blank" rel="noopener">${esc(title(e))}</a></div>
         <div class="grid4">

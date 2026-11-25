@@ -666,7 +666,7 @@ footer.site {
    행사를 기차표로. 오른쪽 그루터기를 끌어 뜯으면 날아가고 다시 인쇄된다.
    종이 색은 다크 화면에서도 표가 표처럼 보이게 밝게 두고, 띠·그루터기에 게임 색을 쓴다.
    ====================================================================== */
-.tickets { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 30px 22px; }
+.tickets { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 30px 22px; align-items: start; }
 .ticket {
   --paper: #f2efe8; --paper-ink: #1d1c22; --paper-2: #6b6872;
   --tg: var(--g, var(--accent));
@@ -681,6 +681,11 @@ footer.site {
   position: relative; display: grid; gap: 12px; min-width: 0;
   box-shadow: inset 6px 0 0 color-mix(in srgb, var(--tg) 85%, #000);
 }
+/* 공지 대표 그림: 티켓 윗부분에 사진처럼. 절취선 오른쪽(stub)은 그대로 종이. */
+.ticket .shot { display: block; margin: -18px -22px 2px -26px; border-radius: 14px 0 0 0; overflow: hidden; aspect-ratio: 2.4 / 1; background: color-mix(in srgb, var(--tg) 30%, var(--paper)); }
+.ticket .shot img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; transition: transform .6s var(--ease); }
+.ticket .shot:hover img { transform: scale(1.04); }
+@media (prefers-reduced-motion: reduce) { .ticket .shot img { transition: none; } }
 .ticket .line { display: flex; justify-content: space-between; gap: 12px; font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; color: var(--paper-2); }
 .ticket .line b { color: color-mix(in srgb, var(--tg) 70%, #000); font-weight: 700; }
 .ticket .tt { font-size: 26px; font-weight: 800; letter-spacing: -.04em; line-height: 1.1; }
