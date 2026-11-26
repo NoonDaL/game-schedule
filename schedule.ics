@@ -9,8 +9,8 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=MK4bIOILTHM
-DTEND:20261222T150000Z
-DTSTART:20261201T150000Z
+DTEND:20261223T030000Z
+DTSTART:20261202T030000Z
 SUMMARY:[이환] [예측] Exe
 UID:ihwan-shp-2026-12-02@gameschedule
 URL:https://www.youtube.com/watch?v=MK4bIOILTHM
@@ -34,8 +34,8 @@ UID:manual-129a72b2@gameschedule
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=dwt-MKfMblI
-DTEND:20270112T150000Z
-DTSTART:20261222T150000Z
+DTEND:20270113T030000Z
+DTSTART:20261223T030000Z
 SUMMARY:[이환] [예측] 니샤
 UID:ihwan-shp-2026-12-23@gameschedule
 URL:https://www.youtube.com/watch?v=dwt-MKfMblI
@@ -77,24 +77,6 @@ DTSTART:20270111T150000Z
 SUMMARY:[명조: 워더링 웨이브] [예측] 루시엘
 UID:wuwa-pred-2027-01-12@gameschedule
 URL:https://www.youtube.com/watch?v=tiew3-YmxDg
-END:VEVENT
-BEGIN:VEVENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:카페 세일링 (블루버드 로스터스) 종료 2일 전
-TRIGGER:P10W6DT23H59M59S
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:카페 세일링 (블루버드 로스터스) 종료 3시간 전
-TRIGGER:P11W1DT20H59M59S
-END:VALARM
-DESCRIPTION:https://playeternalreturn.com/posts/news/3837
-DTEND:20261129T145959Z
-DTSTART:20260911T150000Z
-SUMMARY:[이터널 리턴] 카페 세일링 (블루버드 로스터스)
-UID:manual-74273f04@gameschedule
-URL:https://playeternalreturn.com/posts/news/3837
 END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
@@ -233,8 +215,8 @@ UID:hsr-banner-101@gameschedule
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:https://www.youtube.com/watch?v=q1F4Zjb8YE0
-DTEND:20270202T150000Z
-DTSTART:20270112T150000Z
+DTEND:20270203T030000Z
+DTSTART:20270113T030000Z
 SUMMARY:[이환] [예측] 앨리
 UID:ihwan-shp-2027-01-13@gameschedule
 URL:https://www.youtube.com/watch?v=q1F4Zjb8YE0
@@ -513,19 +495,19 @@ END:VEVENT
 BEGIN:VEVENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:탕탕 종료 2일 전
-TRIGGER:P2W4DT23H59M
+DESCRIPTION:카페 세일링 (블루버드 로스터스) 종료 2일 전
+TRIGGER:P10W6DT23H59M59S
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:탕탕 종료 3시간 전
-TRIGGER:P2W6DT20H59M
+DESCRIPTION:카페 세일링 (블루버드 로스터스) 종료 3시간 전
+TRIGGER:P11W1DT20H59M59S
 END:VALARM
-DESCRIPTION:https://endfield.gryphline.com/ko-kr/news/9560
-DTEND:20261119T035900Z
-DTSTART:20261029T040000Z
-SUMMARY:[명일방주: 엔드필드] [픽업] 탕탕
-UID:endfield-off-9560-1@gameschedule
-URL:https://endfield.gryphline.com/ko-kr/news/9560
+DESCRIPTION:https://playeternalreturn.com/posts/news/3837
+DTEND:20261129T145959Z
+DTSTART:20260911T150000Z
+SUMMARY:[이터널 리턴] 카페 세일링 (블루버드 로스터스)
+UID:manual-74273f04@gameschedule
+URL:https://playeternalreturn.com/posts/news/3837
 END:VEVENT
 END:VCALENDAR

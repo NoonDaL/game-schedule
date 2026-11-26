@@ -488,7 +488,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00"
+    "updated_at": "2026-11-26T07:55:35.899781+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -526,20 +526,6 @@
     "url_kind": "공지",
     "source": "youtube",
     "updated_at": "2026-09-22T04:30:52.215712+00:00"
-  },
-  "zzz-ver-3.1@gameschedule": {
-    "uid": "zzz-ver-3.1@gameschedule",
-    "game": "젠레스 존 제로",
-    "type": "version",
-    "version": "3.1",
-    "version_name": "기나긴 이별",
-    "title": "3.1 버전 「기나긴 이별」",
-    "start": "2026-07-29T03:30:21Z",
-    "end": null,
-    "url": "https://www.youtube.com/watch?v=fg_zK5AJ7HE",
-    "url_kind": "공지",
-    "source": "youtube",
-    "updated_at": "2026-08-22T12:52:18.671720+00:00"
   },
   "genshin-banner-222@gameschedule": {
     "uid": "genshin-banner-222@gameschedule",
@@ -1378,7 +1364,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00"
+    "updated_at": "2026-11-26T07:55:35.899781+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -1595,7 +1581,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1609,7 +1595,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "chars": [
       "에버에코"
     ],
@@ -1626,7 +1612,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -1643,7 +1629,7 @@
     "end": "2026-11-25T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "chars": [
       "헤도네"
     ],
@@ -1664,7 +1650,7 @@
     "end": "2026-12-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "chars": [
       "나르키소스"
     ],
@@ -2204,12 +2190,12 @@
     "type": "banner",
     "title": "[예측] Exe",
     "version_name": "지금 거신 번호는",
-    "start": "2026-12-01T15:00:00+00:00",
-    "end": "2026-12-22T15:00:00+00:00",
+    "start": "2026-12-02T03:00:00+00:00",
+    "end": "2026-12-23T03:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=MK4bIOILTHM",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2220,9 +2206,7 @@
     },
     "new_char": true,
     "image": {
-      "yt": "6D2uSqNKmUM",
-      "short": true,
-      "wide": "iF5hxpmEPsk"
+      "yt": "ex-JoebggiE"
     }
   },
   "endfield-off-9560-2@gameschedule": {
@@ -2273,11 +2257,7 @@
     "url": "https://endfield.gryphline.com/ko-kr/news/9560",
     "url_kind": "공지",
     "source": "official",
-    "updated_at": "2026-10-19T11:57:31.973755+00:00",
-    "new_char": true,
-    "image": {
-      "yt": "XMXX4SjQVPk"
-    }
+    "updated_at": "2026-10-19T11:57:31.973755+00:00"
   },
   "endfield-off-9560-0@gameschedule": {
     "uid": "endfield-off-9560-0@gameschedule",
@@ -2418,7 +2398,7 @@
     "url": "https://www.youtube.com/watch?v=18Y_2ncWLHQ",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00"
+    "updated_at": "2026-11-26T07:55:35.899781+00:00"
   },
   "manual-09bc8445@gameschedule": {
     "uid": "manual-09bc8445@gameschedule",
@@ -2772,7 +2752,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -2797,7 +2777,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3035,12 +3015,12 @@
     "type": "banner",
     "title": "[예측] 니샤",
     "version_name": null,
-    "start": "2026-12-22T15:00:00+00:00",
-    "end": "2027-01-12T15:00:00+00:00",
+    "start": "2026-12-23T03:00:00+00:00",
+    "end": "2027-01-13T03:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=dwt-MKfMblI",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-11-14T05:57:59.703823+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3049,11 +3029,11 @@
       "method": "upcoming_phase",
       "url": "https://www.youtube.com/watch?v=dwt-MKfMblI"
     },
+    "new_char": true,
     "image": {
       "yt": "dwt-MKfMblI",
       "short": true
-    },
-    "new_char": true
+    }
   },
   "hsr-banner-105@gameschedule": {
     "uid": "hsr-banner-105@gameschedule",
@@ -3130,12 +3110,12 @@
     "type": "banner",
     "title": "[예측] 앨리",
     "version_name": null,
-    "start": "2027-01-12T15:00:00+00:00",
-    "end": "2027-02-02T15:00:00+00:00",
+    "start": "2027-01-13T03:00:00+00:00",
+    "end": "2027-02-03T03:00:00+00:00",
     "url": "https://www.youtube.com/watch?v=q1F4Zjb8YE0",
     "url_kind": "쇼케이스",
     "source": "showcase",
-    "updated_at": "2026-11-15T05:59:47.366377+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3144,11 +3124,11 @@
       "method": "upcoming_phase",
       "url": "https://www.youtube.com/watch?v=q1F4Zjb8YE0"
     },
+    "new_char": true,
     "image": {
       "yt": "q1F4Zjb8YE0",
       "short": true
-    },
-    "new_char": true
+    }
   },
   "endfield-vpr1L_5SJ4A@gameschedule": {
     "uid": "endfield-vpr1L_5SJ4A@gameschedule",
@@ -3553,7 +3533,7 @@
     "url": "https://www.youtube.com/watch?v=eHkaECBEoUo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-25T21:31:18.937801+00:00",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -3567,5 +3547,17 @@
       "yt": "eHkaECBEoUo",
       "short": true
     }
+  },
+  "ihwan-hint-ex-JoebggiE@gameschedule": {
+    "uid": "ihwan-hint-ex-JoebggiE@gameschedule",
+    "game": "이환",
+    "type": "hint",
+    "title": "Exe",
+    "start": "2026-11-26T02:00:10Z",
+    "end": null,
+    "url": "https://www.youtube.com/watch?v=ex-JoebggiE",
+    "url_kind": "쇼케이스",
+    "source": "youtube",
+    "updated_at": "2026-11-26T07:55:35.899781+00:00"
   }
 }
