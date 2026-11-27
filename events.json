@@ -265,21 +265,6 @@
     "source": "youtube",
     "updated_at": "2026-08-19T17:27:28.463071+00:00"
   },
-  "wuwa-rel-2026-07-09@gameschedule": {
-    "uid": "wuwa-rel-2026-07-09@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "release",
-    "version": "3.5",
-    "version_name": "남겨진 울림, 검에 기대 꿈속에서 노래하리",
-    "title": "3.5 버전 출시",
-    "start": "2026-07-09T15:00:00+00:00",
-    "end": "2026-07-30T01:59:00+00:00",
-    "chars": [],
-    "url": "https://www.youtube.com/watch?v=8Ve139qCryk",
-    "url_kind": "공지",
-    "source": "youtube",
-    "updated_at": "2026-08-19T17:27:28.463071+00:00"
-  },
   "hsr-rel-2026-08-25@gameschedule": {
     "uid": "hsr-rel-2026-08-25@gameschedule",
     "game": "붕괴: 스타레일",
@@ -399,29 +384,6 @@
     "source": "official",
     "updated_at": "2026-09-10T20:45:06.950254+00:00"
   },
-  "wuwa-off-5049@gameschedule": {
-    "uid": "wuwa-off-5049@gameschedule",
-    "game": "명조: 워더링 웨이브",
-    "type": "banner",
-    "title": "[예측] 양양 · 현령",
-    "version_name": "깃털에 실은 만물의 소리",
-    "start": "2026-07-09T15:00:00+00:00",
-    "end": "2026-07-30T01:59:00+00:00",
-    "chars": [
-      "양양 · 현령"
-    ],
-    "confirmed": false,
-    "start_confirmed": false,
-    "end_confirmed": true,
-    "predicted": true,
-    "date_evidence": {
-      "method": "notice_end_only"
-    },
-    "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5049",
-    "url_kind": "공지",
-    "source": "official",
-    "updated_at": "2026-09-10T20:45:06.950254+00:00"
-  },
   "ihwan-off-263607-잔홍@gameschedule": {
     "uid": "ihwan-off-263607-잔홍@gameschedule",
     "game": "이환",
@@ -488,7 +450,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00"
+    "updated_at": "2026-11-27T07:56:22.887181+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1364,7 +1326,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00"
+    "updated_at": "2026-11-27T07:56:22.887181+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -1581,7 +1543,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1595,7 +1557,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "chars": [
       "에버에코"
     ],
@@ -1612,7 +1574,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -1629,7 +1591,7 @@
     "end": "2026-11-25T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "chars": [
       "헤도네"
     ],
@@ -1650,7 +1612,7 @@
     "end": "2026-12-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "chars": [
       "나르키소스"
     ],
@@ -2195,7 +2157,7 @@
     "url": "https://www.youtube.com/watch?v=MK4bIOILTHM",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2398,7 +2360,7 @@
     "url": "https://www.youtube.com/watch?v=18Y_2ncWLHQ",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00"
+    "updated_at": "2026-11-27T07:56:22.887181+00:00"
   },
   "manual-09bc8445@gameschedule": {
     "uid": "manual-09bc8445@gameschedule",
@@ -2752,7 +2714,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -2777,7 +2739,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3171,7 +3133,7 @@
     "source": "hoyolab",
     "updated_at": "2026-11-21T13:24:16.585443+00:00",
     "image": {
-      "yt": "ZNf4RekyVJ8"
+      "yt": "l89NONeSjCo"
     }
   },
   "manual-0f8c36dd@gameschedule": {
@@ -3533,7 +3495,7 @@
     "url": "https://www.youtube.com/watch?v=eHkaECBEoUo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-26T21:19:02.062303+00:00",
+    "updated_at": "2026-11-27T07:56:22.887181+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
