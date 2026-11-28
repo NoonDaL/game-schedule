@@ -450,7 +450,7 @@
     "url": "https://www.youtube.com/watch?v=3AKeLpkvRC0",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00"
+    "updated_at": "2026-11-28T07:26:16.346270+00:00"
   },
   "wuwa-hint-8budBJJs0rg@gameschedule": {
     "uid": "wuwa-hint-8budBJJs0rg@gameschedule",
@@ -1326,7 +1326,7 @@
     "url": "https://www.youtube.com/watch?v=uBR-gNtBfZs",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00"
+    "updated_at": "2026-11-28T07:26:16.346270+00:00"
   },
   "pgr-hint-GCA2A0EXR4c@gameschedule": {
     "uid": "pgr-hint-GCA2A0EXR4c@gameschedule",
@@ -1543,7 +1543,7 @@
     "end": "2026-09-23T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "note": "3.7 전반기(버전 전체). 미스 스트레인저와 겹쳐 진행. 시작일은 reverse1999-simulator.com 미래시 기준으로 정정 (2026-08-17 → 2026-08-13).",
     "confirmed": true,
     "version_name": "타인의 슬픔"
@@ -1557,7 +1557,7 @@
     "end": "2026-10-14T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "chars": [
       "에버에코"
     ],
@@ -1574,7 +1574,7 @@
     "end": "2026-11-04T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "chars": [
       "코너스톤"
     ],
@@ -1591,7 +1591,7 @@
     "end": "2026-11-25T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "chars": [
       "헤도네"
     ],
@@ -1612,7 +1612,7 @@
     "end": "2026-12-16T15:00:00+00:00",
     "url": null,
     "source": "manual",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "chars": [
       "나르키소스"
     ],
@@ -2157,7 +2157,7 @@
     "url": "https://www.youtube.com/watch?v=MK4bIOILTHM",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -2360,7 +2360,7 @@
     "url": "https://www.youtube.com/watch?v=18Y_2ncWLHQ",
     "url_kind": "공지",
     "source": "youtube",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00"
+    "updated_at": "2026-11-28T07:26:16.346270+00:00"
   },
   "manual-09bc8445@gameschedule": {
     "uid": "manual-09bc8445@gameschedule",
@@ -2714,7 +2714,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "start_confirmed": true,
     "end_confirmed": true,
     "confirmed": true,
@@ -2739,7 +2739,7 @@
     "url": "https://wutheringwaves.kurogames.com/kr/main/news/detail/5784",
     "url_kind": "공지",
     "source": "cycle",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "start_confirmed": false,
     "end_confirmed": false,
     "confirmed": false,
@@ -3132,8 +3132,9 @@
     "url": null,
     "source": "hoyolab",
     "updated_at": "2026-11-21T13:24:16.585443+00:00",
+    "new_char": true,
     "image": {
-      "yt": "l89NONeSjCo"
+      "yt": "SpsokNg4Ww8"
     }
   },
   "manual-0f8c36dd@gameschedule": {
@@ -3495,7 +3496,7 @@
     "url": "https://www.youtube.com/watch?v=eHkaECBEoUo",
     "url_kind": "공지",
     "source": "showcase",
-    "updated_at": "2026-11-27T21:00:10.827577+00:00",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
     "start_confirmed": true,
     "end_confirmed": false,
     "confirmed": false,
@@ -3521,5 +3522,31 @@
     "url_kind": "쇼케이스",
     "source": "youtube",
     "updated_at": "2026-11-26T07:55:35.899781+00:00"
+  },
+  "manual-13bb1442@gameschedule": {
+    "uid": "manual-13bb1442@gameschedule",
+    "game": "실버팰리스",
+    "type": "broadcast",
+    "title": "정식 출시 프리뷰 특별 방송",
+    "start": "2026-12-05T11:00:00+00:00",
+    "end": null,
+    "url": null,
+    "source": "manual",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
+    "note": "공식 이미지 기준 12/05 19:00(UTC+8) = 한국 20:00 (사용자 제공)",
+    "confirmed": true
+  },
+  "manual-e0e0d999@gameschedule": {
+    "uid": "manual-e0e0d999@gameschedule",
+    "game": "기타",
+    "type": "event",
+    "title": "AGF 2026",
+    "start": "2026-12-03T15:00:00+00:00",
+    "end": "2026-12-06T14:59:59+00:00",
+    "url": "https://www.agfkorea.com/",
+    "source": "manual",
+    "updated_at": "2026-11-28T07:26:16.346270+00:00",
+    "note": "애니메이션 X 게임 페스티벌. 일산 킨텍스 제1전시장 1~5홀. 실버팰리스(공식 스폰서, 국내 첫 시연), 아주르 프로밀리아 참가.",
+    "confirmed": true
   }
 }
